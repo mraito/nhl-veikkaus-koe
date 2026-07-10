@@ -1,16 +1,16 @@
-// NHL-datan hakuskripti — ajetaan GitHub Actionissa
-// Testivaihe: haetaan päättyneen kauden 2025–26 dataa rakenteen todentamiseksi.
+// NHL-datan hakuskripti v2 — ajetaan GitHub Actionissa
+// Uutta v2:ssa: joukkueiden rosterit + otteluohjelma
 const fs = require('fs');
 const path = require('path');
 
 // ===== ASETUKSET =====
-const TEST_MODE = true;             // true = haetaan viime kauden dataa testiksi
+const TEST_MODE = true;             // true = haetaan päättyneen kauden dataa testiksi
 const TEST_DATE = '2026-01-31';     // testipäivä (sarjataulukko + tulokset)
-const SEASON = '20252026';          // pörssien kausi testimoodissa
+const SEASON = '20252026';          // kausi testimoodissa (tuotannossa: '20262027')
 // =====================
 
 const API = 'https://api-web.nhle.com/v1';
-const HEADERS = { 'User-Agent': 'nhl-veikkaus-koe/1.0 (kaveriporukan veikkaussovellus; GitHub Action)' };
+const HEADERS = { 'User-Agent': 'nhl-veikkaus-koe/2.0 (kaveriporukan veikkaussovellus; GitHub Action)' };
 
 async function getJSON(url) {
   for (let i = 1; i <= 3; i++) {
@@ -33,14 +33,30 @@ function save(name, data) {
   console.log('Tallennettu data/' + name);
 }
 
+// Tiivistä rosteri: vain veikkauksen tarvitsemat kentät
+function tiivistaRosteri(abbrev, r) {
+  const map = (lista, pos) => (lista || []).map(p => ({
+    id: p.id,
+    nimi: p.firstName.default + ' ' + p.lastName.default,
+    pos: pos,                       // H = hyökkääjä, P = puolustaja, MV = maalivahti
+    numero: p.sweaterNumber || null,
+    kuva: p.headshot
+  }));
+  return {
+    joukkue: abbrev,
+    pelaajat: map(r.forwards, 'H').concat(map(r.defensemen, 'P'), map(r.goalies, 'MV'))
+  };
+}
+
 (async () => {
   const date = TEST_MODE ? TEST_DATE : new Date().toISOString().slice(0, 10);
   console.log('Haetaan NHL-data, päivä: ' + date + (TEST_MODE ? ' (TESTIMOODI)' : ''));
 
   // 1) Sarjataulukko
-  save('standings.json', await getJSON(API + '/standings/' + date));
+  const standings = await getJSON(API + '/standings/' + date);
+  save('standings.json', standings);
 
-  // 2) Päivän ottelutulokset (kaikki ottelut, ml. ratkaisutapa REG/OT/SO)
+  // 2) Päivän ottelutulokset
   save('scores.json', await getJSON(API + '/score/' + date));
 
   // 3) Pistepörssi + maalipörssi top 10
@@ -49,14 +65,47 @@ function save(name, data) {
     : API + '/skater-stats-leaders/current?categories=points,goals&limit=10';
   save('leaders.json', await getJSON(skatersUrl));
 
-  // 4) Maalivahtipörssi (nollapelit, voitot)
+  // 4) Maalivahtipörssi
   const goaliesUrl = TEST_MODE
     ? API + '/goalie-stats-leaders/' + SEASON + '/2?categories=shutouts,wins&limit=10'
     : API + '/goalie-stats-leaders/current?categories=shutouts,wins&limit=10';
   save('goalies.json', await getJSON(goaliesUrl));
 
-  // 5) Ajon metatiedot
-  save('meta.json', { haettu: new Date().toISOString(), paiva: date, testimoodi: TEST_MODE });
+  // 5) UUTTA: Rosterit kaikilta 32 joukkueelta (sarjataulukosta saadaan lyhenteet)
+  const joukkueet = standings.standings.map(t => t.teamAbbrev.default).sort();
+  console.log('Haetaan rosterit: ' + joukkueet.length + ' joukkuetta…');
+  const rosterit = {};
+  for (const abbrev of joukkueet) {
+    const r = TEST_MODE
+      ? await getJSON(API + '/roster/' + abbrev + '/' + SEASON)
+      : await getJSON(API + '/roster/' + abbrev + '/current');
+    rosterit[abbrev] = tiivistaRosteri(abbrev, r);
+    await new Promise(r2 => setTimeout(r2, 250)); // kohtelias tahti API:lle
+  }
+  save('rosters.json', rosterit);
+
+  // 6) UUTTA: Otteluohjelma koko kaudelta (viikko kerrallaan schedule-endpointista
+  // olisi raskas → haetaan joukkuekohtaiset kausiohjelmat ja yhdistetään)
+  console.log('Haetaan otteluohjelma…');
+  const ottelut = {};
+  for (const abbrev of joukkueet) {
+    const s = await getJSON(API + '/club-schedule-season/' + abbrev + '/' + SEASON);
+    (s.games || []).forEach(g => {
+      if (g.gameType !== 2) return; // vain runkosarja
+      ottelut[g.id] = {
+        id: g.id,
+        alkaaUTC: g.startTimeUTC,
+        koti: g.homeTeam.abbrev,
+        vieras: g.awayTeam.abbrev
+      };
+    });
+    await new Promise(r2 => setTimeout(r2, 250));
+  }
+  const lista = Object.values(ottelut).sort((a, b) => a.alkaaUTC.localeCompare(b.alkaaUTC));
+  save('schedule.json', { kausi: SEASON, otteluita: lista.length, ottelut: lista });
+
+  // 7) Ajometa
+  save('meta.json', { haettu: new Date().toISOString(), paiva: date, kausi: SEASON, testimoodi: TEST_MODE, versio: 2 });
 
   console.log('Valmis!');
 })().catch(e => { console.error('VIRHE:', e.message); process.exit(1); });
