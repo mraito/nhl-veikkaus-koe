@@ -20,122 +20,136 @@ window.FIREBASE_CONFIG = {
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@500;600;700&display=swap');
 :root{
-  --bg:#0a0a0d; --panel:#15151a; --panel2:#101014; --line:#2a2a32;
-  --ink:#f2f3f6; --mut:#9aa0ac; --grn:#39e57c; --amb:#ffcf3f; --red:#ff5d52;
-  --hopea:#c8ccd6; --alive:#1d1d24;
+  --bg:#070a12; --panel:#0b101d; --panel2:#0d1424; --line:#1c2438; --line2:#151d30;
+  --chipbg:#10192e; --ink:#ffffff; --body:#b9c2d4; --mut:#7b8496; --faint:#3d4457;
+  --blue:#3f8cff; --blue2:#8fb8f2; --amb:#ffcf3f; --grn:#39e57c; --red:#ff5d52;
+  --hopea:#c8ccd6; --pronssi:#d78d4e; --alive:#10192e;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:'Hanken Grotesk',sans-serif;color:var(--ink);
-  background:radial-gradient(1000px 520px at 85% -12%,#1b1b22 0,transparent 55%),
-  radial-gradient(900px 500px at -10% 110%,#16161c 0,transparent 55%),var(--bg);min-height:100vh;line-height:1.45;}
+body{margin:0;font-family:'Hanken Grotesk',sans-serif;color:var(--body);background:var(--bg);min-height:100vh;line-height:1.45}
 .mono{font-family:'Spline Sans Mono',monospace}
-h1,h2,.disp{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.02em;text-transform:uppercase}
+h1,h2,.disp{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px 90px}
-.hero{background:linear-gradient(115deg,#0c0c0f 0%,#1e1e26 60%,#2a2a34 100%);border:1px solid #3a3a46;border-radius:18px;padding:18px 20px;margin:14px 0 6px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--hopea),transparent)}
-.herorow{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.hero .liigalogo{height:64px;width:auto;flex:0 0 auto;filter:drop-shadow(0 3px 8px rgba(0,0,0,.6))}
-.hero .cup{height:85px;width:auto;flex:0 0 auto;filter:drop-shadow(0 3px 10px rgba(0,0,0,.65))}
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:14px 0 6px;position:relative;overflow:hidden;padding:0}
+.hero .streak{position:absolute;top:-20px;bottom:-20px;right:40px;width:280px;background:linear-gradient(115deg,transparent 0,rgba(63,140,255,.18) 35%,rgba(63,140,255,.04) 100%);transform:skewX(-14deg);pointer-events:none}
+.herorow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:20px 24px 16px;position:relative}
+.hero .cup{height:100px;width:auto;flex:0 0 auto;filter:drop-shadow(0 3px 10px rgba(0,0,0,.65))}
 .hero .htxt{flex:1 1 240px;min-width:0}
-.kick{color:var(--hopea);font-weight:800;letter-spacing:.18em;font-size:11px;text-transform:uppercase}
-.title{font-size:clamp(30px,6.5vw,54px);line-height:.92;margin:4px 0 2px;color:#fff}
-.sub{color:var(--mut);font-size:13px;max-width:600px;margin:5px 0 0}
-.logostrip{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap;opacity:.9}
-.logostrip img{width:26px;height:26px}
-.tabs{display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:0;z-index:20;
-  background:linear-gradient(var(--bg),rgba(10,10,13,.85));backdrop-filter:blur(8px);
-  padding:12px 0;margin-bottom:6px;border-bottom:1px solid var(--line)}
-.tab{font-family:inherit;font-weight:700;font-size:14px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);
-  background:transparent;color:var(--mut);cursor:pointer;transition:.15s}
-.tab:hover{color:var(--ink);border-color:var(--hopea)}
-.tab.on{background:#fff;color:#0a0a0d;border-color:#fff}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:3px;background:#101014;flex-wrap:wrap}
+.kick{color:var(--blue);font-family:'Barlow Condensed';font-weight:800;letter-spacing:.22em;font-size:11px;text-transform:uppercase}
+.title{font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:clamp(34px,6.5vw,56px);line-height:.92;margin:4px 0 2px;color:#fff;text-transform:uppercase}
+.title .vuosi{color:var(--blue)}
+.logostrip{display:flex;gap:14px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.logostrip img{width:40px;height:40px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+.ticker{background:var(--panel2);border-top:1px solid var(--line);padding:7px 24px;font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.08em;color:var(--blue2);text-transform:uppercase}
+.tabs{display:flex;gap:2px;flex-wrap:wrap;position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg),rgba(7,10,18,.88));backdrop-filter:blur(8px);padding:10px 0 0;margin-bottom:12px;border-bottom:1px solid var(--line)}
+.tab{font-family:'Barlow Condensed';font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.05em;padding:7px 15px;border:none;border-bottom:3px solid transparent;background:transparent;color:var(--mut);cursor:pointer;transition:.15s}
+.tab:hover{color:#fff}
+.tab.on{color:#fff;border-bottom-color:var(--blue)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:3px;background:var(--panel2);flex-wrap:wrap}
 .segb{font-family:inherit;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;color:var(--mut);border:none;background:transparent;cursor:pointer}
-.segb.on{background:#fff;color:#0a0a0d}
-.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
-  border-radius:16px;padding:18px;margin:14px 0}
-.card h2{font-size:17px;margin:0 0 12px;color:var(--ink)}
+.segb.on{background:#fff;color:#06080f}
+.card{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:14px;margin:14px 0}
+.card h2{font-size:21px;margin:0 0 10px}
+.sect{display:flex;align-items:center;gap:12px;margin:2px 0 10px}
+.sect .so{font-family:'Barlow Condensed';font-weight:800;font-size:21px;text-transform:uppercase;color:#fff}
+.sect .viiva{flex:1;height:2px;background:linear-gradient(90deg,var(--blue),transparent)}
+.sect .meta{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.06em;color:var(--mut);text-transform:uppercase}
+.sect .meta.kulta{color:var(--amb)}
+.paneeliots{font-family:'Barlow Condensed';font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue2);margin:0 0 8px}
 .lab{color:var(--mut);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .tiny{font-size:12px;color:var(--mut)}
-.note{font-size:14px;color:var(--mut);background:rgba(200,204,214,.05);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
-.pill{font-size:11px;font-weight:800;padding:2px 7px;border-radius:999px}
-.pill.g{background:rgba(57,229,124,.16);color:var(--grn)}
-.pill.s{background:rgba(200,204,214,.14);color:var(--hopea)}
-.pill.y{background:rgba(255,207,63,.16);color:var(--amb)}
+.note{font-size:14px;color:var(--mut);background:rgba(63,140,255,.05);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
+.pill{font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;padding:2.5px 7px;border-radius:4px}
+.pill.g{background:rgba(57,229,124,.13);color:var(--grn)}
+.pill.s{background:var(--chipbg);color:var(--body)}
+.pill.y{background:rgba(255,207,63,.1);color:var(--amb)}
+.fintag{font-size:7.5px;background:var(--blue);color:#06080f;border-radius:2px;padding:1px 3px;font-weight:700;margin-right:3px;vertical-align:1px}
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{text-align:left;color:var(--mut);font-weight:800;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:6px 6px;border-bottom:1px solid var(--line)}
-td{padding:6px 6px;border-bottom:1px solid #1c1c22}
+th{text-align:left;color:var(--mut);font-weight:600;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:6px 6px;border-bottom:1px solid var(--line);font-family:'Spline Sans Mono',monospace}
+td{padding:6px 6px;border-bottom:1px solid var(--line2)}
 td.num,th.num{text-align:right;font-family:'Spline Sans Mono',monospace;font-size:13px}
-.divh{font-family:'Anton';font-size:15px;color:var(--hopea);letter-spacing:.04em;text-transform:uppercase;margin:16px 0 4px}
-.joukkue{display:flex;align-items:center;gap:8px;font-weight:600}
-.joukkue img{width:24px;height:24px;background:transparent}
+.divh{font-family:'Barlow Condensed';font-weight:800;font-size:16px;color:var(--blue2);letter-spacing:.05em;text-transform:uppercase;margin:16px 0 4px}
+.joukkue{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--ink)}
+.joukkue img{width:24px;height:24px}
 tr.poline td{border-bottom:2px dashed rgba(255,207,63,.45)}
-tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--grn)}
-.peli{display:grid;grid-template-columns:1fr auto 1fr auto;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
-.peli:last-child{border-bottom:none}
-.peli .tm{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
-.peli .tm.r{justify-content:flex-end}
-.peli img{width:26px;height:26px}
-.peli .tulos{font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:17px;min-width:52px;text-align:center}
-.tagi{font-size:10px;font-weight:800;background:var(--alive);color:var(--hopea);border:1px solid var(--line);border-radius:5px;padding:2px 7px;letter-spacing:.04em}
-.pelaaja{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid #1c1c22;font-size:14px}
+tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
+.rlohko{font-family:'Barlow Condensed';font-weight:800;display:flex;align-items:center;justify-content:center;height:100%;border-radius:8px 0 0 8px;font-size:18px;background:var(--line2);color:var(--mut)}
+.rlohko.s1{background:var(--amb);color:#211a02}
+.rlohko.s2{background:var(--hopea);color:#15171c}
+.rlohko.s3{background:var(--pronssi);color:#221204}
+.krivi{display:grid;grid-template-columns:44px 34px 1fr 70px 70px 70px 70px 96px;gap:8px;align-items:center;background:var(--panel2);border:1px solid var(--line2);border-radius:8px;margin-bottom:5px;min-height:46px;padding-right:14px;cursor:pointer}
+.krivi:hover{background:#111a30}
+.krivi.k1{background:linear-gradient(90deg,rgba(255,207,63,.10),var(--panel2) 55%)}
+.krivi.k2{background:linear-gradient(90deg,rgba(200,204,214,.09),var(--panel2) 55%)}
+.krivi.k3{background:linear-gradient(90deg,rgba(215,141,78,.09),var(--panel2) 55%)}
+.knimi{font-family:'Barlow Condensed';font-weight:700;font-size:19px;text-transform:uppercase;color:#fff;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.kotsikot{display:grid;grid-template-columns:44px 34px 1fr 70px 70px 70px 70px 96px;gap:8px;padding-right:14px;font-family:'Spline Sans Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.1em;color:var(--mut);text-transform:uppercase;margin-bottom:5px}
+.kpist{font-family:'Spline Sans Mono',monospace;font-size:12.5px;color:var(--body);text-align:right}
+.kyht{font-family:'Barlow Condensed';font-weight:800;font-size:25px;color:#fff;text-align:right}
+@media(max-width:879px){
+  .kpiilo{display:none}
+  .krivi{grid-template-columns:38px 30px 1fr 88px}
+  .kotsikot{grid-template-columns:38px 30px 1fr 88px}
+}
+.vpaiva{color:var(--mut);font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 4px;font-family:'Barlow Condensed'}
+.gblokki{background:var(--panel2);border:1px solid var(--line2);border-radius:9px;padding:9px 12px;margin-bottom:7px}
+.gblokki.kohde{border-color:#2a3a5c}
+.tagi{font-family:'Spline Sans Mono',monospace;font-size:9px;font-weight:600;color:var(--hopea);border:1px solid var(--line);border-radius:4px;padding:1px 6px;letter-spacing:.04em}
+.tulospilli{font-family:'Spline Sans Mono',monospace;font-size:8.5px;font-weight:600;color:var(--amb);background:rgba(255,207,63,.1);border-radius:4px;padding:2px 7px;letter-spacing:.1em;margin-left:auto}
+.pelaaja{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--chipbg);font-size:14px}
 .pelaaja:last-child{border-bottom:none}
-.pelaaja .sija{font-family:'Anton';color:var(--mut);width:22px;font-size:15px}
-.pelaaja img.kasvo{width:36px;height:36px;border-radius:50%;background:var(--alive);object-fit:cover;border:1px solid var(--line)}
-.pelaaja img.logo{width:20px;height:20px}
-.pelaaja .arvo{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:16px}
+.pelaaja .sija{font-family:'Barlow Condensed';font-weight:800;color:var(--mut);width:22px;font-size:14px}
+.pelaaja img.kasvo{width:28px;height:28px;border-radius:50%;background:var(--chipbg);object-fit:cover;border:1px solid var(--line2)}
+.pelaaja img.logo{width:24px;height:24px}
+.pelaaja b{font-family:'Barlow Condensed';font-weight:700;font-size:15.5px;text-transform:uppercase;color:#fff;letter-spacing:.02em}
+.pelaaja .arvo{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:16px;color:var(--ink)}
+.ppilli{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-size:10.5px;font-weight:600;color:var(--blue2);background:var(--chipbg);border-radius:4px;padding:2px 7px;white-space:nowrap}
+.valinnutrivi{font-family:'Spline Sans Mono',monospace;font-size:10.5px;color:var(--faint);margin-top:3px}
 .gridx{display:grid;gap:14px}
 @media(min-width:880px){.gridx.two{grid-template-columns:1fr 1fr}}
 .tulossa{text-align:center;padding:40px 20px;color:var(--mut)}
-.tulossa .iso{font-family:'Anton';font-size:26px;color:var(--hopea);margin-bottom:8px;text-transform:uppercase}
-
-/* ---- veikkauslomake ---- */
+.tulossa .iso{font-family:'Barlow Condensed';font-weight:800;font-size:26px;color:var(--blue2);margin-bottom:8px;text-transform:uppercase}
+footer{color:var(--faint);font-size:10px;font-family:'Spline Sans Mono',monospace;text-align:center;padding:20px 0;text-transform:uppercase;letter-spacing:.06em}
 .kirjaudu{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
 .kentta{display:flex;flex-direction:column;gap:4px}
-input,select{font-family:inherit;font-size:15px;color:var(--ink);background:#101014;
-  border:1px solid var(--line);border-radius:10px;padding:9px 11px;outline:none}
-input:focus,select:focus{border-color:var(--hopea)}
-button.act{font-family:inherit;font-weight:800;background:var(--grn);color:#04150c;border:none;border-radius:11px;padding:11px 18px;cursor:pointer;font-size:15px}
+input,select{font-family:inherit;font-size:15px;color:var(--ink);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 11px;outline:none}
+input:focus,select:focus{border-color:var(--blue)}
+button.act{font-family:inherit;font-weight:800;background:var(--blue);color:#06080f;border:none;border-radius:11px;padding:11px 18px;cursor:pointer;font-size:15px}
 button.act:hover{filter:brightness(1.08)}
 button.act:disabled{opacity:.5;cursor:not-allowed}
 button.ghost{font-family:inherit;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:11px;padding:9px 15px;cursor:pointer;font-weight:700}
-button.ghost:hover{border-color:var(--hopea)}
-.tchip{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);cursor:pointer;font-weight:700;font-size:13px;user-select:none}
+button.ghost:hover{border-color:var(--blue)}
+.tchip{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);cursor:pointer;font-weight:700;font-size:13px;user-select:none;color:var(--ink)}
 .tchip img{width:22px;height:22px}
-.tchip.val{background:#fff;color:#0a0a0d;border-color:#fff}
+.tchip.val{background:#fff;color:#06080f;border-color:#fff}
 .tchip.lukossa{cursor:default;opacity:.85}
 .chipgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:8px 0}
 .haku{position:relative}
 .hakulista{position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--panel);border:1px solid var(--line);border-radius:10px;z-index:30;max-height:260px;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.5)}
 .hakurivi{display:flex;align-items:center;gap:8px;padding:8px 10px;cursor:pointer;font-size:14px}
-.hakurivi:hover{background:var(--alive)}
-.hakurivi img{width:26px;height:26px;border-radius:50%;background:var(--alive)}
-.valittu{display:flex;align-items:center;gap:8px;background:var(--alive);border-radius:10px;padding:7px 10px;margin-top:6px}
-.valittu img{width:30px;height:30px;border-radius:50%;background:#101014}
+.hakurivi:hover{background:var(--chipbg)}
+.hakurivi img{width:26px;height:26px;border-radius:50%;background:var(--chipbg)}
+.valittu{display:flex;align-items:center;gap:8px;background:var(--chipbg);border-radius:10px;padding:7px 10px;margin-top:6px;color:var(--ink)}
+.valittu img{width:30px;height:30px;border-radius:50%;background:var(--panel2)}
 .valittu .tyhjaa{margin-left:auto;color:var(--red);cursor:pointer;font-weight:800;background:none;border:none;font-size:15px}
 .osio{margin:18px 0 6px;padding-top:14px;border-top:1px solid var(--line)}
-.osio .ots{font-family:'Anton';font-size:16px;color:var(--hopea);letter-spacing:.04em;text-transform:uppercase}
+.osio .ots{font-family:'Barlow Condensed';font-weight:800;font-size:16px;color:var(--blue2);letter-spacing:.04em;text-transform:uppercase}
 .osio .kuv{font-size:13px;color:var(--mut);margin:2px 0 8px}
 .puuttuu{color:var(--amb);font-size:13px}
 .okvihrea{color:var(--grn);font-size:13px;font-weight:700}
-
-/* ---- vakiokierros ---- */
-.vpaiva{color:var(--mut);font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 4px}
-.vrivi{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 10px;border:1px solid var(--line);border-radius:12px;margin:6px 0;background:var(--panel2)}
-.vrivi.tuloskohde{border-color:var(--hopea);background:linear-gradient(180deg,#1a1a21,#131318)}
+.vrivi{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 10px;border:1px solid var(--line2);border-radius:12px;margin:6px 0;background:var(--panel2)}
+.vrivi.tuloskohde{border-color:#2a3a5c}
 .vrivi .aika{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--mut);min-width:44px}
-.vrivi .pari{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;min-width:150px}
+.vrivi .pari{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;min-width:150px;color:var(--ink)}
 .vrivi .pari img{width:22px;height:22px}
 .merkit{display:flex;gap:5px;margin-left:auto}
 .merkki{font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:14px;width:38px;height:34px;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
-.merkki:hover{border-color:var(--hopea);color:var(--ink)}
-.merkki.val{background:#fff;color:#0a0a0d;border-color:#fff}
+.merkki:hover{border-color:var(--blue);color:var(--ink)}
+.merkki.val{background:#fff;color:#06080f;border-color:#fff}
 .merkki:disabled{cursor:default;opacity:.85}
 .tulosinput{width:46px;height:34px;text-align:center;font-family:'Spline Sans Mono',monospace;font-size:15px;padding:4px}
-.tulospilli{font-size:10px;font-weight:800;background:rgba(200,204,214,.16);color:var(--hopea);border-radius:5px;padding:2px 7px;letter-spacing:.05em}
-footer{color:var(--mut);font-size:11px;text-align:center;padding:20px 0}
 </style>
 </head>
 <body>
@@ -199,44 +213,46 @@ const fmtP = (n) => (Math.round(n * 10) / 10).toLocaleString("fi-FI");
 const VKL = ["su", "ma", "ti", "ke", "to", "pe", "la"];
 const pvmTxt = (pvm) => VKL[new Date(pvm).getUTCDay()] + " " + pvm.slice(8, 10) + "." + pvm.slice(5, 7) + ".";
 
-function Chipit({ rivit }) {
-  const [auki, setAuki] = useState(false);
-  const nayta = auki ? rivit : rivit.slice(0, 3);
-  return (
-    <div style={{ display: "flex", gap: 5, flexWrap: "wrap", marginTop: 5 }}>
-      {nayta.map((r, i) =>
-        <span key={i} className="pill" style={{ background: r.pts > 0 ? "rgba(57,229,124,.14)" : "rgba(200,204,214,.08)",
-          color: r.pts > 0 ? "var(--grn)" : "var(--mut)" }}>{r.txt}</span>)}
-      {rivit.length > 3 &&
-        <span className="pill s" style={{ cursor: "pointer" }} onClick={() => setAuki(!auki)}>
-          {auki ? "▴" : "+" + (rivit.length - 3) + " ▾"}</span>}
-    </div>
-  );
-}
-
 const suomiAika = (utc) => {
   const kesa = utc < "2025-10-26T01:00:00Z" || (utc >= "2026-03-29T01:00:00Z" && utc < "2026-10-25T01:00:00Z");
   const fi = new Date(new Date(utc).getTime() + (kesa ? 3 : 2) * 3600 * 1000);
   return { pvm: fi.toISOString().slice(0, 10), klo: fi.toISOString().slice(11, 16) };
 };
 
+function Chipit({ rivit }) {
+  const [auki, setAuki] = useState(false);
+  const nayta = auki ? rivit : rivit.slice(0, 4);
+  return (
+    <div style={{ display: "flex", gap: 4, flexWrap: "wrap", marginTop: 7 }}>
+      {nayta.map((r, i) =>
+        <span key={i} className={"pill " + (r.pts > 0 ? "g" : "s")}>{r.txt}</span>)}
+      {rivit.length > 4 &&
+        <span className="pill s" style={{ cursor: "pointer", color: "var(--blue2)" }} onClick={() => setAuki(!auki)}>
+          {auki ? "▴" : "+" + (rivit.length - 4) + " ▾"}</span>}
+    </div>
+  );
+}
+
 function PisteRivi({ pts, finnit, valitut }) {
   if (!pts) return null;
   const rivit = Object.keys(pts).map(id => {
     const p = pts[id], yht = p.g + p.a;
-    const oma = valitut[id];
-    return { id, txt: p.n + " " + p.g + "+" + p.a, yht, oma, finn: finnit.has(id) };
-  }).filter(r => r.finn || r.oma || r.yht >= 3)
-    .sort((a, b) => (b.oma ? 1 : 0) - (a.oma ? 1 : 0) || b.yht - a.yht);
+    return { id, txt: p.n + " " + p.g + "+" + p.a, yht, oma: valitut[id], finn: finnit.has(id) };
+  }).filter(r => r.finn || r.oma || r.yht >= 2)
+    .sort((a, b) => {
+      const kat = (r) => r.finn ? 0 : (r.yht >= 3 ? 1 : 2);
+      return kat(a) - kat(b) || b.yht - a.yht;
+    }).slice(0, 6);
   if (!rivit.length) return null;
   return (
-    <div style={{ display: "flex", gap: 5, flexWrap: "wrap", marginTop: 4, marginLeft: 52 }}>
+    <div style={{ display: "flex", gap: 4, flexWrap: "wrap", marginTop: 5 }}>
       {rivit.map(r =>
-        <span key={r.id} className="pill" title={r.oma ? "Valinnut: " + r.oma.join(", ") : (r.finn ? "Suomalainen" : "Illan tykki")}
-              style={{ background: r.oma ? "rgba(57,229,124,.14)" : "rgba(200,204,214,.09)",
-                       color: r.oma ? "var(--grn)" : (r.finn ? "var(--ink)" : "var(--hopea)"),
-                       fontWeight: r.yht >= 3 ? 800 : 600 }}>
-          {r.oma ? "★ " : ""}{r.txt}</span>)}
+        <span key={r.id} className="pill" title={r.oma ? "Valinnut: " + r.oma.join(", ") : ""}
+              style={r.oma ? { background: "rgba(57,229,124,.13)", color: "var(--grn)" }
+                : r.finn ? { background: "rgba(63,140,255,.12)", color: "var(--blue2)" }
+                : r.yht >= 3 ? { background: "var(--chipbg)", color: "var(--amb)" }
+                : { background: "var(--chipbg)", color: "var(--mut)" }}>
+          {r.oma ? "★ " : ""}{r.finn ? <span className="fintag">FIN</span> : null}{r.txt}</span>)}
     </div>
   );
 }
@@ -244,62 +260,62 @@ function PisteRivi({ pts, finnit, valitut }) {
 function OtteluRivi({ g, logot, tulos }) {
   const voittaja = tulos ? (g.k > g.v ? g.koti : g.vieras) : null;
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 7, flexWrap: "wrap" }}>
-      <span className="tiny mono" style={{ minWidth: 40 }}>{suomiAika(g.alkaaUTC).klo}</span>
-      <img src={logot[g.vieras]} alt="" style={{ width: 20, height: 20 }} /><b>{g.vieras}</b>
-      {tulos ? <span className="mono" style={{ fontWeight: 600 }}>{g.v}–{g.k}</span>
+    <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+      <span className="tiny mono" style={{ minWidth: 36, fontSize: 10 }}>{suomiAika(g.alkaaUTC).klo}</span>
+      <img src={logot[g.vieras]} alt="" style={{ width: 20, height: 20 }} />
+      <span style={{ fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: 15, color: "var(--ink)" }}>{g.vieras}</span>
+      {tulos ? <span className="mono" style={{ fontWeight: 600, fontSize: 13.5 }}>{g.v}–{g.k}</span>
              : <span style={{ color: "var(--mut)" }}>@</span>}
-      <b>{g.koti}</b><img src={logot[g.koti]} alt="" style={{ width: 20, height: 20 }} />
+      <span style={{ fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: 15, color: "var(--ink)" }}>{g.koti}</span>
+      <img src={logot[g.koti]} alt="" style={{ width: 20, height: 20 }} />
       {tulos && g.paattyi !== "REG" && <span className="tagi">{g.paattyi === "OT" ? "JA" : "VL"}</span>}
       {tulos && <span className="pill g">{voittaja}</span>}
     </div>
   );
 }
 
-function PaivaLohko({ pvm, ottelut, kohdeMap, preds, lukittu, logot, finnit, valitut, mennyt }) {
+function PaivaLohko({ ottelut, kohdeMap, preds, lukittu, logot, finnit, valitut, mennyt }) {
   const [auki, setAuki] = useState(false);
   const jarjestys = ottelut.slice().sort((a, b) =>
     (kohdeMap[b.id] ? 1 : 0) - (kohdeMap[a.id] ? 1 : 0) || suomiAika(a.alkaaUTC).klo.localeCompare(suomiAika(b.alkaaUTC).klo));
   const nayta = auki ? jarjestys : jarjestys.slice(0, 4);
+  const nimijarjestys = preds.slice().sort((a, b) => a.name.localeCompare(b.name, "fi"));
   return (
-    <div style={{ padding: "8px 0", borderBottom: "1px dashed var(--line)" }}>
-      <div className="vpaiva" style={{ margin: "2px 0 4px" }}>{pvmTxt(pvm)}</div>
+    <div>
       {nayta.map(g => {
         const kohde = kohdeMap[g.id];
-        const chipit = kohde && mennyt ? preds.map(p => {
+        const chipit = kohde && mennyt ? nimijarjestys.map(p => {
           if (kohde.tulos) {
             const v = (p.tulos || {})[g.id];
             const pts = tulosPisteet(v, { v: g.v, k: g.k });
-            return { pts, txt: (v && v.v != null && v.k != null ? v.v + "–" + v.k : "–") + " " + p.name + (pts ? " +" + pts : "") };
+            return { pts, txt: p.name + " " + (v && v.v != null && v.k != null ? v.v + "–" + v.k : "–") + (pts ? " +" + pts : "") };
           }
           const oikea = g.paattyi !== "REG" ? "X" : (g.k > g.v ? "1" : "2");
           const m = (p.vakio || {})[g.id];
           const pts = m === oikea ? 3 * (kohde.dbl ? 2 : 1) : 0;
-          return { pts, txt: (m || "–") + " " + p.name + (pts ? " +" + pts : "") };
-        }).sort((a, b) => b.pts - a.pts) : null;
+          return { pts, txt: p.name + " " + (m || "–") + (pts ? " +" + pts : "") };
+        }) : null;
         return (
-          <div key={g.id} style={{ padding: "5px 0", background: kohde ? "rgba(200,204,214,.04)" : "transparent",
-                                   borderRadius: 8, paddingLeft: kohde ? 6 : 0, marginBottom: 2,
-                                   borderLeft: kohde ? "2px solid var(--hopea)" : "none" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 7, flexWrap: "wrap" }}>
+          <div key={g.id} className={"gblokki" + (kohde ? " kohde" : "")}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
               <OtteluRivi g={g} logot={logot} tulos={mennyt} />
               {kohde && <span className="tulospilli">{kohde.tulos ? "TULOSKOHDE" : "VAKIOKOHDE"}</span>}
             </div>
-            {chipit && <div style={{ marginLeft: 47 }}><Chipit rivit={chipit} /></div>}
-            {kohde && !mennyt && !lukittu && <div className="tiny" style={{ marginLeft: 47 }}>Veikkaukset näkyvät lukituksen jälkeen.</div>}
+            {chipit && <Chipit rivit={chipit} />}
+            {kohde && !mennyt && !lukittu && <div className="tiny" style={{ marginTop: 5 }}>Veikkaukset näkyvät lukituksen jälkeen.</div>}
             {kohde && !mennyt && lukittu && preds.length > 0 &&
-              <div style={{ marginLeft: 47 }}><Chipit rivit={preds.map(p => {
+              <Chipit rivit={nimijarjestys.map(p => {
                 if (kohde.tulos) { const v = (p.tulos || {})[g.id];
-                  return { pts: 0, txt: (v && v.v != null && v.k != null ? v.v + "–" + v.k : "–") + " " + p.name }; }
-                return { pts: 0, txt: ((p.vakio || {})[g.id] || "–") + " " + p.name };
-              })} /></div>}
+                  return { pts: 0, txt: p.name + " " + (v && v.v != null && v.k != null ? v.v + "–" + v.k : "–") }; }
+                return { pts: 0, txt: p.name + " " + ((p.vakio || {})[g.id] || "–") };
+              })} />}
             {mennyt && <PisteRivi pts={g.pts} finnit={finnit} valitut={valitut} />}
           </div>
         );
       })}
       {jarjestys.length > 4 &&
-        <div className="tiny" style={{ cursor: "pointer", color: "var(--hopea)", fontWeight: 700, marginTop: 3 }}
-             onClick={() => setAuki(!auki)}>{auki ? "▴ vähemmän" : "▾ näytä kaikki päivän ottelut (" + jarjestys.length + ")"}</div>}
+        <div className="tiny mono" style={{ cursor: "pointer", color: "var(--blue2)", fontWeight: 600, marginTop: 3 }}
+             onClick={() => setAuki(!auki)}>{auki ? "▴ VÄHEMMÄN" : "▾ NÄYTÄ KAIKKI PÄIVÄN OTTELUT (" + jarjestys.length + ")"}</div>}
     </div>
   );
 }
@@ -311,50 +327,48 @@ function TulosKortit({ preds, round, results, dayscores, schedule, rosters, luki
   const valitut = {};
   preds.forEach(p => { if (p.player) (valitut[String(p.player.id)] = valitut[String(p.player.id)] || []).push(p.name); });
 
-  // Menneet: dayscores FI-päivittäin, uusimmat 2 päivää
   const fiPaivat = {};
   if (dayscores) Object.values(dayscores).flat().forEach(g => {
     const pvm = suomiAika(g.alkaaUTC).pvm;
     (fiPaivat[pvm] = fiPaivat[pvm] || []).push(g);
   });
-  const menneet = Object.keys(fiPaivat).sort().reverse().slice(0, 2);
-  const viimeisin = menneet[0] || "";
-
-  // Tulevat: schedule FI-päivittäin viimeisimmän jälkeen, 2 päivää
+  const mennytPvm = Object.keys(fiPaivat).sort().reverse()[0] || "";
   const tulevatP = {};
   if (schedule) schedule.ottelut.forEach(g => {
     const pvm = suomiAika(g.alkaaUTC).pvm;
-    if (pvm > viimeisin) (tulevatP[pvm] = tulevatP[pvm] || []).push(g);
+    if (pvm > mennytPvm) (tulevatP[pvm] = tulevatP[pvm] || []).push(g);
   });
-  const tulevat = Object.keys(tulevatP).sort().slice(0, 2);
+  const tulevaPvm = Object.keys(tulevatP).sort()[0] || "";
 
   return (
-    <div className="gridx two">
-      <div className="card" style={{ margin: 0 }}>
-        <h2>Edelliset ottelut</h2>
-        {!dayscores && <div className="note">Kierrosnäkymä aukeaa, kun uusin datahaku (v4) on ajettu.</div>}
-        {menneet.map(pvm =>
-          <PaivaLohko key={pvm} pvm={pvm} ottelut={fiPaivat[pvm]} kohdeMap={kohdeMap} preds={preds}
-                      lukittu={lukittu} logot={logot} finnit={finnit} valitut={valitut} mennyt={true} />)}
+    <div>
+      <div className="sect" style={{ marginTop: 16 }}>
+        <span className="so">Ottelut</span><span className="viiva"></span>
+        <span className="meta">FIN = suomalainen · vihreä = osuma</span>
       </div>
-      <div className="card" style={{ margin: 0 }}>
-        <h2>Seuraavat ottelut</h2>
-        {tulevat.length ? tulevat.map(pvm =>
-          <PaivaLohko key={pvm} pvm={pvm} ottelut={tulevatP[pvm]} kohdeMap={kohdeMap} preds={preds}
-                      lukittu={lukittu} logot={logot} finnit={finnit} valitut={valitut} mennyt={false} />)
-          : <div className="tiny">Ei tulevia otteluita.</div>}
+      <div className="gridx two">
+        <div className="card" style={{ margin: 0 }}>
+          <div className="paneeliots">Edelliset · {mennytPvm ? pvmTxt(mennytPvm) : "—"}</div>
+          {!dayscores && <div className="note">Kierrosnäkymä aukeaa, kun uusin datahaku (v4) on ajettu.</div>}
+          {mennytPvm && <PaivaLohko ottelut={fiPaivat[mennytPvm]} kohdeMap={kohdeMap} preds={preds}
+                        lukittu={lukittu} logot={logot} finnit={finnit} valitut={valitut} mennyt={true} />}
+        </div>
+        <div className="card" style={{ margin: 0 }}>
+          <div className="paneeliots">Seuraavat · {tulevaPvm ? pvmTxt(tulevaPvm) : "—"}</div>
+          {tulevaPvm ? <PaivaLohko ottelut={tulevatP[tulevaPvm]} kohdeMap={kohdeMap} preds={preds}
+                       lukittu={lukittu} logot={logot} finnit={finnit} valitut={valitut} mennyt={false} />
+            : <div className="tiny">Ei tulevia otteluita.</div>}
+        </div>
       </div>
     </div>
   );
 }
 
 function ValitutPorssit({ preds, playerstats, winsMap, logot, nimetMap }) {
-  // Mestarijoukkueet
   const mestarit = {};
   preds.forEach(p => { if (p.champ) (mestarit[p.champ] = mestarit[p.champ] || []).push(p.name); });
   const mRivit = Object.keys(mestarit).map(ab => ({ ab, valinneet: mestarit[ab], pts: winsMap[ab] || 0 }))
     .sort((a, b) => b.pts - a.pts);
-  // Valitut pelaajat
   const pelaajat = {};
   preds.forEach(p => {
     if (!p.player) return;
@@ -370,37 +384,42 @@ function ValitutPorssit({ preds, playerstats, winsMap, logot, nimetMap }) {
     return Object.assign({ maara, pts }, r);
   }).sort((a, b) => b.pts - a.pts);
   return (
-    <div className="gridx two" style={{ marginTop: 14 }}>
-      <div className="card" style={{ margin: 0 }}>
-        <h2>Pistepörssi — mestarijoukkueet</h2>
-        {mRivit.map((r, i) => (
-          <div key={r.ab} style={{ padding: "8px 0", borderBottom: "1px solid #1c1c22" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-              <span className="sija" style={{ fontFamily: "'Anton'", width: 20, color: "var(--mut)" }}>{i + 1}</span>
-              <img src={logot[r.ab]} alt="" style={{ width: 24, height: 24 }} />
-              <b>{nimetMap[r.ab] || r.ab}</b>
-              <span className="pill s">{r.pts} voittoa · {r.pts} p</span>
-            </div>
-            <div className="tiny" style={{ marginLeft: 29, marginTop: 3 }}>Valinnut: {r.valinneet.join(", ")}</div>
-          </div>
-        ))}
-        {mRivit.length === 0 && <div className="tiny">Ei vielä valintoja.</div>}
+    <div>
+      <div className="sect" style={{ marginTop: 16 }}>
+        <span className="so">Veikkauspörssit</span><span className="viiva"></span>
       </div>
-      <div className="card" style={{ margin: 0 }}>
-        <h2>Pistepörssi — valitut pelaajat</h2>
-        {pRivit.map((r, i) => (
-          <div key={r.p.id} style={{ padding: "8px 0", borderBottom: "1px solid #1c1c22" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
-              <span className="sija" style={{ fontFamily: "'Anton'", width: 20, color: "var(--mut)" }}>{i + 1}</span>
-              <img src={r.p.kuva} alt="" style={{ width: 30, height: 30, borderRadius: "50%", background: "var(--alive)" }} />
-              <b>{r.p.nimi}</b>
-              <span className="tiny">{posTxt[r.p.pos]}</span>
-              <span className="pill s">{r.maara} {r.p.pos === "MV" ? "nollapeliä" : "maalia"} · {fmtP(r.pts)} p</span>
+      <div className="gridx two">
+        <div className="card" style={{ margin: 0 }}>
+          <div className="paneeliots">Mestarijoukkueet</div>
+          {mRivit.map((r, i) => (
+            <div key={r.ab} style={{ padding: "7px 0", borderBottom: "1px solid var(--chipbg)" }}>
+              <div className="pelaaja" style={{ border: "none", padding: 0 }}>
+                <span className="sija">{i + 1}</span>
+                <img className="logo" src={logot[r.ab]} alt="" />
+                <b>{nimetMap[r.ab] || r.ab}</b>
+                <span className="ppilli">{r.pts} voittoa · {r.pts} p</span>
+              </div>
+              <div className="valinnutrivi" style={{ marginLeft: 32 }}>Valinnut: {r.valinneet.join(", ")}</div>
             </div>
-            <div className="tiny" style={{ marginLeft: 39, marginTop: 3 }}>Valinnut: {r.valinneet.join(", ")}</div>
-          </div>
-        ))}
-        {pRivit.length === 0 && <div className="tiny">Ei vielä valintoja.</div>}
+          ))}
+          {mRivit.length === 0 && <div className="tiny">Ei vielä valintoja.</div>}
+        </div>
+        <div className="card" style={{ margin: 0 }}>
+          <div className="paneeliots">Valitut pelaajat</div>
+          {pRivit.map((r, i) => (
+            <div key={r.p.id} style={{ padding: "7px 0", borderBottom: "1px solid var(--chipbg)" }}>
+              <div className="pelaaja" style={{ border: "none", padding: 0 }}>
+                <span className="sija">{i + 1}</span>
+                <img className="kasvo" src={r.p.kuva} alt="" />
+                <b>{r.p.nimi}</b>
+                <span className="tiny">{posTxt[r.p.pos]}</span>
+                <span className="ppilli">{r.maara} {r.p.pos === "MV" ? "np" : "maalia"} · {fmtP(r.pts)} p</span>
+              </div>
+              <div className="valinnutrivi" style={{ marginLeft: 32 }}>Valinnut: {r.valinneet.join(", ")}</div>
+            </div>
+          ))}
+          {pRivit.length === 0 && <div className="tiny">Ei vielä valintoja.</div>}
+        </div>
       </div>
     </div>
   );
@@ -414,32 +433,40 @@ function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standi
     .sort((a, b) => b.e.yhteensa - a.e.yhteensa);
   const potti = preds.length * stake;
   const palkinnot = splitPot(potti);
-  const mitalit = ["🥇", "🥈", "🥉"];
   if (preds.length === 0) return (
-    <div className="card"><h2>Tulostaulukko</h2>
+    <div className="card"><h2>Kärkitaulu</h2>
       <div className="note">Ei vielä osallistujia — käy tekemässä veikkaus Veikkaus-välilehdellä!</div></div>);
   return (
     <div className="card">
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-        <h2 style={{ margin: 0 }}>Tulostaulukko</h2>
-        <span className="tiny">Potti {potti} € · jako {palkinnot.join(" € / ")} €</span>
+      <div className="sect">
+        <span className="so">Kärkitaulu</span><span className="viiva"></span>
+        <span className="meta kulta">Potti {potti} € · jako {palkinnot.join(" / ")} €</span>
       </div>
-      <div className="tiny" style={{ margin: "4px 0 10px" }}>Pisteissä mukana: vakiokohteet, kuukausipisteet, oma mestari ja oma pelaaja. Kausiveikkauksen kohteet ratkeavat runkosarjan päättyessä.</div>
+      <div className="kotsikot">
+        <span></span><span></span><span></span>
+        <span className="kpiilo" style={{ textAlign: "right" }}>Vakio</span>
+        <span className="kpiilo" style={{ textAlign: "right" }}>Kuukausi</span>
+        <span className="kpiilo" style={{ textAlign: "right" }}>Mestari</span>
+        <span className="kpiilo" style={{ textAlign: "right" }}>Pelaaja</span>
+        <span style={{ textAlign: "right" }}>Yhteensä</span>
+      </div>
       {rivit.map(({ p, e }, i) => (
-        <div key={p.name} style={{ borderTop: "1px solid var(--line)" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 2px", cursor: "pointer" }}
-               onClick={() => setAuki(auki === p.name ? null : p.name)}>
-            <span className="sija" style={{ fontFamily: "'Anton'", width: 30, color: i < 3 ? "var(--ink)" : "var(--mut)" }}>
-              {mitalit[i] || (i + 1) + "."}</span>
-            {p.champ && <img src={logot[p.champ]} alt="" style={{ width: 26, height: 26 }} title={"Mestari: " + (nimetMap[p.champ] || p.champ)} />}
-            <b style={{ fontSize: 15 }}>{p.name}</b>
-            <span className="pill s" title="Vakiokohteet oikein">{e.vakioOikein}/{e.vakioPelattu}</span>
-            <span className="arvo" style={{ marginLeft: "auto", fontFamily: "'Spline Sans Mono',monospace", fontWeight: 600, fontSize: 18 }}>
-              {fmtP(e.yhteensa)} p</span>
-            <span style={{ color: "var(--mut)" }}>{auki === p.name ? "▾" : "›"}</span>
+        <div key={p.name}>
+          <div className={"krivi" + (i < 3 ? " k" + (i + 1) : "")} onClick={() => setAuki(auki === p.name ? null : p.name)}>
+            <div className={"rlohko" + (i < 3 ? " s" + (i + 1) : "")}>{i + 1}</div>
+            <div>{p.champ && <img src={logot[p.champ]} alt="" style={{ width: 28, height: 28, display: "block" }}
+                                   title={"Mestari: " + (nimetMap[p.champ] || p.champ)} />}</div>
+            <div className="knimi">{p.name}
+              <span className="mono" style={{ fontSize: 10, color: "var(--mut)", fontWeight: 600, textTransform: "none" }}>
+                {e.vakioOikein}/{e.vakioPelattu} vakio-osumaa</span></div>
+            <div className="kpist kpiilo">{fmtP(e.vakio)}</div>
+            <div className="kpist kpiilo">{e.kk}</div>
+            <div className="kpist kpiilo">{e.mestari}</div>
+            <div className="kpist kpiilo">{fmtP(e.pelaaja)}</div>
+            <div className="kyht">{fmtP(e.yhteensa)}</div>
           </div>
           {auki === p.name && (
-            <div style={{ padding: "0 2px 12px 40px", display: "grid", gap: 4, fontSize: 13 }}>
+            <div style={{ padding: "2px 6px 12px 52px", display: "grid", gap: 4, fontSize: 13 }}>
               <div>Vakiokohteet: <b className="mono">{fmtP(e.vakio)} p</b> <span className="tiny">({e.vakioOikein} oikein / {e.vakioPelattu} pelattua)</span></div>
               <div>Kuukausipisteet: <b className="mono">{e.kk} p</b> <span className="tiny">
                 ({Object.keys(e.kkPerPvm).sort().map(pv => pv.slice(8,10) + "." + pv.slice(5,7) + ". +" + e.kkPerPvm[pv]).join(" · ")})</span></div>
@@ -449,28 +476,31 @@ function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standi
           )}
         </div>
       ))}
+      <div className="mono" style={{ fontSize: 9.5, color: "var(--faint)", textTransform: "uppercase", letterSpacing: ".06em", marginTop: 6 }}>
+        Pisteissä mukana: vakiokohteet · kuukausipisteet · oma mestari · oma pelaaja — kausiveikkaus ratkeaa runkosarjan päättyessä</div>
     </div>
   );
 }
 
-function Hero({ standings }) {
-  // Logoraitaan divisioonien kärkijoukkueet datasta
-  const karjet = standings ? standings.filter(t => t.divisionSequence <= 2) : [];
+function Hero({ round, results, meta, lukittu }) {
+  const seurat = ["FLA", "VGK", "DAL", "COL", "EDM", "CAR"];
+  const pelattu = round && results ? round.kohteet.filter(g => results.tulokset[g.id]).length : 0;
+  const yht = round ? round.kohteet.length : 0;
   return (
     <div className="hero">
+      <div className="streak"></div>
       <div className="herorow">
-        <img className="liigalogo" src="https://assets.nhle.com/logos/nhl/svg/NHL_light.svg" alt="NHL"
-             onError={e => { e.target.style.display = "none"; }} />
         <div className="htxt">
-          <div className="kick">Kaveriporukan kausiveikkaus · KOEVERSIO</div>
-          <h1 className="title">NHL-Veikkaus '26–27</h1>
-          <div className="sub">Vakiokierrokset · kausiveikkaus · oma mestari &amp; pelaaja · playoff-bracket — kaikki pisteet yhteen pottiin.</div>
-          {karjet.length > 0 &&
-            <div className="logostrip">
-              {karjet.map(t => <img key={t.teamAbbrev.default} src={t.teamLogo} alt={t.teamAbbrev.default} title={t.teamName.default} />)}
-            </div>}
+          <div className="kick">Kaveriporukan kausiveikkaus · Koeversio</div>
+          <h1 className="title">NHL-Veikkaus <span className="vuosi">'26–27</span></h1>
+          <div className="logostrip">
+            {seurat.map(ab => <img key={ab} src={"https://assets.nhle.com/logos/nhl/svg/" + ab + "_light.svg"} alt={ab} />)}
+          </div>
         </div>
         <img className="cup" src="stanley-cup.png" alt="Stanley Cup" onError={e => { e.target.style.display = "none"; }} />
+      </div>
+      <div className="ticker">
+        {yht ? "Kierros " + pelattu + "/" + yht + " · " : ""}{meta ? meta.paiva + " · " : ""}1. puolikas {lukittu ? "lukittu" : "auki"}
       </div>
     </div>
   );
@@ -970,7 +1000,7 @@ function App() {
 
   return (
     <div className="wrap">
-      <Hero standings={standings} />
+      <Hero round={round} results={results} meta={meta} lukittu={!!config.locked1} />
       <div className="tabs">
         {TABS.map(([id, nimi]) =>
           <button key={id} className={"tab" + (tab === id ? " on" : "")} onClick={() => setTab(id)}>{nimi}</button>)}
@@ -986,10 +1016,10 @@ function App() {
             const winsMap = Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.wins]));
             return (
               <div>
-                <TulosKortit preds={preds} round={round} results={results} dayscores={dayscores} schedule={schedule} rosters={rosters} lukittu={!!config.locked1} logot={logot} />
-                <ValitutPorssit preds={preds} playerstats={playerstats} winsMap={winsMap} logot={logot} nimetMap={nimetMap} />
                 <Tulostaulukko preds={preds} round={round} results={results} checkpoints={checkpoints}
                                playerstats={playerstats} standings={standings} stake={config.stake != null ? config.stake : 10} />
+                <TulosKortit preds={preds} round={round} results={results} dayscores={dayscores} schedule={schedule} rosters={rosters} lukittu={!!config.locked1} logot={logot} />
+                <ValitutPorssit preds={preds} playerstats={playerstats} winsMap={winsMap} logot={logot} nimetMap={nimetMap} />
               </div>
             );
           })() : <div className="card tiny">Ladataan…</div>}
@@ -1035,7 +1065,7 @@ function App() {
       )}
       {tab === "org" && <Tulossa nimi="Järjestäjä" />}
 
-      <footer>NHL-Veikkaus '26–27 · KOEVERSIO · data: NHL API {meta ? "· haettu " + meta.haettu.slice(0, 10) + " (testipäivä " + meta.paiva + ")" : ""}</footer>
+      <footer>NHL-Veikkaus '26–27 · Data: NHL API · Päivittyy joka aamu{meta ? " · testipäivä " + meta.paiva : ""}</footer>
     </div>
   );
 }
