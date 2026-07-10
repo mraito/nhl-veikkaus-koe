@@ -1,0 +1,843 @@
+{
+ "puolikas": 1,
+ "kohteita": 93,
+ "kohteet": [
+  {
+   "id": 2025020003,
+   "pvm": "2025-10-08",
+   "klo": "05:30",
+   "koti": "LAK",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020004,
+   "pvm": "2025-10-09",
+   "klo": "02:00",
+   "koti": "TOR",
+   "vieras": "MTL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020018,
+   "pvm": "2025-10-10",
+   "klo": "04:00",
+   "koti": "COL",
+   "vieras": "UTA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020022,
+   "pvm": "2025-10-11",
+   "klo": "20:30",
+   "koti": "WPG",
+   "vieras": "LAK",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020023,
+   "pvm": "2025-10-11",
+   "klo": "23:00",
+   "koti": "CGY",
+   "vieras": "STL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020034,
+   "pvm": "2025-10-12",
+   "klo": "04:00",
+   "koti": "COL",
+   "vieras": "DAL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020040,
+   "pvm": "2025-10-13",
+   "klo": "20:00",
+   "koti": "BOS",
+   "vieras": "TBL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020045,
+   "pvm": "2025-10-14",
+   "klo": "02:00",
+   "koti": "CBJ",
+   "vieras": "NJD",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020054,
+   "pvm": "2025-10-15",
+   "klo": "04:30",
+   "koti": "DAL",
+   "vieras": "MIN",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020058,
+   "pvm": "2025-10-16",
+   "klo": "02:00",
+   "koti": "DET",
+   "vieras": "FLA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020070,
+   "pvm": "2025-10-17",
+   "klo": "05:00",
+   "koti": "ANA",
+   "vieras": "CAR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020076,
+   "pvm": "2025-10-18",
+   "klo": "20:00",
+   "koti": "BUF",
+   "vieras": "FLA",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020077,
+   "pvm": "2025-10-18",
+   "klo": "22:00",
+   "koti": "OTT",
+   "vieras": "NYI",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020085,
+   "pvm": "2025-10-19",
+   "klo": "04:00",
+   "koti": "COL",
+   "vieras": "BOS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020092,
+   "pvm": "2025-10-20",
+   "klo": "02:00",
+   "koti": "UTA",
+   "vieras": "BOS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020095,
+   "pvm": "2025-10-21",
+   "klo": "02:30",
+   "koti": "MTL",
+   "vieras": "BUF",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020107,
+   "pvm": "2025-10-22",
+   "klo": "05:00",
+   "koti": "UTA",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020109,
+   "pvm": "2025-10-23",
+   "klo": "02:30",
+   "koti": "BUF",
+   "vieras": "DET",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020121,
+   "pvm": "2025-10-24",
+   "klo": "04:00",
+   "koti": "COL",
+   "vieras": "CAR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020127,
+   "pvm": "2025-10-25",
+   "klo": "19:30",
+   "koti": "PHI",
+   "vieras": "NYI",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020128,
+   "pvm": "2025-10-25",
+   "klo": "22:00",
+   "koti": "BOS",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020138,
+   "pvm": "2025-10-26",
+   "klo": "03:00",
+   "koti": "DAL",
+   "vieras": "CAR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020145,
+   "pvm": "2025-10-27",
+   "klo": "01:00",
+   "koti": "NSH",
+   "vieras": "DAL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020149,
+   "pvm": "2025-10-28",
+   "klo": "01:30",
+   "koti": "OTT",
+   "vieras": "BOS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020150,
+   "pvm": "2025-10-29",
+   "klo": "00:00",
+   "koti": "PHI",
+   "vieras": "PIT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020166,
+   "pvm": "2025-10-30",
+   "klo": "01:30",
+   "koti": "CBJ",
+   "vieras": "TOR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020171,
+   "pvm": "2025-10-31",
+   "klo": "01:30",
+   "koti": "CAR",
+   "vieras": "NYI",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020181,
+   "pvm": "2025-11-01",
+   "klo": "19:00",
+   "koti": "BOS",
+   "vieras": "CAR",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020184,
+   "pvm": "2025-11-01",
+   "klo": "22:00",
+   "koti": "SJS",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020185,
+   "pvm": "2025-11-02",
+   "klo": "00:00",
+   "koti": "FLA",
+   "vieras": "DAL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020195,
+   "pvm": "2025-11-03",
+   "klo": "00:00",
+   "koti": "NYI",
+   "vieras": "CBJ",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020199,
+   "pvm": "2025-11-04",
+   "klo": "02:30",
+   "koti": "TOR",
+   "vieras": "PIT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020208,
+   "pvm": "2025-11-05",
+   "klo": "03:00",
+   "koti": "MIN",
+   "vieras": "NSH",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020217,
+   "pvm": "2025-11-06",
+   "klo": "05:00",
+   "koti": "SEA",
+   "vieras": "SJS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020225,
+   "pvm": "2025-11-07",
+   "klo": "05:00",
+   "koti": "VGK",
+   "vieras": "TBL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020231,
+   "pvm": "2025-11-08",
+   "klo": "19:30",
+   "koti": "NJD",
+   "vieras": "PIT",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020233,
+   "pvm": "2025-11-08",
+   "klo": "22:30",
+   "koti": "NSH",
+   "vieras": "DAL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020236,
+   "pvm": "2025-11-09",
+   "klo": "02:00",
+   "koti": "TBL",
+   "vieras": "WSH",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020248,
+   "pvm": "2025-11-10",
+   "klo": "02:00",
+   "koti": "DAL",
+   "vieras": "SEA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020254,
+   "pvm": "2025-11-11",
+   "klo": "03:30",
+   "koti": "EDM",
+   "vieras": "CBJ",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020259,
+   "pvm": "2025-11-12",
+   "klo": "02:00",
+   "koti": "CAR",
+   "vieras": "WSH",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020265,
+   "pvm": "2025-11-13",
+   "klo": "02:00",
+   "koti": "TBL",
+   "vieras": "NYR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020270,
+   "pvm": "2025-11-14",
+   "klo": "02:00",
+   "koti": "MTL",
+   "vieras": "DAL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020279,
+   "pvm": "2025-11-15",
+   "klo": "02:00",
+   "koti": "CAR",
+   "vieras": "VAN",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020282,
+   "pvm": "2025-11-15",
+   "klo": "04:00",
+   "koti": "UTA",
+   "vieras": "NYI",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020287,
+   "pvm": "2025-11-16",
+   "klo": "02:00",
+   "koti": "DET",
+   "vieras": "BUF",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020298,
+   "pvm": "2025-11-17",
+   "klo": "01:00",
+   "koti": "MIN",
+   "vieras": "VGK",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020302,
+   "pvm": "2025-11-18",
+   "klo": "02:00",
+   "koti": "BUF",
+   "vieras": "EDM",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020308,
+   "pvm": "2025-11-19",
+   "klo": "02:00",
+   "koti": "DET",
+   "vieras": "SEA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020317,
+   "pvm": "2025-11-20",
+   "klo": "04:30",
+   "koti": "MIN",
+   "vieras": "CAR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020322,
+   "pvm": "2025-11-21",
+   "klo": "02:30",
+   "koti": "TBL",
+   "vieras": "EDM",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020335,
+   "pvm": "2025-11-22",
+   "klo": "20:00",
+   "koti": "DET",
+   "vieras": "CBJ",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020336,
+   "pvm": "2025-11-22",
+   "klo": "22:30",
+   "koti": "NYI",
+   "vieras": "STL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020346,
+   "pvm": "2025-11-23",
+   "klo": "05:00",
+   "koti": "ANA",
+   "vieras": "VGK",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020350,
+   "pvm": "2025-11-24",
+   "klo": "02:00",
+   "koti": "CHI",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020356,
+   "pvm": "2025-11-25",
+   "klo": "02:00",
+   "koti": "WSH",
+   "vieras": "CBJ",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020360,
+   "pvm": "2025-11-26",
+   "klo": "04:00",
+   "koti": "EDM",
+   "vieras": "DAL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020370,
+   "pvm": "2025-11-27",
+   "klo": "03:30",
+   "koti": "CHI",
+   "vieras": "MIN",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020378,
+   "pvm": "2025-11-28",
+   "klo": "22:30",
+   "koti": "MIN",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020392,
+   "pvm": "2025-11-29",
+   "klo": "22:00",
+   "koti": "COL",
+   "vieras": "MTL",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020393,
+   "pvm": "2025-11-29",
+   "klo": "23:00",
+   "koti": "SEA",
+   "vieras": "EDM",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020400,
+   "pvm": "2025-11-30",
+   "klo": "05:00",
+   "koti": "VGK",
+   "vieras": "SJS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020405,
+   "pvm": "2025-12-01",
+   "klo": "01:00",
+   "koti": "DAL",
+   "vieras": "OTT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020407,
+   "pvm": "2025-12-02",
+   "klo": "02:00",
+   "koti": "PHI",
+   "vieras": "PIT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020411,
+   "pvm": "2025-12-03",
+   "klo": "02:00",
+   "koti": "MTL",
+   "vieras": "OTT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020422,
+   "pvm": "2025-12-04",
+   "klo": "02:30",
+   "koti": "MTL",
+   "vieras": "WPG",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020428,
+   "pvm": "2025-12-05",
+   "klo": "02:00",
+   "koti": "TBL",
+   "vieras": "PIT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020441,
+   "pvm": "2025-12-06",
+   "klo": "19:30",
+   "koti": "NYR",
+   "vieras": "COL",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020442,
+   "pvm": "2025-12-06",
+   "klo": "22:30",
+   "koti": "FLA",
+   "vieras": "CBJ",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020444,
+   "pvm": "2025-12-07",
+   "klo": "02:00",
+   "koti": "TOR",
+   "vieras": "MTL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020455,
+   "pvm": "2025-12-08",
+   "klo": "00:00",
+   "koti": "CAR",
+   "vieras": "SJS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020461,
+   "pvm": "2025-12-09",
+   "klo": "02:30",
+   "koti": "TOR",
+   "vieras": "TBL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020466,
+   "pvm": "2025-12-10",
+   "klo": "02:00",
+   "koti": "MTL",
+   "vieras": "TBL",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020479,
+   "pvm": "2025-12-11",
+   "klo": "05:00",
+   "koti": "SEA",
+   "vieras": "LAK",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020490,
+   "pvm": "2025-12-12",
+   "klo": "04:30",
+   "koti": "COL",
+   "vieras": "FLA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020495,
+   "pvm": "2025-12-13",
+   "klo": "19:30",
+   "koti": "NJD",
+   "vieras": "ANA",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020496,
+   "pvm": "2025-12-13",
+   "klo": "21:00",
+   "koti": "MIN",
+   "vieras": "OTT",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020505,
+   "pvm": "2025-12-14",
+   "klo": "03:00",
+   "koti": "DAL",
+   "vieras": "FLA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020510,
+   "pvm": "2025-12-15",
+   "klo": "00:00",
+   "koti": "CAR",
+   "vieras": "PHI",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020514,
+   "pvm": "2025-12-16",
+   "klo": "02:00",
+   "koti": "TBL",
+   "vieras": "FLA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020526,
+   "pvm": "2025-12-17",
+   "klo": "03:00",
+   "koti": "MIN",
+   "vieras": "WSH",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020530,
+   "pvm": "2025-12-18",
+   "klo": "02:30",
+   "koti": "DET",
+   "vieras": "UTA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020542,
+   "pvm": "2025-12-19",
+   "klo": "04:00",
+   "koti": "CGY",
+   "vieras": "SEA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020550,
+   "pvm": "2025-12-20",
+   "klo": "19:30",
+   "koti": "WSH",
+   "vieras": "DET",
+   "dbl": false,
+   "tulos": true
+  },
+  {
+   "id": 2025020549,
+   "pvm": "2025-12-20",
+   "klo": "19:30",
+   "koti": "NYR",
+   "vieras": "PHI",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020559,
+   "pvm": "2025-12-21",
+   "klo": "05:00",
+   "koti": "CGY",
+   "vieras": "VGK",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020570,
+   "pvm": "2025-12-22",
+   "klo": "03:00",
+   "koti": "EDM",
+   "vieras": "VGK",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020573,
+   "pvm": "2025-12-23",
+   "klo": "05:00",
+   "koti": "ANA",
+   "vieras": "SEA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020581,
+   "pvm": "2025-12-24",
+   "klo": "02:00",
+   "koti": "CAR",
+   "vieras": "FLA",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020589,
+   "pvm": "2025-12-28",
+   "klo": "02:00",
+   "koti": "BUF",
+   "vieras": "BOS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020601,
+   "pvm": "2025-12-29",
+   "klo": "02:00",
+   "koti": "DET",
+   "vieras": "TOR",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020615,
+   "pvm": "2025-12-30",
+   "klo": "05:00",
+   "koti": "ANA",
+   "vieras": "SJS",
+   "dbl": false,
+   "tulos": false
+  },
+  {
+   "id": 2025020619,
+   "pvm": "2025-12-31",
+   "klo": "02:00",
+   "koti": "PIT",
+   "vieras": "CAR",
+   "dbl": false,
+   "tulos": false
+  }
+ ]
+}
