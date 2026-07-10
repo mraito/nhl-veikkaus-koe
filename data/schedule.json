@@ -1,0 +1,7878 @@
+{
+ "kausi": "20252026",
+ "otteluita": 1312,
+ "ottelut": [
+  {
+   "id": 2025020001,
+   "alkaaUTC": "2025-10-07T21:00:00Z",
+   "koti": "FLA",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020002,
+   "alkaaUTC": "2025-10-08T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020003,
+   "alkaaUTC": "2025-10-08T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020004,
+   "alkaaUTC": "2025-10-08T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020005,
+   "alkaaUTC": "2025-10-08T23:30:00Z",
+   "koti": "WSH",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020006,
+   "alkaaUTC": "2025-10-09T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020007,
+   "alkaaUTC": "2025-10-09T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020008,
+   "alkaaUTC": "2025-10-09T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020009,
+   "alkaaUTC": "2025-10-09T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020010,
+   "alkaaUTC": "2025-10-09T23:00:00Z",
+   "koti": "DET",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020011,
+   "alkaaUTC": "2025-10-09T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020012,
+   "alkaaUTC": "2025-10-09T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020013,
+   "alkaaUTC": "2025-10-09T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020014,
+   "alkaaUTC": "2025-10-09T23:30:00Z",
+   "koti": "CAR",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020015,
+   "alkaaUTC": "2025-10-10T00:00:00Z",
+   "koti": "STL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020016,
+   "alkaaUTC": "2025-10-10T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020017,
+   "alkaaUTC": "2025-10-10T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020018,
+   "alkaaUTC": "2025-10-10T01:00:00Z",
+   "koti": "COL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020019,
+   "alkaaUTC": "2025-10-10T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020020,
+   "alkaaUTC": "2025-10-10T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020021,
+   "alkaaUTC": "2025-10-10T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020022,
+   "alkaaUTC": "2025-10-11T17:30:00Z",
+   "koti": "WPG",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020023,
+   "alkaaUTC": "2025-10-11T20:00:00Z",
+   "koti": "CGY",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020024,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020025,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "DET",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020026,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020027,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020028,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020029,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020030,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020031,
+   "alkaaUTC": "2025-10-11T23:00:00Z",
+   "koti": "CHI",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020032,
+   "alkaaUTC": "2025-10-12T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020033,
+   "alkaaUTC": "2025-10-12T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020034,
+   "alkaaUTC": "2025-10-12T01:00:00Z",
+   "koti": "COL",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020035,
+   "alkaaUTC": "2025-10-12T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020036,
+   "alkaaUTC": "2025-10-12T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020037,
+   "alkaaUTC": "2025-10-12T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020038,
+   "alkaaUTC": "2025-10-12T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020039,
+   "alkaaUTC": "2025-10-13T16:30:00Z",
+   "koti": "BUF",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020040,
+   "alkaaUTC": "2025-10-13T17:00:00Z",
+   "koti": "BOS",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020041,
+   "alkaaUTC": "2025-10-13T17:00:00Z",
+   "koti": "OTT",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020042,
+   "alkaaUTC": "2025-10-13T17:00:00Z",
+   "koti": "NYI",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020043,
+   "alkaaUTC": "2025-10-13T18:00:00Z",
+   "koti": "TOR",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020044,
+   "alkaaUTC": "2025-10-13T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020045,
+   "alkaaUTC": "2025-10-13T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020046,
+   "alkaaUTC": "2025-10-13T23:30:00Z",
+   "koti": "VAN",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020047,
+   "alkaaUTC": "2025-10-14T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020048,
+   "alkaaUTC": "2025-10-14T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020049,
+   "alkaaUTC": "2025-10-14T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020050,
+   "alkaaUTC": "2025-10-14T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020051,
+   "alkaaUTC": "2025-10-14T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020052,
+   "alkaaUTC": "2025-10-14T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020053,
+   "alkaaUTC": "2025-10-15T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020054,
+   "alkaaUTC": "2025-10-15T01:30:00Z",
+   "koti": "DAL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020055,
+   "alkaaUTC": "2025-10-15T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020056,
+   "alkaaUTC": "2025-10-15T02:30:00Z",
+   "koti": "ANA",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020057,
+   "alkaaUTC": "2025-10-15T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020058,
+   "alkaaUTC": "2025-10-15T23:00:00Z",
+   "koti": "DET",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020059,
+   "alkaaUTC": "2025-10-16T01:30:00Z",
+   "koti": "STL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020060,
+   "alkaaUTC": "2025-10-16T01:30:00Z",
+   "koti": "UTA",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020061,
+   "alkaaUTC": "2025-10-16T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020062,
+   "alkaaUTC": "2025-10-16T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020063,
+   "alkaaUTC": "2025-10-16T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020064,
+   "alkaaUTC": "2025-10-16T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020066,
+   "alkaaUTC": "2025-10-16T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020067,
+   "alkaaUTC": "2025-10-16T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020065,
+   "alkaaUTC": "2025-10-16T23:30:00Z",
+   "koti": "NYI",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020068,
+   "alkaaUTC": "2025-10-17T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020069,
+   "alkaaUTC": "2025-10-17T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020070,
+   "alkaaUTC": "2025-10-17T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020071,
+   "alkaaUTC": "2025-10-17T02:00:00Z",
+   "koti": "LAK",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020072,
+   "alkaaUTC": "2025-10-17T23:00:00Z",
+   "koti": "DET",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020073,
+   "alkaaUTC": "2025-10-17T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020074,
+   "alkaaUTC": "2025-10-18T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020075,
+   "alkaaUTC": "2025-10-18T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020076,
+   "alkaaUTC": "2025-10-18T17:00:00Z",
+   "koti": "BUF",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020077,
+   "alkaaUTC": "2025-10-18T19:00:00Z",
+   "koti": "OTT",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020078,
+   "alkaaUTC": "2025-10-18T19:30:00Z",
+   "koti": "NJD",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020079,
+   "alkaaUTC": "2025-10-18T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020080,
+   "alkaaUTC": "2025-10-18T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020081,
+   "alkaaUTC": "2025-10-18T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020082,
+   "alkaaUTC": "2025-10-18T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020083,
+   "alkaaUTC": "2025-10-18T23:00:00Z",
+   "koti": "STL",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020084,
+   "alkaaUTC": "2025-10-18T23:00:00Z",
+   "koti": "WPG",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020085,
+   "alkaaUTC": "2025-10-19T01:00:00Z",
+   "koti": "COL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020086,
+   "alkaaUTC": "2025-10-19T01:00:00Z",
+   "koti": "LAK",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020087,
+   "alkaaUTC": "2025-10-19T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020088,
+   "alkaaUTC": "2025-10-19T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020089,
+   "alkaaUTC": "2025-10-19T16:30:00Z",
+   "koti": "WSH",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020090,
+   "alkaaUTC": "2025-10-19T19:00:00Z",
+   "koti": "DET",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020091,
+   "alkaaUTC": "2025-10-19T23:00:00Z",
+   "koti": "CHI",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020092,
+   "alkaaUTC": "2025-10-19T23:00:00Z",
+   "koti": "UTA",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020093,
+   "alkaaUTC": "2025-10-20T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020094,
+   "alkaaUTC": "2025-10-20T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020095,
+   "alkaaUTC": "2025-10-20T23:30:00Z",
+   "koti": "MTL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020096,
+   "alkaaUTC": "2025-10-21T01:30:00Z",
+   "koti": "CGY",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020097,
+   "alkaaUTC": "2025-10-21T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020098,
+   "alkaaUTC": "2025-10-21T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020099,
+   "alkaaUTC": "2025-10-21T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020100,
+   "alkaaUTC": "2025-10-21T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020101,
+   "alkaaUTC": "2025-10-21T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020102,
+   "alkaaUTC": "2025-10-21T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020103,
+   "alkaaUTC": "2025-10-21T23:30:00Z",
+   "koti": "BOS",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020104,
+   "alkaaUTC": "2025-10-22T00:00:00Z",
+   "koti": "STL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020105,
+   "alkaaUTC": "2025-10-22T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020106,
+   "alkaaUTC": "2025-10-22T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020107,
+   "alkaaUTC": "2025-10-22T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020108,
+   "alkaaUTC": "2025-10-22T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020109,
+   "alkaaUTC": "2025-10-22T23:30:00Z",
+   "koti": "BUF",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020110,
+   "alkaaUTC": "2025-10-23T00:30:00Z",
+   "koti": "CGY",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020113,
+   "alkaaUTC": "2025-10-23T22:45:00Z",
+   "koti": "TBL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020111,
+   "alkaaUTC": "2025-10-23T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020112,
+   "alkaaUTC": "2025-10-23T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020114,
+   "alkaaUTC": "2025-10-23T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020115,
+   "alkaaUTC": "2025-10-23T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020116,
+   "alkaaUTC": "2025-10-23T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020117,
+   "alkaaUTC": "2025-10-24T00:00:00Z",
+   "koti": "STL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020118,
+   "alkaaUTC": "2025-10-24T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020120,
+   "alkaaUTC": "2025-10-24T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020119,
+   "alkaaUTC": "2025-10-24T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020121,
+   "alkaaUTC": "2025-10-24T01:00:00Z",
+   "koti": "COL",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020122,
+   "alkaaUTC": "2025-10-24T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020123,
+   "alkaaUTC": "2025-10-24T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020124,
+   "alkaaUTC": "2025-10-24T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020125,
+   "alkaaUTC": "2025-10-24T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020126,
+   "alkaaUTC": "2025-10-25T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020127,
+   "alkaaUTC": "2025-10-25T16:30:00Z",
+   "koti": "PHI",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020128,
+   "alkaaUTC": "2025-10-25T19:00:00Z",
+   "koti": "BOS",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020129,
+   "alkaaUTC": "2025-10-25T21:00:00Z",
+   "koti": "TBL",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020132,
+   "alkaaUTC": "2025-10-25T21:00:00Z",
+   "koti": "TOR",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020130,
+   "alkaaUTC": "2025-10-25T22:00:00Z",
+   "koti": "FLA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020131,
+   "alkaaUTC": "2025-10-25T22:00:00Z",
+   "koti": "MIN",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020133,
+   "alkaaUTC": "2025-10-25T23:00:00Z",
+   "koti": "DET",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020134,
+   "alkaaUTC": "2025-10-25T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020135,
+   "alkaaUTC": "2025-10-25T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020136,
+   "alkaaUTC": "2025-10-25T23:00:00Z",
+   "koti": "VAN",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020137,
+   "alkaaUTC": "2025-10-26T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020138,
+   "alkaaUTC": "2025-10-26T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020139,
+   "alkaaUTC": "2025-10-26T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020140,
+   "alkaaUTC": "2025-10-26T17:00:00Z",
+   "koti": "NJD",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020141,
+   "alkaaUTC": "2025-10-26T21:00:00Z",
+   "koti": "TBL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020142,
+   "alkaaUTC": "2025-10-26T22:00:00Z",
+   "koti": "MIN",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020143,
+   "alkaaUTC": "2025-10-26T22:00:00Z",
+   "koti": "WPG",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020144,
+   "alkaaUTC": "2025-10-26T23:00:00Z",
+   "koti": "CHI",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020145,
+   "alkaaUTC": "2025-10-26T23:00:00Z",
+   "koti": "NSH",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020146,
+   "alkaaUTC": "2025-10-27T00:00:00Z",
+   "koti": "CGY",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020147,
+   "alkaaUTC": "2025-10-27T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020148,
+   "alkaaUTC": "2025-10-27T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020149,
+   "alkaaUTC": "2025-10-27T23:30:00Z",
+   "koti": "OTT",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020150,
+   "alkaaUTC": "2025-10-28T22:00:00Z",
+   "koti": "PHI",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020151,
+   "alkaaUTC": "2025-10-28T22:00:00Z",
+   "koti": "TOR",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020155,
+   "alkaaUTC": "2025-10-28T22:30:00Z",
+   "koti": "CAR",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020152,
+   "alkaaUTC": "2025-10-28T22:45:00Z",
+   "koti": "BUF",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020153,
+   "alkaaUTC": "2025-10-28T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020154,
+   "alkaaUTC": "2025-10-28T23:15:00Z",
+   "koti": "BOS",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020156,
+   "alkaaUTC": "2025-10-28T23:45:00Z",
+   "koti": "NSH",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020157,
+   "alkaaUTC": "2025-10-29T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020158,
+   "alkaaUTC": "2025-10-29T00:15:00Z",
+   "koti": "STL",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020159,
+   "alkaaUTC": "2025-10-29T00:30:00Z",
+   "koti": "DAL",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020160,
+   "alkaaUTC": "2025-10-29T00:45:00Z",
+   "koti": "CHI",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020161,
+   "alkaaUTC": "2025-10-29T01:00:00Z",
+   "koti": "COL",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020162,
+   "alkaaUTC": "2025-10-29T01:30:00Z",
+   "koti": "EDM",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020163,
+   "alkaaUTC": "2025-10-29T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020164,
+   "alkaaUTC": "2025-10-29T02:30:00Z",
+   "koti": "SEA",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020165,
+   "alkaaUTC": "2025-10-29T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020166,
+   "alkaaUTC": "2025-10-29T23:30:00Z",
+   "koti": "CBJ",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020167,
+   "alkaaUTC": "2025-10-30T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020168,
+   "alkaaUTC": "2025-10-30T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020169,
+   "alkaaUTC": "2025-10-30T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020170,
+   "alkaaUTC": "2025-10-30T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020171,
+   "alkaaUTC": "2025-10-30T23:30:00Z",
+   "koti": "CAR",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020172,
+   "alkaaUTC": "2025-10-31T00:00:00Z",
+   "koti": "STL",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020173,
+   "alkaaUTC": "2025-10-31T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020174,
+   "alkaaUTC": "2025-10-31T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020175,
+   "alkaaUTC": "2025-10-31T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020176,
+   "alkaaUTC": "2025-10-31T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020177,
+   "alkaaUTC": "2025-10-31T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020178,
+   "alkaaUTC": "2025-10-31T20:00:00Z",
+   "koti": "VGK",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020179,
+   "alkaaUTC": "2025-10-31T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020180,
+   "alkaaUTC": "2025-11-01T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020181,
+   "alkaaUTC": "2025-11-01T17:00:00Z",
+   "koti": "BOS",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020182,
+   "alkaaUTC": "2025-11-01T19:00:00Z",
+   "koti": "WPG",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020183,
+   "alkaaUTC": "2025-11-01T19:30:00Z",
+   "koti": "NSH",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020184,
+   "alkaaUTC": "2025-11-01T20:00:00Z",
+   "koti": "SJS",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020185,
+   "alkaaUTC": "2025-11-01T22:00:00Z",
+   "koti": "FLA",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020186,
+   "alkaaUTC": "2025-11-01T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020187,
+   "alkaaUTC": "2025-11-01T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020188,
+   "alkaaUTC": "2025-11-01T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020189,
+   "alkaaUTC": "2025-11-01T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020190,
+   "alkaaUTC": "2025-11-01T23:00:00Z",
+   "koti": "MIN",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020191,
+   "alkaaUTC": "2025-11-02T01:00:00Z",
+   "koti": "LAK",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020192,
+   "alkaaUTC": "2025-11-02T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020193,
+   "alkaaUTC": "2025-11-02T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020194,
+   "alkaaUTC": "2025-11-02T20:30:00Z",
+   "koti": "UTA",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020195,
+   "alkaaUTC": "2025-11-02T22:00:00Z",
+   "koti": "NYI",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020196,
+   "alkaaUTC": "2025-11-03T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020197,
+   "alkaaUTC": "2025-11-03T01:00:00Z",
+   "koti": "ANA",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020198,
+   "alkaaUTC": "2025-11-03T01:00:00Z",
+   "koti": "SJS",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020199,
+   "alkaaUTC": "2025-11-04T00:30:00Z",
+   "koti": "TOR",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020200,
+   "alkaaUTC": "2025-11-04T01:30:00Z",
+   "koti": "STL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020201,
+   "alkaaUTC": "2025-11-04T01:30:00Z",
+   "koti": "NSH",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020202,
+   "alkaaUTC": "2025-11-04T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020203,
+   "alkaaUTC": "2025-11-05T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020204,
+   "alkaaUTC": "2025-11-05T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020205,
+   "alkaaUTC": "2025-11-05T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020206,
+   "alkaaUTC": "2025-11-05T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020207,
+   "alkaaUTC": "2025-11-05T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020208,
+   "alkaaUTC": "2025-11-05T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020209,
+   "alkaaUTC": "2025-11-05T02:30:00Z",
+   "koti": "COL",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020210,
+   "alkaaUTC": "2025-11-05T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020211,
+   "alkaaUTC": "2025-11-05T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020212,
+   "alkaaUTC": "2025-11-05T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020213,
+   "alkaaUTC": "2025-11-06T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020214,
+   "alkaaUTC": "2025-11-06T00:30:00Z",
+   "koti": "WSH",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020215,
+   "alkaaUTC": "2025-11-06T02:30:00Z",
+   "koti": "CGY",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020216,
+   "alkaaUTC": "2025-11-06T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020217,
+   "alkaaUTC": "2025-11-06T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020218,
+   "alkaaUTC": "2025-11-07T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020219,
+   "alkaaUTC": "2025-11-07T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020220,
+   "alkaaUTC": "2025-11-07T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020222,
+   "alkaaUTC": "2025-11-07T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020221,
+   "alkaaUTC": "2025-11-07T00:30:00Z",
+   "koti": "PIT",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020223,
+   "alkaaUTC": "2025-11-07T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020224,
+   "alkaaUTC": "2025-11-07T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020225,
+   "alkaaUTC": "2025-11-07T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020226,
+   "alkaaUTC": "2025-11-07T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020227,
+   "alkaaUTC": "2025-11-08T00:00:00Z",
+   "koti": "DET",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020228,
+   "alkaaUTC": "2025-11-08T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020229,
+   "alkaaUTC": "2025-11-08T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020230,
+   "alkaaUTC": "2025-11-08T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020231,
+   "alkaaUTC": "2025-11-08T17:30:00Z",
+   "koti": "NJD",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020232,
+   "alkaaUTC": "2025-11-08T18:00:00Z",
+   "koti": "PHI",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020233,
+   "alkaaUTC": "2025-11-08T20:30:00Z",
+   "koti": "NSH",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020234,
+   "alkaaUTC": "2025-11-09T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020235,
+   "alkaaUTC": "2025-11-09T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020236,
+   "alkaaUTC": "2025-11-09T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020237,
+   "alkaaUTC": "2025-11-09T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020238,
+   "alkaaUTC": "2025-11-09T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020239,
+   "alkaaUTC": "2025-11-09T00:00:00Z",
+   "koti": "STL",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020240,
+   "alkaaUTC": "2025-11-09T03:00:00Z",
+   "koti": "EDM",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020241,
+   "alkaaUTC": "2025-11-09T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020242,
+   "alkaaUTC": "2025-11-09T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020243,
+   "alkaaUTC": "2025-11-09T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020244,
+   "alkaaUTC": "2025-11-09T18:00:00Z",
+   "koti": "DET",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020245,
+   "alkaaUTC": "2025-11-09T19:00:00Z",
+   "koti": "PIT",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020246,
+   "alkaaUTC": "2025-11-10T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020247,
+   "alkaaUTC": "2025-11-10T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020248,
+   "alkaaUTC": "2025-11-10T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020249,
+   "alkaaUTC": "2025-11-10T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020250,
+   "alkaaUTC": "2025-11-10T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020251,
+   "alkaaUTC": "2025-11-10T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020252,
+   "alkaaUTC": "2025-11-11T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020253,
+   "alkaaUTC": "2025-11-11T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020254,
+   "alkaaUTC": "2025-11-11T01:30:00Z",
+   "koti": "EDM",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020255,
+   "alkaaUTC": "2025-11-11T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020256,
+   "alkaaUTC": "2025-11-12T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020257,
+   "alkaaUTC": "2025-11-12T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020258,
+   "alkaaUTC": "2025-11-12T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020259,
+   "alkaaUTC": "2025-11-12T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020260,
+   "alkaaUTC": "2025-11-12T01:00:00Z",
+   "koti": "STL",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020261,
+   "alkaaUTC": "2025-11-12T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020262,
+   "alkaaUTC": "2025-11-12T02:30:00Z",
+   "koti": "COL",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020263,
+   "alkaaUTC": "2025-11-12T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020264,
+   "alkaaUTC": "2025-11-12T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020265,
+   "alkaaUTC": "2025-11-13T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020266,
+   "alkaaUTC": "2025-11-13T00:30:00Z",
+   "koti": "PHI",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020267,
+   "alkaaUTC": "2025-11-13T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020268,
+   "alkaaUTC": "2025-11-13T02:30:00Z",
+   "koti": "CHI",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020269,
+   "alkaaUTC": "2025-11-14T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020270,
+   "alkaaUTC": "2025-11-14T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020271,
+   "alkaaUTC": "2025-11-14T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020272,
+   "alkaaUTC": "2025-11-14T00:00:00Z",
+   "koti": "DET",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020273,
+   "alkaaUTC": "2025-11-14T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020274,
+   "alkaaUTC": "2025-11-14T00:30:00Z",
+   "koti": "CBJ",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020275,
+   "alkaaUTC": "2025-11-14T02:00:00Z",
+   "koti": "COL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020276,
+   "alkaaUTC": "2025-11-14T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020277,
+   "alkaaUTC": "2025-11-14T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020278,
+   "alkaaUTC": "2025-11-14T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020281,
+   "alkaaUTC": "2025-11-14T19:00:00Z",
+   "koti": "NSH",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020279,
+   "alkaaUTC": "2025-11-15T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020280,
+   "alkaaUTC": "2025-11-15T01:00:00Z",
+   "koti": "STL",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020282,
+   "alkaaUTC": "2025-11-15T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020283,
+   "alkaaUTC": "2025-11-15T22:00:00Z",
+   "koti": "FLA",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020284,
+   "alkaaUTC": "2025-11-15T23:00:00Z",
+   "koti": "MIN",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020285,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020286,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020287,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "DET",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020288,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020289,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020290,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020291,
+   "alkaaUTC": "2025-11-16T00:00:00Z",
+   "koti": "CHI",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020292,
+   "alkaaUTC": "2025-11-16T01:00:00Z",
+   "koti": "STL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020293,
+   "alkaaUTC": "2025-11-16T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020294,
+   "alkaaUTC": "2025-11-16T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020295,
+   "alkaaUTC": "2025-11-16T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020296,
+   "alkaaUTC": "2025-11-16T14:00:00Z",
+   "koti": "PIT",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020297,
+   "alkaaUTC": "2025-11-16T22:00:00Z",
+   "koti": "TBL",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020298,
+   "alkaaUTC": "2025-11-16T23:00:00Z",
+   "koti": "MIN",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020299,
+   "alkaaUTC": "2025-11-17T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020300,
+   "alkaaUTC": "2025-11-17T02:00:00Z",
+   "koti": "COL",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020301,
+   "alkaaUTC": "2025-11-18T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020302,
+   "alkaaUTC": "2025-11-18T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020303,
+   "alkaaUTC": "2025-11-18T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020304,
+   "alkaaUTC": "2025-11-18T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020305,
+   "alkaaUTC": "2025-11-18T00:30:00Z",
+   "koti": "CBJ",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020306,
+   "alkaaUTC": "2025-11-18T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020307,
+   "alkaaUTC": "2025-11-19T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020308,
+   "alkaaUTC": "2025-11-19T00:00:00Z",
+   "koti": "DET",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020309,
+   "alkaaUTC": "2025-11-19T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020310,
+   "alkaaUTC": "2025-11-19T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020311,
+   "alkaaUTC": "2025-11-19T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020312,
+   "alkaaUTC": "2025-11-19T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020313,
+   "alkaaUTC": "2025-11-19T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020314,
+   "alkaaUTC": "2025-11-19T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020315,
+   "alkaaUTC": "2025-11-20T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020316,
+   "alkaaUTC": "2025-11-20T00:30:00Z",
+   "koti": "BUF",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020317,
+   "alkaaUTC": "2025-11-20T02:30:00Z",
+   "koti": "MIN",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020318,
+   "alkaaUTC": "2025-11-20T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020319,
+   "alkaaUTC": "2025-11-21T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020320,
+   "alkaaUTC": "2025-11-21T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020321,
+   "alkaaUTC": "2025-11-21T00:00:00Z",
+   "koti": "DET",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020323,
+   "alkaaUTC": "2025-11-21T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020324,
+   "alkaaUTC": "2025-11-21T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020322,
+   "alkaaUTC": "2025-11-21T00:30:00Z",
+   "koti": "TBL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020325,
+   "alkaaUTC": "2025-11-21T01:00:00Z",
+   "koti": "CHI",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020326,
+   "alkaaUTC": "2025-11-21T02:00:00Z",
+   "koti": "COL",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020327,
+   "alkaaUTC": "2025-11-21T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020328,
+   "alkaaUTC": "2025-11-21T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020329,
+   "alkaaUTC": "2025-11-21T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020330,
+   "alkaaUTC": "2025-11-21T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020331,
+   "alkaaUTC": "2025-11-22T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020332,
+   "alkaaUTC": "2025-11-22T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020333,
+   "alkaaUTC": "2025-11-22T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020334,
+   "alkaaUTC": "2025-11-22T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020335,
+   "alkaaUTC": "2025-11-22T18:00:00Z",
+   "koti": "DET",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020336,
+   "alkaaUTC": "2025-11-22T20:30:00Z",
+   "koti": "NYI",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020337,
+   "alkaaUTC": "2025-11-23T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020338,
+   "alkaaUTC": "2025-11-23T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020339,
+   "alkaaUTC": "2025-11-23T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020340,
+   "alkaaUTC": "2025-11-23T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020341,
+   "alkaaUTC": "2025-11-23T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020342,
+   "alkaaUTC": "2025-11-23T00:00:00Z",
+   "koti": "SJS",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020343,
+   "alkaaUTC": "2025-11-23T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020344,
+   "alkaaUTC": "2025-11-23T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020345,
+   "alkaaUTC": "2025-11-23T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020346,
+   "alkaaUTC": "2025-11-23T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020347,
+   "alkaaUTC": "2025-11-23T18:00:00Z",
+   "koti": "BUF",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020348,
+   "alkaaUTC": "2025-11-23T21:00:00Z",
+   "koti": "WPG",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020349,
+   "alkaaUTC": "2025-11-23T22:00:00Z",
+   "koti": "NYI",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020350,
+   "alkaaUTC": "2025-11-24T00:00:00Z",
+   "koti": "CHI",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020351,
+   "alkaaUTC": "2025-11-24T01:00:00Z",
+   "koti": "SJS",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020352,
+   "alkaaUTC": "2025-11-24T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020353,
+   "alkaaUTC": "2025-11-25T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020354,
+   "alkaaUTC": "2025-11-25T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020355,
+   "alkaaUTC": "2025-11-25T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020356,
+   "alkaaUTC": "2025-11-25T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020357,
+   "alkaaUTC": "2025-11-25T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020358,
+   "alkaaUTC": "2025-11-25T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020359,
+   "alkaaUTC": "2025-11-25T02:00:00Z",
+   "koti": "LAK",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020360,
+   "alkaaUTC": "2025-11-26T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020361,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "DET",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020362,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020363,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020364,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020365,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020366,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020367,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020368,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020369,
+   "alkaaUTC": "2025-11-27T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020370,
+   "alkaaUTC": "2025-11-27T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020371,
+   "alkaaUTC": "2025-11-27T02:00:00Z",
+   "koti": "COL",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020372,
+   "alkaaUTC": "2025-11-27T02:30:00Z",
+   "koti": "UTA",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020373,
+   "alkaaUTC": "2025-11-27T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020374,
+   "alkaaUTC": "2025-11-27T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020375,
+   "alkaaUTC": "2025-11-27T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020377,
+   "alkaaUTC": "2025-11-28T17:00:00Z",
+   "koti": "DET",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020376,
+   "alkaaUTC": "2025-11-28T18:00:00Z",
+   "koti": "BOS",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020378,
+   "alkaaUTC": "2025-11-28T20:30:00Z",
+   "koti": "MIN",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020379,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "BUF",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020380,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "FLA",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020381,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "NYI",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020382,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "STL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020383,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "VGK",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020384,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "ANA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020385,
+   "alkaaUTC": "2025-11-28T21:00:00Z",
+   "koti": "SJS",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020386,
+   "alkaaUTC": "2025-11-28T22:00:00Z",
+   "koti": "WSH",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020387,
+   "alkaaUTC": "2025-11-28T22:00:00Z",
+   "koti": "CAR",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020388,
+   "alkaaUTC": "2025-11-29T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020389,
+   "alkaaUTC": "2025-11-29T01:00:00Z",
+   "koti": "CHI",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020390,
+   "alkaaUTC": "2025-11-29T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020391,
+   "alkaaUTC": "2025-11-29T19:00:00Z",
+   "koti": "NYR",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020392,
+   "alkaaUTC": "2025-11-29T20:00:00Z",
+   "koti": "COL",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020393,
+   "alkaaUTC": "2025-11-29T21:00:00Z",
+   "koti": "SEA",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020394,
+   "alkaaUTC": "2025-11-30T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020395,
+   "alkaaUTC": "2025-11-30T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020396,
+   "alkaaUTC": "2025-11-30T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020397,
+   "alkaaUTC": "2025-11-30T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020398,
+   "alkaaUTC": "2025-11-30T01:00:00Z",
+   "koti": "STL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020399,
+   "alkaaUTC": "2025-11-30T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020400,
+   "alkaaUTC": "2025-11-30T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020401,
+   "alkaaUTC": "2025-11-30T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020402,
+   "alkaaUTC": "2025-11-30T18:00:00Z",
+   "koti": "NYI",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020403,
+   "alkaaUTC": "2025-11-30T20:30:00Z",
+   "koti": "CHI",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020404,
+   "alkaaUTC": "2025-11-30T22:00:00Z",
+   "koti": "CAR",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020405,
+   "alkaaUTC": "2025-11-30T23:00:00Z",
+   "koti": "DAL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020406,
+   "alkaaUTC": "2025-12-02T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020407,
+   "alkaaUTC": "2025-12-02T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020408,
+   "alkaaUTC": "2025-12-02T00:30:00Z",
+   "koti": "BUF",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020409,
+   "alkaaUTC": "2025-12-02T01:00:00Z",
+   "koti": "STL",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020410,
+   "alkaaUTC": "2025-12-02T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020411,
+   "alkaaUTC": "2025-12-03T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020412,
+   "alkaaUTC": "2025-12-03T00:00:00Z",
+   "koti": "DET",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020414,
+   "alkaaUTC": "2025-12-03T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020415,
+   "alkaaUTC": "2025-12-03T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020413,
+   "alkaaUTC": "2025-12-03T00:30:00Z",
+   "koti": "FLA",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020416,
+   "alkaaUTC": "2025-12-03T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020417,
+   "alkaaUTC": "2025-12-03T02:00:00Z",
+   "koti": "COL",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020418,
+   "alkaaUTC": "2025-12-03T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020419,
+   "alkaaUTC": "2025-12-03T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020420,
+   "alkaaUTC": "2025-12-03T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020421,
+   "alkaaUTC": "2025-12-04T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020422,
+   "alkaaUTC": "2025-12-04T00:30:00Z",
+   "koti": "MTL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020423,
+   "alkaaUTC": "2025-12-04T00:30:00Z",
+   "koti": "PHI",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020424,
+   "alkaaUTC": "2025-12-04T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020425,
+   "alkaaUTC": "2025-12-04T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020426,
+   "alkaaUTC": "2025-12-05T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020427,
+   "alkaaUTC": "2025-12-05T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020428,
+   "alkaaUTC": "2025-12-05T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020429,
+   "alkaaUTC": "2025-12-05T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020430,
+   "alkaaUTC": "2025-12-05T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020431,
+   "alkaaUTC": "2025-12-05T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020432,
+   "alkaaUTC": "2025-12-05T00:30:00Z",
+   "koti": "CBJ",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020433,
+   "alkaaUTC": "2025-12-05T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020434,
+   "alkaaUTC": "2025-12-05T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020435,
+   "alkaaUTC": "2025-12-05T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020436,
+   "alkaaUTC": "2025-12-06T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020437,
+   "alkaaUTC": "2025-12-06T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020438,
+   "alkaaUTC": "2025-12-06T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020439,
+   "alkaaUTC": "2025-12-06T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020440,
+   "alkaaUTC": "2025-12-06T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020441,
+   "alkaaUTC": "2025-12-06T17:30:00Z",
+   "koti": "NYR",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020442,
+   "alkaaUTC": "2025-12-06T20:30:00Z",
+   "koti": "FLA",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020443,
+   "alkaaUTC": "2025-12-07T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020444,
+   "alkaaUTC": "2025-12-07T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020445,
+   "alkaaUTC": "2025-12-07T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020446,
+   "alkaaUTC": "2025-12-07T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020447,
+   "alkaaUTC": "2025-12-07T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020448,
+   "alkaaUTC": "2025-12-07T00:00:00Z",
+   "koti": "CGY",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020449,
+   "alkaaUTC": "2025-12-07T02:00:00Z",
+   "koti": "LAK",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020450,
+   "alkaaUTC": "2025-12-07T03:00:00Z",
+   "koti": "EDM",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020451,
+   "alkaaUTC": "2025-12-07T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020452,
+   "alkaaUTC": "2025-12-07T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020453,
+   "alkaaUTC": "2025-12-07T18:00:00Z",
+   "koti": "PHI",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020454,
+   "alkaaUTC": "2025-12-07T22:00:00Z",
+   "koti": "FLA",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020455,
+   "alkaaUTC": "2025-12-07T22:00:00Z",
+   "koti": "CAR",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020456,
+   "alkaaUTC": "2025-12-07T23:00:00Z",
+   "koti": "DAL",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020457,
+   "alkaaUTC": "2025-12-08T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020458,
+   "alkaaUTC": "2025-12-08T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020459,
+   "alkaaUTC": "2025-12-08T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020460,
+   "alkaaUTC": "2025-12-08T01:00:00Z",
+   "koti": "ANA",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020461,
+   "alkaaUTC": "2025-12-09T00:30:00Z",
+   "koti": "TOR",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020462,
+   "alkaaUTC": "2025-12-09T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020463,
+   "alkaaUTC": "2025-12-09T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020464,
+   "alkaaUTC": "2025-12-09T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020465,
+   "alkaaUTC": "2025-12-09T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020466,
+   "alkaaUTC": "2025-12-10T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020467,
+   "alkaaUTC": "2025-12-10T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020468,
+   "alkaaUTC": "2025-12-10T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020469,
+   "alkaaUTC": "2025-12-10T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020470,
+   "alkaaUTC": "2025-12-10T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020471,
+   "alkaaUTC": "2025-12-10T00:30:00Z",
+   "koti": "CAR",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020472,
+   "alkaaUTC": "2025-12-10T01:00:00Z",
+   "koti": "STL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020473,
+   "alkaaUTC": "2025-12-10T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020474,
+   "alkaaUTC": "2025-12-10T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020475,
+   "alkaaUTC": "2025-12-10T02:30:00Z",
+   "koti": "NSH",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020476,
+   "alkaaUTC": "2025-12-11T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020477,
+   "alkaaUTC": "2025-12-11T01:30:00Z",
+   "koti": "CGY",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020478,
+   "alkaaUTC": "2025-12-11T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020479,
+   "alkaaUTC": "2025-12-11T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020480,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020481,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020482,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020483,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020484,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020485,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020486,
+   "alkaaUTC": "2025-12-12T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020487,
+   "alkaaUTC": "2025-12-12T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020488,
+   "alkaaUTC": "2025-12-12T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020489,
+   "alkaaUTC": "2025-12-12T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020491,
+   "alkaaUTC": "2025-12-12T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020490,
+   "alkaaUTC": "2025-12-12T02:30:00Z",
+   "koti": "COL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020492,
+   "alkaaUTC": "2025-12-12T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020493,
+   "alkaaUTC": "2025-12-13T01:00:00Z",
+   "koti": "STL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020494,
+   "alkaaUTC": "2025-12-13T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020495,
+   "alkaaUTC": "2025-12-13T17:30:00Z",
+   "koti": "NJD",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020496,
+   "alkaaUTC": "2025-12-13T19:00:00Z",
+   "koti": "MIN",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020497,
+   "alkaaUTC": "2025-12-13T20:00:00Z",
+   "koti": "PIT",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020498,
+   "alkaaUTC": "2025-12-13T20:30:00Z",
+   "koti": "NYI",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020499,
+   "alkaaUTC": "2025-12-14T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020500,
+   "alkaaUTC": "2025-12-14T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020501,
+   "alkaaUTC": "2025-12-14T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020502,
+   "alkaaUTC": "2025-12-14T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020503,
+   "alkaaUTC": "2025-12-14T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020504,
+   "alkaaUTC": "2025-12-14T01:00:00Z",
+   "koti": "CHI",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020505,
+   "alkaaUTC": "2025-12-14T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020506,
+   "alkaaUTC": "2025-12-14T02:00:00Z",
+   "koti": "COL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020507,
+   "alkaaUTC": "2025-12-14T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020508,
+   "alkaaUTC": "2025-12-14T17:30:00Z",
+   "koti": "NJD",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020509,
+   "alkaaUTC": "2025-12-14T20:00:00Z",
+   "koti": "PIT",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020510,
+   "alkaaUTC": "2025-12-14T22:00:00Z",
+   "koti": "CAR",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020511,
+   "alkaaUTC": "2025-12-14T23:00:00Z",
+   "koti": "MIN",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020512,
+   "alkaaUTC": "2025-12-15T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020513,
+   "alkaaUTC": "2025-12-15T01:00:00Z",
+   "koti": "SEA",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020514,
+   "alkaaUTC": "2025-12-16T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020515,
+   "alkaaUTC": "2025-12-16T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020516,
+   "alkaaUTC": "2025-12-16T00:30:00Z",
+   "koti": "WPG",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020517,
+   "alkaaUTC": "2025-12-16T01:00:00Z",
+   "koti": "STL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020518,
+   "alkaaUTC": "2025-12-16T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020519,
+   "alkaaUTC": "2025-12-17T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020520,
+   "alkaaUTC": "2025-12-17T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020521,
+   "alkaaUTC": "2025-12-17T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020522,
+   "alkaaUTC": "2025-12-17T00:00:00Z",
+   "koti": "DET",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020523,
+   "alkaaUTC": "2025-12-17T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020525,
+   "alkaaUTC": "2025-12-17T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020524,
+   "alkaaUTC": "2025-12-17T00:30:00Z",
+   "koti": "PIT",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020526,
+   "alkaaUTC": "2025-12-17T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020527,
+   "alkaaUTC": "2025-12-17T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020528,
+   "alkaaUTC": "2025-12-17T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020529,
+   "alkaaUTC": "2025-12-18T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020530,
+   "alkaaUTC": "2025-12-18T00:30:00Z",
+   "koti": "DET",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020531,
+   "alkaaUTC": "2025-12-18T01:00:00Z",
+   "koti": "STL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020532,
+   "alkaaUTC": "2025-12-18T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020533,
+   "alkaaUTC": "2025-12-18T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020534,
+   "alkaaUTC": "2025-12-19T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020536,
+   "alkaaUTC": "2025-12-19T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020537,
+   "alkaaUTC": "2025-12-19T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020538,
+   "alkaaUTC": "2025-12-19T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020539,
+   "alkaaUTC": "2025-12-19T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020540,
+   "alkaaUTC": "2025-12-19T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020535,
+   "alkaaUTC": "2025-12-19T00:30:00Z",
+   "koti": "BUF",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020541,
+   "alkaaUTC": "2025-12-19T01:00:00Z",
+   "koti": "STL",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020542,
+   "alkaaUTC": "2025-12-19T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020543,
+   "alkaaUTC": "2025-12-19T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020544,
+   "alkaaUTC": "2025-12-20T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020545,
+   "alkaaUTC": "2025-12-20T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020546,
+   "alkaaUTC": "2025-12-20T02:00:00Z",
+   "koti": "COL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020547,
+   "alkaaUTC": "2025-12-20T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020548,
+   "alkaaUTC": "2025-12-20T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020549,
+   "alkaaUTC": "2025-12-20T17:30:00Z",
+   "koti": "NYR",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020550,
+   "alkaaUTC": "2025-12-20T17:30:00Z",
+   "koti": "WSH",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020551,
+   "alkaaUTC": "2025-12-20T20:00:00Z",
+   "koti": "OTT",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020552,
+   "alkaaUTC": "2025-12-20T20:00:00Z",
+   "koti": "MIN",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020553,
+   "alkaaUTC": "2025-12-20T22:00:00Z",
+   "koti": "BUF",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020554,
+   "alkaaUTC": "2025-12-20T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020555,
+   "alkaaUTC": "2025-12-21T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020556,
+   "alkaaUTC": "2025-12-21T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020557,
+   "alkaaUTC": "2025-12-21T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020558,
+   "alkaaUTC": "2025-12-21T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020559,
+   "alkaaUTC": "2025-12-21T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020560,
+   "alkaaUTC": "2025-12-21T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020561,
+   "alkaaUTC": "2025-12-21T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020562,
+   "alkaaUTC": "2025-12-21T18:00:00Z",
+   "koti": "DET",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020563,
+   "alkaaUTC": "2025-12-21T23:00:00Z",
+   "koti": "MIN",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020564,
+   "alkaaUTC": "2025-12-22T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020565,
+   "alkaaUTC": "2025-12-22T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020566,
+   "alkaaUTC": "2025-12-22T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020567,
+   "alkaaUTC": "2025-12-22T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020568,
+   "alkaaUTC": "2025-12-22T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020569,
+   "alkaaUTC": "2025-12-22T00:00:00Z",
+   "koti": "UTA",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020570,
+   "alkaaUTC": "2025-12-22T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020571,
+   "alkaaUTC": "2025-12-23T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020572,
+   "alkaaUTC": "2025-12-23T00:30:00Z",
+   "koti": "PHI",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020573,
+   "alkaaUTC": "2025-12-23T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020574,
+   "alkaaUTC": "2025-12-23T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020575,
+   "alkaaUTC": "2025-12-23T21:00:00Z",
+   "koti": "TOR",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020579,
+   "alkaaUTC": "2025-12-23T23:30:00Z",
+   "koti": "DET",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020576,
+   "alkaaUTC": "2025-12-24T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020577,
+   "alkaaUTC": "2025-12-24T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020578,
+   "alkaaUTC": "2025-12-24T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020580,
+   "alkaaUTC": "2025-12-24T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020581,
+   "alkaaUTC": "2025-12-24T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020582,
+   "alkaaUTC": "2025-12-24T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020583,
+   "alkaaUTC": "2025-12-24T02:00:00Z",
+   "koti": "CHI",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020584,
+   "alkaaUTC": "2025-12-24T02:00:00Z",
+   "koti": "COL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020585,
+   "alkaaUTC": "2025-12-24T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020586,
+   "alkaaUTC": "2025-12-24T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020587,
+   "alkaaUTC": "2025-12-24T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020588,
+   "alkaaUTC": "2025-12-27T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020589,
+   "alkaaUTC": "2025-12-28T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020590,
+   "alkaaUTC": "2025-12-28T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020591,
+   "alkaaUTC": "2025-12-28T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020592,
+   "alkaaUTC": "2025-12-28T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020593,
+   "alkaaUTC": "2025-12-28T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020594,
+   "alkaaUTC": "2025-12-28T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020595,
+   "alkaaUTC": "2025-12-28T01:00:00Z",
+   "koti": "STL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020596,
+   "alkaaUTC": "2025-12-28T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020597,
+   "alkaaUTC": "2025-12-28T02:00:00Z",
+   "koti": "LAK",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020598,
+   "alkaaUTC": "2025-12-28T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020599,
+   "alkaaUTC": "2025-12-28T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020600,
+   "alkaaUTC": "2025-12-28T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020602,
+   "alkaaUTC": "2025-12-28T22:00:00Z",
+   "koti": "TBL",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020603,
+   "alkaaUTC": "2025-12-28T22:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020601,
+   "alkaaUTC": "2025-12-29T00:00:00Z",
+   "koti": "DET",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020604,
+   "alkaaUTC": "2025-12-29T00:00:00Z",
+   "koti": "CHI",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020605,
+   "alkaaUTC": "2025-12-29T01:00:00Z",
+   "koti": "SEA",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020607,
+   "alkaaUTC": "2025-12-30T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020608,
+   "alkaaUTC": "2025-12-30T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020606,
+   "alkaaUTC": "2025-12-30T00:30:00Z",
+   "koti": "OTT",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020609,
+   "alkaaUTC": "2025-12-30T00:30:00Z",
+   "koti": "WPG",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020610,
+   "alkaaUTC": "2025-12-30T01:00:00Z",
+   "koti": "STL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020611,
+   "alkaaUTC": "2025-12-30T02:00:00Z",
+   "koti": "COL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020612,
+   "alkaaUTC": "2025-12-30T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020613,
+   "alkaaUTC": "2025-12-30T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020614,
+   "alkaaUTC": "2025-12-30T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020615,
+   "alkaaUTC": "2025-12-30T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020616,
+   "alkaaUTC": "2025-12-30T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020617,
+   "alkaaUTC": "2025-12-31T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020618,
+   "alkaaUTC": "2025-12-31T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020619,
+   "alkaaUTC": "2025-12-31T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020620,
+   "alkaaUTC": "2025-12-31T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020621,
+   "alkaaUTC": "2025-12-31T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020622,
+   "alkaaUTC": "2025-12-31T17:30:00Z",
+   "koti": "WSH",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020623,
+   "alkaaUTC": "2025-12-31T20:00:00Z",
+   "koti": "VGK",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020624,
+   "alkaaUTC": "2025-12-31T21:00:00Z",
+   "koti": "ANA",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020625,
+   "alkaaUTC": "2025-12-31T21:00:00Z",
+   "koti": "SJS",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020626,
+   "alkaaUTC": "2025-12-31T23:30:00Z",
+   "koti": "DET",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020627,
+   "alkaaUTC": "2026-01-01T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020628,
+   "alkaaUTC": "2026-01-01T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020629,
+   "alkaaUTC": "2026-01-01T02:00:00Z",
+   "koti": "COL",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020630,
+   "alkaaUTC": "2026-01-01T02:30:00Z",
+   "koti": "CGY",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020631,
+   "alkaaUTC": "2026-01-01T02:30:00Z",
+   "koti": "EDM",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020632,
+   "alkaaUTC": "2026-01-01T18:00:00Z",
+   "koti": "OTT",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020633,
+   "alkaaUTC": "2026-01-01T20:00:00Z",
+   "koti": "NYI",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020634,
+   "alkaaUTC": "2026-01-02T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020635,
+   "alkaaUTC": "2026-01-02T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020636,
+   "alkaaUTC": "2026-01-02T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020639,
+   "alkaaUTC": "2026-01-02T00:00:00Z",
+   "koti": "LAK",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020637,
+   "alkaaUTC": "2026-01-02T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020638,
+   "alkaaUTC": "2026-01-02T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020640,
+   "alkaaUTC": "2026-01-02T20:00:00Z",
+   "koti": "STL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020641,
+   "alkaaUTC": "2026-01-03T01:00:00Z",
+   "koti": "FLA",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020642,
+   "alkaaUTC": "2026-01-03T03:30:00Z",
+   "koti": "VAN",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020643,
+   "alkaaUTC": "2026-01-03T03:30:00Z",
+   "koti": "ANA",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020644,
+   "alkaaUTC": "2026-01-03T17:00:00Z",
+   "koti": "DET",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020645,
+   "alkaaUTC": "2026-01-03T20:00:00Z",
+   "koti": "NJD",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020646,
+   "alkaaUTC": "2026-01-03T20:00:00Z",
+   "koti": "CBJ",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020647,
+   "alkaaUTC": "2026-01-03T20:30:00Z",
+   "koti": "EDM",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020648,
+   "alkaaUTC": "2026-01-03T21:00:00Z",
+   "koti": "STL",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020649,
+   "alkaaUTC": "2026-01-03T21:00:00Z",
+   "koti": "SJS",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020650,
+   "alkaaUTC": "2026-01-04T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020651,
+   "alkaaUTC": "2026-01-04T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020652,
+   "alkaaUTC": "2026-01-04T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020653,
+   "alkaaUTC": "2026-01-04T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020654,
+   "alkaaUTC": "2026-01-04T00:00:00Z",
+   "koti": "CGY",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020655,
+   "alkaaUTC": "2026-01-04T02:00:00Z",
+   "koti": "LAK",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020656,
+   "alkaaUTC": "2026-01-04T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020657,
+   "alkaaUTC": "2026-01-04T19:00:00Z",
+   "koti": "DAL",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020658,
+   "alkaaUTC": "2026-01-04T20:00:00Z",
+   "koti": "CBJ",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020659,
+   "alkaaUTC": "2026-01-04T22:00:00Z",
+   "koti": "FLA",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020660,
+   "alkaaUTC": "2026-01-05T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020661,
+   "alkaaUTC": "2026-01-05T00:00:00Z",
+   "koti": "CHI",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020662,
+   "alkaaUTC": "2026-01-06T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020663,
+   "alkaaUTC": "2026-01-06T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020664,
+   "alkaaUTC": "2026-01-06T00:30:00Z",
+   "koti": "OTT",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020665,
+   "alkaaUTC": "2026-01-06T02:30:00Z",
+   "koti": "CGY",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020666,
+   "alkaaUTC": "2026-01-06T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020667,
+   "alkaaUTC": "2026-01-07T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020668,
+   "alkaaUTC": "2026-01-07T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020670,
+   "alkaaUTC": "2026-01-07T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020671,
+   "alkaaUTC": "2026-01-07T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020669,
+   "alkaaUTC": "2026-01-07T00:30:00Z",
+   "koti": "NYI",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020672,
+   "alkaaUTC": "2026-01-07T00:30:00Z",
+   "koti": "TOR",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020673,
+   "alkaaUTC": "2026-01-07T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020674,
+   "alkaaUTC": "2026-01-07T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020675,
+   "alkaaUTC": "2026-01-07T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020676,
+   "alkaaUTC": "2026-01-07T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020677,
+   "alkaaUTC": "2026-01-08T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020678,
+   "alkaaUTC": "2026-01-08T00:30:00Z",
+   "koti": "MTL",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020679,
+   "alkaaUTC": "2026-01-08T02:30:00Z",
+   "koti": "CHI",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020680,
+   "alkaaUTC": "2026-01-08T02:30:00Z",
+   "koti": "UTA",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020681,
+   "alkaaUTC": "2026-01-08T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020682,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020683,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020684,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "DET",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020685,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020686,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020687,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020688,
+   "alkaaUTC": "2026-01-09T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020689,
+   "alkaaUTC": "2026-01-09T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020690,
+   "alkaaUTC": "2026-01-09T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020691,
+   "alkaaUTC": "2026-01-09T02:00:00Z",
+   "koti": "COL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020692,
+   "alkaaUTC": "2026-01-09T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020693,
+   "alkaaUTC": "2026-01-09T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020694,
+   "alkaaUTC": "2026-01-10T01:00:00Z",
+   "koti": "CHI",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020695,
+   "alkaaUTC": "2026-01-10T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020696,
+   "alkaaUTC": "2026-01-10T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020697,
+   "alkaaUTC": "2026-01-10T18:00:00Z",
+   "koti": "BOS",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020698,
+   "alkaaUTC": "2026-01-10T20:30:00Z",
+   "koti": "PIT",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020699,
+   "alkaaUTC": "2026-01-10T21:00:00Z",
+   "koti": "COL",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020700,
+   "alkaaUTC": "2026-01-10T21:00:00Z",
+   "koti": "SJS",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020701,
+   "alkaaUTC": "2026-01-11T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020702,
+   "alkaaUTC": "2026-01-11T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020703,
+   "alkaaUTC": "2026-01-11T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020704,
+   "alkaaUTC": "2026-01-11T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020705,
+   "alkaaUTC": "2026-01-11T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020706,
+   "alkaaUTC": "2026-01-11T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020707,
+   "alkaaUTC": "2026-01-11T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020708,
+   "alkaaUTC": "2026-01-11T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020709,
+   "alkaaUTC": "2026-01-11T03:00:00Z",
+   "koti": "EDM",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020710,
+   "alkaaUTC": "2026-01-11T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020711,
+   "alkaaUTC": "2026-01-11T19:00:00Z",
+   "koti": "WPG",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020712,
+   "alkaaUTC": "2026-01-11T22:00:00Z",
+   "koti": "BOS",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020713,
+   "alkaaUTC": "2026-01-12T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020714,
+   "alkaaUTC": "2026-01-12T00:00:00Z",
+   "koti": "UTA",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020715,
+   "alkaaUTC": "2026-01-12T01:00:00Z",
+   "koti": "SJS",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020716,
+   "alkaaUTC": "2026-01-13T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020717,
+   "alkaaUTC": "2026-01-13T00:00:00Z",
+   "koti": "DET",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020718,
+   "alkaaUTC": "2026-01-13T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020719,
+   "alkaaUTC": "2026-01-13T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020720,
+   "alkaaUTC": "2026-01-13T00:30:00Z",
+   "koti": "MTL",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020721,
+   "alkaaUTC": "2026-01-13T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020722,
+   "alkaaUTC": "2026-01-13T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020723,
+   "alkaaUTC": "2026-01-13T03:00:00Z",
+   "koti": "COL",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020724,
+   "alkaaUTC": "2026-01-13T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020725,
+   "alkaaUTC": "2026-01-14T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020726,
+   "alkaaUTC": "2026-01-14T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020727,
+   "alkaaUTC": "2026-01-14T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020728,
+   "alkaaUTC": "2026-01-14T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020729,
+   "alkaaUTC": "2026-01-14T00:30:00Z",
+   "koti": "BOS",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020730,
+   "alkaaUTC": "2026-01-14T00:30:00Z",
+   "koti": "STL",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020731,
+   "alkaaUTC": "2026-01-14T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020732,
+   "alkaaUTC": "2026-01-14T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020733,
+   "alkaaUTC": "2026-01-14T03:00:00Z",
+   "koti": "UTA",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020734,
+   "alkaaUTC": "2026-01-14T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020735,
+   "alkaaUTC": "2026-01-15T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020736,
+   "alkaaUTC": "2026-01-15T00:30:00Z",
+   "koti": "BUF",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020737,
+   "alkaaUTC": "2026-01-15T00:30:00Z",
+   "koti": "NYR",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020738,
+   "alkaaUTC": "2026-01-15T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020740,
+   "alkaaUTC": "2026-01-16T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020741,
+   "alkaaUTC": "2026-01-16T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020742,
+   "alkaaUTC": "2026-01-16T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020743,
+   "alkaaUTC": "2026-01-16T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020739,
+   "alkaaUTC": "2026-01-16T01:00:00Z",
+   "koti": "BOS",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020744,
+   "alkaaUTC": "2026-01-16T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020745,
+   "alkaaUTC": "2026-01-16T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020746,
+   "alkaaUTC": "2026-01-16T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020747,
+   "alkaaUTC": "2026-01-16T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020748,
+   "alkaaUTC": "2026-01-16T02:30:00Z",
+   "koti": "VGK",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020749,
+   "alkaaUTC": "2026-01-17T00:00:00Z",
+   "koti": "DET",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020750,
+   "alkaaUTC": "2026-01-17T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020751,
+   "alkaaUTC": "2026-01-17T01:00:00Z",
+   "koti": "STL",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020752,
+   "alkaaUTC": "2026-01-17T02:00:00Z",
+   "koti": "COL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020753,
+   "alkaaUTC": "2026-01-17T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020754,
+   "alkaaUTC": "2026-01-17T17:30:00Z",
+   "koti": "BUF",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020755,
+   "alkaaUTC": "2026-01-17T18:00:00Z",
+   "koti": "PHI",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020756,
+   "alkaaUTC": "2026-01-17T20:00:00Z",
+   "koti": "CGY",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020757,
+   "alkaaUTC": "2026-01-17T22:00:00Z",
+   "koti": "UTA",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020758,
+   "alkaaUTC": "2026-01-18T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020759,
+   "alkaaUTC": "2026-01-18T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020760,
+   "alkaaUTC": "2026-01-18T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020761,
+   "alkaaUTC": "2026-01-18T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020762,
+   "alkaaUTC": "2026-01-18T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020763,
+   "alkaaUTC": "2026-01-18T01:00:00Z",
+   "koti": "CHI",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020764,
+   "alkaaUTC": "2026-01-18T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020765,
+   "alkaaUTC": "2026-01-18T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020766,
+   "alkaaUTC": "2026-01-18T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020767,
+   "alkaaUTC": "2026-01-18T19:00:00Z",
+   "koti": "DAL",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020768,
+   "alkaaUTC": "2026-01-18T22:00:00Z",
+   "koti": "DET",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020769,
+   "alkaaUTC": "2026-01-19T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020770,
+   "alkaaUTC": "2026-01-19T18:30:00Z",
+   "koti": "CAR",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020771,
+   "alkaaUTC": "2026-01-19T21:00:00Z",
+   "koti": "COL",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020772,
+   "alkaaUTC": "2026-01-19T22:00:00Z",
+   "koti": "SEA",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020773,
+   "alkaaUTC": "2026-01-19T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020774,
+   "alkaaUTC": "2026-01-20T00:30:00Z",
+   "koti": "TOR",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020775,
+   "alkaaUTC": "2026-01-20T01:00:00Z",
+   "koti": "VGK",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020776,
+   "alkaaUTC": "2026-01-20T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020777,
+   "alkaaUTC": "2026-01-20T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020778,
+   "alkaaUTC": "2026-01-20T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020779,
+   "alkaaUTC": "2026-01-20T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020780,
+   "alkaaUTC": "2026-01-21T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020781,
+   "alkaaUTC": "2026-01-21T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020782,
+   "alkaaUTC": "2026-01-21T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020783,
+   "alkaaUTC": "2026-01-21T00:30:00Z",
+   "koti": "DAL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020784,
+   "alkaaUTC": "2026-01-21T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020785,
+   "alkaaUTC": "2026-01-21T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020786,
+   "alkaaUTC": "2026-01-21T03:00:00Z",
+   "koti": "EDM",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020787,
+   "alkaaUTC": "2026-01-21T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020788,
+   "alkaaUTC": "2026-01-22T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020789,
+   "alkaaUTC": "2026-01-22T02:00:00Z",
+   "koti": "COL",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020790,
+   "alkaaUTC": "2026-01-22T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020791,
+   "alkaaUTC": "2026-01-22T02:30:00Z",
+   "koti": "CGY",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020793,
+   "alkaaUTC": "2026-01-22T02:30:00Z",
+   "koti": "SEA",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020792,
+   "alkaaUTC": "2026-01-22T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020794,
+   "alkaaUTC": "2026-01-23T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020795,
+   "alkaaUTC": "2026-01-23T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020796,
+   "alkaaUTC": "2026-01-23T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020797,
+   "alkaaUTC": "2026-01-23T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020798,
+   "alkaaUTC": "2026-01-23T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020799,
+   "alkaaUTC": "2026-01-23T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020800,
+   "alkaaUTC": "2026-01-23T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020801,
+   "alkaaUTC": "2026-01-23T02:30:00Z",
+   "koti": "MIN",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020802,
+   "alkaaUTC": "2026-01-24T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020803,
+   "alkaaUTC": "2026-01-24T00:00:00Z",
+   "koti": "CHI",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020804,
+   "alkaaUTC": "2026-01-24T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020805,
+   "alkaaUTC": "2026-01-24T02:00:00Z",
+   "koti": "COL",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020806,
+   "alkaaUTC": "2026-01-24T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020807,
+   "alkaaUTC": "2026-01-24T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020808,
+   "alkaaUTC": "2026-01-24T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020809,
+   "alkaaUTC": "2026-01-24T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020810,
+   "alkaaUTC": "2026-01-24T18:00:00Z",
+   "koti": "NYI",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020811,
+   "alkaaUTC": "2026-01-24T18:30:00Z",
+   "koti": "NSH",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020812,
+   "alkaaUTC": "2026-01-25T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020813,
+   "alkaaUTC": "2026-01-25T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020814,
+   "alkaaUTC": "2026-01-25T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020815,
+   "alkaaUTC": "2026-01-25T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020816,
+   "alkaaUTC": "2026-01-25T01:00:00Z",
+   "koti": "STL",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020817,
+   "alkaaUTC": "2026-01-25T02:00:00Z",
+   "koti": "MIN",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020818,
+   "alkaaUTC": "2026-01-25T03:00:00Z",
+   "koti": "EDM",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020819,
+   "alkaaUTC": "2026-01-25T18:30:00Z",
+   "koti": "TOR",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020820,
+   "alkaaUTC": "2026-01-25T20:00:00Z",
+   "koti": "SEA",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020821,
+   "alkaaUTC": "2026-01-25T22:00:00Z",
+   "koti": "OTT",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020822,
+   "alkaaUTC": "2026-01-25T23:00:00Z",
+   "koti": "VAN",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020823,
+   "alkaaUTC": "2026-01-26T00:00:00Z",
+   "koti": "CHI",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020824,
+   "alkaaUTC": "2026-01-26T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020825,
+   "alkaaUTC": "2026-01-27T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020826,
+   "alkaaUTC": "2026-01-27T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020827,
+   "alkaaUTC": "2026-01-27T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020829,
+   "alkaaUTC": "2026-01-27T01:30:00Z",
+   "koti": "EDM",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020830,
+   "alkaaUTC": "2026-01-28T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020831,
+   "alkaaUTC": "2026-01-28T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020832,
+   "alkaaUTC": "2026-01-28T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020833,
+   "alkaaUTC": "2026-01-28T00:00:00Z",
+   "koti": "DET",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020834,
+   "alkaaUTC": "2026-01-28T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020835,
+   "alkaaUTC": "2026-01-28T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020836,
+   "alkaaUTC": "2026-01-28T01:00:00Z",
+   "koti": "STL",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020837,
+   "alkaaUTC": "2026-01-28T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020838,
+   "alkaaUTC": "2026-01-28T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020839,
+   "alkaaUTC": "2026-01-28T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020842,
+   "alkaaUTC": "2026-01-29T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020840,
+   "alkaaUTC": "2026-01-29T00:30:00Z",
+   "koti": "CBJ",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020841,
+   "alkaaUTC": "2026-01-29T00:30:00Z",
+   "koti": "OTT",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020843,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020844,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020845,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020847,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020848,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020849,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020850,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020851,
+   "alkaaUTC": "2026-01-30T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020846,
+   "alkaaUTC": "2026-01-30T00:30:00Z",
+   "koti": "DET",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020852,
+   "alkaaUTC": "2026-01-30T01:00:00Z",
+   "koti": "STL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020853,
+   "alkaaUTC": "2026-01-30T01:00:00Z",
+   "koti": "MIN",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020854,
+   "alkaaUTC": "2026-01-30T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020855,
+   "alkaaUTC": "2026-01-30T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025020856,
+   "alkaaUTC": "2026-01-30T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020857,
+   "alkaaUTC": "2026-01-30T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020858,
+   "alkaaUTC": "2026-01-31T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020859,
+   "alkaaUTC": "2026-01-31T17:30:00Z",
+   "koti": "PHI",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020860,
+   "alkaaUTC": "2026-01-31T18:00:00Z",
+   "koti": "DET",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020861,
+   "alkaaUTC": "2026-01-31T20:30:00Z",
+   "koti": "PIT",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020862,
+   "alkaaUTC": "2026-01-31T21:00:00Z",
+   "koti": "FLA",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020863,
+   "alkaaUTC": "2026-01-31T21:00:00Z",
+   "koti": "CGY",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020864,
+   "alkaaUTC": "2026-01-31T22:00:00Z",
+   "koti": "WSH",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020865,
+   "alkaaUTC": "2026-02-01T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020866,
+   "alkaaUTC": "2026-02-01T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020867,
+   "alkaaUTC": "2026-02-01T00:00:00Z",
+   "koti": "NYI",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020868,
+   "alkaaUTC": "2026-02-01T00:00:00Z",
+   "koti": "STL",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020869,
+   "alkaaUTC": "2026-02-01T00:00:00Z",
+   "koti": "VAN",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020870,
+   "alkaaUTC": "2026-02-01T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020871,
+   "alkaaUTC": "2026-02-01T03:00:00Z",
+   "koti": "EDM",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020872,
+   "alkaaUTC": "2026-02-01T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020874,
+   "alkaaUTC": "2026-02-01T20:00:00Z",
+   "koti": "CAR",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020873,
+   "alkaaUTC": "2026-02-01T23:30:00Z",
+   "koti": "TBL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020875,
+   "alkaaUTC": "2026-02-02T02:30:00Z",
+   "koti": "ANA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020876,
+   "alkaaUTC": "2026-02-03T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020877,
+   "alkaaUTC": "2026-02-03T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020878,
+   "alkaaUTC": "2026-02-03T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020879,
+   "alkaaUTC": "2026-02-03T00:30:00Z",
+   "koti": "MIN",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020880,
+   "alkaaUTC": "2026-02-03T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020881,
+   "alkaaUTC": "2026-02-03T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020882,
+   "alkaaUTC": "2026-02-03T01:30:00Z",
+   "koti": "DAL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020883,
+   "alkaaUTC": "2026-02-03T02:00:00Z",
+   "koti": "COL",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020884,
+   "alkaaUTC": "2026-02-03T02:30:00Z",
+   "koti": "UTA",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020885,
+   "alkaaUTC": "2026-02-03T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020887,
+   "alkaaUTC": "2026-02-04T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020889,
+   "alkaaUTC": "2026-02-04T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020890,
+   "alkaaUTC": "2026-02-04T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020886,
+   "alkaaUTC": "2026-02-04T00:30:00Z",
+   "koti": "TBL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020888,
+   "alkaaUTC": "2026-02-04T00:30:00Z",
+   "koti": "NYI",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020891,
+   "alkaaUTC": "2026-02-04T01:30:00Z",
+   "koti": "EDM",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020892,
+   "alkaaUTC": "2026-02-04T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020893,
+   "alkaaUTC": "2026-02-05T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020894,
+   "alkaaUTC": "2026-02-05T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020895,
+   "alkaaUTC": "2026-02-05T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020896,
+   "alkaaUTC": "2026-02-05T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020897,
+   "alkaaUTC": "2026-02-05T02:00:00Z",
+   "koti": "COL",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025020898,
+   "alkaaUTC": "2026-02-05T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020899,
+   "alkaaUTC": "2026-02-05T02:30:00Z",
+   "koti": "DAL",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020900,
+   "alkaaUTC": "2026-02-05T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020901,
+   "alkaaUTC": "2026-02-05T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020902,
+   "alkaaUTC": "2026-02-05T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020903,
+   "alkaaUTC": "2026-02-06T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020905,
+   "alkaaUTC": "2026-02-06T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020906,
+   "alkaaUTC": "2026-02-06T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020907,
+   "alkaaUTC": "2026-02-06T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020908,
+   "alkaaUTC": "2026-02-06T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020904,
+   "alkaaUTC": "2026-02-06T00:30:00Z",
+   "koti": "TBL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020909,
+   "alkaaUTC": "2026-02-06T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025020910,
+   "alkaaUTC": "2026-02-26T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020911,
+   "alkaaUTC": "2026-02-26T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020912,
+   "alkaaUTC": "2026-02-26T00:30:00Z",
+   "koti": "TBL",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020913,
+   "alkaaUTC": "2026-02-26T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020914,
+   "alkaaUTC": "2026-02-26T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020915,
+   "alkaaUTC": "2026-02-26T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020916,
+   "alkaaUTC": "2026-02-26T03:00:00Z",
+   "koti": "LAK",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020917,
+   "alkaaUTC": "2026-02-26T03:30:00Z",
+   "koti": "ANA",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020918,
+   "alkaaUTC": "2026-02-27T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020919,
+   "alkaaUTC": "2026-02-27T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020920,
+   "alkaaUTC": "2026-02-27T00:00:00Z",
+   "koti": "OTT",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020921,
+   "alkaaUTC": "2026-02-27T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020922,
+   "alkaaUTC": "2026-02-27T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020923,
+   "alkaaUTC": "2026-02-27T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020924,
+   "alkaaUTC": "2026-02-27T01:00:00Z",
+   "koti": "NYR",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020925,
+   "alkaaUTC": "2026-02-27T01:00:00Z",
+   "koti": "STL",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025020926,
+   "alkaaUTC": "2026-02-27T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020927,
+   "alkaaUTC": "2026-02-27T02:00:00Z",
+   "koti": "COL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020928,
+   "alkaaUTC": "2026-02-27T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020929,
+   "alkaaUTC": "2026-02-27T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020930,
+   "alkaaUTC": "2026-02-28T00:00:00Z",
+   "koti": "FLA",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020931,
+   "alkaaUTC": "2026-02-28T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020932,
+   "alkaaUTC": "2026-02-28T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020933,
+   "alkaaUTC": "2026-02-28T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020934,
+   "alkaaUTC": "2026-02-28T17:30:00Z",
+   "koti": "NYR",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020935,
+   "alkaaUTC": "2026-02-28T20:00:00Z",
+   "koti": "PHI",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020936,
+   "alkaaUTC": "2026-02-28T21:00:00Z",
+   "koti": "SJS",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020943,
+   "alkaaUTC": "2026-02-28T22:00:00Z",
+   "koti": "STL",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025020937,
+   "alkaaUTC": "2026-02-28T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020938,
+   "alkaaUTC": "2026-02-28T23:00:00Z",
+   "koti": "COL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020939,
+   "alkaaUTC": "2026-03-01T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020940,
+   "alkaaUTC": "2026-03-01T00:00:00Z",
+   "koti": "MTL",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020941,
+   "alkaaUTC": "2026-03-01T00:00:00Z",
+   "koti": "TBL",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020942,
+   "alkaaUTC": "2026-03-01T00:00:00Z",
+   "koti": "CAR",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020944,
+   "alkaaUTC": "2026-03-01T00:00:00Z",
+   "koti": "LAK",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020945,
+   "alkaaUTC": "2026-03-01T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020946,
+   "alkaaUTC": "2026-03-01T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020947,
+   "alkaaUTC": "2026-03-01T18:00:00Z",
+   "koti": "PIT",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020949,
+   "alkaaUTC": "2026-03-01T21:00:00Z",
+   "koti": "UTA",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020950,
+   "alkaaUTC": "2026-03-01T21:00:00Z",
+   "koti": "SJS",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025020951,
+   "alkaaUTC": "2026-03-01T22:00:00Z",
+   "koti": "MIN",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020948,
+   "alkaaUTC": "2026-03-01T23:30:00Z",
+   "koti": "NYI",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020952,
+   "alkaaUTC": "2026-03-02T01:00:00Z",
+   "koti": "ANA",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025020955,
+   "alkaaUTC": "2026-03-02T19:00:00Z",
+   "koti": "NSH",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025020953,
+   "alkaaUTC": "2026-03-03T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025020954,
+   "alkaaUTC": "2026-03-03T00:30:00Z",
+   "koti": "TOR",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020956,
+   "alkaaUTC": "2026-03-03T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020957,
+   "alkaaUTC": "2026-03-03T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020958,
+   "alkaaUTC": "2026-03-03T03:30:00Z",
+   "koti": "LAK",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020959,
+   "alkaaUTC": "2026-03-04T00:00:00Z",
+   "koti": "BOS",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025020960,
+   "alkaaUTC": "2026-03-04T00:00:00Z",
+   "koti": "BUF",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020961,
+   "alkaaUTC": "2026-03-04T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020962,
+   "alkaaUTC": "2026-03-04T00:00:00Z",
+   "koti": "WSH",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020963,
+   "alkaaUTC": "2026-03-04T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020964,
+   "alkaaUTC": "2026-03-04T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025020965,
+   "alkaaUTC": "2026-03-04T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025020966,
+   "alkaaUTC": "2026-03-04T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020967,
+   "alkaaUTC": "2026-03-04T02:30:00Z",
+   "koti": "MIN",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020968,
+   "alkaaUTC": "2026-03-04T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020969,
+   "alkaaUTC": "2026-03-04T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020970,
+   "alkaaUTC": "2026-03-05T00:00:00Z",
+   "koti": "DET",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025020971,
+   "alkaaUTC": "2026-03-05T00:00:00Z",
+   "koti": "NJD",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020972,
+   "alkaaUTC": "2026-03-05T03:00:00Z",
+   "koti": "VAN",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020973,
+   "alkaaUTC": "2026-03-05T03:00:00Z",
+   "koti": "ANA",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020974,
+   "alkaaUTC": "2026-03-05T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020975,
+   "alkaaUTC": "2026-03-06T00:00:00Z",
+   "koti": "NYR",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025020976,
+   "alkaaUTC": "2026-03-06T00:00:00Z",
+   "koti": "PHI",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020977,
+   "alkaaUTC": "2026-03-06T00:00:00Z",
+   "koti": "PIT",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025020978,
+   "alkaaUTC": "2026-03-06T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020979,
+   "alkaaUTC": "2026-03-06T01:00:00Z",
+   "koti": "NSH",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025020980,
+   "alkaaUTC": "2026-03-06T01:00:00Z",
+   "koti": "WPG",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020981,
+   "alkaaUTC": "2026-03-06T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025020982,
+   "alkaaUTC": "2026-03-06T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025020983,
+   "alkaaUTC": "2026-03-07T00:00:00Z",
+   "koti": "DET",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025020984,
+   "alkaaUTC": "2026-03-07T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025020985,
+   "alkaaUTC": "2026-03-07T01:30:00Z",
+   "koti": "CHI",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020986,
+   "alkaaUTC": "2026-03-07T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020987,
+   "alkaaUTC": "2026-03-07T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020988,
+   "alkaaUTC": "2026-03-07T03:00:00Z",
+   "koti": "VGK",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025020989,
+   "alkaaUTC": "2026-03-07T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025020990,
+   "alkaaUTC": "2026-03-07T17:30:00Z",
+   "koti": "BOS",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025020991,
+   "alkaaUTC": "2026-03-07T20:00:00Z",
+   "koti": "NJD",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025020992,
+   "alkaaUTC": "2026-03-07T22:30:00Z",
+   "koti": "BUF",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025020993,
+   "alkaaUTC": "2026-03-07T22:30:00Z",
+   "koti": "PIT",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025020994,
+   "alkaaUTC": "2026-03-08T00:00:00Z",
+   "koti": "TOR",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025020995,
+   "alkaaUTC": "2026-03-08T00:00:00Z",
+   "koti": "CBJ",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025020996,
+   "alkaaUTC": "2026-03-08T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025020997,
+   "alkaaUTC": "2026-03-08T00:00:00Z",
+   "koti": "LAK",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025020998,
+   "alkaaUTC": "2026-03-08T03:00:00Z",
+   "koti": "CGY",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025020999,
+   "alkaaUTC": "2026-03-08T03:00:00Z",
+   "koti": "SJS",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021000,
+   "alkaaUTC": "2026-03-08T03:00:00Z",
+   "koti": "SEA",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021001,
+   "alkaaUTC": "2026-03-08T18:00:00Z",
+   "koti": "COL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021002,
+   "alkaaUTC": "2026-03-08T20:30:00Z",
+   "koti": "PIT",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021003,
+   "alkaaUTC": "2026-03-08T22:00:00Z",
+   "koti": "BUF",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021004,
+   "alkaaUTC": "2026-03-08T22:00:00Z",
+   "koti": "DAL",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021005,
+   "alkaaUTC": "2026-03-08T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021006,
+   "alkaaUTC": "2026-03-09T01:00:00Z",
+   "koti": "ANA",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021007,
+   "alkaaUTC": "2026-03-09T01:30:00Z",
+   "koti": "VGK",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025020828,
+   "alkaaUTC": "2026-03-09T20:00:00Z",
+   "koti": "CBJ",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021008,
+   "alkaaUTC": "2026-03-09T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021009,
+   "alkaaUTC": "2026-03-09T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021010,
+   "alkaaUTC": "2026-03-10T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021011,
+   "alkaaUTC": "2026-03-10T01:00:00Z",
+   "koti": "VAN",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021012,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021013,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021014,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021015,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021016,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021017,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021018,
+   "alkaaUTC": "2026-03-10T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021019,
+   "alkaaUTC": "2026-03-10T23:30:00Z",
+   "koti": "STL",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021020,
+   "alkaaUTC": "2026-03-11T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021021,
+   "alkaaUTC": "2026-03-11T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021022,
+   "alkaaUTC": "2026-03-11T00:30:00Z",
+   "koti": "WPG",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021023,
+   "alkaaUTC": "2026-03-11T02:00:00Z",
+   "koti": "COL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021024,
+   "alkaaUTC": "2026-03-11T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021025,
+   "alkaaUTC": "2026-03-11T23:30:00Z",
+   "koti": "OTT",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021026,
+   "alkaaUTC": "2026-03-11T23:30:00Z",
+   "koti": "PHI",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021027,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021028,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021029,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021030,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021031,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021032,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021033,
+   "alkaaUTC": "2026-03-12T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021034,
+   "alkaaUTC": "2026-03-13T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021035,
+   "alkaaUTC": "2026-03-13T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021036,
+   "alkaaUTC": "2026-03-13T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021037,
+   "alkaaUTC": "2026-03-13T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021038,
+   "alkaaUTC": "2026-03-13T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021039,
+   "alkaaUTC": "2026-03-13T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021040,
+   "alkaaUTC": "2026-03-13T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021041,
+   "alkaaUTC": "2026-03-13T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021042,
+   "alkaaUTC": "2026-03-14T00:00:00Z",
+   "koti": "STL",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021043,
+   "alkaaUTC": "2026-03-14T17:00:00Z",
+   "koti": "OTT",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021044,
+   "alkaaUTC": "2026-03-14T19:00:00Z",
+   "koti": "WSH",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021045,
+   "alkaaUTC": "2026-03-14T20:00:00Z",
+   "koti": "WPG",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021046,
+   "alkaaUTC": "2026-03-14T22:00:00Z",
+   "koti": "MIN",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021047,
+   "alkaaUTC": "2026-03-14T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021048,
+   "alkaaUTC": "2026-03-14T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021049,
+   "alkaaUTC": "2026-03-14T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021050,
+   "alkaaUTC": "2026-03-14T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021051,
+   "alkaaUTC": "2026-03-14T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021052,
+   "alkaaUTC": "2026-03-14T23:30:00Z",
+   "koti": "PHI",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021053,
+   "alkaaUTC": "2026-03-15T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021054,
+   "alkaaUTC": "2026-03-15T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021055,
+   "alkaaUTC": "2026-03-15T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021056,
+   "alkaaUTC": "2026-03-15T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021057,
+   "alkaaUTC": "2026-03-15T19:00:00Z",
+   "koti": "WPG",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021058,
+   "alkaaUTC": "2026-03-15T21:00:00Z",
+   "koti": "OTT",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021059,
+   "alkaaUTC": "2026-03-15T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021060,
+   "alkaaUTC": "2026-03-15T23:30:00Z",
+   "koti": "MIN",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021061,
+   "alkaaUTC": "2026-03-16T00:00:00Z",
+   "koti": "EDM",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021062,
+   "alkaaUTC": "2026-03-16T00:00:00Z",
+   "koti": "SEA",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021063,
+   "alkaaUTC": "2026-03-16T23:00:00Z",
+   "koti": "DET",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021064,
+   "alkaaUTC": "2026-03-16T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021065,
+   "alkaaUTC": "2026-03-16T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021066,
+   "alkaaUTC": "2026-03-17T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021067,
+   "alkaaUTC": "2026-03-17T01:30:00Z",
+   "koti": "COL",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021068,
+   "alkaaUTC": "2026-03-17T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021069,
+   "alkaaUTC": "2026-03-17T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021070,
+   "alkaaUTC": "2026-03-17T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021072,
+   "alkaaUTC": "2026-03-17T23:30:00Z",
+   "koti": "CHI",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021071,
+   "alkaaUTC": "2026-03-18T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021073,
+   "alkaaUTC": "2026-03-18T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021074,
+   "alkaaUTC": "2026-03-18T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021075,
+   "alkaaUTC": "2026-03-18T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021076,
+   "alkaaUTC": "2026-03-18T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021077,
+   "alkaaUTC": "2026-03-18T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021078,
+   "alkaaUTC": "2026-03-18T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021079,
+   "alkaaUTC": "2026-03-18T23:30:00Z",
+   "koti": "WSH",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021080,
+   "alkaaUTC": "2026-03-19T01:30:00Z",
+   "koti": "COL",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021081,
+   "alkaaUTC": "2026-03-19T01:30:00Z",
+   "koti": "CGY",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021082,
+   "alkaaUTC": "2026-03-19T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021083,
+   "alkaaUTC": "2026-03-19T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021084,
+   "alkaaUTC": "2026-03-19T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021085,
+   "alkaaUTC": "2026-03-19T23:00:00Z",
+   "koti": "DET",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021086,
+   "alkaaUTC": "2026-03-19T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021088,
+   "alkaaUTC": "2026-03-19T23:30:00Z",
+   "koti": "MIN",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021087,
+   "alkaaUTC": "2026-03-20T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021089,
+   "alkaaUTC": "2026-03-20T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021090,
+   "alkaaUTC": "2026-03-20T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021091,
+   "alkaaUTC": "2026-03-20T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021092,
+   "alkaaUTC": "2026-03-20T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021093,
+   "alkaaUTC": "2026-03-20T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021094,
+   "alkaaUTC": "2026-03-20T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021095,
+   "alkaaUTC": "2026-03-20T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021096,
+   "alkaaUTC": "2026-03-21T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021097,
+   "alkaaUTC": "2026-03-21T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021098,
+   "alkaaUTC": "2026-03-21T02:00:00Z",
+   "koti": "UTA",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021099,
+   "alkaaUTC": "2026-03-21T17:00:00Z",
+   "koti": "PIT",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021100,
+   "alkaaUTC": "2026-03-21T18:00:00Z",
+   "koti": "NSH",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021101,
+   "alkaaUTC": "2026-03-21T20:00:00Z",
+   "koti": "MIN",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021102,
+   "alkaaUTC": "2026-03-21T20:00:00Z",
+   "koti": "LAK",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021103,
+   "alkaaUTC": "2026-03-21T20:00:00Z",
+   "koti": "SJS",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021104,
+   "alkaaUTC": "2026-03-21T21:00:00Z",
+   "koti": "CBJ",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021105,
+   "alkaaUTC": "2026-03-21T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021106,
+   "alkaaUTC": "2026-03-21T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021107,
+   "alkaaUTC": "2026-03-21T23:00:00Z",
+   "koti": "VAN",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021108,
+   "alkaaUTC": "2026-03-22T00:00:00Z",
+   "koti": "DET",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021109,
+   "alkaaUTC": "2026-03-22T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021110,
+   "alkaaUTC": "2026-03-22T16:00:00Z",
+   "koti": "NYR",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021111,
+   "alkaaUTC": "2026-03-22T16:30:00Z",
+   "koti": "WSH",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021112,
+   "alkaaUTC": "2026-03-22T19:00:00Z",
+   "koti": "PIT",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021113,
+   "alkaaUTC": "2026-03-22T19:00:00Z",
+   "koti": "CHI",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021114,
+   "alkaaUTC": "2026-03-22T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021115,
+   "alkaaUTC": "2026-03-22T23:00:00Z",
+   "koti": "DAL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021116,
+   "alkaaUTC": "2026-03-23T00:00:00Z",
+   "koti": "CGY",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021117,
+   "alkaaUTC": "2026-03-23T00:00:00Z",
+   "koti": "ANA",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021118,
+   "alkaaUTC": "2026-03-23T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021119,
+   "alkaaUTC": "2026-03-23T23:30:00Z",
+   "koti": "NYR",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021120,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021121,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021122,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "DET",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021123,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021124,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021125,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021126,
+   "alkaaUTC": "2026-03-24T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021127,
+   "alkaaUTC": "2026-03-24T23:30:00Z",
+   "koti": "TBL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021128,
+   "alkaaUTC": "2026-03-25T00:00:00Z",
+   "koti": "STL",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021129,
+   "alkaaUTC": "2026-03-25T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021130,
+   "alkaaUTC": "2026-03-25T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021131,
+   "alkaaUTC": "2026-03-25T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021133,
+   "alkaaUTC": "2026-03-25T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021132,
+   "alkaaUTC": "2026-03-25T01:30:00Z",
+   "koti": "UTA",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021134,
+   "alkaaUTC": "2026-03-25T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021135,
+   "alkaaUTC": "2026-03-25T23:30:00Z",
+   "koti": "BUF",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021136,
+   "alkaaUTC": "2026-03-25T23:30:00Z",
+   "koti": "TOR",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021137,
+   "alkaaUTC": "2026-03-26T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021138,
+   "alkaaUTC": "2026-03-26T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021139,
+   "alkaaUTC": "2026-03-26T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021140,
+   "alkaaUTC": "2026-03-26T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021141,
+   "alkaaUTC": "2026-03-26T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021142,
+   "alkaaUTC": "2026-03-26T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021143,
+   "alkaaUTC": "2026-03-27T00:00:00Z",
+   "koti": "STL",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021144,
+   "alkaaUTC": "2026-03-27T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021145,
+   "alkaaUTC": "2026-03-27T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021146,
+   "alkaaUTC": "2026-03-27T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021147,
+   "alkaaUTC": "2026-03-27T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021148,
+   "alkaaUTC": "2026-03-27T01:30:00Z",
+   "koti": "VGK",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021149,
+   "alkaaUTC": "2026-03-27T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021150,
+   "alkaaUTC": "2026-03-27T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021151,
+   "alkaaUTC": "2026-03-27T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021152,
+   "alkaaUTC": "2026-03-28T17:00:00Z",
+   "koti": "TBL",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021153,
+   "alkaaUTC": "2026-03-28T17:00:00Z",
+   "koti": "NYI",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021154,
+   "alkaaUTC": "2026-03-28T19:30:00Z",
+   "koti": "EDM",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021155,
+   "alkaaUTC": "2026-03-28T21:00:00Z",
+   "koti": "BOS",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021156,
+   "alkaaUTC": "2026-03-28T21:00:00Z",
+   "koti": "PIT",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021157,
+   "alkaaUTC": "2026-03-28T21:00:00Z",
+   "koti": "CAR",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021158,
+   "alkaaUTC": "2026-03-28T21:00:00Z",
+   "koti": "CBJ",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021159,
+   "alkaaUTC": "2026-03-28T21:30:00Z",
+   "koti": "BUF",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021160,
+   "alkaaUTC": "2026-03-28T23:00:00Z",
+   "koti": "STL",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021161,
+   "alkaaUTC": "2026-03-28T23:00:00Z",
+   "koti": "NSH",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021162,
+   "alkaaUTC": "2026-03-28T23:00:00Z",
+   "koti": "COL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021163,
+   "alkaaUTC": "2026-03-29T00:00:00Z",
+   "koti": "DET",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021164,
+   "alkaaUTC": "2026-03-29T01:00:00Z",
+   "koti": "LAK",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021165,
+   "alkaaUTC": "2026-03-29T02:00:00Z",
+   "koti": "CGY",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021166,
+   "alkaaUTC": "2026-03-29T02:30:00Z",
+   "koti": "VGK",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021167,
+   "alkaaUTC": "2026-03-29T17:00:00Z",
+   "koti": "NYR",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021168,
+   "alkaaUTC": "2026-03-29T21:00:00Z",
+   "koti": "TBL",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021169,
+   "alkaaUTC": "2026-03-29T21:00:00Z",
+   "koti": "CAR",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021170,
+   "alkaaUTC": "2026-03-29T21:00:00Z",
+   "koti": "CBJ",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021171,
+   "alkaaUTC": "2026-03-29T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021172,
+   "alkaaUTC": "2026-03-29T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021173,
+   "alkaaUTC": "2026-03-30T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021174,
+   "alkaaUTC": "2026-03-31T00:30:00Z",
+   "koti": "COL",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021175,
+   "alkaaUTC": "2026-03-31T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021176,
+   "alkaaUTC": "2026-03-31T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021177,
+   "alkaaUTC": "2026-03-31T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021178,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021179,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021180,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021181,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021182,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021183,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "PIT",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021184,
+   "alkaaUTC": "2026-03-31T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021185,
+   "alkaaUTC": "2026-03-31T23:30:00Z",
+   "koti": "CBJ",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021186,
+   "alkaaUTC": "2026-04-01T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021187,
+   "alkaaUTC": "2026-04-01T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021188,
+   "alkaaUTC": "2026-04-02T00:30:00Z",
+   "koti": "COL",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021189,
+   "alkaaUTC": "2026-04-02T01:00:00Z",
+   "koti": "LAK",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021190,
+   "alkaaUTC": "2026-04-02T01:00:00Z",
+   "koti": "SJS",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021191,
+   "alkaaUTC": "2026-04-02T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021192,
+   "alkaaUTC": "2026-04-02T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021193,
+   "alkaaUTC": "2026-04-02T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021195,
+   "alkaaUTC": "2026-04-02T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021196,
+   "alkaaUTC": "2026-04-02T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021197,
+   "alkaaUTC": "2026-04-02T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021194,
+   "alkaaUTC": "2026-04-02T23:30:00Z",
+   "koti": "NJD",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021198,
+   "alkaaUTC": "2026-04-03T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021199,
+   "alkaaUTC": "2026-04-03T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021200,
+   "alkaaUTC": "2026-04-03T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021201,
+   "alkaaUTC": "2026-04-03T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021202,
+   "alkaaUTC": "2026-04-03T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021203,
+   "alkaaUTC": "2026-04-03T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021204,
+   "alkaaUTC": "2026-04-03T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021205,
+   "alkaaUTC": "2026-04-03T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021206,
+   "alkaaUTC": "2026-04-04T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021207,
+   "alkaaUTC": "2026-04-04T16:30:00Z",
+   "koti": "NYR",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021208,
+   "alkaaUTC": "2026-04-04T17:00:00Z",
+   "koti": "OTT",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021209,
+   "alkaaUTC": "2026-04-04T19:00:00Z",
+   "koti": "DAL",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021210,
+   "alkaaUTC": "2026-04-04T21:00:00Z",
+   "koti": "TBL",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021211,
+   "alkaaUTC": "2026-04-04T21:00:00Z",
+   "koti": "PIT",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021212,
+   "alkaaUTC": "2026-04-04T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021213,
+   "alkaaUTC": "2026-04-04T23:00:00Z",
+   "koti": "WSH",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021214,
+   "alkaaUTC": "2026-04-04T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "NYI"
+  },
+  {
+   "id": 2025021215,
+   "alkaaUTC": "2026-04-04T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021216,
+   "alkaaUTC": "2026-04-04T23:00:00Z",
+   "koti": "VAN",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021217,
+   "alkaaUTC": "2026-04-04T23:00:00Z",
+   "koti": "LAK",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021218,
+   "alkaaUTC": "2026-04-05T02:00:00Z",
+   "koti": "EDM",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021219,
+   "alkaaUTC": "2026-04-05T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021220,
+   "alkaaUTC": "2026-04-05T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021221,
+   "alkaaUTC": "2026-04-05T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021222,
+   "alkaaUTC": "2026-04-05T17:00:00Z",
+   "koti": "DET",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021223,
+   "alkaaUTC": "2026-04-05T19:00:00Z",
+   "koti": "PIT",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021224,
+   "alkaaUTC": "2026-04-05T19:30:00Z",
+   "koti": "PHI",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021225,
+   "alkaaUTC": "2026-04-05T21:00:00Z",
+   "koti": "OTT",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021226,
+   "alkaaUTC": "2026-04-05T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021227,
+   "alkaaUTC": "2026-04-05T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021228,
+   "alkaaUTC": "2026-04-06T01:30:00Z",
+   "koti": "COL",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021229,
+   "alkaaUTC": "2026-04-06T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021230,
+   "alkaaUTC": "2026-04-06T23:30:00Z",
+   "koti": "WPG",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021231,
+   "alkaaUTC": "2026-04-07T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "CHI"
+  },
+  {
+   "id": 2025021232,
+   "alkaaUTC": "2026-04-07T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021233,
+   "alkaaUTC": "2026-04-07T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021234,
+   "alkaaUTC": "2026-04-07T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021235,
+   "alkaaUTC": "2026-04-07T23:00:00Z",
+   "koti": "DET",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021236,
+   "alkaaUTC": "2026-04-07T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021237,
+   "alkaaUTC": "2026-04-07T23:00:00Z",
+   "koti": "CAR",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021238,
+   "alkaaUTC": "2026-04-08T00:00:00Z",
+   "koti": "STL",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021239,
+   "alkaaUTC": "2026-04-08T00:00:00Z",
+   "koti": "DAL",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021240,
+   "alkaaUTC": "2026-04-08T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021241,
+   "alkaaUTC": "2026-04-08T01:30:00Z",
+   "koti": "UTA",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021242,
+   "alkaaUTC": "2026-04-08T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021243,
+   "alkaaUTC": "2026-04-08T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021244,
+   "alkaaUTC": "2026-04-08T23:00:00Z",
+   "koti": "NYR",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021245,
+   "alkaaUTC": "2026-04-08T23:30:00Z",
+   "koti": "TOR",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021246,
+   "alkaaUTC": "2026-04-09T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021252,
+   "alkaaUTC": "2026-04-09T22:45:00Z",
+   "koti": "NYI",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021247,
+   "alkaaUTC": "2026-04-09T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021248,
+   "alkaaUTC": "2026-04-09T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021249,
+   "alkaaUTC": "2026-04-09T23:00:00Z",
+   "koti": "OTT",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021250,
+   "alkaaUTC": "2026-04-09T23:00:00Z",
+   "koti": "DET",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021251,
+   "alkaaUTC": "2026-04-09T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021253,
+   "alkaaUTC": "2026-04-10T00:00:00Z",
+   "koti": "STL",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021255,
+   "alkaaUTC": "2026-04-10T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021254,
+   "alkaaUTC": "2026-04-10T01:00:00Z",
+   "koti": "DAL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021256,
+   "alkaaUTC": "2026-04-10T01:00:00Z",
+   "koti": "COL",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021257,
+   "alkaaUTC": "2026-04-10T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "NSH"
+  },
+  {
+   "id": 2025021258,
+   "alkaaUTC": "2026-04-10T02:00:00Z",
+   "koti": "ANA",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021259,
+   "alkaaUTC": "2026-04-10T02:00:00Z",
+   "koti": "SEA",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021260,
+   "alkaaUTC": "2026-04-10T02:30:00Z",
+   "koti": "LAK",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021261,
+   "alkaaUTC": "2026-04-11T16:30:00Z",
+   "koti": "BOS",
+   "vieras": "TBL"
+  },
+  {
+   "id": 2025021262,
+   "alkaaUTC": "2026-04-11T17:00:00Z",
+   "koti": "NYI",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021263,
+   "alkaaUTC": "2026-04-11T19:00:00Z",
+   "koti": "PIT",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021264,
+   "alkaaUTC": "2026-04-11T20:00:00Z",
+   "koti": "LAK",
+   "vieras": "EDM"
+  },
+  {
+   "id": 2025021265,
+   "alkaaUTC": "2026-04-11T21:00:00Z",
+   "koti": "DET",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021266,
+   "alkaaUTC": "2026-04-11T21:00:00Z",
+   "koti": "CHI",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021267,
+   "alkaaUTC": "2026-04-11T21:00:00Z",
+   "koti": "NSH",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021268,
+   "alkaaUTC": "2026-04-11T21:00:00Z",
+   "koti": "DAL",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021269,
+   "alkaaUTC": "2026-04-11T21:00:00Z",
+   "koti": "UTA",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021270,
+   "alkaaUTC": "2026-04-11T23:00:00Z",
+   "koti": "TOR",
+   "vieras": "FLA"
+  },
+  {
+   "id": 2025021271,
+   "alkaaUTC": "2026-04-11T23:00:00Z",
+   "koti": "MTL",
+   "vieras": "CBJ"
+  },
+  {
+   "id": 2025021272,
+   "alkaaUTC": "2026-04-11T23:00:00Z",
+   "koti": "WPG",
+   "vieras": "PHI"
+  },
+  {
+   "id": 2025021273,
+   "alkaaUTC": "2026-04-11T23:00:00Z",
+   "koti": "SEA",
+   "vieras": "CGY"
+  },
+  {
+   "id": 2025021274,
+   "alkaaUTC": "2026-04-12T00:00:00Z",
+   "koti": "COL",
+   "vieras": "VGK"
+  },
+  {
+   "id": 2025021275,
+   "alkaaUTC": "2026-04-12T02:00:00Z",
+   "koti": "SJS",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021276,
+   "alkaaUTC": "2026-04-12T19:00:00Z",
+   "koti": "WSH",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021277,
+   "alkaaUTC": "2026-04-12T22:00:00Z",
+   "koti": "NYI",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021278,
+   "alkaaUTC": "2026-04-12T22:00:00Z",
+   "koti": "CBJ",
+   "vieras": "BOS"
+  },
+  {
+   "id": 2025021279,
+   "alkaaUTC": "2026-04-12T23:00:00Z",
+   "koti": "NJD",
+   "vieras": "OTT"
+  },
+  {
+   "id": 2025021280,
+   "alkaaUTC": "2026-04-13T00:00:00Z",
+   "koti": "ANA",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021281,
+   "alkaaUTC": "2026-04-13T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "UTA"
+  },
+  {
+   "id": 2025021282,
+   "alkaaUTC": "2026-04-13T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021283,
+   "alkaaUTC": "2026-04-13T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021284,
+   "alkaaUTC": "2026-04-13T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021285,
+   "alkaaUTC": "2026-04-13T23:30:00Z",
+   "koti": "TOR",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021286,
+   "alkaaUTC": "2026-04-14T00:00:00Z",
+   "koti": "STL",
+   "vieras": "MIN"
+  },
+  {
+   "id": 2025021287,
+   "alkaaUTC": "2026-04-14T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021288,
+   "alkaaUTC": "2026-04-14T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "BUF"
+  },
+  {
+   "id": 2025021289,
+   "alkaaUTC": "2026-04-14T01:30:00Z",
+   "koti": "EDM",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021291,
+   "alkaaUTC": "2026-04-14T01:30:00Z",
+   "koti": "SEA",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021290,
+   "alkaaUTC": "2026-04-14T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021292,
+   "alkaaUTC": "2026-04-14T23:00:00Z",
+   "koti": "BOS",
+   "vieras": "NJD"
+  },
+  {
+   "id": 2025021293,
+   "alkaaUTC": "2026-04-14T23:00:00Z",
+   "koti": "NYI",
+   "vieras": "CAR"
+  },
+  {
+   "id": 2025021294,
+   "alkaaUTC": "2026-04-14T23:00:00Z",
+   "koti": "PHI",
+   "vieras": "MTL"
+  },
+  {
+   "id": 2025021295,
+   "alkaaUTC": "2026-04-14T23:00:00Z",
+   "koti": "CBJ",
+   "vieras": "WSH"
+  },
+  {
+   "id": 2025021296,
+   "alkaaUTC": "2026-04-15T00:00:00Z",
+   "koti": "MIN",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021297,
+   "alkaaUTC": "2026-04-15T01:00:00Z",
+   "koti": "UTA",
+   "vieras": "WPG"
+  },
+  {
+   "id": 2025021298,
+   "alkaaUTC": "2026-04-15T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "COL"
+  },
+  {
+   "id": 2025021299,
+   "alkaaUTC": "2026-04-15T01:30:00Z",
+   "koti": "STL",
+   "vieras": "PIT"
+  },
+  {
+   "id": 2025021300,
+   "alkaaUTC": "2026-04-15T02:00:00Z",
+   "koti": "VAN",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021301,
+   "alkaaUTC": "2026-04-15T23:00:00Z",
+   "koti": "BUF",
+   "vieras": "DAL"
+  },
+  {
+   "id": 2025021302,
+   "alkaaUTC": "2026-04-15T23:00:00Z",
+   "koti": "TBL",
+   "vieras": "NYR"
+  },
+  {
+   "id": 2025021303,
+   "alkaaUTC": "2026-04-15T23:00:00Z",
+   "koti": "FLA",
+   "vieras": "DET"
+  },
+  {
+   "id": 2025021304,
+   "alkaaUTC": "2026-04-15T23:30:00Z",
+   "koti": "OTT",
+   "vieras": "TOR"
+  },
+  {
+   "id": 2025021305,
+   "alkaaUTC": "2026-04-16T00:30:00Z",
+   "koti": "CHI",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021306,
+   "alkaaUTC": "2026-04-16T02:00:00Z",
+   "koti": "VGK",
+   "vieras": "SEA"
+  },
+  {
+   "id": 2025021309,
+   "alkaaUTC": "2026-04-16T23:30:00Z",
+   "koti": "UTA",
+   "vieras": "STL"
+  },
+  {
+   "id": 2025021307,
+   "alkaaUTC": "2026-04-17T00:00:00Z",
+   "koti": "NSH",
+   "vieras": "ANA"
+  },
+  {
+   "id": 2025021308,
+   "alkaaUTC": "2026-04-17T00:00:00Z",
+   "koti": "WPG",
+   "vieras": "SJS"
+  },
+  {
+   "id": 2025021310,
+   "alkaaUTC": "2026-04-17T01:00:00Z",
+   "koti": "CGY",
+   "vieras": "LAK"
+  },
+  {
+   "id": 2025021311,
+   "alkaaUTC": "2026-04-17T01:00:00Z",
+   "koti": "EDM",
+   "vieras": "VAN"
+  },
+  {
+   "id": 2025021312,
+   "alkaaUTC": "2026-04-17T02:00:00Z",
+   "koti": "COL",
+   "vieras": "SEA"
+  }
+ ]
+}

@@ -1,0 +1,5069 @@
+{
+ "ANA": {
+  "joukkue": "ANA",
+  "pelaajat": [
+   {
+    "id": 8484153,
+    "nimi": "Leo Carlsson",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8484153.png"
+   },
+   {
+    "id": 8483444,
+    "nimi": "Nathan Gaucher",
+    "pos": "H",
+    "numero": 41,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8483444.png"
+   },
+   {
+    "id": 8483445,
+    "nimi": "Cutter Gauthier",
+    "pos": "H",
+    "numero": 61,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8483445.png"
+   },
+   {
+    "id": 8475798,
+    "nimi": "Mikael Granlund",
+    "pos": "H",
+    "numero": 64,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8475798.png"
+   },
+   {
+    "id": 8478421,
+    "nimi": "A.J. Greer",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8478421.png"
+   },
+   {
+    "id": 8473986,
+    "nimi": "Alex Killorn",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8473986.png"
+   },
+   {
+    "id": 8475184,
+    "nimi": "Chris Kreider",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8475184.png"
+   },
+   {
+    "id": 8484201,
+    "nimi": "Nico Myatovic",
+    "pos": "H",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8484201.png"
+   },
+   {
+    "id": 8480068,
+    "nimi": "Ryan Poehling",
+    "pos": "H",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8480068.png"
+   },
+   {
+    "id": 8484762,
+    "nimi": "Beckett Sennecke",
+    "pos": "H",
+    "numero": 45,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8484762.png"
+   },
+   {
+    "id": 8478873,
+    "nimi": "Troy Terry",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8478873.png"
+   },
+   {
+    "id": 8478366,
+    "nimi": "Frank Vatrano",
+    "pos": "H",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8478366.png"
+   },
+   {
+    "id": 8484238,
+    "nimi": "Anton Wahlberg",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8484238.png"
+   },
+   {
+    "id": 8485512,
+    "nimi": "Tim Washe",
+    "pos": "H",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8485512.png"
+   },
+   {
+    "id": 8481563,
+    "nimi": "Drew Helleson",
+    "pos": "P",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8481563.png"
+   },
+   {
+    "id": 8482731,
+    "nimi": "Tyson Hinds",
+    "pos": "P",
+    "numero": 60,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8482731.png"
+   },
+   {
+    "id": 8481605,
+    "nimi": "Jackson LaCombe",
+    "pos": "P",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8481605.png"
+   },
+   {
+    "id": 8483490,
+    "nimi": "Pavel Mintyukov",
+    "pos": "P",
+    "numero": 98,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8483490.png"
+   },
+   {
+    "id": 8482178,
+    "nimi": "Ian Moore",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8482178.png"
+   },
+   {
+    "id": 8483521,
+    "nimi": "Noah Warren",
+    "pos": "P",
+    "numero": 47,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8483521.png"
+   },
+   {
+    "id": 8483746,
+    "nimi": "Vyacheslav Buteyets",
+    "pos": "MV",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8483746.png"
+   },
+   {
+    "id": 8480843,
+    "nimi": "Lukas Dostal",
+    "pos": "MV",
+    "numero": 1,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8480843.png"
+   },
+   {
+    "id": 8478024,
+    "nimi": "Ville Husso",
+    "pos": "MV",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/ANA/8478024.png"
+   }
+  ]
+ },
+ "BOS": {
+  "joukkue": "BOS",
+  "pelaajat": [
+   {
+    "id": 8479591,
+    "nimi": "Michael Eyssimont",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8479591.png"
+   },
+   {
+    "id": 8479987,
+    "nimi": "Morgan Geekie",
+    "pos": "H",
+    "numero": 39,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8479987.png"
+   },
+   {
+    "id": 8485395,
+    "nimi": "James Hagens",
+    "pos": "H",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8485395.png"
+   },
+   {
+    "id": 8479661,
+    "nimi": "Tanner Jeannot",
+    "pos": "H",
+    "numero": 84,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8479661.png"
+   },
+   {
+    "id": 8480355,
+    "nimi": "Mark Kastelic",
+    "pos": "H",
+    "numero": 47,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8480355.png"
+   },
+   {
+    "id": 8482177,
+    "nimi": "Marat Khusnutdinov",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8482177.png"
+   },
+   {
+    "id": 8476374,
+    "nimi": "Sean Kuraly",
+    "pos": "H",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8476374.png"
+   },
+   {
+    "id": 8477496,
+    "nimi": "Elias Lindholm",
+    "pos": "H",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8477496.png"
+   },
+   {
+    "id": 8483489,
+    "nimi": "Fraser Minten",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8483489.png"
+   },
+   {
+    "id": 8479999,
+    "nimi": "Casey Mittelstadt",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8479999.png"
+   },
+   {
+    "id": 8477956,
+    "nimi": "David Pastrnak",
+    "pos": "H",
+    "numero": 88,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8477956.png"
+   },
+   {
+    "id": 8482175,
+    "nimi": "JJ Peterka",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8482175.png"
+   },
+   {
+    "id": 8482634,
+    "nimi": "Alex Steeves",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8482634.png"
+   },
+   {
+    "id": 8478401,
+    "nimi": "Pavel Zacha",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8478401.png"
+   },
+   {
+    "id": 8481219,
+    "nimi": "Jonathan Aspirot",
+    "pos": "P",
+    "numero": 45,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8481219.png"
+   },
+   {
+    "id": 8480035,
+    "nimi": "Henri Jokiharju",
+    "pos": "P",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8480035.png"
+   },
+   {
+    "id": 8476854,
+    "nimi": "Hampus Lindholm",
+    "pos": "P",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8476854.png"
+   },
+   {
+    "id": 8482511,
+    "nimi": "Mason Lohrei",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8482511.png"
+   },
+   {
+    "id": 8479325,
+    "nimi": "Charlie McAvoy",
+    "pos": "P",
+    "numero": 73,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8479325.png"
+   },
+   {
+    "id": 8477507,
+    "nimi": "Nikita Zadorov",
+    "pos": "P",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8477507.png"
+   },
+   {
+    "id": 8476914,
+    "nimi": "Joonas Korpisalo",
+    "pos": "MV",
+    "numero": 70,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8476914.png"
+   },
+   {
+    "id": 8480280,
+    "nimi": "Jeremy Swayman",
+    "pos": "MV",
+    "numero": 1,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BOS/8480280.png"
+   }
+  ]
+ },
+ "BUF": {
+  "joukkue": "BUF",
+  "pelaajat": [
+   {
+    "id": 8484145,
+    "nimi": "Zach Benson",
+    "pos": "H",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8484145.png"
+   },
+   {
+    "id": 8475842,
+    "nimi": "Sam Carrick",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8475842.png"
+   },
+   {
+    "id": 8479941,
+    "nimi": "Justin Danforth",
+    "pos": "H",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8479941.png"
+   },
+   {
+    "id": 8482659,
+    "nimi": "Josh Doan",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8482659.png"
+   },
+   {
+    "id": 8483090,
+    "nimi": "Riley Fiddler-Schultz",
+    "pos": "H",
+    "numero": 45,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8483090.png"
+   },
+   {
+    "id": 8484797,
+    "nimi": "Konsta Helenius",
+    "pos": "H",
+    "numero": 94,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8484797.png"
+   },
+   {
+    "id": 8482896,
+    "nimi": "Tyson Kozak",
+    "pos": "H",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8482896.png"
+   },
+   {
+    "id": 8481522,
+    "nimi": "Peyton Krebs",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8481522.png"
+   },
+   {
+    "id": 8483468,
+    "nimi": "Jiri Kulich",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8483468.png"
+   },
+   {
+    "id": 8479359,
+    "nimi": "Beck Malenstyn",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8479359.png"
+   },
+   {
+    "id": 8480802,
+    "nimi": "Ryan McLeod",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8480802.png"
+   },
+   {
+    "id": 8480064,
+    "nimi": "Josh Norris",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8480064.png"
+   },
+   {
+    "id": 8483500,
+    "nimi": "Noah Ostlund",
+    "pos": "H",
+    "numero": 86,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8483500.png"
+   },
+   {
+    "id": 8482097,
+    "nimi": "Jack Quinn",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8482097.png"
+   },
+   {
+    "id": 8479420,
+    "nimi": "Tage Thompson",
+    "pos": "H",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8479420.png"
+   },
+   {
+    "id": 8475722,
+    "nimi": "Jason Zucker",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8475722.png"
+   },
+   {
+    "id": 8481806,
+    "nimi": "Louis Crevier",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8481806.png"
+   },
+   {
+    "id": 8480839,
+    "nimi": "Rasmus Dahlin",
+    "pos": "P",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8480839.png"
+   },
+   {
+    "id": 8481564,
+    "nimi": "Ryan Johnson",
+    "pos": "P",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8481564.png"
+   },
+   {
+    "id": 8483732,
+    "nimi": "Vsevolod Komarov",
+    "pos": "P",
+    "numero": 76,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8483732.png"
+   },
+   {
+    "id": 8484305,
+    "nimi": "Zach Metsa",
+    "pos": "P",
+    "numero": 73,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8484305.png"
+   },
+   {
+    "id": 8485404,
+    "nimi": "Radim Mrtka",
+    "pos": "P",
+    "numero": 57,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8485404.png"
+   },
+   {
+    "id": 8482671,
+    "nimi": "Owen Power",
+    "pos": "P",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8482671.png"
+   },
+   {
+    "id": 8480807,
+    "nimi": "Mattias Samuelsson",
+    "pos": "P",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8480807.png"
+   },
+   {
+    "id": 8479982,
+    "nimi": "Conor Timmins",
+    "pos": "P",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8479982.png"
+   },
+   {
+    "id": 8482803,
+    "nimi": "Olen Zellweger",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8482803.png"
+   },
+   {
+    "id": 8481551,
+    "nimi": "Colten Ellis",
+    "pos": "MV",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8481551.png"
+   },
+   {
+    "id": 8482221,
+    "nimi": "Devon Levi",
+    "pos": "MV",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8482221.png"
+   },
+   {
+    "id": 8480045,
+    "nimi": "Ukko-Pekka Luukkonen",
+    "pos": "MV",
+    "numero": 1,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8480045.png"
+   },
+   {
+    "id": 8479312,
+    "nimi": "Alex Lyon",
+    "pos": "MV",
+    "numero": 34,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/BUF/8479312.png"
+   }
+  ]
+ },
+ "CAR": {
+  "joukkue": "CAR",
+  "pelaajat": [
+   {
+    "id": 8478427,
+    "nimi": "Sebastian Aho",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8478427.png"
+   },
+   {
+    "id": 8482809,
+    "nimi": "Jackson Blake",
+    "pos": "H",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8482809.png"
+   },
+   {
+    "id": 8477478,
+    "nimi": "William Carrier",
+    "pos": "H",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8477478.png"
+   },
+   {
+    "id": 8475235,
+    "nimi": "Nicolas Deslauriers",
+    "pos": "H",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8475235.png"
+   },
+   {
+    "id": 8477940,
+    "nimi": "Nikolaj Ehlers",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8477940.png"
+   },
+   {
+    "id": 8475791,
+    "nimi": "Taylor Hall",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8475791.png"
+   },
+   {
+    "id": 8476873,
+    "nimi": "Mark Jankowski",
+    "pos": "H",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8476873.png"
+   },
+   {
+    "id": 8482093,
+    "nimi": "Seth Jarvis",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8482093.png"
+   },
+   {
+    "id": 8480829,
+    "nimi": "Jesperi Kotkaniemi",
+    "pos": "H",
+    "numero": 82,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8480829.png"
+   },
+   {
+    "id": 8476921,
+    "nimi": "Jordan Martinook",
+    "pos": "H",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8476921.png"
+   },
+   {
+    "id": 8480762,
+    "nimi": "Eric Robinson",
+    "pos": "H",
+    "numero": 50,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8480762.png"
+   },
+   {
+    "id": 8473533,
+    "nimi": "Jordan Staal",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8473533.png"
+   },
+   {
+    "id": 8482702,
+    "nimi": "Logan Stankoven",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8482702.png"
+   },
+   {
+    "id": 8480830,
+    "nimi": "Andrei Svechnikov",
+    "pos": "H",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8480830.png"
+   },
+   {
+    "id": 8478970,
+    "nimi": "Jalen Chatfield",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8478970.png"
+   },
+   {
+    "id": 8476906,
+    "nimi": "Shayne Gostisbehere",
+    "pos": "P",
+    "numero": 4,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8476906.png"
+   },
+   {
+    "id": 8480817,
+    "nimi": "K'Andre Miller",
+    "pos": "P",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8480817.png"
+   },
+   {
+    "id": 8482100,
+    "nimi": "Alexander Nikishin",
+    "pos": "P",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8482100.png"
+   },
+   {
+    "id": 8476958,
+    "nimi": "Jaccob Slavin",
+    "pos": "P",
+    "numero": 74,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8476958.png"
+   },
+   {
+    "id": 8480336,
+    "nimi": "Sean Walker",
+    "pos": "P",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8480336.png"
+   },
+   {
+    "id": 8483548,
+    "nimi": "Brandon Bussi",
+    "pos": "MV",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8483548.png"
+   },
+   {
+    "id": 8481611,
+    "nimi": "Pyotr Kochetkov",
+    "pos": "MV",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CAR/8481611.png"
+   }
+  ]
+ },
+ "CBJ": {
+  "joukkue": "CBJ",
+  "pelaajat": [
+   {
+    "id": 8475745,
+    "nimi": "Charlie Coyle",
+    "pos": "H",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8475745.png"
+   },
+   {
+    "id": 8484166,
+    "nimi": "Adam Fantilli",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8484166.png"
+   },
+   {
+    "id": 8478856,
+    "nimi": "Conor Garland",
+    "pos": "H",
+    "numero": 83,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8478856.png"
+   },
+   {
+    "id": 8482660,
+    "nimi": "Kent Johnson",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8482660.png"
+   },
+   {
+    "id": 8480806,
+    "nimi": "Isac Lundeström",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8480806.png"
+   },
+   {
+    "id": 8480893,
+    "nimi": "Kirill Marchenko",
+    "pos": "H",
+    "numero": 86,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8480893.png"
+   },
+   {
+    "id": 8477497,
+    "nimi": "Sean Monahan",
+    "pos": "H",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8477497.png"
+   },
+   {
+    "id": 8477501,
+    "nimi": "Valeri Nichushkin",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8477501.png"
+   },
+   {
+    "id": 8479671,
+    "nimi": "Mathieu Olivier",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8479671.png"
+   },
+   {
+    "id": 8482705,
+    "nimi": "Cole Sillinger",
+    "pos": "H",
+    "numero": 4,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8482705.png"
+   },
+   {
+    "id": 8481716,
+    "nimi": "Dmitri Voronkov",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8481716.png"
+   },
+   {
+    "id": 8477425,
+    "nimi": "Miles Wood",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8477425.png"
+   },
+   {
+    "id": 8481161,
+    "nimi": "Jake Christiansen",
+    "pos": "P",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8481161.png"
+   },
+   {
+    "id": 8479371,
+    "nimi": "Dante Fabbro",
+    "pos": "P",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8479371.png"
+   },
+   {
+    "id": 8483485,
+    "nimi": "Denton Mateychuk",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8483485.png"
+   },
+   {
+    "id": 8478500,
+    "nimi": "Ivan Provorov",
+    "pos": "P",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8478500.png"
+   },
+   {
+    "id": 8476923,
+    "nimi": "Damon Severson",
+    "pos": "P",
+    "numero": 78,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8476923.png"
+   },
+   {
+    "id": 8478460,
+    "nimi": "Zach Werenski",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8478460.png"
+   },
+   {
+    "id": 8482982,
+    "nimi": "Jet Greaves",
+    "pos": "MV",
+    "numero": 73,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8482982.png"
+   },
+   {
+    "id": 8478007,
+    "nimi": "Elvis Merzlikins",
+    "pos": "MV",
+    "numero": 90,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CBJ/8478007.png"
+   }
+  ]
+ },
+ "CGY": {
+  "joukkue": "CGY",
+  "pelaajat": [
+   {
+    "id": 8474150,
+    "nimi": "Mikael Backlund",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8474150.png"
+   },
+   {
+    "id": 8476399,
+    "nimi": "Blake Coleman",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8476399.png"
+   },
+   {
+    "id": 8482679,
+    "nimi": "Matt Coronato",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8482679.png"
+   },
+   {
+    "id": 8480797,
+    "nimi": "Joel Farabee",
+    "pos": "H",
+    "numero": 86,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8480797.png"
+   },
+   {
+    "id": 8480028,
+    "nimi": "Morgan Frost",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8480028.png"
+   },
+   {
+    "id": 8484860,
+    "nimi": "Matvei Gridin",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8484860.png"
+   },
+   {
+    "id": 8486056,
+    "nimi": "Tyson Gross",
+    "pos": "H",
+    "numero": 39,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8486056.png"
+   },
+   {
+    "id": 8484180,
+    "nimi": "Samuel Honzek",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8484180.png"
+   },
+   {
+    "id": 8476456,
+    "nimi": "Jonathan Huberdeau",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8476456.png"
+   },
+   {
+    "id": 8482209,
+    "nimi": "Rory Kerins",
+    "pos": "H",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8482209.png"
+   },
+   {
+    "id": 8483609,
+    "nimi": "Adam Klapka",
+    "pos": "H",
+    "numero": 43,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8483609.png"
+   },
+   {
+    "id": 8481028,
+    "nimi": "Martin Pospisil",
+    "pos": "H",
+    "numero": 76,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8481028.png"
+   },
+   {
+    "id": 8481068,
+    "nimi": "Yegor Sharangovich",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8481068.png"
+   },
+   {
+    "id": 8476458,
+    "nimi": "Ryan Strome",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8476458.png"
+   },
+   {
+    "id": 8484234,
+    "nimi": "Aydar Suniev",
+    "pos": "H",
+    "numero": 36,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8484234.png"
+   },
+   {
+    "id": 8484958,
+    "nimi": "Maxim Tsyplakov",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8484958.png"
+   },
+   {
+    "id": 8482074,
+    "nimi": "Connor Zary",
+    "pos": "H",
+    "numero": 47,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8482074.png"
+   },
+   {
+    "id": 8480860,
+    "nimi": "Kevin Bahl",
+    "pos": "P",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8480860.png"
+   },
+   {
+    "id": 8484150,
+    "nimi": "Hunter Brzustewicz",
+    "pos": "P",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8484150.png"
+   },
+   {
+    "id": 8477810,
+    "nimi": "Joel Hanley",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8477810.png"
+   },
+   {
+    "id": 8482165,
+    "nimi": "Yan Kuznetsov",
+    "pos": "P",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8482165.png"
+   },
+   {
+    "id": 8476874,
+    "nimi": "Olli Maatta",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8476874.png"
+   },
+   {
+    "id": 8483495,
+    "nimi": "Simon Nemec",
+    "pos": "P",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8483495.png"
+   },
+   {
+    "id": 8481167,
+    "nimi": "Brayden Pachal",
+    "pos": "P",
+    "numero": 94,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8481167.png"
+   },
+   {
+    "id": 8484768,
+    "nimi": "Zayne Parekh",
+    "pos": "P",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8484768.png"
+   },
+   {
+    "id": 8480727,
+    "nimi": "Zach Whitecloud",
+    "pos": "P",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8480727.png"
+   },
+   {
+    "id": 8483709,
+    "nimi": "Abram Wiebe",
+    "pos": "P",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8483709.png"
+   },
+   {
+    "id": 8482445,
+    "nimi": "Devin Cooley",
+    "pos": "MV",
+    "numero": 1,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8482445.png"
+   },
+   {
+    "id": 8481692,
+    "nimi": "Dustin Wolf",
+    "pos": "MV",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CGY/8481692.png"
+   }
+  ]
+ },
+ "CHI": {
+  "joukkue": "CHI",
+  "pelaajat": [
+   {
+    "id": 8484144,
+    "nimi": "Connor Bedard",
+    "pos": "H",
+    "numero": 98,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8484144.png"
+   },
+   {
+    "id": 8477479,
+    "nimi": "Tyler Bertuzzi",
+    "pos": "H",
+    "numero": 59,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8477479.png"
+   },
+   {
+    "id": 8484793,
+    "nimi": "Sacha Boisvert",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8484793.png"
+   },
+   {
+    "id": 8477987,
+    "nimi": "Ryan Donato",
+    "pos": "H",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8477987.png"
+   },
+   {
+    "id": 8485391,
+    "nimi": "Anton Frondell",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8485391.png"
+   },
+   {
+    "id": 8483450,
+    "nimi": "Ryan Greene",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8483450.png"
+   },
+   {
+    "id": 8478413,
+    "nimi": "Jordan Greenway",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8478413.png"
+   },
+   {
+    "id": 8484185,
+    "nimi": "Nick Lardis",
+    "pos": "H",
+    "numero": 76,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8484185.png"
+   },
+   {
+    "id": 8478233,
+    "nimi": "Andrew Mangiapane",
+    "pos": "H",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8478233.png"
+   },
+   {
+    "id": 8484197,
+    "nimi": "Oliver Moore",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8484197.png"
+   },
+   {
+    "id": 8483493,
+    "nimi": "Frank Nazar",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8483493.png"
+   },
+   {
+    "id": 8482172,
+    "nimi": "Landon Slaggert",
+    "pos": "H",
+    "numero": 84,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8482172.png"
+   },
+   {
+    "id": 8476882,
+    "nimi": "Teuvo Teravainen",
+    "pos": "H",
+    "numero": 86,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8476882.png"
+   },
+   {
+    "id": 8476952,
+    "nimi": "Dominic Toninato",
+    "pos": "H",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8476952.png"
+   },
+   {
+    "id": 8481524,
+    "nimi": "Bowen Byram",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8481524.png"
+   },
+   {
+    "id": 8482807,
+    "nimi": "Ethan Del Mastro",
+    "pos": "P",
+    "numero": 38,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8482807.png"
+   },
+   {
+    "id": 8482176,
+    "nimi": "Wyatt Kaiser",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8482176.png"
+   },
+   {
+    "id": 8483466,
+    "nimi": "Kevin Korchinski",
+    "pos": "P",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8483466.png"
+   },
+   {
+    "id": 8484783,
+    "nimi": "Artyom Levshunov",
+    "pos": "P",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8484783.png"
+   },
+   {
+    "id": 8483506,
+    "nimi": "Sam Rinzel",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8483506.png"
+   },
+   {
+    "id": 8481568,
+    "nimi": "Alex Vlasic",
+    "pos": "P",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8481568.png"
+   },
+   {
+    "id": 8481519,
+    "nimi": "Spencer Knight",
+    "pos": "MV",
+    "numero": 30,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8481519.png"
+   },
+   {
+    "id": 8482821,
+    "nimi": "Arvid Soderblom",
+    "pos": "MV",
+    "numero": 40,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8482821.png"
+   }
+  ]
+ },
+ "COL": {
+  "joukkue": "COL",
+  "pelaajat": [
+   {
+    "id": 8482947,
+    "nimi": "Zakhar Bardakov",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8482947.png"
+   },
+   {
+    "id": 8475172,
+    "nimi": "Nazem Kadri",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8475172.png"
+   },
+   {
+    "id": 8480448,
+    "nimi": "Parker Kelly",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8480448.png"
+   },
+   {
+    "id": 8476455,
+    "nimi": "Gabriel Landeskog",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8476455.png"
+   },
+   {
+    "id": 8477476,
+    "nimi": "Artturi Lehkonen",
+    "pos": "H",
+    "numero": 62,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8477476.png"
+   },
+   {
+    "id": 8477492,
+    "nimi": "Nathan MacKinnon",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8477492.png"
+   },
+   {
+    "id": 8480039,
+    "nimi": "Martin Necas",
+    "pos": "H",
+    "numero": 88,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8480039.png"
+   },
+   {
+    "id": 8475754,
+    "nimi": "Brock Nelson",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8475754.png"
+   },
+   {
+    "id": 8481186,
+    "nimi": "Logan O'Connor",
+    "pos": "H",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8481186.png"
+   },
+   {
+    "id": 8478462,
+    "nimi": "Nicolas Roy",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8478462.png"
+   },
+   {
+    "id": 8482768,
+    "nimi": "Fedor Svechkov",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8482768.png"
+   },
+   {
+    "id": 8470613,
+    "nimi": "Brent Burns",
+    "pos": "P",
+    "numero": 84,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8470613.png"
+   },
+   {
+    "id": 8476967,
+    "nimi": "Brett Kulak",
+    "pos": "P",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8476967.png"
+   },
+   {
+    "id": 8480069,
+    "nimi": "Cale Makar",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8480069.png"
+   },
+   {
+    "id": 8484258,
+    "nimi": "Sam Malinski",
+    "pos": "P",
+    "numero": 70,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8484258.png"
+   },
+   {
+    "id": 8476312,
+    "nimi": "Josh Manson",
+    "pos": "P",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8476312.png"
+   },
+   {
+    "id": 8478038,
+    "nimi": "Devon Toews",
+    "pos": "P",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8478038.png"
+   },
+   {
+    "id": 8478406,
+    "nimi": "Mackenzie Blackwood",
+    "pos": "MV",
+    "numero": 39,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8478406.png"
+   },
+   {
+    "id": 8475809,
+    "nimi": "Scott Wedgewood",
+    "pos": "MV",
+    "numero": 41,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/COL/8475809.png"
+   }
+  ]
+ },
+ "DAL": {
+  "joukkue": "DAL",
+  "pelaajat": [
+   {
+    "id": 8476278,
+    "nimi": "Colin Blackwell",
+    "pos": "H",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8476278.png"
+   },
+   {
+    "id": 8480840,
+    "nimi": "Oskar Bäck",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8480840.png"
+   },
+   {
+    "id": 8475168,
+    "nimi": "Matt Duchene",
+    "pos": "H",
+    "numero": 95,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8475168.png"
+   },
+   {
+    "id": 8476889,
+    "nimi": "Radek Faksa",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8476889.png"
+   },
+   {
+    "id": 8478449,
+    "nimi": "Roope Hintz",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8478449.png"
+   },
+   {
+    "id": 8484829,
+    "nimi": "Justin Hryckowian",
+    "pos": "H",
+    "numero": 49,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8484829.png"
+   },
+   {
+    "id": 8484938,
+    "nimi": "Arttu Hyry",
+    "pos": "H",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8484938.png"
+   },
+   {
+    "id": 8482740,
+    "nimi": "Wyatt Johnston",
+    "pos": "H",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8482740.png"
+   },
+   {
+    "id": 8478420,
+    "nimi": "Mikko Rantanen",
+    "pos": "H",
+    "numero": 96,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8478420.png"
+   },
+   {
+    "id": 8480027,
+    "nimi": "Jason Robertson",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8480027.png"
+   },
+   {
+    "id": 8475794,
+    "nimi": "Tyler Seguin",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8475794.png"
+   },
+   {
+    "id": 8479351,
+    "nimi": "Sam Steel",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8479351.png"
+   },
+   {
+    "id": 8483425,
+    "nimi": "Lian Bichsel",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8483425.png"
+   },
+   {
+    "id": 8478476,
+    "nimi": "Kyle Capobianco",
+    "pos": "P",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8478476.png"
+   },
+   {
+    "id": 8481581,
+    "nimi": "Thomas Harley",
+    "pos": "P",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8481581.png"
+   },
+   {
+    "id": 8480036,
+    "nimi": "Miro Heiskanen",
+    "pos": "P",
+    "numero": 4,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8480036.png"
+   },
+   {
+    "id": 8476902,
+    "nimi": "Esa Lindell",
+    "pos": "P",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8476902.png"
+   },
+   {
+    "id": 8480878,
+    "nimi": "Nils Lundkvist",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8480878.png"
+   },
+   {
+    "id": 8474574,
+    "nimi": "Tyler Myers",
+    "pos": "P",
+    "numero": 57,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8474574.png"
+   },
+   {
+    "id": 8479193,
+    "nimi": "Casey DeSmith",
+    "pos": "MV",
+    "numero": 1,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8479193.png"
+   },
+   {
+    "id": 8479979,
+    "nimi": "Jake Oettinger",
+    "pos": "MV",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DAL/8479979.png"
+   }
+  ]
+ },
+ "DET": {
+  "joukkue": "DET",
+  "pelaajat": [
+   {
+    "id": 8478891,
+    "nimi": "Mason Appleton",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8478891.png"
+   },
+   {
+    "id": 8477456,
+    "nimi": "J.T. Compher",
+    "pos": "H",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8477456.png"
+   },
+   {
+    "id": 8477429,
+    "nimi": "Andrew Copp",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8477429.png"
+   },
+   {
+    "id": 8479337,
+    "nimi": "Alex DeBrincat",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8479337.png"
+   },
+   {
+    "id": 8484471,
+    "nimi": "Emmitt Finnie",
+    "pos": "H",
+    "numero": 58,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8484471.png"
+   },
+   {
+    "id": 8483464,
+    "nimi": "Marco Kasper",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8483464.png"
+   },
+   {
+    "id": 8477946,
+    "nimi": "Dylan Larkin",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8477946.png"
+   },
+   {
+    "id": 8479992,
+    "nimi": "Michael Rasmussen",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8479992.png"
+   },
+   {
+    "id": 8482078,
+    "nimi": "Lucas Raymond",
+    "pos": "H",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8482078.png"
+   },
+   {
+    "id": 8480879,
+    "nimi": "Jacob Bernard-Docker",
+    "pos": "P",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8480879.png"
+   },
+   {
+    "id": 8475279,
+    "nimi": "Ben Chiarot",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8475279.png"
+   },
+   {
+    "id": 8482762,
+    "nimi": "Simon Edvinsson",
+    "pos": "P",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8482762.png"
+   },
+   {
+    "id": 8475753,
+    "nimi": "Justin Faulk",
+    "pos": "P",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8475753.png"
+   },
+   {
+    "id": 8481607,
+    "nimi": "Albert Johansson",
+    "pos": "P",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8481607.png"
+   },
+   {
+    "id": 8481542,
+    "nimi": "Moritz Seider",
+    "pos": "P",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8481542.png"
+   },
+   {
+    "id": 8476434,
+    "nimi": "John Gibson",
+    "pos": "MV",
+    "numero": 36,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/DET/8476434.png"
+   }
+  ]
+ },
+ "EDM": {
+  "joukkue": "EDM",
+  "pelaajat": [
+   {
+    "id": 8482703,
+    "nimi": "Colton Dach",
+    "pos": "H",
+    "numero": 34,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8482703.png"
+   },
+   {
+    "id": 8477450,
+    "nimi": "Jason Dickinson",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8477450.png"
+   },
+   {
+    "id": 8477934,
+    "nimi": "Leon Draisaitl",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8477934.png"
+   },
+   {
+    "id": 8479365,
+    "nimi": "Trent Frederic",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8479365.png"
+   },
+   {
+    "id": 8475786,
+    "nimi": "Zach Hyman",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8475786.png"
+   },
+   {
+    "id": 8477406,
+    "nimi": "Mattias Janmark",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8477406.png"
+   },
+   {
+    "id": 8478402,
+    "nimi": "Connor McDavid",
+    "pos": "H",
+    "numero": 97,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8478402.png"
+   },
+   {
+    "id": 8476454,
+    "nimi": "Ryan Nugent-Hopkins",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8476454.png"
+   },
+   {
+    "id": 8481617,
+    "nimi": "Vasily Podkolzin",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8481617.png"
+   },
+   {
+    "id": 8484509,
+    "nimi": "Josh Samanski",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8484509.png"
+   },
+   {
+    "id": 8483512,
+    "nimi": "Matt Savoie",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8483512.png"
+   },
+   {
+    "id": 8480803,
+    "nimi": "Evan Bouchard",
+    "pos": "P",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8480803.png"
+   },
+   {
+    "id": 8475218,
+    "nimi": "Mattias Ekholm",
+    "pos": "P",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8475218.png"
+   },
+   {
+    "id": 8480834,
+    "nimi": "Ty Emberson",
+    "pos": "P",
+    "numero": 49,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8480834.png"
+   },
+   {
+    "id": 8476473,
+    "nimi": "Connor Murphy",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8476473.png"
+   },
+   {
+    "id": 8477498,
+    "nimi": "Darnell Nurse",
+    "pos": "P",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8477498.png"
+   },
+   {
+    "id": 8481056,
+    "nimi": "Spencer Stastney",
+    "pos": "P",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8481056.png"
+   },
+   {
+    "id": 8478013,
+    "nimi": "Jake Walman",
+    "pos": "P",
+    "numero": 96,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8478013.png"
+   },
+   {
+    "id": 8477465,
+    "nimi": "Tristan Jarry",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8477465.png"
+   }
+  ]
+ },
+ "FLA": {
+  "joukkue": "FLA",
+  "pelaajat": [
+   {
+    "id": 8477493,
+    "nimi": "Aleksander Barkov",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477493.png"
+   },
+   {
+    "id": 8477935,
+    "nimi": "Sam Bennett",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477935.png"
+   },
+   {
+    "id": 8479981,
+    "nimi": "Jonah Gadjovich",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8479981.png"
+   },
+   {
+    "id": 8477903,
+    "nimi": "Garnet Hathaway",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477903.png"
+   },
+   {
+    "id": 8482113,
+    "nimi": "Anton Lundell",
+    "pos": "H",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8482113.png"
+   },
+   {
+    "id": 8480185,
+    "nimi": "Eetu Luostarinen",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8480185.png"
+   },
+   {
+    "id": 8473419,
+    "nimi": "Brad Marchand",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8473419.png"
+   },
+   {
+    "id": 8481133,
+    "nimi": "Cole Reinhardt",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8481133.png"
+   },
+   {
+    "id": 8477933,
+    "nimi": "Sam Reinhart",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477933.png"
+   },
+   {
+    "id": 8480801,
+    "nimi": "Brady Tkachuk",
+    "pos": "H",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8480801.png"
+   },
+   {
+    "id": 8479314,
+    "nimi": "Matthew Tkachuk",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8479314.png"
+   },
+   {
+    "id": 8477409,
+    "nimi": "Carter Verhaeghe",
+    "pos": "H",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477409.png"
+   },
+   {
+    "id": 8484304,
+    "nimi": "Uvis Balinskis",
+    "pos": "P",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8484304.png"
+   },
+   {
+    "id": 8477932,
+    "nimi": "Aaron Ekblad",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477932.png"
+   },
+   {
+    "id": 8478055,
+    "nimi": "Gustav Forsling",
+    "pos": "P",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8478055.png"
+   },
+   {
+    "id": 8477495,
+    "nimi": "Seth Jones",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8477495.png"
+   },
+   {
+    "id": 8475179,
+    "nimi": "Dmitry Kulikov",
+    "pos": "P",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8475179.png"
+   },
+   {
+    "id": 8478859,
+    "nimi": "Niko Mikkola",
+    "pos": "P",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8478859.png"
+   },
+   {
+    "id": 8474593,
+    "nimi": "Jacob Markstrom",
+    "pos": "MV",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8474593.png"
+   },
+   {
+    "id": 8481033,
+    "nimi": "Akira Schmid",
+    "pos": "MV",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/FLA/8481033.png"
+   }
+  ]
+ },
+ "LAK": {
+  "joukkue": "LAK",
+  "pelaajat": [
+   {
+    "id": 8476469,
+    "nimi": "Joel Armia",
+    "pos": "H",
+    "numero": 40,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8476469.png"
+   },
+   {
+    "id": 8482124,
+    "nimi": "Quinton Byfield",
+    "pos": "H",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8482124.png"
+   },
+   {
+    "id": 8477942,
+    "nimi": "Kevin Fiala",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8477942.png"
+   },
+   {
+    "id": 8482726,
+    "nimi": "Samuel Helenius",
+    "pos": "H",
+    "numero": 79,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8482726.png"
+   },
+   {
+    "id": 8477960,
+    "nimi": "Adrian Kempe",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8477960.png"
+   },
+   {
+    "id": 8482155,
+    "nimi": "Alex Laferriere",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8482155.png"
+   },
+   {
+    "id": 8479675,
+    "nimi": "Trevor Moore",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8479675.png"
+   },
+   {
+    "id": 8478550,
+    "nimi": "Artemi Panarin",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8478550.png"
+   },
+   {
+    "id": 8481532,
+    "nimi": "Alex Turcotte",
+    "pos": "H",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8481532.png"
+   },
+   {
+    "id": 8483406,
+    "nimi": "Taylor Ward",
+    "pos": "H",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8483406.png"
+   },
+   {
+    "id": 8479998,
+    "nimi": "Mikey Anderson",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8479998.png"
+   },
+   {
+    "id": 8476879,
+    "nimi": "Cody Ceci",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8476879.png"
+   },
+   {
+    "id": 8482730,
+    "nimi": "Brandt Clarke",
+    "pos": "P",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8482730.png"
+   },
+   {
+    "id": 8474563,
+    "nimi": "Drew Doughty",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8474563.png"
+   },
+   {
+    "id": 8475208,
+    "nimi": "Brian Dumoulin",
+    "pos": "P",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8475208.png"
+   },
+   {
+    "id": 8476441,
+    "nimi": "Joel Edmundson",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8476441.png"
+   },
+   {
+    "id": 8476341,
+    "nimi": "Anton Forsberg",
+    "pos": "MV",
+    "numero": 31,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8476341.png"
+   },
+   {
+    "id": 8475311,
+    "nimi": "Darcy Kuemper",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/LAK/8475311.png"
+   }
+  ]
+ },
+ "MIN": {
+  "joukkue": "MIN",
+  "pelaajat": [
+   {
+    "id": 8481557,
+    "nimi": "Matt Boldy",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8481557.png"
+   },
+   {
+    "id": 8481553,
+    "nimi": "Bobby Brink",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8481553.png"
+   },
+   {
+    "id": 8478493,
+    "nimi": "Joel Eriksson Ek",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8478493.png"
+   },
+   {
+    "id": 8475220,
+    "nimi": "Marcus Foligno",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8475220.png"
+   },
+   {
+    "id": 8483452,
+    "nimi": "Hunter Haight",
+    "pos": "H",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8483452.png"
+   },
+   {
+    "id": 8477451,
+    "nimi": "Ryan Hartman",
+    "pos": "H",
+    "numero": 38,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8477451.png"
+   },
+   {
+    "id": 8478864,
+    "nimi": "Kirill Kaprizov",
+    "pos": "H",
+    "numero": 97,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8478864.png"
+   },
+   {
+    "id": 8477446,
+    "nimi": "Michael McCarron",
+    "pos": "H",
+    "numero": 47,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8477446.png"
+   },
+   {
+    "id": 8481477,
+    "nimi": "Nico Sturm",
+    "pos": "H",
+    "numero": 78,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8481477.png"
+   },
+   {
+    "id": 8478508,
+    "nimi": "Yakov Trenin",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8478508.png"
+   },
+   {
+    "id": 8483525,
+    "nimi": "Danila Yurov",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8483525.png"
+   },
+   {
+    "id": 8476463,
+    "nimi": "Jonas Brodin",
+    "pos": "P",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8476463.png"
+   },
+   {
+    "id": 8482122,
+    "nimi": "Brock Faber",
+    "pos": "P",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8482122.png"
+   },
+   {
+    "id": 8486166,
+    "nimi": "Viking Gustafsson Nyberg",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8486166.png"
+   },
+   {
+    "id": 8480800,
+    "nimi": "Quinn Hughes",
+    "pos": "P",
+    "numero": 43,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8480800.png"
+   },
+   {
+    "id": 8482094,
+    "nimi": "Daemon Hunt",
+    "pos": "P",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8482094.png"
+   },
+   {
+    "id": 8482641,
+    "nimi": "Matt Kiersted",
+    "pos": "P",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8482641.png"
+   },
+   {
+    "id": 8482781,
+    "nimi": "Carson Lambos",
+    "pos": "P",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8482781.png"
+   },
+   {
+    "id": 8478136,
+    "nimi": "Jake Middleton",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8478136.png"
+   },
+   {
+    "id": 8483766,
+    "nimi": "David Spacek",
+    "pos": "P",
+    "numero": 82,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8483766.png"
+   },
+   {
+    "id": 8474716,
+    "nimi": "Jared Spurgeon",
+    "pos": "P",
+    "numero": 46,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8474716.png"
+   },
+   {
+    "id": 8479406,
+    "nimi": "Filip Gustavsson",
+    "pos": "MV",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8479406.png"
+   },
+   {
+    "id": 8483918,
+    "nimi": "Riley Mercer",
+    "pos": "MV",
+    "numero": 50,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8483918.png"
+   },
+   {
+    "id": 8482661,
+    "nimi": "Jesper Wallstedt",
+    "pos": "MV",
+    "numero": 30,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8482661.png"
+   },
+   {
+    "id": 8485037,
+    "nimi": "Chase Wutzke",
+    "pos": "MV",
+    "numero": 95,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MIN/8485037.png"
+   }
+  ]
+ },
+ "MTL": {
+  "joukkue": "MTL",
+  "pelaajat": [
+   {
+    "id": 8476981,
+    "nimi": "Josh Anderson",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8476981.png"
+   },
+   {
+    "id": 8483424,
+    "nimi": "Owen Beck",
+    "pos": "H",
+    "numero": 62,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8483424.png"
+   },
+   {
+    "id": 8482737,
+    "nimi": "Zachary Bolduc",
+    "pos": "H",
+    "numero": 76,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8482737.png"
+   },
+   {
+    "id": 8481540,
+    "nimi": "Cole Caufield",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481540.png"
+   },
+   {
+    "id": 8481523,
+    "nimi": "Kirby Dach",
+    "pos": "H",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481523.png"
+   },
+   {
+    "id": 8476479,
+    "nimi": "Phillip Danault",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8476479.png"
+   },
+   {
+    "id": 8484984,
+    "nimi": "Ivan Demidov",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8484984.png"
+   },
+   {
+    "id": 8478133,
+    "nimi": "Jake Evans",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8478133.png"
+   },
+   {
+    "id": 8482775,
+    "nimi": "Oliver Kapanen",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8482775.png"
+   },
+   {
+    "id": 8481618,
+    "nimi": "Alex Newhook",
+    "pos": "H",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481618.png"
+   },
+   {
+    "id": 8483515,
+    "nimi": "Juraj Slafkovský",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8483515.png"
+   },
+   {
+    "id": 8480018,
+    "nimi": "Nick Suzuki",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8480018.png"
+   },
+   {
+    "id": 8480074,
+    "nimi": "Alexandre Texier",
+    "pos": "H",
+    "numero": 85,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8480074.png"
+   },
+   {
+    "id": 8484403,
+    "nimi": "Florian Xhekaj",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8484403.png"
+   },
+   {
+    "id": 8478851,
+    "nimi": "Alexandre Carrier",
+    "pos": "P",
+    "numero": 45,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8478851.png"
+   },
+   {
+    "id": 8480865,
+    "nimi": "Noah Dobson",
+    "pos": "P",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8480865.png"
+   },
+   {
+    "id": 8483686,
+    "nimi": "Adam Engstrom",
+    "pos": "P",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8483686.png"
+   },
+   {
+    "id": 8482087,
+    "nimi": "Kaiden Guhle",
+    "pos": "P",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8482087.png"
+   },
+   {
+    "id": 8483457,
+    "nimi": "Lane Hutson",
+    "pos": "P",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8483457.png"
+   },
+   {
+    "id": 8476875,
+    "nimi": "Mike Matheson",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8476875.png"
+   },
+   {
+    "id": 8484220,
+    "nimi": "David Reinbacher",
+    "pos": "P",
+    "numero": 64,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8484220.png"
+   },
+   {
+    "id": 8481593,
+    "nimi": "Jayden Struble",
+    "pos": "P",
+    "numero": 47,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8481593.png"
+   },
+   {
+    "id": 8483763,
+    "nimi": "Maksymilian Szuber",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8483763.png"
+   },
+   {
+    "id": 8482964,
+    "nimi": "Arber Xhekaj",
+    "pos": "P",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8482964.png"
+   },
+   {
+    "id": 8482487,
+    "nimi": "Jakub Dobes",
+    "pos": "MV",
+    "numero": 75,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8482487.png"
+   },
+   {
+    "id": 8484170,
+    "nimi": "Jacob Fowler",
+    "pos": "MV",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8484170.png"
+   },
+   {
+    "id": 8478470,
+    "nimi": "Samuel Montembeault",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/MTL/8478470.png"
+   }
+  ]
+ },
+ "NJD": {
+  "joukkue": "NJD",
+  "pelaajat": [
+   {
+    "id": 8475760,
+    "nimi": "Nick Bjugstad",
+    "pos": "H",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8475760.png"
+   },
+   {
+    "id": 8480003,
+    "nimi": "Jesper Boqvist",
+    "pos": "H",
+    "numero": 70,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8480003.png"
+   },
+   {
+    "id": 8479407,
+    "nimi": "Jesper Bratt",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8479407.png"
+   },
+   {
+    "id": 8477015,
+    "nimi": "Connor Brown",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8477015.png"
+   },
+   {
+    "id": 8479996,
+    "nimi": "Cody Glass",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8479996.png"
+   },
+   {
+    "id": 8481721,
+    "nimi": "Arseny Gritsyuk",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8481721.png"
+   },
+   {
+    "id": 8480002,
+    "nimi": "Nico Hischier",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8480002.png"
+   },
+   {
+    "id": 8481559,
+    "nimi": "Jack Hughes",
+    "pos": "H",
+    "numero": 86,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8481559.png"
+   },
+   {
+    "id": 8478414,
+    "nimi": "Timo Meier",
+    "pos": "H",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8478414.png"
+   },
+   {
+    "id": 8482110,
+    "nimi": "Dawson Mercer",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8482110.png"
+   },
+   {
+    "id": 8476474,
+    "nimi": "Stefan Noesen",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8476474.png"
+   },
+   {
+    "id": 8478542,
+    "nimi": "Evan Rodrigues",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8478542.png"
+   },
+   {
+    "id": 8480990,
+    "nimi": "Declan Chisholm",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8480990.png"
+   },
+   {
+    "id": 8475455,
+    "nimi": "Brenden Dillon",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8475455.png"
+   },
+   {
+    "id": 8476462,
+    "nimi": "Dougie Hamilton",
+    "pos": "P",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8476462.png"
+   },
+   {
+    "id": 8482684,
+    "nimi": "Luke Hughes",
+    "pos": "P",
+    "numero": 43,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8482684.png"
+   },
+   {
+    "id": 8480192,
+    "nimi": "Johnathan Kovacevic",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8480192.png"
+   },
+   {
+    "id": 8477488,
+    "nimi": "Brett Pesce",
+    "pos": "P",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8477488.png"
+   },
+   {
+    "id": 8478399,
+    "nimi": "Jonas Siegenthaler",
+    "pos": "P",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8478399.png"
+   },
+   {
+    "id": 8474596,
+    "nimi": "Jake Allen",
+    "pos": "MV",
+    "numero": 34,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NJD/8474596.png"
+   }
+  ]
+ },
+ "NSH": {
+  "joukkue": "NSH",
+  "pelaajat": [
+   {
+    "id": 8479525,
+    "nimi": "Ross Colton",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8479525.png"
+   },
+   {
+    "id": 8480835,
+    "nimi": "Jack Drury",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8480835.png"
+   },
+   {
+    "id": 8481726,
+    "nimi": "Adam Edstrom",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8481726.png"
+   },
+   {
+    "id": 8482146,
+    "nimi": "Luke Evangelista",
+    "pos": "H",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8482146.png"
+   },
+   {
+    "id": 8484494,
+    "nimi": "Aiden Fink",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8484494.png"
+   },
+   {
+    "id": 8476887,
+    "nimi": "Filip Forsberg",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8476887.png"
+   },
+   {
+    "id": 8481535,
+    "nimi": "Nils Hoglander",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8481535.png"
+   },
+   {
+    "id": 8476539,
+    "nimi": "Jonathan Marchessault",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8476539.png"
+   },
+   {
+    "id": 8475158,
+    "nimi": "Ryan O'Reilly",
+    "pos": "H",
+    "numero": 90,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8475158.png"
+   },
+   {
+    "id": 8474564,
+    "nimi": "Steven Stamkos",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8474564.png"
+   },
+   {
+    "id": 8482103,
+    "nimi": "Ozzy Wiesblatt",
+    "pos": "H",
+    "numero": 89,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8482103.png"
+   },
+   {
+    "id": 8484241,
+    "nimi": "Matthew Wood",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8484241.png"
+   },
+   {
+    "id": 8482111,
+    "nimi": "Justin Barron",
+    "pos": "P",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8482111.png"
+   },
+   {
+    "id": 8479980,
+    "nimi": "Nicolas Hague",
+    "pos": "P",
+    "numero": 41,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8479980.png"
+   },
+   {
+    "id": 8474600,
+    "nimi": "Roman Josi",
+    "pos": "P",
+    "numero": 59,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8474600.png"
+   },
+   {
+    "id": 8480950,
+    "nimi": "Ilya Lyubushkin",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8480950.png"
+   },
+   {
+    "id": 8480246,
+    "nimi": "Nick Perbix",
+    "pos": "P",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8480246.png"
+   },
+   {
+    "id": 8476869,
+    "nimi": "Brady Skjei",
+    "pos": "P",
+    "numero": 76,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8476869.png"
+   },
+   {
+    "id": 8482482,
+    "nimi": "Adam Wilsby",
+    "pos": "P",
+    "numero": 83,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8482482.png"
+   },
+   {
+    "id": 8481020,
+    "nimi": "Justus Annunen",
+    "pos": "MV",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8481020.png"
+   },
+   {
+    "id": 8477424,
+    "nimi": "Juuse Saros",
+    "pos": "MV",
+    "numero": 74,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NSH/8477424.png"
+   }
+  ]
+ },
+ "NYI": {
+  "joukkue": "NYI",
+  "pelaajat": [
+   {
+    "id": 8478445,
+    "nimi": "Mathew Barzal",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8478445.png"
+   },
+   {
+    "id": 8475231,
+    "nimi": "Casey Cizikas",
+    "pos": "H",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8475231.png"
+   },
+   {
+    "id": 8477407,
+    "nimi": "Anthony Duclair",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8477407.png"
+   },
+   {
+    "id": 8482476,
+    "nimi": "Emil Heineman",
+    "pos": "H",
+    "numero": 51,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8482476.png"
+   },
+   {
+    "id": 8481601,
+    "nimi": "Simon Holmstrom",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8481601.png"
+   },
+   {
+    "id": 8477500,
+    "nimi": "Bo Horvat",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8477500.png"
+   },
+   {
+    "id": 8481237,
+    "nimi": "Kyle MacLean",
+    "pos": "H",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8481237.png"
+   },
+   {
+    "id": 8476419,
+    "nimi": "Jean-Gabriel Pageau",
+    "pos": "H",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8476419.png"
+   },
+   {
+    "id": 8476292,
+    "nimi": "Ondrej Palat",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8476292.png"
+   },
+   {
+    "id": 8475151,
+    "nimi": "Kyle Palmieri",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8475151.png"
+   },
+   {
+    "id": 8475170,
+    "nimi": "Brayden Schenn",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8475170.png"
+   },
+   {
+    "id": 8477950,
+    "nimi": "Tony DeAngelo",
+    "pos": "P",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8477950.png"
+   },
+   {
+    "id": 8476429,
+    "nimi": "Scott Mayfield",
+    "pos": "P",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8476429.png"
+   },
+   {
+    "id": 8476917,
+    "nimi": "Adam Pelech",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8476917.png"
+   },
+   {
+    "id": 8477506,
+    "nimi": "Ryan Pulock",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8477506.png"
+   },
+   {
+    "id": 8481014,
+    "nimi": "Alexander Romanov",
+    "pos": "P",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8481014.png"
+   },
+   {
+    "id": 8485366,
+    "nimi": "Matthew Schaefer",
+    "pos": "P",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8485366.png"
+   },
+   {
+    "id": 8478009,
+    "nimi": "Ilya Sorokin",
+    "pos": "MV",
+    "numero": 30,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8478009.png"
+   },
+   {
+    "id": 8473575,
+    "nimi": "Semyon Varlamov",
+    "pos": "MV",
+    "numero": 40,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYI/8473575.png"
+   }
+  ]
+ },
+ "NYR": {
+  "joukkue": "NYR",
+  "pelaajat": [
+   {
+    "id": 8482877,
+    "nimi": "Jaroslav Chmelar",
+    "pos": "H",
+    "numero": 49,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482877.png"
+   },
+   {
+    "id": 8482157,
+    "nimi": "Will Cuylle",
+    "pos": "H",
+    "numero": 50,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482157.png"
+   },
+   {
+    "id": 8481604,
+    "nimi": "Pavel Dorofeyev",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8481604.png"
+   },
+   {
+    "id": 8481789,
+    "nimi": "Tye Kartye",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8481789.png"
+   },
+   {
+    "id": 8483690,
+    "nimi": "Noah Laba",
+    "pos": "H",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8483690.png"
+   },
+   {
+    "id": 8482109,
+    "nimi": "Alexis Lafrenière",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482109.png"
+   },
+   {
+    "id": 8476468,
+    "nimi": "J.T. Miller",
+    "pos": "H",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8476468.png"
+   },
+   {
+    "id": 8484210,
+    "nimi": "Gabe Perreault",
+    "pos": "H",
+    "numero": 94,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8484210.png"
+   },
+   {
+    "id": 8479390,
+    "nimi": "Taylor Raddysh",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8479390.png"
+   },
+   {
+    "id": 8482460,
+    "nimi": "Matt Rempe",
+    "pos": "H",
+    "numero": 73,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482460.png"
+   },
+   {
+    "id": 8483669,
+    "nimi": "Adam Sykora",
+    "pos": "H",
+    "numero": 38,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8483669.png"
+   },
+   {
+    "id": 8476389,
+    "nimi": "Vincent Trocheck",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8476389.png"
+   },
+   {
+    "id": 8476459,
+    "nimi": "Mika Zibanejad",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8476459.png"
+   },
+   {
+    "id": 8478840,
+    "nimi": "Will Borgen",
+    "pos": "P",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8478840.png"
+   },
+   {
+    "id": 8484169,
+    "nimi": "Drew Fortescue",
+    "pos": "P",
+    "numero": 45,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8484169.png"
+   },
+   {
+    "id": 8479323,
+    "nimi": "Adam Fox",
+    "pos": "P",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8479323.png"
+   },
+   {
+    "id": 8478882,
+    "nimi": "Vladislav Gavrikov",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8478882.png"
+   },
+   {
+    "id": 8482861,
+    "nimi": "Vincent Iorio",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482861.png"
+   },
+   {
+    "id": 8481525,
+    "nimi": "Matthew Robertson",
+    "pos": "P",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8481525.png"
+   },
+   {
+    "id": 8482073,
+    "nimi": "Braden Schneider",
+    "pos": "P",
+    "numero": 4,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482073.png"
+   },
+   {
+    "id": 8480001,
+    "nimi": "Urho Vaakanainen",
+    "pos": "P",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8480001.png"
+   },
+   {
+    "id": 8482193,
+    "nimi": "Dylan Garand",
+    "pos": "MV",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8482193.png"
+   },
+   {
+    "id": 8478048,
+    "nimi": "Igor Shesterkin",
+    "pos": "MV",
+    "numero": 31,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/NYR/8478048.png"
+   }
+  ]
+ },
+ "OTT": {
+  "joukkue": "OTT",
+  "pelaajat": [
+   {
+    "id": 8478020,
+    "nimi": "Michael Amadio",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8478020.png"
+   },
+   {
+    "id": 8480208,
+    "nimi": "Drake Batherson",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8480208.png"
+   },
+   {
+    "id": 8482674,
+    "nimi": "Tyler Boucher",
+    "pos": "H",
+    "numero": 54,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482674.png"
+   },
+   {
+    "id": 8477444,
+    "nimi": "Andre Burakovsky",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8477444.png"
+   },
+   {
+    "id": 8476393,
+    "nimi": "Nick Cousins",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8476393.png"
+   },
+   {
+    "id": 8481528,
+    "nimi": "Dylan Cozens",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8481528.png"
+   },
+   {
+    "id": 8482667,
+    "nimi": "William Eklund",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482667.png"
+   },
+   {
+    "id": 8477998,
+    "nimi": "Warren Foegele",
+    "pos": "H",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8477998.png"
+   },
+   {
+    "id": 8482092,
+    "nimi": "Ridly Greig",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482092.png"
+   },
+   {
+    "id": 8483676,
+    "nimi": "Stephen Halliday",
+    "pos": "H",
+    "numero": 83,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8483676.png"
+   },
+   {
+    "id": 8478173,
+    "nimi": "Hayden Hodgson",
+    "pos": "H",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8478173.png"
+   },
+   {
+    "id": 8477073,
+    "nimi": "Kurtis MacDermid",
+    "pos": "H",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8477073.png"
+   },
+   {
+    "id": 8483673,
+    "nimi": "Oskar Pettersson",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8483673.png"
+   },
+   {
+    "id": 8481596,
+    "nimi": "Shane Pinto",
+    "pos": "H",
+    "numero": 12,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8481596.png"
+   },
+   {
+    "id": 8482116,
+    "nimi": "Tim Stützle",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482116.png"
+   },
+   {
+    "id": 8480188,
+    "nimi": "Fabian Zetterlund",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8480188.png"
+   },
+   {
+    "id": 8478469,
+    "nimi": "Thomas Chabot",
+    "pos": "P",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8478469.png"
+   },
+   {
+    "id": 8480075,
+    "nimi": "Cameron Crotty",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8480075.png"
+   },
+   {
+    "id": 8482095,
+    "nimi": "Tyler Kleven",
+    "pos": "P",
+    "numero": 43,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482095.png"
+   },
+   {
+    "id": 8484321,
+    "nimi": "Nikolas Matinpalo",
+    "pos": "P",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8484321.png"
+   },
+   {
+    "id": 8482105,
+    "nimi": "Jake Sanderson",
+    "pos": "P",
+    "numero": 85,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482105.png"
+   },
+   {
+    "id": 8481606,
+    "nimi": "Jordan Spence",
+    "pos": "P",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8481606.png"
+   },
+   {
+    "id": 8484759,
+    "nimi": "Carter Yakemchuk",
+    "pos": "P",
+    "numero": 58,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8484759.png"
+   },
+   {
+    "id": 8482245,
+    "nimi": "Artem Zub",
+    "pos": "P",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482245.png"
+   },
+   {
+    "id": 8482447,
+    "nimi": "Leevi Meriläinen",
+    "pos": "MV",
+    "numero": 1,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8482447.png"
+   },
+   {
+    "id": 8476999,
+    "nimi": "Linus Ullmark",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/OTT/8476999.png"
+   }
+  ]
+ },
+ "PHI": {
+  "joukkue": "PHI",
+  "pelaajat": [
+   {
+    "id": 8484142,
+    "nimi": "Denver Barkey",
+    "pos": "H",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8484142.png"
+   },
+   {
+    "id": 8483731,
+    "nimi": "Alex Bump",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8483731.png"
+   },
+   {
+    "id": 8480220,
+    "nimi": "Noah Cates",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8480220.png"
+   },
+   {
+    "id": 8476461,
+    "nimi": "Sean Couturier",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8476461.png"
+   },
+   {
+    "id": 8477989,
+    "nimi": "Christian Dvorak",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8477989.png"
+   },
+   {
+    "id": 8482159,
+    "nimi": "Tyson Foerster",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8482159.png"
+   },
+   {
+    "id": 8481848,
+    "nimi": "Jacob Gaucher",
+    "pos": "H",
+    "numero": 78,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8481848.png"
+   },
+   {
+    "id": 8483733,
+    "nimi": "Nikita Grebenkin",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8483733.png"
+   },
+   {
+    "id": 8478439,
+    "nimi": "Travis Konecny",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8478439.png"
+   },
+   {
+    "id": 8484779,
+    "nimi": "Jett Luchanko",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8484779.png"
+   },
+   {
+    "id": 8485406,
+    "nimi": "Porter Martone",
+    "pos": "H",
+    "numero": 94,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8485406.png"
+   },
+   {
+    "id": 8484387,
+    "nimi": "Matvei Michkov",
+    "pos": "H",
+    "numero": 39,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8484387.png"
+   },
+   {
+    "id": 8480015,
+    "nimi": "Owen Tippett",
+    "pos": "H",
+    "numero": 74,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8480015.png"
+   },
+   {
+    "id": 8481533,
+    "nimi": "Trevor Zegras",
+    "pos": "H",
+    "numero": 46,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8481533.png"
+   },
+   {
+    "id": 8481122,
+    "nimi": "Simon Benoit",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8481122.png"
+   },
+   {
+    "id": 8484148,
+    "nimi": "Oliver Bonk",
+    "pos": "P",
+    "numero": 59,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8484148.png"
+   },
+   {
+    "id": 8482142,
+    "nimi": "Jamie Drysdale",
+    "pos": "P",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8482142.png"
+   },
+   {
+    "id": 8482169,
+    "nimi": "Helge Grans",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8482169.png"
+   },
+   {
+    "id": 8483460,
+    "nimi": "David Jiricek",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8483460.png"
+   },
+   {
+    "id": 8483760,
+    "nimi": "Hunter McDonald",
+    "pos": "P",
+    "numero": 75,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8483760.png"
+   },
+   {
+    "id": 8477499,
+    "nimi": "Rasmus Ristolainen",
+    "pos": "P",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8477499.png"
+   },
+   {
+    "id": 8477948,
+    "nimi": "Travis Sanheim",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8477948.png"
+   },
+   {
+    "id": 8476372,
+    "nimi": "Nick Seeler",
+    "pos": "P",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8476372.png"
+   },
+   {
+    "id": 8481546,
+    "nimi": "Cam York",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8481546.png"
+   },
+   {
+    "id": 8484147,
+    "nimi": "Carson Bjarnason",
+    "pos": "MV",
+    "numero": 64,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8484147.png"
+   },
+   {
+    "id": 8482783,
+    "nimi": "Aleksei Kolosov",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8482783.png"
+   },
+   {
+    "id": 8478435,
+    "nimi": "Dan Vladar",
+    "pos": "MV",
+    "numero": 80,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8478435.png"
+   },
+   {
+    "id": 8479361,
+    "nimi": "Joseph Woll",
+    "pos": "MV",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PHI/8479361.png"
+   }
+  ]
+ },
+ "PIT": {
+  "joukkue": "PIT",
+  "pelaajat": [
+   {
+    "id": 8479638,
+    "nimi": "Justin Brazeau",
+    "pos": "H",
+    "numero": 16,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8479638.png"
+   },
+   {
+    "id": 8482475,
+    "nimi": "Egor Chinakhov",
+    "pos": "H",
+    "numero": 59,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8482475.png"
+   },
+   {
+    "id": 8471675,
+    "nimi": "Sidney Crosby",
+    "pos": "H",
+    "numero": 87,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8471675.png"
+   },
+   {
+    "id": 8480980,
+    "nimi": "Connor Dewar",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8480980.png"
+   },
+   {
+    "id": 8481019,
+    "nimi": "David Gustafsson",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481019.png"
+   },
+   {
+    "id": 8480842,
+    "nimi": "Filip Hallander",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8480842.png"
+   },
+   {
+    "id": 8485414,
+    "nimi": "Ben Kindel",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8485414.png"
+   },
+   {
+    "id": 8482758,
+    "nimi": "Ville Koivunen",
+    "pos": "H",
+    "numero": 41,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8482758.png"
+   },
+   {
+    "id": 8482148,
+    "nimi": "Hendrix Lapierre",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8482148.png"
+   },
+   {
+    "id": 8481481,
+    "nimi": "Blake Lizotte",
+    "pos": "H",
+    "numero": 46,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481481.png"
+   },
+   {
+    "id": 8471215,
+    "nimi": "Evgeni Malkin",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8471215.png"
+   },
+   {
+    "id": 8478438,
+    "nimi": "Tommy Novak",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8478438.png"
+   },
+   {
+    "id": 8476483,
+    "nimi": "Rickard Rakell",
+    "pos": "H",
+    "numero": 67,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8476483.png"
+   },
+   {
+    "id": 8475810,
+    "nimi": "Bryan Rust",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8475810.png"
+   },
+   {
+    "id": 8481725,
+    "nimi": "Elmer Soderblom",
+    "pos": "H",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481725.png"
+   },
+   {
+    "id": 8479398,
+    "nimi": "Samuel Girard",
+    "pos": "P",
+    "numero": 49,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8479398.png"
+   },
+   {
+    "id": 8477435,
+    "nimi": "Ryan Graves",
+    "pos": "P",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8477435.png"
+   },
+   {
+    "id": 8474578,
+    "nimi": "Erik Karlsson",
+    "pos": "P",
+    "numero": 65,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8474578.png"
+   },
+   {
+    "id": 8481527,
+    "nimi": "Kaedan Korczak",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481527.png"
+   },
+   {
+    "id": 8471724,
+    "nimi": "Kris Letang",
+    "pos": "P",
+    "numero": 58,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8471724.png"
+   },
+   {
+    "id": 8486169,
+    "nimi": "Jake Livanavage",
+    "pos": "P",
+    "numero": 57,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8486169.png"
+   },
+   {
+    "id": 8482470,
+    "nimi": "Ilya Solovyov",
+    "pos": "P",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8482470.png"
+   },
+   {
+    "id": 8481668,
+    "nimi": "Arturs Silovs",
+    "pos": "MV",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481668.png"
+   }
+  ]
+ },
+ "SEA": {
+  "joukkue": "SEA",
+  "pelaajat": [
+   {
+    "id": 8482665,
+    "nimi": "Matty Beniers",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8482665.png"
+   },
+   {
+    "id": 8484800,
+    "nimi": "Berkly Catton",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8484800.png"
+   },
+   {
+    "id": 8474586,
+    "nimi": "Jordan Eberle",
+    "pos": "H",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8474586.png"
+   },
+   {
+    "id": 8477919,
+    "nimi": "Frederick Gaudreau",
+    "pos": "H",
+    "numero": 89,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8477919.png"
+   },
+   {
+    "id": 8481554,
+    "nimi": "Kaapo Kakko",
+    "pos": "H",
+    "numero": 84,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8481554.png"
+   },
+   {
+    "id": 8477955,
+    "nimi": "Jared McCann",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8477955.png"
+   },
+   {
+    "id": 8482259,
+    "nimi": "Bobby McMann",
+    "pos": "H",
+    "numero": 74,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8482259.png"
+   },
+   {
+    "id": 8483570,
+    "nimi": "Ben Meyers",
+    "pos": "H",
+    "numero": 59,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8483570.png"
+   },
+   {
+    "id": 8482713,
+    "nimi": "Mackie Samoskevich",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8482713.png"
+   },
+   {
+    "id": 8476905,
+    "nimi": "Chandler Stephenson",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8476905.png"
+   },
+   {
+    "id": 8482751,
+    "nimi": "Ryan Winterton",
+    "pos": "H",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8482751.png"
+   },
+   {
+    "id": 8483524,
+    "nimi": "Shane Wright",
+    "pos": "H",
+    "numero": 51,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8483524.png"
+   },
+   {
+    "id": 8478407,
+    "nimi": "Vince Dunn",
+    "pos": "P",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8478407.png"
+   },
+   {
+    "id": 8482858,
+    "nimi": "Ryker Evans",
+    "pos": "P",
+    "numero": 41,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8482858.png"
+   },
+   {
+    "id": 8479985,
+    "nimi": "Cale Fleury",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8479985.png"
+   },
+   {
+    "id": 8476457,
+    "nimi": "Adam Larsson",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8476457.png"
+   },
+   {
+    "id": 8479324,
+    "nimi": "Ryan Lindgren",
+    "pos": "P",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8479324.png"
+   },
+   {
+    "id": 8479372,
+    "nimi": "Joshua Mahura",
+    "pos": "P",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8479372.png"
+   },
+   {
+    "id": 8477986,
+    "nimi": "Brandon Montour",
+    "pos": "P",
+    "numero": 62,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8477986.png"
+   },
+   {
+    "id": 8478916,
+    "nimi": "Joey Daccord",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8478916.png"
+   },
+   {
+    "id": 8475831,
+    "nimi": "Philipp Grubauer",
+    "pos": "MV",
+    "numero": 31,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SEA/8475831.png"
+   }
+  ]
+ },
+ "SJS": {
+  "joukkue": "SJS",
+  "pelaajat": [
+   {
+    "id": 8484801,
+    "nimi": "Macklin Celebrini",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8484801.png"
+   },
+   {
+    "id": 8480848,
+    "nimi": "Ty Dellandrea",
+    "pos": "H",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8480848.png"
+   },
+   {
+    "id": 8478874,
+    "nimi": "Adam Gaudette",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8478874.png"
+   },
+   {
+    "id": 8476624,
+    "nimi": "Barclay Goodrow",
+    "pos": "H",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8476624.png"
+   },
+   {
+    "id": 8484911,
+    "nimi": "Collin Graf",
+    "pos": "H",
+    "numero": 51,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8484911.png"
+   },
+   {
+    "id": 8485402,
+    "nimi": "Michael Misa",
+    "pos": "H",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8485402.png"
+   },
+   {
+    "id": 8482859,
+    "nimi": "Zack Ostapchuk",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8482859.png"
+   },
+   {
+    "id": 8480748,
+    "nimi": "Kiefer Sherwood",
+    "pos": "H",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8480748.png"
+   },
+   {
+    "id": 8484227,
+    "nimi": "Will Smith",
+    "pos": "H",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8484227.png"
+   },
+   {
+    "id": 8475726,
+    "nimi": "Tyler Toffoli",
+    "pos": "H",
+    "numero": 73,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8475726.png"
+   },
+   {
+    "id": 8477505,
+    "nimi": "Alexander Wennberg",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8477505.png"
+   },
+   {
+    "id": 8484806,
+    "nimi": "Sam Dickinson",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8484806.png"
+   },
+   {
+    "id": 8480891,
+    "nimi": "Michael Kesselring",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8480891.png"
+   },
+   {
+    "id": 8482166,
+    "nimi": "Shakir Mukhamadullin",
+    "pos": "P",
+    "numero": 85,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8482166.png"
+   },
+   {
+    "id": 8475200,
+    "nimi": "Dmitry Orlov",
+    "pos": "P",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8475200.png"
+   },
+   {
+    "id": 8482137,
+    "nimi": "Yaroslav Askarov",
+    "pos": "MV",
+    "numero": 30,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8482137.png"
+   },
+   {
+    "id": 8477968,
+    "nimi": "Alex Nedeljkovic",
+    "pos": "MV",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/SJS/8477968.png"
+   }
+  ]
+ },
+ "STL": {
+  "joukkue": "STL",
+  "pelaajat": [
+   {
+    "id": 8477402,
+    "nimi": "Pavel Buchnevich",
+    "pos": "H",
+    "numero": 89,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8477402.png"
+   },
+   {
+    "id": 8477494,
+    "nimi": "Jonathan Drouin",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8477494.png"
+   },
+   {
+    "id": 8484164,
+    "nimi": "Dalibor Dvorsky",
+    "pos": "H",
+    "numero": 54,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8484164.png"
+   },
+   {
+    "id": 8482090,
+    "nimi": "Jack Finley",
+    "pos": "H",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8482090.png"
+   },
+   {
+    "id": 8482077,
+    "nimi": "Dylan Holloway",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8482077.png"
+   },
+   {
+    "id": 8481580,
+    "nimi": "Connor McMichael",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8481580.png"
+   },
+   {
+    "id": 8482745,
+    "nimi": "Mason McTavish",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8482745.png"
+   },
+   {
+    "id": 8482089,
+    "nimi": "Jake Neighbours",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8482089.png"
+   },
+   {
+    "id": 8483516,
+    "nimi": "Jimmy Snuggerud",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8483516.png"
+   },
+   {
+    "id": 8480459,
+    "nimi": "Pius Suter",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8480459.png"
+   },
+   {
+    "id": 8480023,
+    "nimi": "Robert Thomas",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8480023.png"
+   },
+   {
+    "id": 8480281,
+    "nimi": "Alexey Toropchenko",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8480281.png"
+   },
+   {
+    "id": 8477573,
+    "nimi": "Nathan Walker",
+    "pos": "H",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8477573.png"
+   },
+   {
+    "id": 8481598,
+    "nimi": "Philip Broberg",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8481598.png"
+   },
+   {
+    "id": 8478443,
+    "nimi": "Brandon Carlo",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8478443.png"
+   },
+   {
+    "id": 8475764,
+    "nimi": "Cam Fowler",
+    "pos": "P",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8475764.png"
+   },
+   {
+    "id": 8482733,
+    "nimi": "Logan Mailloux",
+    "pos": "P",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8482733.png"
+   },
+   {
+    "id": 8476892,
+    "nimi": "Colton Parayko",
+    "pos": "P",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8476892.png"
+   },
+   {
+    "id": 8481006,
+    "nimi": "Tyler Tucker",
+    "pos": "P",
+    "numero": 75,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8481006.png"
+   },
+   {
+    "id": 8476412,
+    "nimi": "Jordan Binnington",
+    "pos": "MV",
+    "numero": 50,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8476412.png"
+   },
+   {
+    "id": 8480981,
+    "nimi": "Joel Hofer",
+    "pos": "MV",
+    "numero": 30,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/STL/8480981.png"
+   }
+  ]
+ },
+ "TBL": {
+  "joukkue": "TBL",
+  "pelaajat": [
+   {
+    "id": 8478519,
+    "nimi": "Anthony Cirelli",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8478519.png"
+   },
+   {
+    "id": 8483447,
+    "nimi": "Conor Geekie",
+    "pos": "H",
+    "numero": 14,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8483447.png"
+   },
+   {
+    "id": 8476878,
+    "nimi": "Zemgus Girgensons",
+    "pos": "H",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8476878.png"
+   },
+   {
+    "id": 8482201,
+    "nimi": "Gage Goncalves",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8482201.png"
+   },
+   {
+    "id": 8476826,
+    "nimi": "Yanni Gourde",
+    "pos": "H",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8476826.png"
+   },
+   {
+    "id": 8477404,
+    "nimi": "Jake Guentzel",
+    "pos": "H",
+    "numero": 59,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8477404.png"
+   },
+   {
+    "id": 8479542,
+    "nimi": "Brandon Hagel",
+    "pos": "H",
+    "numero": 38,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8479542.png"
+   },
+   {
+    "id": 8480995,
+    "nimi": "Pontus Holmberg",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8480995.png"
+   },
+   {
+    "id": 8483752,
+    "nimi": "Dominic James",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8483752.png"
+   },
+   {
+    "id": 8476453,
+    "nimi": "Nikita Kucherov",
+    "pos": "H",
+    "numero": 86,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8476453.png"
+   },
+   {
+    "id": 8477426,
+    "nimi": "Nick Paul",
+    "pos": "H",
+    "numero": 20,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8477426.png"
+   },
+   {
+    "id": 8478010,
+    "nimi": "Brayden Point",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8478010.png"
+   },
+   {
+    "id": 8477149,
+    "nimi": "Scott Sabourin",
+    "pos": "H",
+    "numero": 46,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8477149.png"
+   },
+   {
+    "id": 8478416,
+    "nimi": "Erik Cernak",
+    "pos": "P",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8478416.png"
+   },
+   {
+    "id": 8481719,
+    "nimi": "Max Crozier",
+    "pos": "P",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8481719.png"
+   },
+   {
+    "id": 8480426,
+    "nimi": "Charle-Edouard D'Astous",
+    "pos": "P",
+    "numero": 51,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8480426.png"
+   },
+   {
+    "id": 8475167,
+    "nimi": "Victor Hedman",
+    "pos": "P",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8475167.png"
+   },
+   {
+    "id": 8482929,
+    "nimi": "Emil Lilleberg",
+    "pos": "P",
+    "numero": 78,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8482929.png"
+   },
+   {
+    "id": 8474151,
+    "nimi": "Ryan McDonagh",
+    "pos": "P",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8474151.png"
+   },
+   {
+    "id": 8482655,
+    "nimi": "J.J. Moser",
+    "pos": "P",
+    "numero": 90,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8482655.png"
+   },
+   {
+    "id": 8477992,
+    "nimi": "Jonas Johansson",
+    "pos": "MV",
+    "numero": 31,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8477992.png"
+   },
+   {
+    "id": 8476883,
+    "nimi": "Andrei Vasilevskiy",
+    "pos": "MV",
+    "numero": 88,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TBL/8476883.png"
+   }
+  ]
+ },
+ "TOR": {
+  "joukkue": "TOR",
+  "pelaajat": [
+   {
+    "id": 8477503,
+    "nimi": "Max Domi",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8477503.png"
+   },
+   {
+    "id": 8480870,
+    "nimi": "Bo Groulx",
+    "pos": "H",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8480870.png"
+   },
+   {
+    "id": 8485467,
+    "nimi": "Luke Haymes",
+    "pos": "H",
+    "numero": 43,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8485467.png"
+   },
+   {
+    "id": 8478057,
+    "nimi": "Dakota Joshua",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8478057.png"
+   },
+   {
+    "id": 8482720,
+    "nimi": "Matthew Knies",
+    "pos": "H",
+    "numero": 23,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8482720.png"
+   },
+   {
+    "id": 8478904,
+    "nimi": "Steven Lorentz",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8478904.png"
+   },
+   {
+    "id": 8479318,
+    "nimi": "Auston Matthews",
+    "pos": "H",
+    "numero": 34,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8479318.png"
+   },
+   {
+    "id": 8477939,
+    "nimi": "William Nylander",
+    "pos": "H",
+    "numero": 88,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8477939.png"
+   },
+   {
+    "id": 8475166,
+    "nimi": "John Tavares",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8475166.png"
+   },
+   {
+    "id": 8482126,
+    "nimi": "Emil Andrae",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8482126.png"
+   },
+   {
+    "id": 8475171,
+    "nimi": "Oliver Ekman-Larsson",
+    "pos": "P",
+    "numero": 95,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8475171.png"
+   },
+   {
+    "id": 8476931,
+    "nimi": "Jake McCabe",
+    "pos": "P",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8476931.png"
+   },
+   {
+    "id": 8479026,
+    "nimi": "Philippe Myers",
+    "pos": "P",
+    "numero": 51,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8479026.png"
+   },
+   {
+    "id": 8478178,
+    "nimi": "Darren Raddysh",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8478178.png"
+   },
+   {
+    "id": 8476853,
+    "nimi": "Morgan Rielly",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8476853.png"
+   },
+   {
+    "id": 8479442,
+    "nimi": "Troy Stecher",
+    "pos": "P",
+    "numero": 28,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8479442.png"
+   },
+   {
+    "id": 8475690,
+    "nimi": "Chris Tanev",
+    "pos": "P",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8475690.png"
+   },
+   {
+    "id": 8476932,
+    "nimi": "Anthony Stolarz",
+    "pos": "MV",
+    "numero": 41,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/TOR/8476932.png"
+   }
+  ]
+ },
+ "UTA": {
+  "joukkue": "UTA",
+  "pelaajat": [
+   {
+    "id": 8484388,
+    "nimi": "Daniil But",
+    "pos": "H",
+    "numero": 19,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8484388.png"
+   },
+   {
+    "id": 8479619,
+    "nimi": "Michael Carcone",
+    "pos": "H",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8479619.png"
+   },
+   {
+    "id": 8483431,
+    "nimi": "Logan Cooley",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8483431.png"
+   },
+   {
+    "id": 8478474,
+    "nimi": "Lawson Crouse",
+    "pos": "H",
+    "numero": 67,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8478474.png"
+   },
+   {
+    "id": 8482699,
+    "nimi": "Dylan Guenther",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8482699.png"
+   },
+   {
+    "id": 8480849,
+    "nimi": "Barrett Hayton",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8480849.png"
+   },
+   {
+    "id": 8479656,
+    "nimi": "Cam Hebig",
+    "pos": "H",
+    "numero": 78,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8479656.png"
+   },
+   {
+    "id": 8479343,
+    "nimi": "Clayton Keller",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8479343.png"
+   },
+   {
+    "id": 8480855,
+    "nimi": "Jack McBain",
+    "pos": "H",
+    "numero": 22,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8480855.png"
+   },
+   {
+    "id": 8481827,
+    "nimi": "Ben McCartney",
+    "pos": "H",
+    "numero": 62,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8481827.png"
+   },
+   {
+    "id": 8477070,
+    "nimi": "Liam O'Brien",
+    "pos": "H",
+    "numero": 38,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8477070.png"
+   },
+   {
+    "id": 8477951,
+    "nimi": "Nick Schmaltz",
+    "pos": "H",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8477951.png"
+   },
+   {
+    "id": 8479293,
+    "nimi": "Brandon Tanev",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8479293.png"
+   },
+   {
+    "id": 8479977,
+    "nimi": "Kailer Yamamoto",
+    "pos": "H",
+    "numero": 56,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8479977.png"
+   },
+   {
+    "id": 8480084,
+    "nimi": "Nick DeSimone",
+    "pos": "P",
+    "numero": 57,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8480084.png"
+   },
+   {
+    "id": 8480434,
+    "nimi": "Sean Durzi",
+    "pos": "P",
+    "numero": 50,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8480434.png"
+   },
+   {
+    "id": 8483472,
+    "nimi": "Maveric Lamoureux",
+    "pos": "P",
+    "numero": 10,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8483472.png"
+   },
+   {
+    "id": 8478507,
+    "nimi": "John Marino",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8478507.png"
+   },
+   {
+    "id": 8477220,
+    "nimi": "Nate Schmidt",
+    "pos": "P",
+    "numero": 88,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8477220.png"
+   },
+   {
+    "id": 8479410,
+    "nimi": "Mikhail Sergachev",
+    "pos": "P",
+    "numero": 98,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8479410.png"
+   },
+   {
+    "id": 8484386,
+    "nimi": "Dmitri Simashev",
+    "pos": "P",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8484386.png"
+   },
+   {
+    "id": 8477346,
+    "nimi": "MacKenzie Weegar",
+    "pos": "P",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8477346.png"
+   },
+   {
+    "id": 8483530,
+    "nimi": "Jaxson Stauber",
+    "pos": "MV",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8483530.png"
+   },
+   {
+    "id": 8478872,
+    "nimi": "Karel Vejmelka",
+    "pos": "MV",
+    "numero": 70,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/UTA/8478872.png"
+   }
+  ]
+ },
+ "VAN": {
+  "joukkue": "VAN",
+  "pelaajat": [
+   {
+    "id": 8478444,
+    "nimi": "Brock Boeser",
+    "pos": "H",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8478444.png"
+   },
+   {
+    "id": 8480078,
+    "nimi": "Filip Chytil",
+    "pos": "H",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8480078.png"
+   },
+   {
+    "id": 8478498,
+    "nimi": "Jake DeBrusk",
+    "pos": "H",
+    "numero": 74,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8478498.png"
+   },
+   {
+    "id": 8475848,
+    "nimi": "Brendan Gallagher",
+    "pos": "H",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8475848.png"
+   },
+   {
+    "id": 8481024,
+    "nimi": "Linus Karlsson",
+    "pos": "H",
+    "numero": 94,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8481024.png"
+   },
+   {
+    "id": 8482055,
+    "nimi": "Drew O'Connor",
+    "pos": "H",
+    "numero": 18,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8482055.png"
+   },
+   {
+    "id": 8483499,
+    "nimi": "Liam Ohgren",
+    "pos": "H",
+    "numero": 92,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8483499.png"
+   },
+   {
+    "id": 8480012,
+    "nimi": "Elias Pettersson",
+    "pos": "H",
+    "numero": 40,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8480012.png"
+   },
+   {
+    "id": 8482691,
+    "nimi": "Aatu Räty",
+    "pos": "H",
+    "numero": 54,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8482691.png"
+   },
+   {
+    "id": 8482079,
+    "nimi": "Marco Rossi",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8482079.png"
+   },
+   {
+    "id": 8484136,
+    "nimi": "Max Sasson",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8484136.png"
+   },
+   {
+    "id": 8484798,
+    "nimi": "Zeev Buium",
+    "pos": "P",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8484798.png"
+   },
+   {
+    "id": 8479425,
+    "nimi": "Filip Hronek",
+    "pos": "P",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8479425.png"
+   },
+   {
+    "id": 8483768,
+    "nimi": "Victor Mancini",
+    "pos": "P",
+    "numero": 90,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8483768.png"
+   },
+   {
+    "id": 8483678,
+    "nimi": "Elias Pettersson",
+    "pos": "P",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8483678.png"
+   },
+   {
+    "id": 8477969,
+    "nimi": "Marcus Pettersson",
+    "pos": "P",
+    "numero": 29,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8477969.png"
+   },
+   {
+    "id": 8484240,
+    "nimi": "Tom Willander",
+    "pos": "P",
+    "numero": 5,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8484240.png"
+   },
+   {
+    "id": 8477967,
+    "nimi": "Thatcher Demko",
+    "pos": "MV",
+    "numero": 35,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8477967.png"
+   },
+   {
+    "id": 8480947,
+    "nimi": "Kevin Lankinen",
+    "pos": "MV",
+    "numero": 32,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8480947.png"
+   },
+   {
+    "id": 8484268,
+    "nimi": "Nikita Tolopilo",
+    "pos": "MV",
+    "numero": 60,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VAN/8484268.png"
+   }
+  ]
+ },
+ "VGK": {
+  "joukkue": "VGK",
+  "pelaajat": [
+   {
+    "id": 8477964,
+    "nimi": "Ivan Barbashev",
+    "pos": "H",
+    "numero": 49,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8477964.png"
+   },
+   {
+    "id": 8483890,
+    "nimi": "Braeden Bowman",
+    "pos": "H",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8483890.png"
+   },
+   {
+    "id": 8484803,
+    "nimi": "Trevor Connelly",
+    "pos": "H",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8484803.png"
+   },
+   {
+    "id": 8475343,
+    "nimi": "Nic Dowd",
+    "pos": "H",
+    "numero": 26,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8475343.png"
+   },
+   {
+    "id": 8478403,
+    "nimi": "Jack Eichel",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8478403.png"
+   },
+   {
+    "id": 8476881,
+    "nimi": "Tomas Hertl",
+    "pos": "H",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8476881.png"
+   },
+   {
+    "id": 8482125,
+    "nimi": "Alexander Holtz",
+    "pos": "H",
+    "numero": 11,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8482125.png"
+   },
+   {
+    "id": 8479353,
+    "nimi": "Brett Howden",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8479353.png"
+   },
+   {
+    "id": 8476448,
+    "nimi": "William Karlsson",
+    "pos": "H",
+    "numero": 71,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8476448.png"
+   },
+   {
+    "id": 8478434,
+    "nimi": "Keegan Kolesar",
+    "pos": "H",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8478434.png"
+   },
+   {
+    "id": 8478483,
+    "nimi": "Mitch Marner",
+    "pos": "H",
+    "numero": 93,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8478483.png"
+   },
+   {
+    "id": 8475913,
+    "nimi": "Mark Stone",
+    "pos": "H",
+    "numero": 61,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8475913.png"
+   },
+   {
+    "id": 8485251,
+    "nimi": "Kai Uchacz",
+    "pos": "H",
+    "numero": 77,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8485251.png"
+   },
+   {
+    "id": 8479602,
+    "nimi": "Jeremy Davies",
+    "pos": "P",
+    "numero": 84,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8479602.png"
+   },
+   {
+    "id": 8478396,
+    "nimi": "Noah Hanifin",
+    "pos": "P",
+    "numero": 15,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8478396.png"
+   },
+   {
+    "id": 8475188,
+    "nimi": "Brayden McNabb",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8475188.png"
+   },
+   {
+    "id": 8477034,
+    "nimi": "Jaycob Megna",
+    "pos": "P",
+    "numero": 88,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8477034.png"
+   },
+   {
+    "id": 8477447,
+    "nimi": "Shea Theodore",
+    "pos": "P",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8477447.png"
+   },
+   {
+    "id": 8478450,
+    "nimi": "Parker Wotherspoon",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8478450.png"
+   },
+   {
+    "id": 8479394,
+    "nimi": "Carter Hart",
+    "pos": "MV",
+    "numero": 79,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8479394.png"
+   },
+   {
+    "id": 8478499,
+    "nimi": "Adin Hill",
+    "pos": "MV",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8478499.png"
+   },
+   {
+    "id": 8482761,
+    "nimi": "Carl Lindbom",
+    "pos": "MV",
+    "numero": 30,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/VGK/8482761.png"
+   }
+  ]
+ },
+ "WPG": {
+  "joukkue": "WPG",
+  "pelaajat": [
+   {
+    "id": 8480289,
+    "nimi": "Morgan Barron",
+    "pos": "H",
+    "numero": 36,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8480289.png"
+   },
+   {
+    "id": 8482787,
+    "nimi": "Nikita Chibrikov",
+    "pos": "H",
+    "numero": 90,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8482787.png"
+   },
+   {
+    "id": 8478398,
+    "nimi": "Kyle Connor",
+    "pos": "H",
+    "numero": 81,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8478398.png"
+   },
+   {
+    "id": 8480113,
+    "nimi": "Alex Iafallo",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8480113.png"
+   },
+   {
+    "id": 8481043,
+    "nimi": "Cole Koepke",
+    "pos": "H",
+    "numero": 45,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8481043.png"
+   },
+   {
+    "id": 8476392,
+    "nimi": "Adam Lowry",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8476392.png"
+   },
+   {
+    "id": 8476480,
+    "nimi": "Vladislav Namestnikov",
+    "pos": "H",
+    "numero": 7,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8476480.png"
+   },
+   {
+    "id": 8475799,
+    "nimi": "Nino Niederreiter",
+    "pos": "H",
+    "numero": 62,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8475799.png"
+   },
+   {
+    "id": 8482149,
+    "nimi": "Cole Perfetti",
+    "pos": "H",
+    "numero": 91,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8482149.png"
+   },
+   {
+    "id": 8482765,
+    "nimi": "Isak Rosen",
+    "pos": "H",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8482765.png"
+   },
+   {
+    "id": 8476460,
+    "nimi": "Mark Scheifele",
+    "pos": "H",
+    "numero": 55,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8476460.png"
+   },
+   {
+    "id": 8480014,
+    "nimi": "Gabriel Vilardi",
+    "pos": "H",
+    "numero": 13,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8480014.png"
+   },
+   {
+    "id": 8476331,
+    "nimi": "Dylan DeMelo",
+    "pos": "P",
+    "numero": 2,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8476331.png"
+   },
+   {
+    "id": 8477938,
+    "nimi": "Haydn Fleury",
+    "pos": "P",
+    "numero": 24,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8477938.png"
+   },
+   {
+    "id": 8477504,
+    "nimi": "Josh Morrissey",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8477504.png"
+   },
+   {
+    "id": 8480145,
+    "nimi": "Neal Pionk",
+    "pos": "P",
+    "numero": 4,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8480145.png"
+   },
+   {
+    "id": 8480049,
+    "nimi": "Dylan Samberg",
+    "pos": "P",
+    "numero": 54,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8480049.png"
+   },
+   {
+    "id": 8481030,
+    "nimi": "John St. Ivany",
+    "pos": "P",
+    "numero": null,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8481030.png"
+   },
+   {
+    "id": 8476945,
+    "nimi": "Connor Hellebuyck",
+    "pos": "MV",
+    "numero": 37,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WPG/8476945.png"
+   }
+  ]
+ },
+ "WSH": {
+  "joukkue": "WSH",
+  "pelaajat": [
+   {
+    "id": 8478463,
+    "nimi": "Anthony Beauvillier",
+    "pos": "H",
+    "numero": 72,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8478463.png"
+   },
+   {
+    "id": 8479400,
+    "nimi": "Pierre-Luc Dubois",
+    "pos": "H",
+    "numero": 80,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8479400.png"
+   },
+   {
+    "id": 8483573,
+    "nimi": "Ethen Frank",
+    "pos": "H",
+    "numero": 53,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8483573.png"
+   },
+   {
+    "id": 8479385,
+    "nimi": "Jordan Kyrou",
+    "pos": "H",
+    "numero": 25,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8479385.png"
+   },
+   {
+    "id": 8484186,
+    "nimi": "Ryan Leonard",
+    "pos": "H",
+    "numero": 9,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8484186.png"
+   },
+   {
+    "id": 8483491,
+    "nimi": "Ivan Miroshnichenko",
+    "pos": "H",
+    "numero": 63,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8483491.png"
+   },
+   {
+    "id": 8471214,
+    "nimi": "Alex Ovechkin",
+    "pos": "H",
+    "numero": 8,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8471214.png"
+   },
+   {
+    "id": 8481656,
+    "nimi": "Aliaksei Protas",
+    "pos": "H",
+    "numero": 21,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8481656.png"
+   },
+   {
+    "id": 8484999,
+    "nimi": "Ilya Protas",
+    "pos": "H",
+    "numero": 62,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8484999.png"
+   },
+   {
+    "id": 8482088,
+    "nimi": "Justin Sourdif",
+    "pos": "H",
+    "numero": 34,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8482088.png"
+   },
+   {
+    "id": 8478440,
+    "nimi": "Dylan Strome",
+    "pos": "H",
+    "numero": 17,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8478440.png"
+   },
+   {
+    "id": 8477949,
+    "nimi": "Alex Tuch",
+    "pos": "H",
+    "numero": 89,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8477949.png"
+   },
+   {
+    "id": 8476880,
+    "nimi": "Tom Wilson",
+    "pos": "H",
+    "numero": 43,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8476880.png"
+   },
+   {
+    "id": 8479345,
+    "nimi": "Jakob Chychrun",
+    "pos": "P",
+    "numero": 6,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8479345.png"
+   },
+   {
+    "id": 8480796,
+    "nimi": "Martin Fehérváry",
+    "pos": "P",
+    "numero": 42,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8480796.png"
+   },
+   {
+    "id": 8484873,
+    "nimi": "Cole Hutson",
+    "pos": "P",
+    "numero": 44,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8484873.png"
+   },
+   {
+    "id": 8480043,
+    "nimi": "Timothy Liljegren",
+    "pos": "P",
+    "numero": 27,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8480043.png"
+   },
+   {
+    "id": 8475795,
+    "nimi": "Dylan McIlrath",
+    "pos": "P",
+    "numero": 52,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8475795.png"
+   },
+   {
+    "id": 8478911,
+    "nimi": "Matt Roy",
+    "pos": "P",
+    "numero": 3,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8478911.png"
+   },
+   {
+    "id": 8480873,
+    "nimi": "Rasmus Sandin",
+    "pos": "P",
+    "numero": 38,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8480873.png"
+   },
+   {
+    "id": 8479292,
+    "nimi": "Charlie Lindgren",
+    "pos": "MV",
+    "numero": 79,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8479292.png"
+   },
+   {
+    "id": 8483532,
+    "nimi": "Clay Stevenson",
+    "pos": "MV",
+    "numero": 33,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8483532.png"
+   },
+   {
+    "id": 8480313,
+    "nimi": "Logan Thompson",
+    "pos": "MV",
+    "numero": 48,
+    "kuva": "https://assets.nhle.com/mugs/nhl/20252026/WSH/8480313.png"
+   }
+  ]
+ }
+}
