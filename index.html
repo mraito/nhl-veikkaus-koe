@@ -120,6 +120,21 @@ button.ghost:hover{border-color:var(--hopea)}
 .osio .kuv{font-size:13px;color:var(--mut);margin:2px 0 8px}
 .puuttuu{color:var(--amb);font-size:13px}
 .okvihrea{color:var(--grn);font-size:13px;font-weight:700}
+
+/* ---- vakiokierros ---- */
+.vpaiva{color:var(--mut);font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 4px}
+.vrivi{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 10px;border:1px solid var(--line);border-radius:12px;margin:6px 0;background:var(--panel2)}
+.vrivi.tuloskohde{border-color:var(--hopea);background:linear-gradient(180deg,#1a1a21,#131318)}
+.vrivi .aika{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--mut);min-width:44px}
+.vrivi .pari{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;min-width:150px}
+.vrivi .pari img{width:22px;height:22px}
+.merkit{display:flex;gap:5px;margin-left:auto}
+.merkki{font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:14px;width:38px;height:34px;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
+.merkki:hover{border-color:var(--hopea);color:var(--ink)}
+.merkki.val{background:#fff;color:#0a0a0d;border-color:#fff}
+.merkki:disabled{cursor:default;opacity:.85}
+.tulosinput{width:46px;height:34px;text-align:center;font-family:'Spline Sans Mono',monospace;font-size:15px;padding:4px}
+.tulospilli{font-size:10px;font-weight:800;background:rgba(200,204,214,.16);color:var(--hopea);border-radius:5px;padding:2px 7px;letter-spacing:.05em}
 footer{color:var(--mut);font-size:11px;text-align:center;padding:20px 0}
 </style>
 </head>
@@ -276,13 +291,65 @@ function PelaajaHaku({ pelaajat, value, onChange, placeholder }) {
   );
 }
 
-function Veikkaus({ standings, rosters, lukittu }) {
+function VakioOsa({ round, picks, setPicks, lukittu, logot }) {
+  if (!round) return <div className="note">Vakiokierrosta ei ole vielä julkaistu.</div>;
+  const vk = ["su", "ma", "ti", "ke", "to", "pe", "la"];
+  const kkNimet = { "10": "Lokakuu", "11": "Marraskuu", "12": "Joulukuu", "01": "Tammikuu", "02": "Helmikuu", "03": "Maaliskuu", "04": "Huhtikuu" };
+  const asetaMerkki = (id, m) => { if (lukittu) return;
+    setPicks(Object.assign({}, picks, { vakio: Object.assign({}, picks.vakio, { [id]: picks.vakio[id] === m ? null : m }) })); };
+  const asetaTulos = (id, kentta, arvo) => { if (lukittu) return;
+    const n = arvo === "" ? null : Math.max(0, Math.min(15, parseInt(arvo, 10) || 0));
+    const vanha = picks.tulos[id] || { v: null, k: null };
+    setPicks(Object.assign({}, picks, { tulos: Object.assign({}, picks.tulos, { [id]: Object.assign({}, vanha, { [kentta]: n }) }) })); };
+  let edKk = "", edPvm = "";
+  return (
+    <div>
+      <div className="note">Tavalliset kohteet 1X2:lla (1 = kotivoitto varsinaisella ajalla, X = jatkoaika/voittolaukaukset, 2 = vierasvoitto varsinaisella ajalla; 3 p). Lauantain <b>tuloskohteessa</b> veikataan lopputulos: täysosuma 4 p · voittaja + toisen joukkueen maalit 3 p · voittaja 2 p.</div>
+      {round.kohteet.map(g => {
+        const kk = g.pvm.slice(5, 7), pvmTxt = vk[new Date(g.pvm).getUTCDay()] + " " + g.pvm.slice(8, 10) + "." + kk + ".";
+        const kkOtsikko = kk !== edKk ? <div className="divh">{kkNimet[kk] || kk}</div> : null;
+        edKk = kk;
+        const naytaPvm = g.pvm !== edPvm; edPvm = g.pvm;
+        const t = picks.tulos[g.id] || {};
+        return (
+          <div key={g.id}>
+            {kkOtsikko}
+            {naytaPvm && <div className="vpaiva">{pvmTxt}</div>}
+            <div className={"vrivi" + (g.tulos ? " tuloskohde" : "")}>
+              <span className="aika">{g.klo}</span>
+              <span className="pari"><img src={logot[g.vieras]} alt="" />{g.vieras} @ <img src={logot[g.koti]} alt="" />{g.koti}</span>
+              {g.tulos ? (
+                <span className="merkit" style={{ alignItems: "center", gap: 7 }}>
+                  <span className="tulospilli">TULOSKOHDE</span>
+                  <input className="tulosinput" inputMode="numeric" placeholder={g.vieras} disabled={lukittu}
+                         value={t.v == null ? "" : t.v} onChange={e => asetaTulos(g.id, "v", e.target.value.replace(/\D/g, ""))} />
+                  <span style={{ color: "var(--mut)" }}>–</span>
+                  <input className="tulosinput" inputMode="numeric" placeholder={g.koti} disabled={lukittu}
+                         value={t.k == null ? "" : t.k} onChange={e => asetaTulos(g.id, "k", e.target.value.replace(/\D/g, ""))} />
+                </span>
+              ) : (
+                <span className="merkit">
+                  {["1", "X", "2"].map(m =>
+                    <button key={m} disabled={lukittu} className={"merkki" + (picks.vakio[g.id] === m ? " val" : "")}
+                            onClick={() => asetaMerkki(g.id, m)}>{m}</button>)}
+                </span>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function Veikkaus({ standings, rosters, round, lukittu }) {
   const [nimi, setNimi] = useState("");
   const [pin, setPin] = useState("");
   const [kirjautunut, setKirjautunut] = useState(false);
   const [viesti, setViesti] = useState("");
   const [tallennettu, setTallennettu] = useState("");
-  const tyhja = { poE: [], poW: [], div: {}, pres: "", artRoss: null, finn: null, champ: "", player: null };
+  const tyhja = { poE: [], poW: [], div: {}, pres: "", artRoss: null, finn: null, champ: "", player: null, vakio: {}, tulos: {} };
+  const [osa, setOsa] = useState("kausi");
   const [picks, setPicks] = useState(tyhja);
 
   const joukkueet = standings.slice().sort((a, b) => a.teamName.default.localeCompare(b.teamName.default));
@@ -320,7 +387,8 @@ function Veikkaus({ standings, rosters, lukittu }) {
       setNimi(avattava);
       setPicks({
         poE: d.poE || [], poW: d.poW || [], div: d.div || {}, pres: d.pres || "",
-        artRoss: d.artRoss || null, finn: d.finn || null, champ: d.champ || "", player: d.player || null
+        artRoss: d.artRoss || null, finn: d.finn || null, champ: d.champ || "", player: d.player || null,
+        vakio: d.vakio || {}, tulos: d.tulos || {}
       });
       setAvattava(""); setKirjautunut(true);
     }).catch(e => setViesti("Yhteysvirhe: " + e.message));
@@ -353,6 +421,12 @@ function Veikkaus({ standings, rosters, lukittu }) {
   if (!picks.finn) puutteet.push("Paras suomalainen");
   if (!picks.champ) puutteet.push("Oma mestari");
   if (!picks.player) puutteet.push("Oma pelaaja");
+  if (round) {
+    const veikattu = round.kohteet.filter(g => g.tulos
+      ? (picks.tulos[g.id] && picks.tulos[g.id].v != null && picks.tulos[g.id].k != null)
+      : !!picks.vakio[g.id]).length;
+    if (veikattu < round.kohteet.length) puutteet.push("Vakiokohteita " + veikattu + "/" + round.kohteet.length);
+  }
 
   const tallenna = () => {
     if (lukittu) return;
@@ -412,13 +486,23 @@ function Veikkaus({ standings, rosters, lukittu }) {
   return (
     <div className="card">
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
-        <h2 style={{ margin: 0 }}>Kausiveikkaus — {nimi.trim()}</h2>
+        <h2 style={{ margin: 0 }}>Veikkaus — {nimi.trim()}</h2>
         <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
           {lukittu && <span className="pill y">LUKITTU</span>}
           <button className="ghost" onClick={() => { setKirjautunut(false); setTallennettu(""); }}>Kirjaudu ulos</button>
         </div>
       </div>
+      <div style={{ margin: "10px 0" }}>
+        <div className="seg">
+          <button className={"segb" + (osa === "kausi" ? " on" : "")} onClick={() => setOsa("kausi")}>Kausiveikkaus</button>
+          <button className={"segb" + (osa === "vakio" ? " on" : "")} onClick={() => setOsa("vakio")}>Vakiokierros 1</button>
+        </div>
+      </div>
 
+      {osa === "vakio" && <VakioOsa round={round} picks={picks} setPicks={setPicks} lukittu={lukittu}
+        logot={Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.teamLogo]))} />}
+
+      {osa === "kausi" && <div>
       <div className="osio"><div className="ots">1 · Playoff-joukkueet</div>
         <div className="kuv">Valitse 8 joukkuetta molemmista konferensseista, jotka pääsevät playoffeihin. 2 p / oikea + kuukausipisteet pitkin kautta.</div>
         {[["E", "Itäinen konferenssi", "poE"], ["W", "Läntinen konferenssi", "poW"]].map(([c, otsikko, avain]) => (
@@ -511,6 +595,8 @@ function Veikkaus({ standings, rosters, lukittu }) {
           </div>}
       </div>
 
+      </div>}
+
       <div className="osio">
         {puutteet.length > 0
           ? <div className="puuttuu">Vielä puuttuu: {puutteet.join(" · ")}. Voit silti tallentaa ja jatkaa myöhemmin.</div>
@@ -545,6 +631,7 @@ function App() {
   const [meta, setMeta] = useState(null);
   const [rosters, setRosters] = useState(null);
   const [config, setConfig] = useState({ locked1: false });
+  const [round, setRound] = useState(null);
   const [virhe, setVirhe] = useState("");
 
   useEffect(() => {
@@ -553,6 +640,7 @@ function App() {
     )).then(([st, sc, ld, gl, me, ro]) => {
       setStandings(st.standings); setScores(sc); setLeaders(ld); setGoalies(gl); setMeta(me); setRosters(ro);
     }).catch(e => setVirhe(e.message));
+    fetch("data/round1.json").then(r => r.ok ? r.json() : null).then(setRound).catch(() => setRound(null));
     db.collection("nhl27").doc("config").get()
       .then(snap => { if (snap.exists) setConfig(snap.data()); })
       .catch(() => {});
@@ -599,7 +687,7 @@ function App() {
         </div>
       )}
 
-      {tab === "veikkaus" && (standings && rosters ? <Veikkaus standings={standings} rosters={rosters} lukittu={!!config.locked1} /> : <div className="card tiny">Ladataan…</div>)}
+      {tab === "veikkaus" && (standings && rosters ? <Veikkaus standings={standings} rosters={rosters} round={round} lukittu={!!config.locked1} /> : <div className="card tiny">Ladataan…</div>)}
       {tab === "saannot" && (
         <div className="card">
           <h2>Säännöt</h2>
@@ -608,7 +696,7 @@ function App() {
           <div className="osio"><div className="ots">Kuukausipisteet</div>
             <div className="kuv">Jokaisen kuukauden viimeisenä päivänä (loka–maaliskuu): +1 p jokaisesta omasta playoff-veikkauksesta, joka on sillä hetkellä playoff-paikalla (top 3 divisioonassa tai wild card 1–2). Kertyneet pisteet jäävät voimaan, vaikka joukkue putoaisi myöhemmin.</div></div>
           <div className="osio"><div className="ots">Vakiokierrokset (1X2)</div>
-            <div className="kuv">Kausi jaetaan kahteen puolikkaaseen (loka–joulu ja tammi–huhti), jotka veikataan erikseen ennen puolikkaan alkua. Noin yksi kohde per pelipäivä, lauantaisin kaksi. Merkit: 1 = kotivoitto varsinaisella peliajalla, X = ottelu ratkeaa jatkoajalla tai voittolaukauksilla, 2 = vierasvoitto varsinaisella peliajalla. 3 p / oikea merkki, tuplakohteissa (×2) pisteet kaksinkertaisina.</div></div>
+            <div className="kuv">Kausi jaetaan kahteen puolikkaaseen (loka–joulu ja tammi–huhti), jotka veikataan erikseen ennen puolikkaan alkua. Noin yksi kohde per pelipäivä, lauantaisin kaksi. Merkit: 1 = kotivoitto varsinaisella peliajalla, X = ottelu ratkeaa jatkoajalla tai voittolaukauksilla, 2 = vierasvoitto varsinaisella peliajalla. 3 p / oikea merkki. Lauantain aikaisemmin alkava peli on viikon TULOSKOHDE: siihen veikataan lopputulos (jatkoaika ja voittolaukaukset mukaan lukien, NHL:n virallisen tuloksen mukaan) — täysosuma 4 p, oikea voittaja + toisen joukkueen maalimäärä 3 p, oikea voittaja 2 p. Järjestäjä voi lisäksi merkitä erikoistapahtumia (esim. Winter Classic) tuplakohteiksi (×2).</div></div>
           <div className="osio"><div className="ots">Oma mestari &amp; oma pelaaja</div>
             <div className="kuv">Mestari: 1 p / voitto runkosarjassa, 2 p / voitto playoffeissa. Pelaaja on pakko valita omasta mestarijoukkueesta: hyökkääjä 0,5 p/maali · puolustaja 2 p/maali · maalivahti 6 p/nollapeli. Vain maalit ja nollapelit lasketaan, ei syöttöjä. Pisteet seuraavat pelaajaa koko kauden, vaikka hän vaihtaisi seuraa — vaihto-oikeutta ei ole edes loukkaantumisissa.</div></div>
           <div className="osio"><div className="ots">Playoff-bracket</div>
