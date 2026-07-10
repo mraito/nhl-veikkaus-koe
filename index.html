@@ -90,6 +90,36 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--grn)}
 @media(min-width:880px){.gridx.two{grid-template-columns:1fr 1fr}}
 .tulossa{text-align:center;padding:40px 20px;color:var(--mut)}
 .tulossa .iso{font-family:'Anton';font-size:26px;color:var(--hopea);margin-bottom:8px;text-transform:uppercase}
+
+/* ---- veikkauslomake ---- */
+.kirjaudu{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.kentta{display:flex;flex-direction:column;gap:4px}
+input,select{font-family:inherit;font-size:15px;color:var(--ink);background:#101014;
+  border:1px solid var(--line);border-radius:10px;padding:9px 11px;outline:none}
+input:focus,select:focus{border-color:var(--hopea)}
+button.act{font-family:inherit;font-weight:800;background:var(--grn);color:#04150c;border:none;border-radius:11px;padding:11px 18px;cursor:pointer;font-size:15px}
+button.act:hover{filter:brightness(1.08)}
+button.act:disabled{opacity:.5;cursor:not-allowed}
+button.ghost{font-family:inherit;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:11px;padding:9px 15px;cursor:pointer;font-weight:700}
+button.ghost:hover{border-color:var(--hopea)}
+.tchip{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);cursor:pointer;font-weight:700;font-size:13px;user-select:none}
+.tchip img{width:22px;height:22px}
+.tchip.val{background:#fff;color:#0a0a0d;border-color:#fff}
+.tchip.lukossa{cursor:default;opacity:.85}
+.chipgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:8px 0}
+.haku{position:relative}
+.hakulista{position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--panel);border:1px solid var(--line);border-radius:10px;z-index:30;max-height:260px;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.hakurivi{display:flex;align-items:center;gap:8px;padding:8px 10px;cursor:pointer;font-size:14px}
+.hakurivi:hover{background:var(--alive)}
+.hakurivi img{width:26px;height:26px;border-radius:50%;background:var(--alive)}
+.valittu{display:flex;align-items:center;gap:8px;background:var(--alive);border-radius:10px;padding:7px 10px;margin-top:6px}
+.valittu img{width:30px;height:30px;border-radius:50%;background:#101014}
+.valittu .tyhjaa{margin-left:auto;color:var(--red);cursor:pointer;font-weight:800;background:none;border:none;font-size:15px}
+.osio{margin:18px 0 6px;padding-top:14px;border-top:1px solid var(--line)}
+.osio .ots{font-family:'Anton';font-size:16px;color:var(--hopea);letter-spacing:.04em;text-transform:uppercase}
+.osio .kuv{font-size:13px;color:var(--mut);margin:2px 0 8px}
+.puuttuu{color:var(--amb);font-size:13px}
+.okvihrea{color:var(--grn);font-size:13px;font-weight:700}
 footer{color:var(--mut);font-size:11px;text-align:center;padding:20px 0}
 </style>
 </head>
@@ -217,6 +247,244 @@ function Porssit({ leaders, goalies }) {
   );
 }
 
+function PelaajaHaku({ pelaajat, value, onChange, placeholder }) {
+  const [teksti, setTeksti] = useState("");
+  const osumat = teksti.trim().length >= 2
+    ? pelaajat.filter(p => p.nimi.toLowerCase().includes(teksti.trim().toLowerCase())).slice(0, 8)
+    : [];
+  if (value) return (
+    <div className="valittu">
+      <img src={value.kuva} alt="" />
+      <span><b>{value.nimi}</b> <span className="tiny">{value.joukkue} · {value.pos}</span></span>
+      <button className="tyhjaa" onClick={() => onChange(null)} title="Tyhjennä">✕</button>
+    </div>
+  );
+  return (
+    <div className="haku">
+      <input style={{ width: "100%" }} value={teksti} placeholder={placeholder || "Hae pelaajaa nimellä (väh. 2 kirjainta)…"}
+             onChange={e => setTeksti(e.target.value)} />
+      {osumat.length > 0 &&
+        <div className="hakulista">
+          {osumat.map(p => (
+            <div className="hakurivi" key={p.id} onClick={() => { onChange(p); setTeksti(""); }}>
+              <img src={p.kuva} alt="" /><b>{p.nimi}</b>
+              <span className="tiny">{p.joukkue} · {p.pos}{p.numero ? " · #" + p.numero : ""}</span>
+            </div>
+          ))}
+        </div>}
+    </div>
+  );
+}
+
+function Veikkaus({ standings, rosters, lukittu }) {
+  const [nimi, setNimi] = useState("");
+  const [pin, setPin] = useState("");
+  const [kirjautunut, setKirjautunut] = useState(false);
+  const [viesti, setViesti] = useState("");
+  const [tallennettu, setTallennettu] = useState("");
+  const tyhja = { poE: [], poW: [], div: {}, pres: "", artRoss: null, finn: null, champ: "", player: null };
+  const [picks, setPicks] = useState(tyhja);
+
+  const joukkueet = standings.slice().sort((a, b) => a.teamName.default.localeCompare(b.teamName.default));
+  const divit = {};
+  standings.forEach(t => { (divit[t.divisionName] = divit[t.divisionName] || []).push(t); });
+  const kaikkiPelaajat = Object.values(rosters).flatMap(t =>
+    t.pelaajat.map(p => Object.assign({ joukkue: t.joukkue }, p)));
+
+  const kirjaudu = () => {
+    const n = nimi.trim();
+    if (!n) { setViesti("Anna nimi."); return; }
+    if (!/^\d{4}$/.test(pin)) { setViesti("PIN on 4 numeroa."); return; }
+    setViesti("");
+    db.collection("nhlpredictions").doc(n).get().then(snap => {
+      if (snap.exists) {
+        const d = snap.data();
+        if (d.pin !== pin) { setViesti("Väärä PIN tälle nimelle."); return; }
+        setPicks({
+          poE: d.poE || [], poW: d.poW || [], div: d.div || {}, pres: d.pres || "",
+          artRoss: d.artRoss || null, finn: d.finn || null, champ: d.champ || "", player: d.player || null
+        });
+        setKirjautunut(true);
+      } else {
+        if (lukittu) { setViesti("Veikkaus on lukittu — uusia osallistujia ei voi enää lisätä."); return; }
+        setPicks(tyhja); setKirjautunut(true);
+      }
+    }).catch(e => setViesti("Yhteysvirhe: " + e.message));
+  };
+
+  const togglePO = (t) => {
+    if (lukittu) return;
+    const avain = t.conferenceAbbrev === "E" ? "poE" : "poW";
+    const lista = picks[avain];
+    const ab = t.teamAbbrev.default;
+    let uusi;
+    if (lista.includes(ab)) uusi = lista.filter(x => x !== ab);
+    else { if (lista.length >= 8) return; uusi = lista.concat([ab]); }
+    setPicks(Object.assign({}, picks, { [avain]: uusi }));
+  };
+
+  const asetaChamp = (ab) => {
+    if (lukittu) return;
+    const p = Object.assign({}, picks, { champ: ab });
+    if (picks.player && picks.player.joukkue !== ab) p.player = null; // pelaaja mestarijoukkueesta!
+    setPicks(p);
+  };
+
+  const puutteet = [];
+  if (picks.poE.length < 8) puutteet.push("Itä: " + picks.poE.length + "/8 playoff-joukkuetta");
+  if (picks.poW.length < 8) puutteet.push("Länsi: " + picks.poW.length + "/8 playoff-joukkuetta");
+  if (Object.keys(picks.div).filter(k => picks.div[k]).length < 4) puutteet.push("Divisioonavoittajat");
+  if (!picks.pres) puutteet.push("Presidents' Trophy");
+  if (!picks.artRoss) puutteet.push("Pistepörssin voittaja");
+  if (!picks.finn) puutteet.push("Paras suomalainen");
+  if (!picks.champ) puutteet.push("Oma mestari");
+  if (!picks.player) puutteet.push("Oma pelaaja");
+
+  const tallenna = () => {
+    if (lukittu) return;
+    setTallennettu("");
+    const doc = Object.assign({ name: nimi.trim(), pin: pin, savedAt: new Date().toISOString() }, picks);
+    db.collection("nhlpredictions").doc(nimi.trim()).set(doc)
+      .then(() => setTallennettu("Tallennettu " + new Date().toLocaleTimeString("fi-FI") + "! Voit muokata valintoja lukitukseen asti."))
+      .catch(e => setViesti("Tallennus epäonnistui: " + e.message));
+  };
+
+  const mestariJoukkue = picks.champ ? standings.find(t => t.teamAbbrev.default === picks.champ) : null;
+  const mestariRosteri = picks.champ && rosters[picks.champ] ? rosters[picks.champ].pelaajat : [];
+  const posNimi = { H: "Hyökkääjät (0,5 p/maali)", P: "Puolustajat (2 p/maali)", MV: "Maalivahdit (6 p/nollapeli)" };
+
+  if (!kirjautunut) return (
+    <div className="card">
+      <h2>Kirjaudu veikkaukseen</h2>
+      <div className="tiny" style={{ marginBottom: 10 }}>Uusi osallistuja: keksi itsellesi 4-numeroinen PIN. Palaava: käytä samaa nimeä ja PIN-koodia kuin ennen.</div>
+      <div className="kirjaudu">
+        <div className="kentta"><span className="lab">Nimi</span>
+          <input value={nimi} onChange={e => setNimi(e.target.value)} placeholder="Etunimi" /></div>
+        <div className="kentta"><span className="lab">PIN (4 numeroa)</span>
+          <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))} inputMode="numeric" placeholder="••••" style={{ width: 90 }} /></div>
+        <button className="act" onClick={kirjaudu}>Kirjaudu</button>
+      </div>
+      {viesti && <div className="note" style={{ color: "var(--amb)" }}>{viesti}</div>}
+    </div>
+  );
+
+  return (
+    <div className="card">
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+        <h2 style={{ margin: 0 }}>Kausiveikkaus — {nimi.trim()}</h2>
+        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          {lukittu && <span className="pill y">LUKITTU</span>}
+          <button className="ghost" onClick={() => { setKirjautunut(false); setTallennettu(""); }}>Kirjaudu ulos</button>
+        </div>
+      </div>
+
+      <div className="osio"><div className="ots">1 · Playoff-joukkueet</div>
+        <div className="kuv">Valitse 8 joukkuetta molemmista konferensseista, jotka pääsevät playoffeihin. 2 p / oikea + kuukausipisteet pitkin kautta.</div>
+        {[["E", "Itäinen konferenssi", "poE"], ["W", "Läntinen konferenssi", "poW"]].map(([c, otsikko, avain]) => (
+          <div key={c}>
+            <div className="lab" style={{ margin: "8px 0 2px" }}>{otsikko} — valittu {picks[avain].length}/8</div>
+            <div className="chipgrid">
+              {joukkueet.filter(t => t.conferenceAbbrev === c).map(t => {
+                const val = picks[avain].includes(t.teamAbbrev.default);
+                return (
+                  <div key={t.teamAbbrev.default}
+                       className={"tchip" + (val ? " val" : "") + (lukittu ? " lukossa" : "")}
+                       onClick={() => togglePO(t)}>
+                    <img src={t.teamLogo} alt="" />{t.teamName.default}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="osio"><div className="ots">2 · Divisioonavoittajat</div>
+        <div className="kuv">3 p / oikea voittaja.</div>
+        <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+          {Object.keys(divit).map(dn => (
+            <div className="kentta" key={dn}><span className="lab">{dn}</span>
+              <select disabled={lukittu} value={picks.div[dn] || ""}
+                      onChange={e => setPicks(Object.assign({}, picks, { div: Object.assign({}, picks.div, { [dn]: e.target.value }) }))}>
+                <option value="">— valitse —</option>
+                {divit[dn].slice().sort((a, b) => a.teamName.default.localeCompare(b.teamName.default))
+                  .map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
+              </select></div>
+          ))}
+        </div>
+      </div>
+
+      <div className="osio"><div className="ots">3 · Presidents' Trophy</div>
+        <div className="kuv">Runkosarjan paras joukkue. 5 p.</div>
+        <select disabled={lukittu} value={picks.pres}
+                onChange={e => setPicks(Object.assign({}, picks, { pres: e.target.value }))}>
+          <option value="">— valitse —</option>
+          {joukkueet.map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
+        </select>
+      </div>
+
+      <div className="osio"><div className="ots">4 · Pistepörssin voittaja (Art Ross)</div>
+        <div className="kuv">10 p oikein · 5 p jos top 3.</div>
+        {lukittu && !picks.artRoss ? <div className="tiny">—</div> :
+          <PelaajaHaku pelaajat={kaikkiPelaajat} value={picks.artRoss}
+                       onChange={p => !lukittu && setPicks(Object.assign({}, picks, { artRoss: p }))} />}
+      </div>
+
+      <div className="osio"><div className="ots">5 · Paras suomalainen pistemies</div>
+        <div className="kuv">8 p oikein · 4 p jos top 3 suomalaisista. (Haku näyttää toistaiseksi kaikki pelaajat — valitse suomalainen!)</div>
+        {lukittu && !picks.finn ? <div className="tiny">—</div> :
+          <PelaajaHaku pelaajat={kaikkiPelaajat} value={picks.finn}
+                       onChange={p => !lukittu && setPicks(Object.assign({}, picks, { finn: p }))} />}
+      </div>
+
+      <div className="osio"><div className="ots">6 · Oma mestari</div>
+        <div className="kuv">Stanley Cup -voittajasi. 1 p / voitto runkosarjassa, 2 p / voitto playoffeissa — pisteitä lähes joka illasta!</div>
+        <select disabled={lukittu} value={picks.champ} onChange={e => asetaChamp(e.target.value)}>
+          <option value="">— valitse —</option>
+          {joukkueet.map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
+        </select>
+        {mestariJoukkue &&
+          <div className="valittu"><img src={mestariJoukkue.teamLogo} alt="" style={{ borderRadius: 0, background: "transparent" }} />
+            <b>{mestariJoukkue.teamName.default}</b></div>}
+      </div>
+
+      <div className="osio"><div className="ots">7 · Oma pelaaja</div>
+        <div className="kuv">Pakko valita mestarijoukkueestasi! Hyökkääjä 0,5 p/maali · puolustaja 2 p/maali · maalivahti 6 p/nollapeli.</div>
+        {!picks.champ ? <div className="note">Valitse ensin oma mestari (kohta 6) — pelaajalista aukeaa sen joukkueesta.</div> :
+          <div>
+            <select disabled={lukittu} value={picks.player ? String(picks.player.id) : ""}
+                    onChange={e => {
+                      const p = mestariRosteri.find(x => String(x.id) === e.target.value);
+                      setPicks(Object.assign({}, picks, { player: p ? Object.assign({ joukkue: picks.champ }, p) : null }));
+                    }}>
+              <option value="">— valitse pelaaja ({picks.champ}) —</option>
+              {["H", "P", "MV"].map(pos =>
+                <optgroup key={pos} label={posNimi[pos]}>
+                  {mestariRosteri.filter(p => p.pos === pos).slice().sort((a, b) => a.nimi.localeCompare(b.nimi))
+                    .map(p => <option key={p.id} value={String(p.id)}>{p.nimi}{p.numero ? " #" + p.numero : ""}</option>)}
+                </optgroup>)}
+            </select>
+            {picks.player &&
+              <div className="valittu"><img src={picks.player.kuva} alt="" />
+                <span><b>{picks.player.nimi}</b> <span className="tiny">{picks.player.joukkue} · {posNimi[picks.player.pos]}</span></span></div>}
+          </div>}
+      </div>
+
+      <div className="osio">
+        {puutteet.length > 0
+          ? <div className="puuttuu">Vielä puuttuu: {puutteet.join(" · ")}. Voit silti tallentaa ja jatkaa myöhemmin.</div>
+          : <div className="okvihrea">Kaikki valinnat tehty! ✓</div>}
+        <div style={{ marginTop: 10, display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+          <button className="act" onClick={tallenna} disabled={lukittu}>Tallenna veikkaus</button>
+          {tallennettu && <span className="okvihrea">{tallennettu}</span>}
+        </div>
+        {viesti && <div className="note" style={{ color: "var(--amb)" }}>{viesti}</div>}
+        <div className="tiny" style={{ marginTop: 8 }}>Muista tallentaa! Valinnat eivät tallennu itsestään. Ennen lukitusta voit muokata veikkaustasi rajattomasti kirjautumalla samalla nimellä ja PIN-koodilla.</div>
+      </div>
+    </div>
+  );
+}
+
 function Tulossa({ nimi }) {
   return (
     <div className="card tulossa">
@@ -234,14 +502,19 @@ function App() {
   const [leaders, setLeaders] = useState(null);
   const [goalies, setGoalies] = useState(null);
   const [meta, setMeta] = useState(null);
+  const [rosters, setRosters] = useState(null);
+  const [config, setConfig] = useState({ locked1: false });
   const [virhe, setVirhe] = useState("");
 
   useEffect(() => {
-    Promise.all(["standings", "scores", "leaders", "goalies", "meta"].map(n =>
+    Promise.all(["standings", "scores", "leaders", "goalies", "meta", "rosters"].map(n =>
       fetch("data/" + n + ".json").then(r => { if (!r.ok) throw new Error("data/" + n + ".json: HTTP " + r.status); return r.json(); })
-    )).then(([st, sc, ld, gl, me]) => {
-      setStandings(st.standings); setScores(sc); setLeaders(ld); setGoalies(gl); setMeta(me);
+    )).then(([st, sc, ld, gl, me, ro]) => {
+      setStandings(st.standings); setScores(sc); setLeaders(ld); setGoalies(gl); setMeta(me); setRosters(ro);
     }).catch(e => setVirhe(e.message));
+    db.collection("nhl27").doc("config").get()
+      .then(snap => { if (snap.exists) setConfig(snap.data()); })
+      .catch(() => {});
   }, []);
 
   const TABS = [["karki", "Kärkitaulu"], ["sarja", "Sarjataulukko"], ["veikkaus", "Veikkaus"], ["saannot", "Säännöt"], ["org", "Järjestäjä"]];
@@ -285,11 +558,22 @@ function App() {
         </div>
       )}
 
-      {tab === "veikkaus" && <Tulossa nimi="Veikkaus" />}
+      {tab === "veikkaus" && (standings && rosters ? <Veikkaus standings={standings} rosters={rosters} lukittu={!!config.locked1} /> : <div className="card tiny">Ladataan…</div>)}
       {tab === "saannot" && (
         <div className="card">
-          <h2>Säännöt (tiivistelmä)</h2>
-          <div className="note">Vakiokierrokset (1X2, 3 p/oikea, X = jatkoaika tai voittolaukaukset) · Kausiveikkaus (playoff-joukkueet, divarivoittajat, Presidents' Trophy, pörssit) · Kuukausipisteet playoff-paikoilla olevista veikkauksista · Oma mestari (1 p/voitto, playoffeissa 2 p) · Oma pelaaja mestarijoukkueesta (hyökkääjä 0,5 p/maali, puolustaja 2 p/maali, maalivahti 6 p/nollapeli) · Playoff-bracket. Kaikki pisteet lasketaan yhteen. Täydet säännöt kirjoitetaan tähän toteutuksen edetessä.</div>
+          <h2>Säännöt</h2>
+          <div className="osio" style={{ borderTop: "none", paddingTop: 0 }}><div className="ots">Kausiveikkaus</div>
+            <div className="kuv">Täytetään ennen kauden alkua (lukitus ennen avauskierrosta). 16 playoff-joukkuetta: 2 p/oikea. Divisioonavoittajat: 3 p/oikea. Presidents' Trophy: 5 p. Pistepörssin voittaja: 10 p oikein, 5 p jos top 3. Paras suomalainen pistemies: 8 p oikein, 4 p jos top 3.</div></div>
+          <div className="osio"><div className="ots">Kuukausipisteet</div>
+            <div className="kuv">Jokaisen kuukauden viimeisenä päivänä (loka–maaliskuu): +1 p jokaisesta omasta playoff-veikkauksesta, joka on sillä hetkellä playoff-paikalla (top 3 divisioonassa tai wild card 1–2). Kertyneet pisteet jäävät voimaan, vaikka joukkue putoaisi myöhemmin.</div></div>
+          <div className="osio"><div className="ots">Vakiokierrokset (1X2)</div>
+            <div className="kuv">Kausi jaetaan kahteen puolikkaaseen (loka–joulu ja tammi–huhti), jotka veikataan erikseen ennen puolikkaan alkua. Noin yksi kohde per pelipäivä, lauantaisin kaksi. Merkit: 1 = kotivoitto varsinaisella peliajalla, X = ottelu ratkeaa jatkoajalla tai voittolaukauksilla, 2 = vierasvoitto varsinaisella peliajalla. 3 p / oikea merkki, tuplakohteissa (×2) pisteet kaksinkertaisina.</div></div>
+          <div className="osio"><div className="ots">Oma mestari &amp; oma pelaaja</div>
+            <div className="kuv">Mestari: 1 p / voitto runkosarjassa, 2 p / voitto playoffeissa. Pelaaja on pakko valita omasta mestarijoukkueesta: hyökkääjä 0,5 p/maali · puolustaja 2 p/maali · maalivahti 6 p/nollapeli. Vain maalit ja nollapelit lasketaan, ei syöttöjä. Pisteet seuraavat pelaajaa koko kauden, vaikka hän vaihtaisi seuraa — vaihto-oikeutta ei ole edes loukkaantumisissa.</div></div>
+          <div className="osio"><div className="ots">Playoff-bracket</div>
+            <div className="kuv">Kun 16 playoff-joukkuetta on selvillä huhtikuussa, veikataan pudotuspelikaavio kierros kierrokselta. Pisteytys tarkentuu ennen playoffseja.</div></div>
+          <div className="osio"><div className="ots">Potti ja lukitukset</div>
+            <div className="kuv">Kaikki pisteet lasketaan yhteen — yksi kärkitaulu, yksi palkintojenjako kauden lopussa: 1. sija 60 %, 2. sija 30 %, 3. sija 10 % potista. Tasatilanteessa sijojen palkinnot jaetaan tasan. Kolme lukitusta: kausiveikkaus + 1. puolikas (lokakuu), 2. puolikas (vuodenvaihde), playoff-bracket (huhtikuu). Ennen lukitusta muiden veikkaukset eivät näy kenellekään. Tulokset ja pisteet päivittyvät automaattisesti joka aamu.</div></div>
         </div>
       )}
       {tab === "org" && <Tulossa nimi="Järjestäjä" />}
