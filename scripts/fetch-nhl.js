@@ -72,7 +72,7 @@ const onPO = (t) => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wil
     // haetaan varmuuden vuoksi sekä FI-päivä-1 kattamaan aikaerot → kerätään UTC-päivät suoraan schedulesta
     const schedule = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'schedule.json'), 'utf8'));
     const utcPaivat = new Set();
-    schedule.ottelut.forEach(g => { if (idt.has(g.id)) utcPaivat.add(g.alkaaUTC.slice(0, 10)); });
+    schedule.ottelut.forEach(g => { if (idt.has(g.id)) utcPaivat.add(new Date(new Date(g.alkaaUTC).getTime() - 6 * 3600 * 1000).toISOString().slice(0, 10)); }); // NHL:n pelipäivä = UTC - 6 h
     console.log('Haetaan vakiotulokset:', utcPaivat.size, 'pelipäivää…');
     const tulokset = {};
     for (const pv of Array.from(utcPaivat).sort()) {
