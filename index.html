@@ -196,6 +196,155 @@ function splitPot(potti) {
 }
 const fmtP = (n) => (Math.round(n * 10) / 10).toLocaleString("fi-FI");
 
+const VKL = ["su", "ma", "ti", "ke", "to", "pe", "la"];
+const pvmTxt = (pvm) => VKL[new Date(pvm).getUTCDay()] + " " + pvm.slice(8, 10) + "." + pvm.slice(5, 7) + ".";
+
+function Chipit({ rivit }) {
+  const [auki, setAuki] = useState(false);
+  const nayta = auki ? rivit : rivit.slice(0, 3);
+  return (
+    <div style={{ display: "flex", gap: 5, flexWrap: "wrap", marginTop: 5 }}>
+      {nayta.map((r, i) =>
+        <span key={i} className="pill" style={{ background: r.pts > 0 ? "rgba(57,229,124,.14)" : "rgba(200,204,214,.08)",
+          color: r.pts > 0 ? "var(--grn)" : "var(--mut)" }}>{r.txt}</span>)}
+      {rivit.length > 3 &&
+        <span className="pill s" style={{ cursor: "pointer" }} onClick={() => setAuki(!auki)}>
+          {auki ? "▴" : "+" + (rivit.length - 3) + " ▾"}</span>}
+    </div>
+  );
+}
+
+function TulosKortit({ preds, round, results, schedule, logot }) {
+  const pelatut = round.kohteet.filter(g => results && results.tulokset[g.id])
+    .sort((a, b) => b.pvm.localeCompare(a.pvm)).slice(0, 5);
+  const tulevatKohteet = round.kohteet.filter(g => !results || !results.tulokset[g.id])
+    .sort((a, b) => a.pvm.localeCompare(b.pvm)).slice(0, 5);
+  const liigaTulevat = (!tulevatKohteet.length && schedule)
+    ? schedule.ottelut.filter(g => g.alkaaUTC > "2026-01-31").slice(0, 5) : [];
+  const merkkiTxt = (t) => t.paattyi !== "REG" ? "X" : (t.k > t.v ? "1" : "2");
+  return (
+    <div className="gridx two">
+      <div className="card" style={{ margin: 0 }}>
+        <h2>Viime kohteet</h2>
+        {pelatut.map(g => {
+          const t = results.tulokset[g.id];
+          const chipit = preds.map(p => {
+            if (g.tulos) {
+              const v = (p.tulos || {})[g.id];
+              const pts = tulosPisteet(v, t);
+              return { pts, txt: (v && v.v != null && v.k != null ? v.v + "–" + v.k : "–") + " " + p.name + (pts ? " +" + pts : "") };
+            }
+            const m = (p.vakio || {})[g.id];
+            const pts = m === merkkiTxt(t) ? 3 * (g.dbl ? 2 : 1) : 0;
+            return { pts, txt: (m || "–") + " " + p.name + (pts ? " +" + pts : "") };
+          }).sort((a, b) => b.pts - a.pts);
+          return (
+            <div key={g.id} style={{ padding: "9px 0", borderBottom: "1px dashed var(--line)" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                <span className="tiny" style={{ minWidth: 60 }}>{pvmTxt(g.pvm)}</span>
+                <img src={logot[g.vieras]} alt="" style={{ width: 20, height: 20 }} /><b>{g.vieras}</b>
+                <span className="mono" style={{ fontWeight: 600 }}>{t.v}–{t.k}</span>
+                <b>{g.koti}</b><img src={logot[g.koti]} alt="" style={{ width: 20, height: 20 }} />
+                {t.paattyi !== "REG" && <span className="tagi">{t.paattyi === "OT" ? "JA" : "VL"}</span>}
+                {g.tulos ? <span className="tulospilli">TULOS</span> :
+                  <span className="pill s">merkki {merkkiTxt(t)}</span>}
+              </div>
+              <Chipit rivit={chipit} />
+            </div>
+          );
+        })}
+      </div>
+      <div className="card" style={{ margin: 0 }}>
+        <h2>Tulossa seuraavaksi</h2>
+        {tulevatKohteet.length > 0 ? tulevatKohteet.map(g => (
+          <div key={g.id} style={{ display: "flex", alignItems: "center", gap: 8, padding: "9px 0", borderBottom: "1px dashed var(--line)" }}>
+            <span className="tiny" style={{ minWidth: 60 }}>{pvmTxt(g.pvm)}</span>
+            <span className="tiny">{g.klo}</span>
+            <img src={logot[g.vieras]} alt="" style={{ width: 20, height: 20 }} /><b>{g.vieras}</b>
+            <span style={{ color: "var(--mut)" }}>@</span>
+            <b>{g.koti}</b><img src={logot[g.koti]} alt="" style={{ width: 20, height: 20 }} />
+            {g.tulos && <span className="tulospilli">TULOS</span>}
+          </div>
+        )) : liigaTulevat.length > 0 ? (
+          <div>
+            <div className="tiny" style={{ marginBottom: 6 }}>Kaikki 1. puolikkaan kohteet on pelattu — liigan seuraavat ottelut:</div>
+            {liigaTulevat.map(g => {
+              const fi = new Date(new Date(g.alkaaUTC).getTime() + 2 * 3600 * 1000);
+              return (
+                <div key={g.id} style={{ display: "flex", alignItems: "center", gap: 8, padding: "9px 0", borderBottom: "1px dashed var(--line)" }}>
+                  <span className="tiny" style={{ minWidth: 60 }}>{pvmTxt(fi.toISOString().slice(0, 10))}</span>
+                  <span className="tiny">{fi.toISOString().slice(11, 16)}</span>
+                  <img src={logot[g.vieras]} alt="" style={{ width: 20, height: 20 }} /><b>{g.vieras}</b>
+                  <span style={{ color: "var(--mut)" }}>@</span>
+                  <b>{g.koti}</b><img src={logot[g.koti]} alt="" style={{ width: 20, height: 20 }} />
+                </div>
+              );
+            })}
+          </div>
+        ) : <div className="tiny">Ei tulevia kohteita.</div>}
+      </div>
+    </div>
+  );
+}
+
+function ValitutPorssit({ preds, playerstats, winsMap, logot, nimetMap }) {
+  // Mestarijoukkueet
+  const mestarit = {};
+  preds.forEach(p => { if (p.champ) (mestarit[p.champ] = mestarit[p.champ] || []).push(p.name); });
+  const mRivit = Object.keys(mestarit).map(ab => ({ ab, valinneet: mestarit[ab], pts: winsMap[ab] || 0 }))
+    .sort((a, b) => b.pts - a.pts);
+  // Valitut pelaajat
+  const pelaajat = {};
+  preds.forEach(p => {
+    if (!p.player) return;
+    const id = String(p.player.id);
+    if (!pelaajat[id]) pelaajat[id] = { p: p.player, valinneet: [] };
+    pelaajat[id].valinneet.push(p.name);
+  });
+  const posTxt = { H: "hyökkääjä", P: "puolustaja", MV: "maalivahti" };
+  const pRivit = Object.values(pelaajat).map(r => {
+    const id = String(r.p.id);
+    const maara = r.p.pos === "MV" ? (playerstats && playerstats.nollapelit[id]) || 0 : (playerstats && playerstats.maalit[id]) || 0;
+    const pts = r.p.pos === "MV" ? 6 * maara : (r.p.pos === "P" ? 2 : 0.5) * maara;
+    return Object.assign({ maara, pts }, r);
+  }).sort((a, b) => b.pts - a.pts);
+  return (
+    <div className="gridx two" style={{ marginTop: 14 }}>
+      <div className="card" style={{ margin: 0 }}>
+        <h2>Pistepörssi — mestarijoukkueet</h2>
+        {mRivit.map((r, i) => (
+          <div key={r.ab} style={{ padding: "8px 0", borderBottom: "1px solid #1c1c22" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+              <span className="sija" style={{ fontFamily: "'Anton'", width: 20, color: "var(--mut)" }}>{i + 1}</span>
+              <img src={logot[r.ab]} alt="" style={{ width: 24, height: 24 }} />
+              <b>{nimetMap[r.ab] || r.ab}</b>
+              <span className="pill s">{r.pts} voittoa · {r.pts} p</span>
+            </div>
+            <div className="tiny" style={{ marginLeft: 29, marginTop: 3 }}>Valinnut: {r.valinneet.join(", ")}</div>
+          </div>
+        ))}
+        {mRivit.length === 0 && <div className="tiny">Ei vielä valintoja.</div>}
+      </div>
+      <div className="card" style={{ margin: 0 }}>
+        <h2>Pistepörssi — valitut pelaajat</h2>
+        {pRivit.map((r, i) => (
+          <div key={r.p.id} style={{ padding: "8px 0", borderBottom: "1px solid #1c1c22" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
+              <span className="sija" style={{ fontFamily: "'Anton'", width: 20, color: "var(--mut)" }}>{i + 1}</span>
+              <img src={r.p.kuva} alt="" style={{ width: 30, height: 30, borderRadius: "50%", background: "var(--alive)" }} />
+              <b>{r.p.nimi}</b>
+              <span className="tiny">{posTxt[r.p.pos]}</span>
+              <span className="pill s">{r.maara} {r.p.pos === "MV" ? "nollapeliä" : "maalia"} · {fmtP(r.pts)} p</span>
+            </div>
+            <div className="tiny" style={{ marginLeft: 39, marginTop: 3 }}>Valinnut: {r.valinneet.join(", ")}</div>
+          </div>
+        ))}
+        {pRivit.length === 0 && <div className="tiny">Ei vielä valintoja.</div>}
+      </div>
+    </div>
+  );
+}
+
 function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standings, stake }) {
   const [auki, setAuki] = useState(null);
   const winsMap = {}, logot = {}, nimetMap = {};
@@ -732,6 +881,7 @@ function App() {
   const [checkpoints, setCheckpoints] = useState(null);
   const [playerstats, setPlayerstats] = useState(null);
   const [preds, setPreds] = useState([]);
+  const [schedule, setSchedule] = useState(null);
   const [virhe, setVirhe] = useState("");
 
   useEffect(() => {
@@ -744,6 +894,7 @@ function App() {
     fetch("data/results1.json").then(r => r.ok ? r.json() : null).then(setResults).catch(() => setResults(null));
     fetch("data/checkpoints.json").then(r => r.ok ? r.json() : null).then(setCheckpoints).catch(() => setCheckpoints(null));
     fetch("data/playerstats.json").then(r => r.ok ? r.json() : null).then(setPlayerstats).catch(() => setPlayerstats(null));
+    fetch("data/schedule.json").then(r => r.ok ? r.json() : null).then(setSchedule).catch(() => setSchedule(null));
     db.collection("nhlpredictions").get()
       .then(qs => setPreds(qs.docs.map(d => d.data())))
       .catch(() => {});
@@ -766,14 +917,19 @@ function App() {
 
       {tab === "tulos" && (
         <div>
-          {standings && round
-            ? <Tulostaulukko preds={preds} round={round} results={results} checkpoints={checkpoints}
-                             playerstats={playerstats} standings={standings} stake={config.stake != null ? config.stake : 10} />
-            : <div className="card tiny">Ladataan…</div>}
-          <div className="card">
-            <h2>Ottelut 31.1.2026 <span className="pill s">testidata, kausi 2025–26</span></h2>
-            <Ottelut scores={scores} />
-          </div>
+          {standings && round ? (() => {
+            const logot = Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.teamLogo]));
+            const nimetMap = Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.teamName.default]));
+            const winsMap = Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.wins]));
+            return (
+              <div>
+                <TulosKortit preds={preds} round={round} results={results} schedule={schedule} logot={logot} />
+                <ValitutPorssit preds={preds} playerstats={playerstats} winsMap={winsMap} logot={logot} nimetMap={nimetMap} />
+                <Tulostaulukko preds={preds} round={round} results={results} checkpoints={checkpoints}
+                               playerstats={playerstats} standings={standings} stake={config.stake != null ? config.stake : 10} />
+              </div>
+            );
+          })() : <div className="card tiny">Ladataan…</div>}
         </div>
       )}
 
