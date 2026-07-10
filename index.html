@@ -147,6 +147,102 @@ const db = firebase.firestore();
 
 const onPOpaikalla = t => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wildcardSequence <= 2);
 
+// ===== PISTELASKENTA =====
+function tulosPisteet(v, oikea) {
+  if (!v || v.v == null || v.k == null || !oikea) return 0;
+  const vVoitto = v.v > v.k, oVoitto = oikea.v > oikea.k;
+  if (vVoitto !== oVoitto) return 0;
+  if (v.v === oikea.v && v.k === oikea.k) return 4;
+  if (v.v === oikea.v || v.k === oikea.k) return 3;
+  return 2;
+}
+function laskePisteet(p, round, results, checkpoints, playerstats, winsMap) {
+  const erittely = { vakio: 0, vakioOikein: 0, vakioPelattu: 0, kk: 0, kkPerPvm: {}, mestari: 0, pelaaja: 0 };
+  if (round && results) {
+    round.kohteet.forEach(g => {
+      const oikea = results.tulokset[g.id];
+      if (!oikea) return;
+      erittely.vakioPelattu++;
+      if (g.tulos) {
+        const pts = tulosPisteet((p.tulos || {})[g.id], oikea);
+        if (pts > 0) erittely.vakioOikein++;
+        erittely.vakio += pts * (g.dbl ? 2 : 1);
+      } else {
+        const oikeaMerkki = oikea.paattyi !== "REG" ? "X" : (oikea.k > oikea.v ? "1" : "2");
+        if ((p.vakio || {})[g.id] === oikeaMerkki) { erittely.vakioOikein++; erittely.vakio += 3 * (g.dbl ? 2 : 1); }
+      }
+    });
+  }
+  if (checkpoints) {
+    const omat = (p.poE || []).concat(p.poW || []);
+    Object.keys(checkpoints).sort().forEach(pv => {
+      const n = omat.filter(t => checkpoints[pv][t]).length;
+      erittely.kkPerPvm[pv] = n; erittely.kk += n;
+    });
+  }
+  if (p.champ && winsMap[p.champ] != null) erittely.mestari = winsMap[p.champ];
+  if (p.player && playerstats) {
+    const id = String(p.player.id);
+    if (p.player.pos === "MV") erittely.pelaaja = 6 * (playerstats.nollapelit[id] || 0);
+    else erittely.pelaaja = (p.player.pos === "P" ? 2 : 0.5) * (playerstats.maalit[id] || 0);
+  }
+  erittely.yhteensa = erittely.vakio + erittely.kk + erittely.mestari + erittely.pelaaja;
+  return erittely;
+}
+function splitPot(potti) {
+  const osuudet = [0.6, 0.3, 0.1].map(o => Math.floor(potti * o));
+  osuudet[0] += potti - osuudet.reduce((a, b) => a + b, 0);  // jäännös 1. sijalle
+  return osuudet;
+}
+const fmtP = (n) => (Math.round(n * 10) / 10).toLocaleString("fi-FI");
+
+function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standings, stake }) {
+  const [auki, setAuki] = useState(null);
+  const winsMap = {}, logot = {}, nimetMap = {};
+  standings.forEach(t => { winsMap[t.teamAbbrev.default] = t.wins; logot[t.teamAbbrev.default] = t.teamLogo; nimetMap[t.teamAbbrev.default] = t.teamName.default; });
+  const rivit = preds.map(p => ({ p, e: laskePisteet(p, round, results, checkpoints, playerstats, winsMap) }))
+    .sort((a, b) => b.e.yhteensa - a.e.yhteensa);
+  const potti = preds.length * stake;
+  const palkinnot = splitPot(potti);
+  const mitalit = ["🥇", "🥈", "🥉"];
+  if (preds.length === 0) return (
+    <div className="card"><h2>Tulostaulukko</h2>
+      <div className="note">Ei vielä osallistujia — käy tekemässä veikkaus Veikkaus-välilehdellä!</div></div>);
+  return (
+    <div className="card">
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
+        <h2 style={{ margin: 0 }}>Tulostaulukko</h2>
+        <span className="tiny">Potti {potti} € · jako {palkinnot.join(" € / ")} €</span>
+      </div>
+      <div className="tiny" style={{ margin: "4px 0 10px" }}>Pisteissä mukana: vakiokohteet, kuukausipisteet, oma mestari ja oma pelaaja. Kausiveikkauksen kohteet ratkeavat runkosarjan päättyessä.</div>
+      {rivit.map(({ p, e }, i) => (
+        <div key={p.name} style={{ borderTop: "1px solid var(--line)" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 2px", cursor: "pointer" }}
+               onClick={() => setAuki(auki === p.name ? null : p.name)}>
+            <span className="sija" style={{ fontFamily: "'Anton'", width: 30, color: i < 3 ? "var(--ink)" : "var(--mut)" }}>
+              {mitalit[i] || (i + 1) + "."}</span>
+            {p.champ && <img src={logot[p.champ]} alt="" style={{ width: 26, height: 26 }} title={"Mestari: " + (nimetMap[p.champ] || p.champ)} />}
+            <b style={{ fontSize: 15 }}>{p.name}</b>
+            <span className="pill s" title="Vakiokohteet oikein">{e.vakioOikein}/{e.vakioPelattu}</span>
+            <span className="arvo" style={{ marginLeft: "auto", fontFamily: "'Spline Sans Mono',monospace", fontWeight: 600, fontSize: 18 }}>
+              {fmtP(e.yhteensa)} p</span>
+            <span style={{ color: "var(--mut)" }}>{auki === p.name ? "▾" : "›"}</span>
+          </div>
+          {auki === p.name && (
+            <div style={{ padding: "0 2px 12px 40px", display: "grid", gap: 4, fontSize: 13 }}>
+              <div>Vakiokohteet: <b className="mono">{fmtP(e.vakio)} p</b> <span className="tiny">({e.vakioOikein} oikein / {e.vakioPelattu} pelattua)</span></div>
+              <div>Kuukausipisteet: <b className="mono">{e.kk} p</b> <span className="tiny">
+                ({Object.keys(e.kkPerPvm).sort().map(pv => pv.slice(8,10) + "." + pv.slice(5,7) + ". +" + e.kkPerPvm[pv]).join(" · ")})</span></div>
+              <div>Oma mestari{p.champ ? " (" + p.champ + ")" : ""}: <b className="mono">{e.mestari} p</b> <span className="tiny">(1 p / voitto)</span></div>
+              <div>Oma pelaaja{p.player ? " (" + p.player.nimi + ", " + p.player.pos + ")" : ""}: <b className="mono">{fmtP(e.pelaaja)} p</b></div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function Hero({ standings }) {
   // Logoraitaan divisioonien kärkijoukkueet datasta
   const karjet = standings ? standings.filter(t => t.divisionSequence <= 2) : [];
@@ -622,7 +718,7 @@ function Tulossa({ nimi }) {
 }
 
 function App() {
-  const [tab, setTab] = useState("sarja");
+  const [tab, setTab] = useState("tulos");
   const [sarjaNakyma, setSarjaNakyma] = useState("div");
   const [standings, setStandings] = useState(null);
   const [scores, setScores] = useState(null);
@@ -632,6 +728,10 @@ function App() {
   const [rosters, setRosters] = useState(null);
   const [config, setConfig] = useState({ locked1: false });
   const [round, setRound] = useState(null);
+  const [results, setResults] = useState(null);
+  const [checkpoints, setCheckpoints] = useState(null);
+  const [playerstats, setPlayerstats] = useState(null);
+  const [preds, setPreds] = useState([]);
   const [virhe, setVirhe] = useState("");
 
   useEffect(() => {
@@ -641,12 +741,18 @@ function App() {
       setStandings(st.standings); setScores(sc); setLeaders(ld); setGoalies(gl); setMeta(me); setRosters(ro);
     }).catch(e => setVirhe(e.message));
     fetch("data/round1.json").then(r => r.ok ? r.json() : null).then(setRound).catch(() => setRound(null));
+    fetch("data/results1.json").then(r => r.ok ? r.json() : null).then(setResults).catch(() => setResults(null));
+    fetch("data/checkpoints.json").then(r => r.ok ? r.json() : null).then(setCheckpoints).catch(() => setCheckpoints(null));
+    fetch("data/playerstats.json").then(r => r.ok ? r.json() : null).then(setPlayerstats).catch(() => setPlayerstats(null));
+    db.collection("nhlpredictions").get()
+      .then(qs => setPreds(qs.docs.map(d => d.data())))
+      .catch(() => {});
     db.collection("nhl27").doc("config").get()
       .then(snap => { if (snap.exists) setConfig(snap.data()); })
       .catch(() => {});
   }, []);
 
-  const TABS = [["karki", "Kärkitaulu"], ["sarja", "Sarjataulukko"], ["veikkaus", "Veikkaus"], ["saannot", "Säännöt"], ["org", "Järjestäjä"]];
+  const TABS = [["tulos", "Tulostaulukko"], ["sarja", "Sarjataulukko"], ["veikkaus", "Veikkaus"], ["saannot", "Säännöt"], ["org", "Järjestäjä"]];
 
   return (
     <div className="wrap">
@@ -658,9 +764,12 @@ function App() {
 
       {virhe && <div className="note" style={{ color: "var(--red)" }}>Datan lataus epäonnistui: {virhe}</div>}
 
-      {tab === "karki" && (
+      {tab === "tulos" && (
         <div>
-          <Tulossa nimi="Kärkitaulu" />
+          {standings && round
+            ? <Tulostaulukko preds={preds} round={round} results={results} checkpoints={checkpoints}
+                             playerstats={playerstats} standings={standings} stake={config.stake != null ? config.stake : 10} />
+            : <div className="card tiny">Ladataan…</div>}
           <div className="card">
             <h2>Ottelut 31.1.2026 <span className="pill s">testidata, kausi 2025–26</span></h2>
             <Ottelut scores={scores} />
