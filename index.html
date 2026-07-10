@@ -291,24 +291,38 @@ function Veikkaus({ standings, rosters, lukittu }) {
   const kaikkiPelaajat = Object.values(rosters).flatMap(t =>
     t.pelaajat.map(p => Object.assign({ joukkue: t.joukkue }, p)));
 
-  const kirjaudu = () => {
+  const [osallistujat, setOsallistujat] = useState([]);
+  const [avattava, setAvattava] = useState("");   // palaajan valitsema nimi (PIN-kysely auki)
+  useEffect(() => {
+    db.collection("nhlpredictions").get()
+      .then(qs => setOsallistujat(qs.docs.map(d => d.id).sort((a, b) => a.localeCompare(b, "fi"))))
+      .catch(() => {});
+  }, [kirjautunut]);
+
+  const aloitaUusi = () => {
     const n = nimi.trim();
     if (!n) { setViesti("Anna nimi."); return; }
+    if (osallistujat.some(o => o.toLowerCase() === n.toLowerCase())) {
+      setViesti("Tämä nimi on jo käytössä — jos se olet sinä, valitse nimesi alta kohdasta \u201dPalaatko muokkaamaan\u201d."); return;
+    }
+    if (!/^\d{4}$/.test(pin)) { setViesti("Keksi 4-numeroinen PIN."); return; }
+    if (lukittu) { setViesti("Veikkaus on lukittu — uusia osallistujia ei voi enää lisätä."); return; }
+    setViesti(""); setPicks(tyhja); setKirjautunut(true);
+  };
+
+  const avaaVanha = () => {
     if (!/^\d{4}$/.test(pin)) { setViesti("PIN on 4 numeroa."); return; }
     setViesti("");
-    db.collection("nhlpredictions").doc(n).get().then(snap => {
-      if (snap.exists) {
-        const d = snap.data();
-        if (d.pin !== pin) { setViesti("Väärä PIN tälle nimelle."); return; }
-        setPicks({
-          poE: d.poE || [], poW: d.poW || [], div: d.div || {}, pres: d.pres || "",
-          artRoss: d.artRoss || null, finn: d.finn || null, champ: d.champ || "", player: d.player || null
-        });
-        setKirjautunut(true);
-      } else {
-        if (lukittu) { setViesti("Veikkaus on lukittu — uusia osallistujia ei voi enää lisätä."); return; }
-        setPicks(tyhja); setKirjautunut(true);
-      }
+    db.collection("nhlpredictions").doc(avattava).get().then(snap => {
+      if (!snap.exists) { setViesti("Veikkausta ei löytynyt."); return; }
+      const d = snap.data();
+      if (d.pin !== pin) { setViesti("Väärä PIN."); return; }
+      setNimi(avattava);
+      setPicks({
+        poE: d.poE || [], poW: d.poW || [], div: d.div || {}, pres: d.pres || "",
+        artRoss: d.artRoss || null, finn: d.finn || null, champ: d.champ || "", player: d.player || null
+      });
+      setAvattava(""); setKirjautunut(true);
     }).catch(e => setViesti("Yhteysvirhe: " + e.message));
   };
 
@@ -353,17 +367,44 @@ function Veikkaus({ standings, rosters, lukittu }) {
   const mestariRosteri = picks.champ && rosters[picks.champ] ? rosters[picks.champ].pelaajat : [];
   const posNimi = { H: "Hyökkääjät (0,5 p/maali)", P: "Puolustajat (2 p/maali)", MV: "Maalivahdit (6 p/nollapeli)" };
 
+  if (!kirjautunut && avattava) return (
+    <div className="card">
+      <h2>🔒 Avaa veikkaus: {avattava}</h2>
+      <div className="tiny" style={{ marginBottom: 10 }}>Syötä PIN-koodisi päästäksesi katsomaan ja muokkaamaan veikkaustasi.</div>
+      <div className="kirjaudu">
+        <input type="password" inputMode="numeric" autoFocus placeholder="PIN" value={pin}
+               onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))}
+               onKeyDown={e => { if (e.key === "Enter") avaaVanha(); }} style={{ width: 110 }} />
+        <button className="act" onClick={avaaVanha}>Avaa</button>
+        <button className="ghost" onClick={() => { setAvattava(""); setPin(""); setViesti(""); }}>Peruuta</button>
+      </div>
+      {viesti && <div className="note" style={{ color: "var(--amb)" }}>{viesti} Jos olet unohtanut PIN-koodisi, järjestäjä voi nollata sen.</div>}
+    </div>
+  );
+
   if (!kirjautunut) return (
     <div className="card">
-      <h2>Kirjaudu veikkaukseen</h2>
-      <div className="tiny" style={{ marginBottom: 10 }}>Uusi osallistuja: keksi itsellesi 4-numeroinen PIN. Palaava: käytä samaa nimeä ja PIN-koodia kuin ennen.</div>
-      <div className="kirjaudu">
+      <h2>Kuka olet?</h2>
+      <div className="note">Näin veikkaat: aloita uutena veikkaajana, tee valintasi ja tallenna. Voit palata muokkaamaan milloin vain lukitukseen asti. Tarkemmat säännöt Säännöt-välilehdellä.</div>
+      <div className="lab">Uusi veikkaaja</div>
+      <div className="kirjaudu" style={{ marginTop: 6 }}>
         <div className="kentta"><span className="lab">Nimi</span>
-          <input value={nimi} onChange={e => setNimi(e.target.value)} placeholder="Etunimi" /></div>
-        <div className="kentta"><span className="lab">PIN (4 numeroa)</span>
-          <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))} inputMode="numeric" placeholder="••••" style={{ width: 90 }} /></div>
-        <button className="act" onClick={kirjaudu}>Kirjaudu</button>
+          <input value={nimi} onChange={e => setNimi(e.target.value)} placeholder="Etunimi (+ sukunimen alkukirjain)" style={{ minWidth: 200 }} /></div>
+        <div className="kentta"><span className="lab">Keksi PIN (4 numeroa)</span>
+          <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))} inputMode="numeric" placeholder="••••" style={{ width: 110 }} /></div>
+        <button className="act" onClick={aloitaUusi}>Aloita</button>
       </div>
+      <div className="tiny" style={{ marginTop: 6 }}>Paina PIN mieleen — tarvitset sitä aina, kun palaat muokkaamaan.</div>
+      {osallistujat.length > 0 && <div>
+        <div className="osio"><div className="lab">Palaatko muokkaamaan? Valitse nimesi</div>
+          <select style={{ marginTop: 6, minWidth: 220 }} value=""
+                  onChange={e => { if (e.target.value) { setAvattava(e.target.value); setPin(""); setViesti(""); } }}>
+            <option value="">— valitse nimesi —</option>
+            {osallistujat.map(o => <option key={o} value={o}>{o} 🔒</option>)}
+          </select>
+        </div>
+      </div>}
+      {lukittu && <div className="note" style={{ color: "var(--amb)" }}>🔒 Veikkaukset on lukittu — uusia ei voi lisätä, mutta omaa voi katsella.</div>}
       {viesti && <div className="note" style={{ color: "var(--amb)" }}>{viesti}</div>}
     </div>
   );
