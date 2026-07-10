@@ -11,7 +11,7 @@ const TEST_CHECKPOINTS = ['2025-10-31', '2025-11-30', '2025-12-31'];
 // =====================
 
 const API = 'https://api-web.nhle.com/v1';
-const HEADERS = { 'User-Agent': 'nhl-veikkaus-koe/4.0 (kaveriporukan veikkaussovellus; GitHub Action)' };
+const HEADERS = { 'User-Agent': 'nhl-veikkaus-koe/5.0 (kaveriporukan veikkaussovellus; GitHub Action)' };
 
 async function getJSON(url) {
   for (let i = 1; i <= 3; i++) {
@@ -50,18 +50,29 @@ const onPO = (t) => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wil
   const kausiTaiCurrent = (polku, params) => TEST_MODE
     ? API + '/' + polku + '/' + SEASON + '/2?' + params
     : API + '/' + polku + '/current?' + params;
-  save('leaders.json', await getJSON(kausiTaiCurrent('skater-stats-leaders', 'categories=points,goals&limit=10')));
-  save('goalies.json', await getJSON(kausiTaiCurrent('goalie-stats-leaders', 'categories=shutouts,wins&limit=10')));
+  save('leaders.json', await getJSON(kausiTaiCurrent('skater-stats-leaders', 'categories=points,goals&limit=30')));
+  save('goalies.json', await getJSON(kausiTaiCurrent('goalie-stats-leaders', 'categories=shutouts,wins&limit=30')));
 
   // 5) UUTTA: KAIKKIEN pelaajien maalit + maalivahtien nollapelit (limit=-1 = kaikki)
   console.log('Haetaan pelaajatilastot (kaikki pelaajat)…');
-  const kaikkiMaalit = await getJSON(kausiTaiCurrent('skater-stats-leaders', 'categories=goals&limit=-1'));
+  const kaikkiKentta = await getJSON(kausiTaiCurrent('skater-stats-leaders', 'categories=goals,assists,points&limit=-1'));
   const kaikkiNollat = await getJSON(kausiTaiCurrent('goalie-stats-leaders', 'categories=shutouts&limit=-1'));
-  const maalit = {}, nollapelit = {};
-  (kaikkiMaalit.goals || []).forEach(p => { maalit[p.id] = p.value; });
+  const maalit = {}, syotot = {}, pisteet = {}, nollapelit = {};
+  (kaikkiKentta.goals || []).forEach(p => { maalit[p.id] = p.value; });
+  (kaikkiKentta.assists || []).forEach(p => { syotot[p.id] = p.value; });
+  (kaikkiKentta.points || []).forEach(p => { pisteet[p.id] = p.value; });
   (kaikkiNollat.shutouts || []).forEach(p => { nollapelit[p.id] = p.value; });
-  save('playerstats.json', { maalit, nollapelit });
-  console.log('Pelaajia maalikartassa:', Object.keys(maalit).length, '| maalivahteja:', Object.keys(nollapelit).length);
+  save('playerstats.json', { maalit, syotot, pisteet, nollapelit });
+  console.log('Kenttäpelaajia:', Object.keys(maalit).length, '| maalivahteja:', Object.keys(nollapelit).length);
+
+  // Maalivahtipörssi: torjunta-%, GAA, voitot (kategorianimet varmistetaan varapoluilla)
+  let mvExtra = null;
+  for (const cats of ['savePctg,goalsAgainstAverage,wins', 'savePctg,goalsAgainstAvg,wins', 'savePctg,wins']) {
+    try { mvExtra = await getJSON(kausiTaiCurrent('goalie-stats-leaders', 'categories=' + cats + '&limit=30')); break; }
+    catch (e) { console.log('MV-kategoriat "' + cats + '" ei kelvannut, kokeillaan seuraavaa…'); }
+  }
+  if (mvExtra) save('goaliestats.json', mvExtra);
+  else console.log('MV-pörssidataa ei saatu — paneeli näyttää ohjeen.');
 
   // 6) UUTTA: Vakiokohteiden tulokset (lukee data/round1.json:n reposta)
   const roundPolku = path.join(process.cwd(), 'data', 'round1.json');
@@ -167,6 +178,6 @@ const onPO = (t) => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wil
   save('schedule.json', { kausi: SEASON, otteluita: lista.length, ottelut: lista });
 
   // 10) Meta
-  save('meta.json', { haettu: new Date().toISOString(), paiva: date, kausi: SEASON, testimoodi: TEST_MODE, versio: 4 });
+  save('meta.json', { haettu: new Date().toISOString(), paiva: date, kausi: SEASON, testimoodi: TEST_MODE, versio: 5 });
   console.log('Valmis!');
 })().catch(e => { console.error('VIRHE:', e.message); process.exit(1); });
