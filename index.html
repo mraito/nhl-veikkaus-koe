@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHL-Veikkaus KOE — testisivu</title>
+<script>
+window.FIREBASE_CONFIG = {
+  apiKey: "AIzaSyAQdVxrPokjztHH0F27d3V4N4c7nnx4asc",
+  authDomain: "nhl-veikkaus-koe.firebaseapp.com",
+  projectId: "nhl-veikkaus-koe",
+  storageBucket: "nhl-veikkaus-koe.firebasestorage.app",
+  messagingSenderId: "843459458789",
+  appId: "1:843459458789:web:cb4200273758a043bbc60c"
+};
+</script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.7/babel.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #0e1420; color: #e8edf5; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 20px; margin: 8px 0 2px; }
+  .sub { color: #8fa1bb; font-size: 13px; margin-bottom: 16px; }
+  .card { background: #17202f; border: 1px solid #263349; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+  .card h2 { font-size: 15px; margin: 0 0 10px; color: #cfe0f5; }
+  .status { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .ok { background: #123524; color: #5ee69a; }
+  .odota { background: #2c2c14; color: #e6d75e; }
+  .virhe { background: #351212; color: #e65e5e; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; color: #8fa1bb; font-weight: 600; padding: 4px 6px; border-bottom: 1px solid #263349; }
+  td { padding: 4px 6px; border-bottom: 1px solid #1d2839; }
+  td.num, th.num { text-align: right; }
+  .joukkue { display: flex; align-items: center; gap: 8px; }
+  .joukkue img { width: 24px; height: 24px; }
+  .wcline td { border-bottom: 2px dashed #e6d75e55; }
+  .divotsikko { color: #5ea8e6; font-weight: 700; padding-top: 12px; }
+  .peli { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid #1d2839; font-size: 14px; }
+  .peli img { width: 22px; height: 22px; }
+  .peli .tulos { font-weight: 700; min-width: 44px; text-align: center; }
+  .tagi { font-size: 11px; background: #263349; color: #9fb5d1; border-radius: 4px; padding: 1px 6px; }
+  .pelaaja { display: flex; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid #1d2839; font-size: 14px; }
+  .pelaaja img.kasvo { width: 34px; height: 34px; border-radius: 50%; background: #263349; object-fit: cover; }
+  .pelaaja img.logo { width: 18px; height: 18px; }
+  .pelaaja .pisteet { margin-left: auto; font-weight: 700; }
+  .harmaa { color: #8fa1bb; font-size: 12px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+firebase.initializeApp(window.FIREBASE_CONFIG);
+const db = firebase.firestore();
+
+function Tila({ tila }) {
+  const cls = tila === "ok" ? "ok" : tila === "virhe" ? "virhe" : "odota";
+  const txt = tila === "ok" ? "OK ✓" : tila === "virhe" ? "VIRHE ✗" : "odottaa…";
+  return <span className={"status " + cls}>{txt}</span>;
+}
+
+function App() {
+  const [fsTila, setFsTila] = useState("odota");
+  const [fsViesti, setFsViesti] = useState("");
+  const [standings, setStandings] = useState(null);
+  const [scores, setScores] = useState(null);
+  const [leaders, setLeaders] = useState(null);
+  const [dataVirhe, setDataVirhe] = useState("");
+
+  // Firestore-yhteystesti: kirjoita ja lue takaisin
+  useEffect(() => {
+    const ref = db.collection("koe").doc("yhteystesti");
+    ref.set({ aika: new Date().toISOString(), viesti: "NHL-Veikkaus KOE toimii" })
+      .then(() => ref.get())
+      .then(snap => { setFsTila("ok"); setFsViesti("Kirjoitus ja luku onnistuivat (" + snap.data().aika + ")"); })
+      .catch(e => { setFsTila("virhe"); setFsViesti(e.message); });
+  }, []);
+
+  // Repon datatiedostot
+  useEffect(() => {
+    Promise.all([
+      fetch("data/standings.json").then(r => r.json()),
+      fetch("data/scores.json").then(r => r.json()),
+      fetch("data/leaders.json").then(r => r.json())
+    ]).then(([st, sc, ld]) => { setStandings(st); setScores(sc); setLeaders(ld); })
+      .catch(e => setDataVirhe(e.message));
+  }, []);
+
+  const divisioonat = {};
+  if (standings) {
+    standings.standings.forEach(t => {
+      (divisioonat[t.divisionName] = divisioonat[t.divisionName] || []).push(t);
+    });
+  }
+
+  return (
+    <div className="wrap">
+      <h1>🏒 NHL-Veikkaus KOE</h1>
+      <div className="sub">Vaiheen 2 testisivu — data 31.1.2026 (testimoodi, kausi 2025–26)</div>
+
+      <div className="card">
+        <h2>Järjestelmätarkistukset</h2>
+        <div style={{ display: "grid", gap: 6, fontSize: 13 }}>
+          <div>Firestore-yhteys: <Tila tila={fsTila} /> <span className="harmaa">{fsViesti}</span></div>
+          <div>Repon data (JSON): <Tila tila={dataVirhe ? "virhe" : standings ? "ok" : "odota"} /> <span className="harmaa">{dataVirhe}</span></div>
+          <div>Logot &amp; kasvokuvat (assets.nhle.com): <span className="harmaa">jos alla näkyy kuvia, hotlink toimii ✓</span></div>
+        </div>
+      </div>
+
+      <div className="card">
+        <h2>Illan ottelut 31.1.2026</h2>
+        {scores ? scores.games.map(g => {
+          const merkki = !g.gameOutcome ? "?" : g.gameOutcome.lastPeriodType !== "REG" ? "X"
+            : g.homeTeam.score > g.awayTeam.score ? "1" : "2";
+          return (
+            <div className="peli" key={g.id}>
+              <img src={g.awayTeam.logo} alt="" />
+              <span>{g.awayTeam.abbrev}</span>
+              <span className="tulos">{g.awayTeam.score}–{g.homeTeam.score}</span>
+              <span>{g.homeTeam.abbrev}</span>
+              <img src={g.homeTeam.logo} alt="" />
+              {g.gameOutcome && g.gameOutcome.lastPeriodType !== "REG" && <span className="tagi">{g.gameOutcome.lastPeriodType === "OT" ? "JA" : "VL"}</span>}
+              <span className="tagi" title="1X2-merkki">merkki: {merkki}</span>
+            </div>
+          );
+        }) : <div className="harmaa">Ladataan…</div>}
+      </div>
+
+      <div className="card">
+        <h2>Pistepörssi top 10</h2>
+        {leaders ? leaders.points.map((p, i) => (
+          <div className="pelaaja" key={p.id}>
+            <span style={{ width: 18, color: "#8fa1bb" }}>{i + 1}.</span>
+            <img className="kasvo" src={p.headshot} alt="" />
+            <span>{p.firstName.default} {p.lastName.default}</span>
+            <img className="logo" src={p.teamLogo} alt="" />
+            <span className="harmaa">{p.teamAbbrev}</span>
+            <span className="pisteet">{p.value} p</span>
+          </div>
+        )) : <div className="harmaa">Ladataan…</div>}
+      </div>
+
+      <div className="card">
+        <h2>Sarjataulukot divisioonittain</h2>
+        {standings ? Object.keys(divisioonat).map(dn => (
+          <table key={dn} style={{ marginBottom: 10 }}>
+            <thead>
+              <tr><th className="divotsikko" colSpan={2}>{dn}</th><th className="num">O</th><th className="num">V</th><th className="num">H</th><th className="num">JH</th><th className="num">P</th></tr>
+            </thead>
+            <tbody>
+              {divisioonat[dn].map(t => (
+                <tr key={t.teamAbbrev.default} className={t.divisionSequence === 3 ? "wcline" : ""}>
+                  <td style={{ width: 20, color: "#8fa1bb" }}>{t.divisionSequence}</td>
+                  <td><span className="joukkue"><img src={t.teamLogo} alt="" />{t.teamName.default}</span></td>
+                  <td className="num">{t.gamesPlayed}</td>
+                  <td className="num">{t.wins}</td>
+                  <td className="num">{t.losses}</td>
+                  <td className="num">{t.otLosses}</td>
+                  <td className="num"><b>{t.points}</b></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )) : <div className="harmaa">Ladataan…</div>}
+        <div className="harmaa">Katkoviiva = divisioonan top 3 raja; wild card -näkymä tulee varsinaiseen sovellukseen.</div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
