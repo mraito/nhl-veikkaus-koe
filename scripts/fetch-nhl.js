@@ -11,7 +11,7 @@ const TEST_CHECKPOINTS = ['2025-10-31', '2025-11-30', '2025-12-31'];
 // =====================
 
 const API = 'https://api-web.nhle.com/v1';
-const HEADERS = { 'User-Agent': 'nhl-veikkaus-koe/3.0 (kaveriporukan veikkaussovellus; GitHub Action)' };
+const HEADERS = { 'User-Agent': 'nhl-veikkaus-koe/4.0 (kaveriporukan veikkaussovellus; GitHub Action)' };
 
 async function getJSON(url) {
   for (let i = 1; i <= 3; i++) {
@@ -75,19 +75,41 @@ const onPO = (t) => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wil
     schedule.ottelut.forEach(g => { if (idt.has(g.id)) utcPaivat.add(new Date(new Date(g.alkaaUTC).getTime() - 6 * 3600 * 1000).toISOString().slice(0, 10)); }); // NHL:n pelipäivä = UTC - 6 h
     console.log('Haetaan vakiotulokset:', utcPaivat.size, 'pelipäivää…');
     const tulokset = {};
+    const dayscores = {};   // kaikki päivien ottelut pistemiehineen (NHL-seuranta)
     for (const pv of Array.from(utcPaivat).sort()) {
       const sc = await getJSON(API + '/score/' + pv);
+      const paivanOttelut = [];
       (sc.games || []).forEach(g => {
-        if (!idt.has(g.id)) return;
-        if (!g.gameOutcome) return; // ei vielä pelattu
-        tulokset[g.id] = {
+        if (g.gameOutcome && idt.has(g.id)) {
+          tulokset[g.id] = { v: g.awayTeam.score, k: g.homeTeam.score, paattyi: g.gameOutcome.lastPeriodType };
+        }
+        if (!g.gameOutcome) return;
+        // Pistemiehet: maalintekijä 1+0, syöttäjät 0+1
+        const pts = {};
+        (g.goals || []).forEach(maali => {
+          const lisaa = (id, nimi, gg, aa) => {
+            if (!id) return;
+            const k = String(id);
+            if (!pts[k]) pts[k] = { n: nimi, g: 0, a: 0 };
+            pts[k].g += gg; pts[k].a += aa;
+          };
+          lisaa(maali.playerId, maali.name && maali.name.default ? maali.name.default : '', 1, 0);
+          (maali.assists || []).forEach(s => lisaa(s.playerId, s.name && s.name.default ? s.name.default : '', 0, 1));
+        });
+        paivanOttelut.push({
+          id: g.id, alkaaUTC: g.startTimeUTC,
+          koti: g.homeTeam.abbrev, vieras: g.awayTeam.abbrev,
           v: g.awayTeam.score, k: g.homeTeam.score,
-          paattyi: g.gameOutcome.lastPeriodType   // REG | OT | SO
-        };
+          paattyi: g.gameOutcome.lastPeriodType, pts
+        });
       });
+      if (paivanOttelut.length) dayscores[pv] = paivanOttelut;
       await nuku(200);
     }
     save('results1.json', { kohteita: idt.size, tuloksia: Object.keys(tulokset).length, tulokset });
+    fs.mkdirSync(path.join(process.cwd(), 'data'), { recursive: true });
+    fs.writeFileSync(path.join(process.cwd(), 'data', 'dayscores.json'), JSON.stringify(dayscores));
+    console.log('Tallennettu data/dayscores.json (' + Object.keys(dayscores).length + ' pelipäivää)');
   } else {
     console.log('data/round1.json puuttuu — ohitetaan vakiotulokset.');
   }
@@ -122,7 +144,7 @@ const onPO = (t) => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wil
     const r = await getJSON(API + '/roster/' + abbrev + '/' + (TEST_MODE ? SEASON : 'current'));
     const map = (lista, pos) => (lista || []).map(p => ({
       id: p.id, nimi: p.firstName.default + ' ' + p.lastName.default, pos,
-      numero: p.sweaterNumber || null, kuva: p.headshot
+      numero: p.sweaterNumber || null, kuva: p.headshot, maa: p.birthCountry || null
     }));
     rosterit[abbrev] = { joukkue: abbrev,
       pelaajat: map(r.forwards, 'H').concat(map(r.defensemen, 'P'), map(r.goalies, 'MV')) };
@@ -145,6 +167,6 @@ const onPO = (t) => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wil
   save('schedule.json', { kausi: SEASON, otteluita: lista.length, ottelut: lista });
 
   // 10) Meta
-  save('meta.json', { haettu: new Date().toISOString(), paiva: date, kausi: SEASON, testimoodi: TEST_MODE, versio: 3 });
+  save('meta.json', { haettu: new Date().toISOString(), paiva: date, kausi: SEASON, testimoodi: TEST_MODE, versio: 4 });
   console.log('Valmis!');
 })().catch(e => { console.error('VIRHE:', e.message); process.exit(1); });
