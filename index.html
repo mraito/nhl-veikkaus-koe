@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NHL-Veikkaus KOE — testisivu</title>
+<title>NHL-Veikkaus '26–27 KOE</title>
 <script>
 window.FIREBASE_CONFIG = {
   apiKey: "AIzaSyAQdVxrPokjztHH0F27d3V4N4c7nnx4asc",
@@ -20,159 +20,284 @@ window.FIREBASE_CONFIG = {
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <style>
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #0e1420; color: #e8edf5; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 16px; }
-  h1 { font-size: 20px; margin: 8px 0 2px; }
-  .sub { color: #8fa1bb; font-size: 13px; margin-bottom: 16px; }
-  .card { background: #17202f; border: 1px solid #263349; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
-  .card h2 { font-size: 15px; margin: 0 0 10px; color: #cfe0f5; }
-  .status { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
-  .ok { background: #123524; color: #5ee69a; }
-  .odota { background: #2c2c14; color: #e6d75e; }
-  .virhe { background: #351212; color: #e65e5e; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: left; color: #8fa1bb; font-weight: 600; padding: 4px 6px; border-bottom: 1px solid #263349; }
-  td { padding: 4px 6px; border-bottom: 1px solid #1d2839; }
-  td.num, th.num { text-align: right; }
-  .joukkue { display: flex; align-items: center; gap: 8px; }
-  .joukkue img { width: 24px; height: 24px; }
-  .wcline td { border-bottom: 2px dashed #e6d75e55; }
-  .divotsikko { color: #5ea8e6; font-weight: 700; padding-top: 12px; }
-  .peli { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid #1d2839; font-size: 14px; }
-  .peli img { width: 22px; height: 22px; }
-  .peli .tulos { font-weight: 700; min-width: 44px; text-align: center; }
-  .tagi { font-size: 11px; background: #263349; color: #9fb5d1; border-radius: 4px; padding: 1px 6px; }
-  .pelaaja { display: flex; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid #1d2839; font-size: 14px; }
-  .pelaaja img.kasvo { width: 34px; height: 34px; border-radius: 50%; background: #263349; object-fit: cover; }
-  .pelaaja img.logo { width: 18px; height: 18px; }
-  .pelaaja .pisteet { margin-left: auto; font-weight: 700; }
-  .harmaa { color: #8fa1bb; font-size: 12px; }
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@500;600&display=swap');
+:root{
+  --bg:#0a0a0d; --panel:#15151a; --panel2:#101014; --line:#2a2a32;
+  --ink:#f2f3f6; --mut:#9aa0ac; --grn:#39e57c; --amb:#ffcf3f; --red:#ff5d52;
+  --hopea:#c8ccd6; --alive:#1d1d24;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Hanken Grotesk',sans-serif;color:var(--ink);
+  background:radial-gradient(1000px 520px at 85% -12%,#1b1b22 0,transparent 55%),
+  radial-gradient(900px 500px at -10% 110%,#16161c 0,transparent 55%),var(--bg);min-height:100vh;line-height:1.45;}
+.mono{font-family:'Spline Sans Mono',monospace}
+h1,h2,.disp{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.02em;text-transform:uppercase}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px 90px}
+.hero{background:linear-gradient(115deg,#0c0c0f 0%,#1e1e26 60%,#2a2a34 100%);border:1px solid #3a3a46;border-radius:18px;padding:18px 20px;margin:14px 0 6px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--hopea),transparent)}
+.herorow{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.hero .liigalogo{height:64px;width:auto;flex:0 0 auto;filter:drop-shadow(0 3px 8px rgba(0,0,0,.6))}
+.hero .cup{font-size:44px;line-height:1;flex:0 0 auto;filter:drop-shadow(0 3px 8px rgba(0,0,0,.6))}
+.hero .htxt{flex:1 1 240px;min-width:0}
+.kick{color:var(--hopea);font-weight:800;letter-spacing:.18em;font-size:11px;text-transform:uppercase}
+.title{font-size:clamp(30px,6.5vw,54px);line-height:.92;margin:4px 0 2px;color:#fff}
+.sub{color:var(--mut);font-size:13px;max-width:600px;margin:5px 0 0}
+.logostrip{display:flex;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap;opacity:.9}
+.logostrip img{width:26px;height:26px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:0;z-index:20;
+  background:linear-gradient(var(--bg),rgba(10,10,13,.85));backdrop-filter:blur(8px);
+  padding:12px 0;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.tab{font-family:inherit;font-weight:700;font-size:14px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--mut);cursor:pointer;transition:.15s}
+.tab:hover{color:var(--ink);border-color:var(--hopea)}
+.tab.on{background:#fff;color:#0a0a0d;border-color:#fff}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:3px;background:#101014;flex-wrap:wrap}
+.segb{font-family:inherit;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;color:var(--mut);border:none;background:transparent;cursor:pointer}
+.segb.on{background:#fff;color:#0a0a0d}
+.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-radius:16px;padding:18px;margin:14px 0}
+.card h2{font-size:17px;margin:0 0 12px;color:var(--ink)}
+.lab{color:var(--mut);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.tiny{font-size:12px;color:var(--mut)}
+.note{font-size:14px;color:var(--mut);background:rgba(200,204,214,.05);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
+.pill{font-size:11px;font-weight:800;padding:2px 7px;border-radius:999px}
+.pill.g{background:rgba(57,229,124,.16);color:var(--grn)}
+.pill.s{background:rgba(200,204,214,.14);color:var(--hopea)}
+.pill.y{background:rgba(255,207,63,.16);color:var(--amb)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--mut);font-weight:800;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:6px 6px;border-bottom:1px solid var(--line)}
+td{padding:6px 6px;border-bottom:1px solid #1c1c22}
+td.num,th.num{text-align:right;font-family:'Spline Sans Mono',monospace;font-size:13px}
+.divh{font-family:'Anton';font-size:15px;color:var(--hopea);letter-spacing:.04em;text-transform:uppercase;margin:16px 0 4px}
+.joukkue{display:flex;align-items:center;gap:8px;font-weight:600}
+.joukkue img{width:24px;height:24px;background:transparent}
+tr.poline td{border-bottom:2px dashed rgba(255,207,63,.45)}
+tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--grn)}
+.peli{display:grid;grid-template-columns:1fr auto 1fr auto;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.peli:last-child{border-bottom:none}
+.peli .tm{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.peli .tm.r{justify-content:flex-end}
+.peli img{width:26px;height:26px}
+.peli .tulos{font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:17px;min-width:52px;text-align:center}
+.tagi{font-size:10px;font-weight:800;background:var(--alive);color:var(--hopea);border:1px solid var(--line);border-radius:5px;padding:2px 7px;letter-spacing:.04em}
+.pelaaja{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid #1c1c22;font-size:14px}
+.pelaaja:last-child{border-bottom:none}
+.pelaaja .sija{font-family:'Anton';color:var(--mut);width:22px;font-size:15px}
+.pelaaja img.kasvo{width:36px;height:36px;border-radius:50%;background:var(--alive);object-fit:cover;border:1px solid var(--line)}
+.pelaaja img.logo{width:20px;height:20px}
+.pelaaja .arvo{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:16px}
+.gridx{display:grid;gap:14px}
+@media(min-width:880px){.gridx.two{grid-template-columns:1fr 1fr}}
+.tulossa{text-align:center;padding:40px 20px;color:var(--mut)}
+.tulossa .iso{font-family:'Anton';font-size:26px;color:var(--hopea);margin-bottom:8px;text-transform:uppercase}
+footer{color:var(--mut);font-size:11px;text-align:center;padding:20px 0}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <script type="text/babel">
 const { useState, useEffect } = React;
-
 firebase.initializeApp(window.FIREBASE_CONFIG);
 const db = firebase.firestore();
 
-function Tila({ tila }) {
-  const cls = tila === "ok" ? "ok" : tila === "virhe" ? "virhe" : "odota";
-  const txt = tila === "ok" ? "OK ✓" : tila === "virhe" ? "VIRHE ✗" : "odottaa…";
-  return <span className={"status " + cls}>{txt}</span>;
-}
+const onPOpaikalla = t => t.divisionSequence <= 3 || (t.wildcardSequence >= 1 && t.wildcardSequence <= 2);
 
-function App() {
-  const [fsTila, setFsTila] = useState("odota");
-  const [fsViesti, setFsViesti] = useState("");
-  const [standings, setStandings] = useState(null);
-  const [scores, setScores] = useState(null);
-  const [leaders, setLeaders] = useState(null);
-  const [dataVirhe, setDataVirhe] = useState("");
-
-  // Firestore-yhteystesti: kirjoita ja lue takaisin
-  useEffect(() => {
-    const ref = db.collection("koe").doc("yhteystesti");
-    ref.set({ aika: new Date().toISOString(), viesti: "NHL-Veikkaus KOE toimii" })
-      .then(() => ref.get())
-      .then(snap => { setFsTila("ok"); setFsViesti("Kirjoitus ja luku onnistuivat (" + snap.data().aika + ")"); })
-      .catch(e => { setFsTila("virhe"); setFsViesti(e.message); });
-  }, []);
-
-  // Repon datatiedostot
-  useEffect(() => {
-    Promise.all([
-      fetch("data/standings.json").then(r => r.json()),
-      fetch("data/scores.json").then(r => r.json()),
-      fetch("data/leaders.json").then(r => r.json())
-    ]).then(([st, sc, ld]) => { setStandings(st); setScores(sc); setLeaders(ld); })
-      .catch(e => setDataVirhe(e.message));
-  }, []);
-
-  const divisioonat = {};
-  if (standings) {
-    standings.standings.forEach(t => {
-      (divisioonat[t.divisionName] = divisioonat[t.divisionName] || []).push(t);
-    });
-  }
-
+function Hero({ standings }) {
+  // Logoraitaan divisioonien kärkijoukkueet datasta
+  const karjet = standings ? standings.filter(t => t.divisionSequence <= 2) : [];
   return (
-    <div className="wrap">
-      <h1>🏒 NHL-Veikkaus KOE</h1>
-      <div className="sub">Vaiheen 2 testisivu — data 31.1.2026 (testimoodi, kausi 2025–26)</div>
-
-      <div className="card">
-        <h2>Järjestelmätarkistukset</h2>
-        <div style={{ display: "grid", gap: 6, fontSize: 13 }}>
-          <div>Firestore-yhteys: <Tila tila={fsTila} /> <span className="harmaa">{fsViesti}</span></div>
-          <div>Repon data (JSON): <Tila tila={dataVirhe ? "virhe" : standings ? "ok" : "odota"} /> <span className="harmaa">{dataVirhe}</span></div>
-          <div>Logot &amp; kasvokuvat (assets.nhle.com): <span className="harmaa">jos alla näkyy kuvia, hotlink toimii ✓</span></div>
+    <div className="hero">
+      <div className="herorow">
+        <img className="liigalogo" src="https://assets.nhle.com/logos/nhl/svg/NHL_light.svg" alt="NHL"
+             onError={e => { e.target.style.display = "none"; }} />
+        <div className="htxt">
+          <div className="kick">Kaveriporukan kausiveikkaus · KOEVERSIO</div>
+          <h1 className="title">NHL-Veikkaus '26–27</h1>
+          <div className="sub">Vakiokierrokset · kausiveikkaus · oma mestari &amp; pelaaja · playoff-bracket — kaikki pisteet yhteen pottiin.</div>
+          {karjet.length > 0 &&
+            <div className="logostrip">
+              {karjet.map(t => <img key={t.teamAbbrev.default} src={t.teamLogo} alt={t.teamAbbrev.default} title={t.teamName.default} />)}
+            </div>}
         </div>
-      </div>
-
-      <div className="card">
-        <h2>Illan ottelut 31.1.2026</h2>
-        {scores ? scores.games.map(g => {
-          const merkki = !g.gameOutcome ? "?" : g.gameOutcome.lastPeriodType !== "REG" ? "X"
-            : g.homeTeam.score > g.awayTeam.score ? "1" : "2";
-          return (
-            <div className="peli" key={g.id}>
-              <img src={g.awayTeam.logo} alt="" />
-              <span>{g.awayTeam.abbrev}</span>
-              <span className="tulos">{g.awayTeam.score}–{g.homeTeam.score}</span>
-              <span>{g.homeTeam.abbrev}</span>
-              <img src={g.homeTeam.logo} alt="" />
-              {g.gameOutcome && g.gameOutcome.lastPeriodType !== "REG" && <span className="tagi">{g.gameOutcome.lastPeriodType === "OT" ? "JA" : "VL"}</span>}
-              <span className="tagi" title="1X2-merkki">merkki: {merkki}</span>
-            </div>
-          );
-        }) : <div className="harmaa">Ladataan…</div>}
-      </div>
-
-      <div className="card">
-        <h2>Pistepörssi top 10</h2>
-        {leaders ? leaders.points.map((p, i) => (
-          <div className="pelaaja" key={p.id}>
-            <span style={{ width: 18, color: "#8fa1bb" }}>{i + 1}.</span>
-            <img className="kasvo" src={p.headshot} alt="" />
-            <span>{p.firstName.default} {p.lastName.default}</span>
-            <img className="logo" src={p.teamLogo} alt="" />
-            <span className="harmaa">{p.teamAbbrev}</span>
-            <span className="pisteet">{p.value} p</span>
-          </div>
-        )) : <div className="harmaa">Ladataan…</div>}
-      </div>
-
-      <div className="card">
-        <h2>Sarjataulukot divisioonittain</h2>
-        {standings ? Object.keys(divisioonat).map(dn => (
-          <table key={dn} style={{ marginBottom: 10 }}>
-            <thead>
-              <tr><th className="divotsikko" colSpan={2}>{dn}</th><th className="num">O</th><th className="num">V</th><th className="num">H</th><th className="num">JH</th><th className="num">P</th></tr>
-            </thead>
-            <tbody>
-              {divisioonat[dn].map(t => (
-                <tr key={t.teamAbbrev.default} className={t.divisionSequence === 3 ? "wcline" : ""}>
-                  <td style={{ width: 20, color: "#8fa1bb" }}>{t.divisionSequence}</td>
-                  <td><span className="joukkue"><img src={t.teamLogo} alt="" />{t.teamName.default}</span></td>
-                  <td className="num">{t.gamesPlayed}</td>
-                  <td className="num">{t.wins}</td>
-                  <td className="num">{t.losses}</td>
-                  <td className="num">{t.otLosses}</td>
-                  <td className="num"><b>{t.points}</b></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )) : <div className="harmaa">Ladataan…</div>}
-        <div className="harmaa">Katkoviiva = divisioonan top 3 raja; wild card -näkymä tulee varsinaiseen sovellukseen.</div>
+        <div className="cup" title="Stanley Cup">🏆</div>
       </div>
     </div>
   );
 }
 
+function Ottelut({ scores }) {
+  if (!scores) return <div className="tiny">Ladataan…</div>;
+  return scores.games.map(g => (
+    <div className="peli" key={g.id}>
+      <div className="tm r">{g.awayTeam.abbrev} <img src={g.awayTeam.logo} alt="" /></div>
+      <div className="tulos">{g.awayTeam.score}–{g.homeTeam.score}</div>
+      <div className="tm"><img src={g.homeTeam.logo} alt="" /> {g.homeTeam.abbrev}</div>
+      <div>{g.gameOutcome && g.gameOutcome.lastPeriodType !== "REG" &&
+        <span className="tagi">{g.gameOutcome.lastPeriodType === "OT" ? "JA" : "VL"}</span>}</div>
+    </div>
+  ));
+}
+
+function SarjataulukkoTaulu({ rivit, viivaIndex }) {
+  return (
+    <table>
+      <thead><tr><th></th><th>Joukkue</th><th className="num">O</th><th className="num">V</th><th className="num">H</th><th className="num">JH</th><th className="num">P</th></tr></thead>
+      <tbody>
+        {rivit.map((t, i) => (
+          <tr key={t.teamAbbrev.default} className={(i === viivaIndex ? "poline " : "") + (onPOpaikalla(t) ? "poon" : "")}>
+            <td style={{ width: 24, color: "var(--mut)" }} className="num">{i + 1}</td>
+            <td><span className="joukkue"><img src={t.teamLogo} alt="" />{t.teamName.default}</span></td>
+            <td className="num">{t.gamesPlayed}</td><td className="num">{t.wins}</td>
+            <td className="num">{t.losses}</td><td className="num">{t.otLosses}</td>
+            <td className="num"><b>{t.points}</b></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function Divisioonat({ standings }) {
+  const divit = {};
+  standings.forEach(t => { (divit[t.divisionName] = divit[t.divisionName] || []).push(t); });
+  return Object.keys(divit).map(dn => {
+    const rivit = divit[dn].slice().sort((a, b) => a.divisionSequence - b.divisionSequence);
+    return (
+      <div key={dn}>
+        <div className="divh">{dn}</div>
+        <SarjataulukkoTaulu rivit={rivit} viivaIndex={2} />
+      </div>
+    );
+  });
+}
+
+function Konferenssit({ standings }) {
+  const confit = { E: "Itäinen konferenssi", W: "Läntinen konferenssi" };
+  return Object.keys(confit).map(c => {
+    const joukkueet = standings.filter(t => t.conferenceAbbrev === c);
+    // Wild card -näkymä: divisioonien top 3:t ensin, sitten loput wild card -järjestyksessä
+    const top3 = joukkueet.filter(t => t.divisionSequence <= 3)
+      .sort((a, b) => a.divisionAbbrev.localeCompare(b.divisionAbbrev) || a.divisionSequence - b.divisionSequence);
+    const loput = joukkueet.filter(t => t.divisionSequence > 3)
+      .sort((a, b) => a.wildcardSequence - b.wildcardSequence);
+    const rivit = top3.concat(loput);
+    return (
+      <div key={c}>
+        <div className="divh">{confit[c]}</div>
+        <SarjataulukkoTaulu rivit={rivit} viivaIndex={7} />
+        <div className="tiny" style={{ margin: "4px 0 10px" }}>Keltainen katkoviiva = playoff-raja (wild card 2). Vihreä reuna = playoff-paikalla.</div>
+      </div>
+    );
+  });
+}
+
+function Porssit({ leaders, goalies }) {
+  const lista = (otsikko, rivit, yksikko) => (
+    <div className="card" style={{ margin: 0 }}>
+      <h2>{otsikko}</h2>
+      {rivit.map((p, i) => (
+        <div className="pelaaja" key={p.id}>
+          <span className="sija">{i + 1}.</span>
+          <img className="kasvo" src={p.headshot} alt="" />
+          <span>{p.firstName.default} {p.lastName.default}</span>
+          <img className="logo" src={p.teamLogo} alt="" />
+          <span className="tiny">{p.teamAbbrev}</span>
+          <span className="arvo">{p.value}<span className="tiny"> {yksikko}</span></span>
+        </div>
+      ))}
+    </div>
+  );
+  return (
+    <div className="gridx two" style={{ marginTop: 14 }}>
+      {lista("Pistepörssi", leaders.points, "p")}
+      {lista("Maalipörssi", leaders.goals, "m")}
+      {lista("Nollapelit", goalies.shutouts, "np")}
+      {lista("Maalivahtien voitot", goalies.wins, "v")}
+    </div>
+  );
+}
+
+function Tulossa({ nimi }) {
+  return (
+    <div className="card tulossa">
+      <div className="iso">{nimi}</div>
+      <div>Tämä osio rakennetaan seuraavaksi. Koeversio etenee pala kerrallaan.</div>
+    </div>
+  );
+}
+
+function App() {
+  const [tab, setTab] = useState("sarja");
+  const [sarjaNakyma, setSarjaNakyma] = useState("div");
+  const [standings, setStandings] = useState(null);
+  const [scores, setScores] = useState(null);
+  const [leaders, setLeaders] = useState(null);
+  const [goalies, setGoalies] = useState(null);
+  const [meta, setMeta] = useState(null);
+  const [virhe, setVirhe] = useState("");
+
+  useEffect(() => {
+    Promise.all(["standings", "scores", "leaders", "goalies", "meta"].map(n =>
+      fetch("data/" + n + ".json").then(r => { if (!r.ok) throw new Error("data/" + n + ".json: HTTP " + r.status); return r.json(); })
+    )).then(([st, sc, ld, gl, me]) => {
+      setStandings(st.standings); setScores(sc); setLeaders(ld); setGoalies(gl); setMeta(me);
+    }).catch(e => setVirhe(e.message));
+  }, []);
+
+  const TABS = [["karki", "Kärkitaulu"], ["sarja", "Sarjataulukko"], ["veikkaus", "Veikkaus"], ["saannot", "Säännöt"], ["org", "Järjestäjä"]];
+
+  return (
+    <div className="wrap">
+      <Hero standings={standings} />
+      <div className="tabs">
+        {TABS.map(([id, nimi]) =>
+          <button key={id} className={"tab" + (tab === id ? " on" : "")} onClick={() => setTab(id)}>{nimi}</button>)}
+      </div>
+
+      {virhe && <div className="note" style={{ color: "var(--red)" }}>Datan lataus epäonnistui: {virhe}</div>}
+
+      {tab === "karki" && (
+        <div>
+          <Tulossa nimi="Kärkitaulu" />
+          <div className="card">
+            <h2>Ottelut 31.1.2026 <span className="pill s">testidata, kausi 2025–26</span></h2>
+            <Ottelut scores={scores} />
+          </div>
+        </div>
+      )}
+
+      {tab === "sarja" && (
+        <div className="card">
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10 }}>
+            <h2 style={{ margin: 0 }}>Sarjataulukko <span className="pill s">31.1.2026</span></h2>
+            <div className="seg">
+              {[["div", "Divisioonat"], ["conf", "Konferenssit"], ["porssi", "Pörssit"]].map(([id, nimi]) =>
+                <button key={id} className={"segb" + (sarjaNakyma === id ? " on" : "")} onClick={() => setSarjaNakyma(id)}>{nimi}</button>)}
+            </div>
+          </div>
+          {!standings ? <div className="tiny" style={{ marginTop: 10 }}>Ladataan…</div> : (
+            <div>
+              {sarjaNakyma === "div" && <Divisioonat standings={standings} />}
+              {sarjaNakyma === "conf" && <Konferenssit standings={standings} />}
+              {sarjaNakyma === "porssi" && leaders && goalies && <Porssit leaders={leaders} goalies={goalies} />}
+            </div>
+          )}
+        </div>
+      )}
+
+      {tab === "veikkaus" && <Tulossa nimi="Veikkaus" />}
+      {tab === "saannot" && (
+        <div className="card">
+          <h2>Säännöt (tiivistelmä)</h2>
+          <div className="note">Vakiokierrokset (1X2, 3 p/oikea, X = jatkoaika tai voittolaukaukset) · Kausiveikkaus (playoff-joukkueet, divarivoittajat, Presidents' Trophy, pörssit) · Kuukausipisteet playoff-paikoilla olevista veikkauksista · Oma mestari (1 p/voitto, playoffeissa 2 p) · Oma pelaaja mestarijoukkueesta (hyökkääjä 0,5 p/maali, puolustaja 2 p/maali, maalivahti 6 p/nollapeli) · Playoff-bracket. Kaikki pisteet lasketaan yhteen. Täydet säännöt kirjoitetaan tähän toteutuksen edetessä.</div>
+        </div>
+      )}
+      {tab === "org" && <Tulossa nimi="Järjestäjä" />}
+
+      <footer>NHL-Veikkaus '26–27 · KOEVERSIO · data: NHL API {meta ? "· haettu " + meta.haettu.slice(0, 10) + " (testipäivä " + meta.paiva + ")" : ""}</footer>
+    </div>
+  );
+}
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 </script>
 </body>
