@@ -1,0 +1,36 @@
+name: NHL-datan haku
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # joka päivä klo 05:00 UTC = aamulla Suomen aikaa
+  workflow_dispatch:       # mahdollistaa manuaalisen käynnistyksen Actions-välilehdeltä
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hae repon sisältö
+        uses: actions/checkout@v4
+
+      - name: Asenna Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Hae NHL-data
+        run: node scripts/fetch-nhl.js
+
+      - name: Committaa muutokset
+        run: |
+          git config user.name "nhl-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia dataan."
+          else
+            git commit -m "NHL-data $(date -u +%F)"
+            git push
+          fi
