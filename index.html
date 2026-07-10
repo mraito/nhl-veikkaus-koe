@@ -93,6 +93,36 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
   .kpiilo{display:none}
   .krivi{grid-template-columns:38px 40px 1fr 88px}
 }
+/* ---- kärkitaulun johtajakortti ---- */
+.johtaja{display:flex;align-items:center;gap:16px;background:linear-gradient(115deg,rgba(255,207,63,.10),var(--panel2) 55%);border:1px solid rgba(255,207,63,.35);border-radius:12px;padding:16px 18px;margin-bottom:8px;flex-wrap:wrap}
+.jnimi{font-family:'Barlow Condensed';font-weight:800;font-size:28px;color:#fff;text-transform:uppercase;line-height:1.05;margin:2px 0}
+.jpisteet{font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:46px;color:var(--amb);line-height:1;text-align:right}
+.echip{font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;color:var(--mut);background:var(--chipbg);border-radius:4px;padding:4px 8px;white-space:nowrap}
+/* ---- avattu erittely kortteina ---- */
+.ekortit{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;padding:4px 14px 12px 52px}
+.ekortti{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:10px 12px}
+.el{font-family:'Spline Sans Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.12em;color:var(--mut);text-transform:uppercase;margin-bottom:6px}
+.ei{font-family:'Barlow Condensed';font-weight:800;font-size:22px;color:#fff}
+.ea{font-family:'Spline Sans Mono',monospace;font-size:9.5px;color:var(--mut);margin-top:3px}
+/* ---- pörssien kärkinosto ---- */
+.feat{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:linear-gradient(115deg,var(--panel2),#12203a);border:1px solid var(--line);border-radius:9px;padding:11px 13px;margin-bottom:5px}
+.fnimi{font-family:'Barlow Condensed';font-weight:800;font-size:19px;color:#fff;text-transform:uppercase;line-height:1.05}
+.farvo{font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:32px;color:var(--blue);line-height:1;text-align:right}
+/* ---- sarjataulukon rivit ---- */
+.srivi{display:grid;grid-template-columns:26px 1fr 56px 52px 36px;gap:7px;align-items:center;background:var(--panel2);border:1px solid var(--line2);border-radius:7px;margin-bottom:4px;padding-right:9px;overflow:hidden;min-height:32px}
+.slohko{display:flex;align-items:center;justify-content:center;height:32px;background:var(--line2);color:var(--mut);font-family:'Barlow Condensed';font-weight:800;font-size:14px;border-radius:7px 0 0 7px}
+.slohko.po{background:var(--blue);color:#06080f}
+.snimi{display:flex;align-items:center;gap:7px;font-family:'Barlow Condensed';font-weight:700;font-size:14px;letter-spacing:.02em;color:#fff;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.snimi img{width:19px;height:19px;flex:0 0 auto}
+.smono{text-align:right;font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--mut)}
+.spist{text-align:right;font-family:'Barlow Condensed';font-weight:800;font-size:17px;color:#fff}
+.raja{display:flex;align-items:center;gap:8px;margin:5px 0;font-family:'Spline Sans Mono',monospace;font-size:8px;font-weight:600;letter-spacing:.14em;color:var(--amb)}
+.raja::before,.raja::after{content:"";flex:1;border-top:1px dashed rgba(255,207,63,.45)}
+/* ---- näytä lisää ---- */
+.haivytys{position:absolute;left:0;right:0;bottom:0;height:42px;background:linear-gradient(transparent,var(--panel));pointer-events:none}
+.laajenna{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;padding:7px;border:1px solid var(--line);border-radius:7px;background:var(--panel2);color:var(--blue2);font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.12em;cursor:pointer;text-transform:uppercase}
+.laajenna:hover{border-color:var(--blue);color:#fff}
+.laajenna.auki{color:var(--mut)}
 .vpaiva{color:var(--mut);font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 4px;font-family:'Barlow Condensed'}
 .gblokki{background:var(--panel2);border:1px solid var(--line2);border-radius:9px;padding:9px 12px;margin-bottom:7px}
 .gblokki.kohde{border-color:#2a3a5c}
@@ -585,19 +615,6 @@ function Hero({ round, results, meta, lukittu }) {
       </div>
     </div>
   );
-}
-
-function Ottelut({ scores }) {
-  if (!scores) return <div className="tiny">Ladataan…</div>;
-  return scores.games.map(g => (
-    <div className="peli" key={g.id}>
-      <div className="tm r">{g.awayTeam.abbrev} <img src={g.awayTeam.logo} alt="" /></div>
-      <div className="tulos">{g.awayTeam.score}–{g.homeTeam.score}</div>
-      <div className="tm"><img src={g.homeTeam.logo} alt="" /> {g.homeTeam.abbrev}</div>
-      <div>{g.gameOutcome && g.gameOutcome.lastPeriodType !== "REG" &&
-        <span className="tagi">{g.gameOutcome.lastPeriodType === "OT" ? "JA" : "VL"}</span>}</div>
-    </div>
-  ));
 }
 
 function SRivi({ t, sija }) {
