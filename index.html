@@ -92,13 +92,21 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 @media(max-width:879px){
   .kpiilo{display:none}
   .krivi{grid-template-columns:38px 40px 1fr 88px}
-  .johtaja{gap:12px;padding:12px 14px}
+  .johtaja{flex-wrap:nowrap;gap:12px;padding:12px 14px}
+  .johtaja > div:nth-child(2){flex:1;min-width:0}
   .johtaja .naamio{width:48px!important;height:48px!important}
   .johtaja .naamio>img:first-child,.johtaja .naamio>span:first-child{width:48px!important;height:48px!important}
   .johtaja .naamio img:last-child{width:26px!important;height:26px!important}
-  .jnimi{font-size:22px}
-  .jpisteet{font-size:34px}
+  .jnimi{font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .johtaja .jala{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .jpisteet{font-size:30px}
   .johtaja .echip{display:none}
+  .vgrid2{grid-template-columns:1fr}
+  .divgrid{grid-template-columns:1fr}
+  .chipgrid{grid-template-columns:repeat(2,1fr)}
+  .logogrid{grid-template-columns:repeat(4,1fr)}
+  .tallennuspalkki .tnappi{width:100%}
+  .tallennuspalkki .tedistys{margin-left:0}
 }
 /* ---- kärkitaulun johtajakortti ---- */
 .johtaja{display:flex;align-items:center;gap:16px;background:linear-gradient(115deg,rgba(255,207,63,.10),var(--panel2) 55%);border:1px solid rgba(255,207,63,.35);border-radius:12px;padding:16px 18px;margin-bottom:8px;flex-wrap:wrap}
@@ -130,7 +138,7 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 .laajenna{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;padding:7px;border:1px solid var(--line);border-radius:7px;background:var(--panel2);color:var(--blue2);font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.12em;cursor:pointer;text-transform:uppercase}
 .laajenna:hover{border-color:var(--blue);color:#fff}
 .laajenna.auki{color:var(--mut)}
-.vpaiva{color:var(--mut);font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 4px;font-family:'Barlow Condensed'}
+.vpaiva{color:var(--blue2);font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:14px 0 4px;font-family:'Barlow Condensed'}
 .gblokki{background:var(--panel2);border:1px solid var(--line2);border-radius:9px;padding:9px 12px;margin-bottom:7px}
 .gblokki.kohde{border-color:#2a3a5c}
 .tagi{font-family:'Spline Sans Mono',monospace;font-size:9px;font-weight:600;color:var(--hopea);border:1px solid var(--line);border-radius:4px;padding:1px 6px;letter-spacing:.04em}
@@ -158,11 +166,14 @@ button.act:hover{filter:brightness(1.08)}
 button.act:disabled{opacity:.5;cursor:not-allowed}
 button.ghost{font-family:inherit;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:11px;padding:9px 15px;cursor:pointer;font-weight:700}
 button.ghost:hover{border-color:var(--blue)}
-.tchip{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel2);cursor:pointer;font-weight:700;font-size:13px;user-select:none;color:var(--ink)}
+.tchip{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line2);border-radius:8px;background:var(--panel2);cursor:pointer;font-family:'Barlow Condensed';font-weight:600;font-size:14px;text-transform:uppercase;user-select:none;color:var(--body)}
+.tchip:hover{border-color:var(--blue)}
 .tchip img{width:22px;height:22px}
-.tchip.val{background:#fff;color:#06080f;border-color:#fff}
+.tchip.val{background:var(--blue);color:#06080f;border-color:var(--blue);font-weight:700}
 .tchip.lukossa{cursor:default;opacity:.85}
-.chipgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:8px 0}
+.tchip.lukossa:hover{border-color:var(--line2)}
+.tchip.val.lukossa:hover{border-color:var(--blue)}
+.chipgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:8px 0}
 .haku{position:relative}
 .hakulista{position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--panel);border:1px solid var(--line);border-radius:10px;z-index:30;max-height:260px;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.5)}
 .hakurivi{display:flex;align-items:center;gap:8px;padding:8px 10px;cursor:pointer;font-size:14px}
@@ -176,17 +187,77 @@ button.ghost:hover{border-color:var(--blue)}
 .osio .kuv{font-size:13px;color:var(--mut);margin:2px 0 8px}
 .puuttuu{color:var(--amb);font-size:13px}
 .okvihrea{color:var(--grn);font-size:13px;font-weight:700}
-.vrivi{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 10px;border:1px solid var(--line2);border-radius:12px;margin:6px 0;background:var(--panel2)}
+.vrivi{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 12px;border:1px solid var(--line2);border-radius:9px;margin:0 0 5px;background:var(--panel2)}
 .vrivi.tuloskohde{border-color:#2a3a5c}
-.vrivi .aika{font-family:'Spline Sans Mono',monospace;font-size:12px;color:var(--mut);min-width:44px}
+.vrivi .aika{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--mut);min-width:38px}
 .vrivi .pari{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;min-width:150px;color:var(--ink)}
 .vrivi .pari img{width:22px;height:22px}
+.vrivi .at{font-family:'Spline Sans Mono',monospace;color:var(--faint);font-weight:400}
 .merkit{display:flex;gap:5px;margin-left:auto}
-.merkki{font-family:'Spline Sans Mono',monospace;font-weight:600;font-size:14px;width:38px;height:34px;border-radius:9px;border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
-.merkki:hover{border-color:var(--blue);color:var(--ink)}
-.merkki.val{background:#fff;color:#06080f;border-color:#fff}
+.merkki{font-family:'Barlow Condensed';font-weight:800;font-size:17px;width:44px;height:40px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--body);cursor:pointer}
+.merkki:hover{border-color:var(--blue)}
+.merkki.val{background:var(--blue);color:#06080f;border-color:var(--blue)}
 .merkki:disabled{cursor:default;opacity:.85}
-.tulosinput{width:46px;height:34px;text-align:center;font-family:'Spline Sans Mono',monospace;font-size:15px;padding:4px}
+.tulosinput{width:40px;height:40px;text-align:center;font-family:'Spline Sans Mono',monospace;font-size:15px;font-weight:600;border-radius:8px;padding:4px}
+.selite{font-family:'Spline Sans Mono',monospace;font-size:9px;color:var(--faint);letter-spacing:.06em;margin-top:10px}
+/* ---- Veikkaus-sivun uudistus (handoff 3) ---- */
+html{scroll-behavior:smooth}
+.vgrid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.vpaneeli{background:var(--panel2);border:1px solid var(--line2);border-radius:10px;padding:14px 16px}
+.vpotsikko{font-family:'Barlow Condensed';font-weight:700;font-size:15px;letter-spacing:.08em;color:var(--blue2);text-transform:uppercase}
+.vpkuvaus{font-size:11px;color:var(--mut);margin:3px 0 10px}
+.vinput{background:var(--panel2);border:1px solid var(--line);border-radius:7px;color:#fff;padding:9px 12px}
+.vinput.mono{font-family:'Spline Sans Mono',monospace}
+.vnappi{background:var(--blue);color:#06080f;font-family:'Barlow Condensed';font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.06em;border:none;border-radius:7px;padding:9px 18px;cursor:pointer}
+.vnappi:hover{background:#5a9dff}
+.nimichip{display:inline-flex;align-items:center;gap:6px;font-family:'Barlow Condensed';font-weight:700;font-size:14px;text-transform:uppercase;background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:7px 13px;color:#fff;cursor:pointer}
+.nimichip:hover{border-color:var(--blue)}
+.nimichip .lukko{color:var(--mut);font-size:11px}
+.stepper{display:flex;gap:5px;flex-wrap:wrap;margin:10px 0 4px}
+.schip{font-family:'Spline Sans Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.08em;border-radius:5px;padding:4px 9px;background:var(--panel2);color:var(--mut);border:1px solid var(--line2);text-decoration:none}
+.schip.done{background:rgba(57,229,124,.12);color:var(--grn);border-color:rgba(57,229,124,.3)}
+.vpan{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:16px;margin:12px 0;scroll-margin-top:64px}
+.vpan .ots{font-family:'Barlow Condensed';font-weight:800;font-size:17px;color:var(--blue2);letter-spacing:.04em;text-transform:uppercase}
+.pinfo{font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;color:var(--mut);letter-spacing:.06em;margin-left:8px}
+.vtila{font-family:'Spline Sans Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.08em;border-radius:4px;padding:3px 8px;margin-left:auto;white-space:nowrap}
+.vtila.kesken{color:var(--amb);background:rgba(255,207,63,.1)}
+.vtila.valmis{color:var(--grn);background:rgba(57,229,124,.12)}
+.otsrivi{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.divgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.divpaneeli{background:var(--panel2);border:1px solid var(--line2);border-radius:10px;padding:12px}
+.divpotsikko{font-family:'Barlow Condensed';font-weight:700;font-size:14px;letter-spacing:.08em;color:var(--blue2);text-transform:uppercase}
+.logogrid{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;margin-top:8px}
+.logosolu{aspect-ratio:1;border-radius:8px;border:1.5px solid transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;background:transparent;padding:0}
+.logosolu img{width:76%;height:76%;object-fit:contain}
+.logogrid .logosolu{opacity:.8}
+.logogrid.valinta .logosolu{opacity:.38}
+.logogrid.valinta .logosolu.val,.logogrid .logosolu.val{opacity:1;border-color:var(--blue);background:rgba(63,140,255,.16)}
+.logogrid:not(.lukossa) .logosolu:hover{opacity:1;border-color:var(--blue)}
+.logogrid.lukossa .logosolu{cursor:default}
+.featkortti{display:flex;align-items:center;gap:12px;background:linear-gradient(115deg,var(--panel2),#12203a);border:1px solid var(--line);border-radius:9px;padding:12px 14px;margin-top:10px}
+.featkortti .fnimi{font-family:'Barlow Condensed';font-weight:800;font-size:20px;color:#fff;text-transform:uppercase;line-height:1.05}
+.featkortti .fala{font-family:'Spline Sans Mono',monospace;font-size:9.5px;letter-spacing:.06em;margin-top:2px}
+.featkortti .fala.ok{color:var(--grn)}
+.featkortti .fala.info{color:var(--mut)}
+.vaihdanappi{font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.06em;color:var(--blue2);background:var(--chipbg);border:none;border-radius:5px;padding:5px 10px;cursor:pointer;margin-left:auto;white-space:nowrap}
+.vaihdanappi:hover{color:#fff}
+.edistysrivi{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.edistys{font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.06em;color:var(--blue2);margin-left:auto}
+.epalkki{height:4px;background:var(--line2);border-radius:99px;margin:8px 0 12px;overflow:hidden}
+.epalkki>div{height:100%;background:linear-gradient(90deg,var(--blue),var(--blue2));border-radius:99px}
+.laskuri{font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.06em;border-radius:4px;padding:3px 8px;margin-left:auto}
+.laskuri.kesken{color:var(--amb);background:rgba(255,207,63,.1)}
+.laskuri.valmis{color:var(--grn);background:rgba(57,229,124,.12)}
+.labrivi{display:flex;align-items:center;gap:6px;margin:8px 0 2px}
+.tallennuspalkki{position:sticky;bottom:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:rgba(11,16,29,.97);border:1px solid var(--line);border-radius:10px;padding:10px 14px;backdrop-filter:blur(4px);z-index:5;margin-top:14px}
+.tnappi{background:var(--blue);color:#06080f;font-family:'Barlow Condensed';font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:.04em;border:none;border-radius:8px;padding:10px 26px;cursor:pointer}
+.tnappi:hover{background:#5a9dff}
+.tnappi:disabled{opacity:.5;cursor:default}
+.ttila{font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.05em}
+.ttila.ok{color:var(--grn)}
+.ttila.virhe{color:var(--red)}
+.ttila.lukossa{color:var(--amb)}
+.tedistys{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--mut);margin-left:auto}
 </style>
 </head>
 <body>
@@ -342,7 +413,7 @@ function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standi
         <div>
           <div className="mono" style={{ fontSize: 9, letterSpacing: ".16em", color: "var(--amb)", textTransform: "uppercase" }}>Johdossa</div>
           <div className="jnimi">{eka.p.name}</div>
-          <div className="mono" style={{ fontSize: 10, color: "var(--mut)", marginTop: 3 }}>
+          <div className="mono jala" style={{ fontSize: 10, color: "var(--mut)", marginTop: 3 }}>
             {eka.p.champ ? nimetMap[eka.p.champ] : "—"}{nykyinenPelaaja(eka.p) ? " · " + lyhytNimi(nykyinenPelaaja(eka.p).nimi) : ""} · {eka.e.vakioOikein}/{eka.e.vakioPelattu} vakio-osumaa</div>
         </div>
         <div style={{ display: "flex", gap: 6, marginLeft: "auto", flexWrap: "wrap" }}>
@@ -779,17 +850,15 @@ function Porssit({ leaders, goalies, goaliestats, playerstats, rosters, standing
   );
 }
 
-function PelaajaHaku({ pelaajat, value, onChange, placeholder }) {
+function PelaajaHaku({ pelaajat, value, onChange, placeholder, logot, lukittu }) {
   const [teksti, setTeksti] = useState("");
   const osumat = teksti.trim().length >= 2
     ? pelaajat.filter(p => p.nimi.toLowerCase().includes(teksti.trim().toLowerCase())).slice(0, 8)
     : [];
   if (value) return (
-    <div className="valittu">
-      <img src={value.kuva} alt="" />
-      <span><b>{value.nimi}</b> <span className="tiny">{value.joukkue} · {value.pos}</span></span>
-      <button className="tyhjaa" onClick={() => onChange(null)} title="Tyhjennä">✕</button>
-    </div>
+    <FeatPelaaja p={value} logot={logot}
+      alarivi={(value.numero ? "#" + value.numero + " · " : "") + value.joukkue + " · " + (posSanat[value.pos] || value.pos)}
+      onVaihda={!lukittu ? (() => onChange(null)) : null} />
   );
   return (
     <div className="haku">
@@ -812,6 +881,9 @@ function VakioOsa({ round, picks, setPicks, lukittu, logot }) {
   if (!round) return <div className="note">Vakiokierrosta ei ole vielä julkaistu.</div>;
   const vk = ["su", "ma", "ti", "ke", "to", "pe", "la"];
   const kkNimet = { "10": "Lokakuu", "11": "Marraskuu", "12": "Joulukuu", "01": "Tammikuu", "02": "Helmikuu", "03": "Maaliskuu", "04": "Huhtikuu" };
+  const merkattu = round.kohteet.filter(g => g.tulos
+    ? (picks.tulos[g.id] && picks.tulos[g.id].v != null && picks.tulos[g.id].k != null)
+    : !!picks.vakio[g.id]).length;
   const asetaMerkki = (id, m) => { if (lukittu) return;
     setPicks(Object.assign({}, picks, { vakio: Object.assign({}, picks.vakio, { [id]: picks.vakio[id] === m ? null : m }) })); };
   const asetaTulos = (id, kentta, arvo) => { if (lukittu) return;
@@ -821,6 +893,9 @@ function VakioOsa({ round, picks, setPicks, lukittu, logot }) {
   let edKk = "", edPvm = "";
   return (
     <div>
+      <div className="sect"><span className="so">Vakiokierros 1</span><span className="viiva"></span>
+        <span className="edistys">{merkattu}/{round.kohteet.length} KOHDETTA MERKATTU</span></div>
+      <div className="epalkki"><div style={{ width: (round.kohteet.length ? Math.round(100 * merkattu / round.kohteet.length) : 0) + "%" }}></div></div>
       <div className="note">Tavalliset kohteet 1X2:lla (1 = kotivoitto varsinaisella ajalla, X = jatkoaika/voittolaukaukset, 2 = vierasvoitto varsinaisella ajalla; 3 p). Lauantain <b>tuloskohteessa</b> veikataan lopputulos: täysosuma 4 p · voittaja + toisen joukkueen maalit 3 p · voittaja 2 p.</div>
       {round.kohteet.map(g => {
         const kk = g.pvm.slice(5, 7), pvmTxt = vk[new Date(g.pvm).getUTCDay()] + " " + g.pvm.slice(8, 10) + "." + kk + ".";
@@ -834,7 +909,7 @@ function VakioOsa({ round, picks, setPicks, lukittu, logot }) {
             {naytaPvm && <div className="vpaiva">{pvmTxt}</div>}
             <div className={"vrivi" + (g.tulos ? " tuloskohde" : "")}>
               <span className="aika">{g.klo}</span>
-              <span className="pari"><img src={logot[g.vieras]} alt="" />{g.vieras} @ <img src={logot[g.koti]} alt="" />{g.koti}</span>
+              <span className="pari"><img src={logot[g.vieras]} alt="" />{g.vieras} <span className="at">@</span> <img src={logot[g.koti]} alt="" />{g.koti}</span>
               {g.tulos ? (
                 <span className="merkit" style={{ alignItems: "center", gap: 7 }}>
                   <span className="tulospilli">TULOSKOHDE</span>
@@ -855,6 +930,7 @@ function VakioOsa({ round, picks, setPicks, lukittu, logot }) {
           </div>
         );
       })}
+      <div className="selite">1 = KOTIVOITTO · X = JATKOAIKA/VL · 2 = VIERASVOITTO · 3 P / OIKEA</div>
     </div>
   );
 }
@@ -890,6 +966,38 @@ function VaihtoOsa({ picks, setPicks, nimi, rosters, playerstats, setViesti, set
   );
 }
 
+const posSanat = { H: "Hyökkääjä", P: "Puolustaja", MV: "Maalivahti" };
+
+function LogoValinta({ teams, value, onChange, lukittu }) {
+  return (
+    <div className={"logogrid" + (value ? " valinta" : "") + (lukittu ? " lukossa" : "")}>
+      {teams.map(t => {
+        const ab = t.teamAbbrev.default;
+        return (
+          <button key={ab} type="button" title={t.teamName.default}
+                  className={"logosolu" + (value === ab ? " val" : "")}
+                  onClick={() => { if (lukittu) return; onChange(value === ab ? "" : ab); }}>
+            <img src={t.teamLogo} alt={t.teamName.default} />
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function FeatPelaaja({ p, logot, alarivi, onVaihda }) {
+  return (
+    <div className="featkortti">
+      <FaceLogo kuva={p.kuva} logo={logot && logot[p.joukkue]} koko={44} logoKoko={20} reuna="2px solid var(--blue)" />
+      <div style={{ minWidth: 0 }}>
+        <div className="fnimi">{p.nimi}</div>
+        <div className="fala info">{alarivi}</div>
+      </div>
+      {onVaihda && <button className="vaihdanappi" onClick={onVaihda}>VAIHDA</button>}
+    </div>
+  );
+}
+
 function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
   const [nimi, setNimi] = useState("");
   const [pin, setPin] = useState("");
@@ -901,6 +1009,7 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
   const [picks, setPicks] = useState(tyhja);
 
   const joukkueet = standings.slice().sort((a, b) => a.teamName.default.localeCompare(b.teamName.default));
+  const logot = Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.teamLogo]));
   const divit = {};
   standings.forEach(t => { (divit[t.divisionName] = divit[t.divisionName] || []).push(t); });
   const kaikkiPelaajat = Object.values(rosters).flatMap(t =>
@@ -972,19 +1081,17 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
   if (!picks.player) puutteet.push("Oma pelaaja");
   if (!picks.viimeinen) puutteet.push("NHL:n viimeinen");
   if (!picks.allstar) puutteet.push("All-Star-voittaja");
-  if (round) {
-    const veikattu = round.kohteet.filter(g => g.tulos
-      ? (picks.tulos[g.id] && picks.tulos[g.id].v != null && picks.tulos[g.id].k != null)
-      : !!picks.vakio[g.id]).length;
-    if (veikattu < round.kohteet.length) puutteet.push("Vakiokohteita " + veikattu + "/" + round.kohteet.length);
-  }
+  const vakioMerkattu = round ? round.kohteet.filter(g => g.tulos
+    ? (picks.tulos[g.id] && picks.tulos[g.id].v != null && picks.tulos[g.id].k != null)
+    : !!picks.vakio[g.id]).length : 0;
+  if (round && vakioMerkattu < round.kohteet.length) puutteet.push("Vakiokohteita " + vakioMerkattu + "/" + round.kohteet.length);
 
   const tallenna = () => {
     if (lukittu) return;
     setTallennettu("");
     const doc = Object.assign({ name: nimi.trim(), pin: pin, savedAt: new Date().toISOString() }, picks);
     db.collection("nhlpredictions").doc(nimi.trim()).set(doc)
-      .then(() => setTallennettu("Tallennettu " + new Date().toLocaleTimeString("fi-FI") + "! Voit muokata valintoja lukitukseen asti."))
+      .then(() => setTallennettu("TALLENNETTU " + new Date().toLocaleTimeString("fi-FI", { hour: "2-digit", minute: "2-digit" }) + " — VOIT MUOKATA LUKITUKSEEN ASTI"))
       .catch(e => setViesti("Tallennus epäonnistui: " + e.message));
   };
 
@@ -1011,37 +1118,51 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
     <div className="card">
       <h2>Kuka olet?</h2>
       <div className="note">Näin veikkaat: aloita uutena veikkaajana, tee valintasi ja tallenna. Voit palata muokkaamaan milloin vain lukitukseen asti. Tarkemmat säännöt Säännöt-välilehdellä.</div>
-      <div className="lab">Uusi veikkaaja</div>
-      <div className="kirjaudu" style={{ marginTop: 6 }}>
-        <div className="kentta"><span className="lab">Nimi</span>
-          <input value={nimi} onChange={e => setNimi(e.target.value)} placeholder="Etunimi (+ sukunimen alkukirjain)" style={{ minWidth: 200 }} /></div>
-        <div className="kentta"><span className="lab">Keksi PIN (4 numeroa)</span>
-          <input value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))} inputMode="numeric" placeholder="••••" style={{ width: 110 }} /></div>
-        <button className="act" onClick={aloitaUusi}>Aloita</button>
-      </div>
-      <div className="tiny" style={{ marginTop: 6 }}>Paina PIN mieleen — tarvitset sitä aina, kun palaat muokkaamaan.</div>
-      {osallistujat.length > 0 && <div>
-        <div className="osio"><div className="lab">Palaatko muokkaamaan? Valitse nimesi</div>
-          <select style={{ marginTop: 6, minWidth: 220 }} value=""
-                  onChange={e => { if (e.target.value) { setAvattava(e.target.value); setPin(""); setViesti(""); } }}>
-            <option value="">— valitse nimesi —</option>
-            {osallistujat.map(o => <option key={o} value={o}>{o} 🔒</option>)}
-          </select>
+      <div className="vgrid2">
+        <div className="vpaneeli">
+          <div className="vpotsikko">Uusi veikkaus</div>
+          <div className="vpkuvaus">Nimi + nelinumeroinen PIN — sillä palaat muokkaamaan.</div>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
+            <input className="vinput" value={nimi} onChange={e => setNimi(e.target.value)}
+                   placeholder="Etunimi (+ sukunimen alkukirjain)" style={{ minWidth: 150, flex: 1 }} />
+            <input className="vinput mono" value={pin} onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))}
+                   inputMode="numeric" placeholder="PIN" style={{ width: 80 }} />
+            <button className="vnappi" onClick={aloitaUusi}>Aloita ›</button>
+          </div>
+          <div className="tiny" style={{ marginTop: 8 }}>Paina PIN mieleen — tarvitset sitä aina, kun palaat muokkaamaan.</div>
         </div>
-      </div>}
+        {osallistujat.length > 0 &&
+          <div className="vpaneeli">
+            <div className="vpotsikko">Palaatko muokkaamaan?</div>
+            <div className="vpkuvaus">Valitse nimesi — PIN kysytään seuraavaksi.</div>
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              {osallistujat.map(o =>
+                <button key={o} className="nimichip" onClick={() => { setAvattava(o); setPin(""); setViesti(""); }}>
+                  {o} <span className="lukko">🔒</span></button>)}
+            </div>
+          </div>}
+      </div>
       {lukittu && <div className="note" style={{ color: "var(--amb)" }}>🔒 Veikkaukset on lukittu — uusia ei voi lisätä, mutta omaa voi katsella.</div>}
       {viesti && <div className="note" style={{ color: "var(--amb)" }}>{viesti}</div>}
     </div>
   );
 
+  const askeleet = [
+    ["1 PLAYOFFIT", "k-playoffit", picks.poE.length === 8 && picks.poW.length === 8],
+    ["2 DIVARIT", "k-divarit", Object.keys(picks.div).filter(k => picks.div[k]).length >= 4],
+    ["3 PRES. TROPHY", "k-pres", !!picks.pres],
+    ["3B VIIMEINEN", "k-viimeinen", !!picks.viimeinen],
+    ["4 ART ROSS", "k-artross", !!picks.artRoss],
+    ["5 SUOMALAINEN", "k-suomalainen", !!picks.finn],
+    ["6 MESTARI", "k-mestari", !!picks.champ],
+    ["7 PELAAJA", "k-pelaaja", !!picks.player]
+  ];
+
   return (
     <div className="card">
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 8 }}>
         <h2 style={{ margin: 0 }}>Veikkaus — {nimi.trim()}</h2>
-        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-          {lukittu && <span className="pill y">LUKITTU</span>}
-          <button className="ghost" onClick={() => { setKirjautunut(false); setTallennettu(""); }}>Kirjaudu ulos</button>
-        </div>
+        <button className="ghost" onClick={() => { setKirjautunut(false); setTallennettu(""); }}>Kirjaudu ulos</button>
       </div>
       <div style={{ margin: "10px 0" }}>
         <div className="seg">
@@ -1050,15 +1171,26 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
         </div>
       </div>
 
-      {osa === "vakio" && <VakioOsa round={round} picks={picks} setPicks={setPicks} lukittu={lukittu}
-        logot={Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.teamLogo]))} />}
+      {osa === "vakio" && <VakioOsa round={round} picks={picks} setPicks={setPicks} lukittu={lukittu} logot={logot} />}
 
       {osa === "kausi" && <div>
-      <div className="osio"><div className="ots">1 · Playoff-joukkueet</div>
+      <div className="sect"><span className="so">Kausiveikkaus · {nimi.trim()}</span><span className="viiva"></span>
+        {lukittu ? <span className="pill y">🔒 LUKITTU</span>
+                 : <span className="meta" style={{ color: "var(--amb)" }}>Lukittuu kauden alkaessa</span>}</div>
+      <div className="stepper">
+        {askeleet.map(([txt, id, done]) =>
+          <a key={id} href={"#" + id} className={"schip" + (done ? " done" : "")}>{txt}{done ? " ✓" : ""}</a>)}
+      </div>
+      <div className="vpan" id="k-playoffit">
+        <div className="otsrivi"><div className="ots">1 · Playoff-joukkueet</div><span className="pinfo">2 P / OIKEA</span>
+          <span className={"vtila " + (picks.poE.length === 8 && picks.poW.length === 8 ? "valmis" : "kesken")}>
+            {picks.poE.length + picks.poW.length}/16{picks.poE.length === 8 && picks.poW.length === 8 ? " ✓" : ""}</span></div>
         <div className="kuv">Valitse 8 joukkuetta molemmista konferensseista, jotka pääsevät playoffeihin. 2 p / oikea + kuukausipisteet pitkin kautta.</div>
         {[["E", "Itäinen konferenssi", "poE"], ["W", "Läntinen konferenssi", "poW"]].map(([c, otsikko, avain]) => (
           <div key={c}>
-            <div className="lab" style={{ margin: "8px 0 2px" }}>{otsikko} — valittu {picks[avain].length}/8</div>
+            <div className="labrivi"><span className="lab">{otsikko}</span>
+              <span className={"laskuri " + (picks[avain].length === 8 ? "valmis" : "kesken")}>
+                {picks[avain].length}/8{picks[avain].length === 8 ? " ✓" : ""}</span></div>
             <div className="chipgrid">
               {joukkueet.filter(t => t.conferenceAbbrev === c).map(t => {
                 const val = picks[avain].includes(t.teamAbbrev.default);
@@ -1075,65 +1207,88 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
         ))}
       </div>
 
-      <div className="osio"><div className="ots">2 · Divisioonavoittajat</div>
-        <div className="kuv">3 p / oikea voittaja.</div>
-        <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-          {Object.keys(divit).map(dn => (
-            <div className="kentta" key={dn}><span className="lab">{dn}</span>
-              <select disabled={lukittu} value={picks.div[dn] || ""}
-                      onChange={e => setPicks(Object.assign({}, picks, { div: Object.assign({}, picks.div, { [dn]: e.target.value }) }))}>
-                <option value="">— valitse —</option>
-                {divit[dn].slice().sort((a, b) => a.teamName.default.localeCompare(b.teamName.default))
-                  .map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
-              </select></div>
-          ))}
+      <div className="vpan" id="k-divarit">
+        <div className="otsrivi"><div className="ots">2 · Divisioonavoittajat</div><span className="pinfo">3 P / OIKEA</span>
+          <span className={"vtila " + (Object.keys(picks.div).filter(k => picks.div[k]).length >= 4 ? "valmis" : "kesken")}>
+            {Object.keys(picks.div).filter(k => picks.div[k]).length}/4{Object.keys(picks.div).filter(k => picks.div[k]).length >= 4 ? " ✓" : ""}</span></div>
+        <div className="kuv">Napauta logoa — valittu joukkue korostuu, muut himmenevät. Uusi napautus valittuun poistaa valinnan.</div>
+        <div className="divgrid">
+          {Object.keys(divit).map(dn => {
+            const val = picks.div[dn] || "";
+            const valT = val ? standings.find(t => t.teamAbbrev.default === val) : null;
+            return (
+              <div className="divpaneeli" key={dn}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <span className="divpotsikko">{dn}</span>
+                  {valT ? <span className="laskuri valmis">{valT.teamName.default} ✓</span>
+                        : <span className="laskuri kesken">VALITSE</span>}
+                </div>
+                <LogoValinta lukittu={lukittu} value={val}
+                  teams={divit[dn].slice().sort((a, b) => a.teamName.default.localeCompare(b.teamName.default))}
+                  onChange={v => setPicks(Object.assign({}, picks, { div: Object.assign({}, picks.div, { [dn]: v }) }))} />
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      <div className="osio"><div className="ots">3 · Presidents' Trophy</div>
+      <div className="vpan" id="k-pres">
+        <div className="otsrivi"><div className="ots">3 · Presidents' Trophy</div><span className="pinfo">5 P</span>
+          {picks.pres
+            ? <span className="vtila valmis">{(standings.find(t => t.teamAbbrev.default === picks.pres) || { teamName: { default: picks.pres } }).teamName.default} ✓</span>
+            : <span className="vtila kesken">VALITSE</span>}</div>
         <div className="kuv">Runkosarjan paras joukkue. 5 p.</div>
-        <select disabled={lukittu} value={picks.pres}
-                onChange={e => setPicks(Object.assign({}, picks, { pres: e.target.value }))}>
-          <option value="">— valitse —</option>
-          {joukkueet.map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
-        </select>
+        <LogoValinta teams={joukkueet} value={picks.pres} lukittu={lukittu}
+          onChange={v => setPicks(Object.assign({}, picks, { pres: v }))} />
       </div>
 
-      <div className="osio"><div className="ots">3b · NHL:n viimeinen</div>
+      <div className="vpan" id="k-viimeinen">
+        <div className="otsrivi"><div className="ots">3b · NHL:n viimeinen</div><span className="pinfo">5 P</span>
+          {picks.viimeinen
+            ? <span className="vtila valmis">{(standings.find(t => t.teamAbbrev.default === picks.viimeinen) || { teamName: { default: picks.viimeinen } }).teamName.default} ✓</span>
+            : <span className="vtila kesken">VALITSE</span>}</div>
         <div className="kuv">Käänteinen Presidents' Trophy: mikä joukkue jää koko liigan viimeiseksi? 5 p.</div>
-        <select disabled={lukittu} value={picks.viimeinen}
-                onChange={e => setPicks(Object.assign({}, picks, { viimeinen: e.target.value }))}>
-          <option value="">— valitse —</option>
-          {joukkueet.map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
-        </select>
+        <LogoValinta teams={joukkueet} value={picks.viimeinen} lukittu={lukittu}
+          onChange={v => setPicks(Object.assign({}, picks, { viimeinen: v }))} />
       </div>
 
-      <div className="osio"><div className="ots">4 · Pistepörssin voittaja (Art Ross)</div>
+      <div className="vpan" id="k-artross">
+        <div className="otsrivi"><div className="ots">4 · Pistepörssin voittaja (Art Ross)</div><span className="pinfo">10 P · TOP 3 5 P</span>
+          <span className={"vtila " + (picks.artRoss ? "valmis" : "kesken")}>{picks.artRoss ? "VALITTU ✓" : "VALITSE"}</span></div>
         <div className="kuv">10 p oikein · 5 p jos top 3.</div>
         {lukittu && !picks.artRoss ? <div className="tiny">—</div> :
-          <PelaajaHaku pelaajat={kaikkiPelaajat} value={picks.artRoss}
+          <PelaajaHaku pelaajat={kaikkiPelaajat} value={picks.artRoss} lukittu={lukittu} logot={logot}
                        onChange={p => !lukittu && setPicks(Object.assign({}, picks, { artRoss: p }))} />}
       </div>
 
-      <div className="osio"><div className="ots">5 · Paras suomalainen pistemies</div>
+      <div className="vpan" id="k-suomalainen">
+        <div className="otsrivi"><div className="ots">5 · Paras suomalainen pistemies</div><span className="pinfo">8 P · TOP 3 4 P</span>
+          <span className={"vtila " + (picks.finn ? "valmis" : "kesken")}>{picks.finn ? "VALITTU ✓" : "VALITSE"}</span></div>
         <div className="kuv">8 p oikein · 4 p jos top 3 suomalaisista. (Haku näyttää toistaiseksi kaikki pelaajat — valitse suomalainen!)</div>
         {lukittu && !picks.finn ? <div className="tiny">—</div> :
-          <PelaajaHaku pelaajat={kaikkiPelaajat} value={picks.finn}
+          <PelaajaHaku pelaajat={kaikkiPelaajat} value={picks.finn} lukittu={lukittu} logot={logot}
                        onChange={p => !lukittu && setPicks(Object.assign({}, picks, { finn: p }))} />}
       </div>
 
-      <div className="osio"><div className="ots">6 · Oma mestari</div>
+      <div className="vpan" id="k-mestari">
+        <div className="otsrivi"><div className="ots">6 · Oma mestari</div><span className="pinfo">1 P / VOITTO · PLAYOFFEISSA 2 P</span>
+          <span className={"vtila " + (picks.champ ? "valmis" : "kesken")}>{picks.champ ? "VALITTU ✓" : "VALITSE"}</span></div>
         <div className="kuv">Stanley Cup -voittajasi. 1 p / voitto runkosarjassa, 2 p / voitto playoffeissa — pisteitä lähes joka illasta!</div>
-        <select disabled={lukittu} value={picks.champ} onChange={e => asetaChamp(e.target.value)}>
-          <option value="">— valitse —</option>
-          {joukkueet.map(t => <option key={t.teamAbbrev.default} value={t.teamAbbrev.default}>{t.teamName.default}</option>)}
-        </select>
+        <LogoValinta teams={joukkueet} value={picks.champ} lukittu={lukittu} onChange={v => asetaChamp(v)} />
         {mestariJoukkue &&
-          <div className="valittu"><img src={mestariJoukkue.teamLogo} alt="" style={{ borderRadius: 0, background: "transparent" }} />
-            <b>{mestariJoukkue.teamName.default}</b></div>}
+          <div className="featkortti">
+            <img src={mestariJoukkue.teamLogo} alt="" style={{ width: 44, height: 44, objectFit: "contain" }} />
+            <div style={{ minWidth: 0 }}>
+              <div className="fnimi">{mestariJoukkue.teamName.default}</div>
+              <div className="fala ok">VALINTASI ✓</div>
+            </div>
+            {!lukittu && <button className="vaihdanappi" onClick={() => asetaChamp("")}>VAIHDA</button>}
+          </div>}
       </div>
 
-      <div className="osio"><div className="ots">7 · Oma pelaaja</div>
+      <div className="vpan" id="k-pelaaja">
+        <div className="otsrivi"><div className="ots">7 · Oma pelaaja</div><span className="pinfo">H 0,5 / P 2 P/MAALI · MV 6 P/NOLLAPELI</span>
+          <span className={"vtila " + (picks.player ? "valmis" : "kesken")}>{picks.player ? "VALITTU ✓" : "VALITSE"}</span></div>
         <div className="kuv">Pakko valita mestarijoukkueestasi! Hyökkääjä 0,5 p/maali · puolustaja 2 p/maali · maalivahti 6 p/nollapeli.</div>
         {!picks.champ ? <div className="note">Valitse ensin oma mestari (kohta 6) — pelaajalista aukeaa sen joukkueesta.</div> :
           <div>
@@ -1150,12 +1305,16 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
                 </optgroup>)}
             </select>
             {picks.player &&
-              <div className="valittu"><img src={picks.player.kuva} alt="" />
-                <span><b>{picks.player.nimi}</b> <span className="tiny">{picks.player.joukkue} · {posNimi[picks.player.pos]}</span></span></div>}
+              <FeatPelaaja p={picks.player} logot={logot}
+                alarivi={(picks.player.numero ? "#" + picks.player.numero + " · " : "") + posSanat[picks.player.pos]
+                  + " · " + (picks.player.pos === "H" ? "0,5 P/MAALI" : picks.player.pos === "P" ? "2 P/MAALI" : "6 P/NOLLAPELI")}
+                onVaihda={!lukittu ? (() => setPicks(Object.assign({}, picks, { player: null }))) : null} />}
           </div>}
       </div>
 
-      <div className="osio"><div className="ots">8 · All-Star 2027 -voittajamaa</div>
+      <div className="vpan" id="k-allstar">
+        <div className="otsrivi"><div className="ots">8 · All-Star 2027 -voittajamaa</div><span className="pinfo">8 P</span>
+          <span className={"vtila " + (picks.allstar ? "valmis" : "kesken")}>{picks.allstar ? picks.allstar.toUpperCase() + " ✓" : "VALITSE"}</span></div>
         <div className="kuv">Viisi joukkuetta (5.–6.2.2027, UBS Arena): kuka voittaa 3v3-turnauksen? 8 p. Tämän kohteen voi täyttää ja muuttaa aina All-Star-viikonloppuun asti, vaikka muu veikkaus olisi jo lukittu.</div>
         <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
           <select disabled={!!(config && config.lockedAS)} value={picks.allstar}
@@ -1174,13 +1333,13 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
 
       {lukittu && picks.player && !picks.player2 && playerstats &&
         (!config || !config.tradeDL || new Date().toISOString().slice(0, 10) <= config.tradeDL) &&
-        <div className="osio"><div className="ots">Pelaajanvaihto — käytettävissä 1 krt</div>
+        <div className="vpan"><div className="otsrivi"><div className="ots">Pelaajanvaihto — käytettävissä 1 krt</div></div>
           <div className="kuv">Voit vaihtaa oman pelaajasi kerran kauden aikana toiseen saman joukkueen ({picks.champ}) pelaajaan. Ikkuna sulkeutuu NHL:n trade deadlineen{config && config.tradeDL ? " (" + config.tradeDL + ")" : ""}. Vaihto on lopullinen — käytetty mahdollisuus ei palaudu, vaikka uusikin pelaaja loukkaantuisi. Pisteet: {lyhytNimi(picks.player.nimi)} vaihtoon asti, uusi pelaaja siitä eteenpäin (uuden pelipaikan kertoimella).</div>
           <VaihtoOsa picks={picks} setPicks={setPicks} nimi={nimi} rosters={rosters} playerstats={playerstats}
                      setViesti={setViesti} setTallennettu={setTallennettu} posNimi={posNimi} />
         </div>}
       {picks.player2 &&
-        <div className="osio"><div className="ots">Pelaajanvaihto — käytetty</div>
+        <div className="vpan"><div className="otsrivi"><div className="ots">Pelaajanvaihto — käytetty</div></div>
           <div className="kuv">{lyhytNimi(picks.player.nimi)} → {lyhytNimi(picks.player2.nimi)} ({picks.vaihtoPvm}). Ei enää vaihto-oikeutta.</div>
         </div>}
       </div>}
@@ -1189,12 +1348,15 @@ function Veikkaus({ standings, rosters, round, lukittu, config, playerstats }) {
         {puutteet.length > 0
           ? <div className="puuttuu">Vielä puuttuu: {puutteet.join(" · ")}. Voit silti tallentaa ja jatkaa myöhemmin.</div>
           : <div className="okvihrea">Kaikki valinnat tehty! ✓</div>}
-        <div style={{ marginTop: 10, display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-          <button className="act" onClick={tallenna} disabled={lukittu}>Tallenna veikkaus</button>
-          {tallennettu && <span className="okvihrea">{tallennettu}</span>}
-        </div>
         {viesti && <div className="note" style={{ color: "var(--amb)" }}>{viesti}</div>}
         <div className="tiny" style={{ marginTop: 8 }}>Muista tallentaa! Valinnat eivät tallennu itsestään. Ennen lukitusta voit muokata veikkaustasi rajattomasti kirjautumalla samalla nimellä ja PIN-koodilla.</div>
+      </div>
+      <div className="tallennuspalkki">
+        {!lukittu
+          ? <button className="tnappi" onClick={tallenna}>Tallenna veikkaus</button>
+          : <span className="ttila lukossa">🔒 LUKITTU — VALINNAT EIVÄT ENÄÄ MUUTU</span>}
+        {tallennettu && <span className="ttila ok">✓ {tallennettu}</span>}
+        {osa === "vakio" && round && <span className="tedistys">{vakioMerkattu}/{round.kohteet.length} MERKATTU</span>}
       </div>
     </div>
   );
