@@ -92,6 +92,13 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 @media(max-width:879px){
   .kpiilo{display:none}
   .krivi{grid-template-columns:38px 40px 1fr 88px}
+  .johtaja{gap:12px;padding:12px 14px}
+  .johtaja .naamio{width:48px!important;height:48px!important}
+  .johtaja .naamio>img:first-child,.johtaja .naamio>span:first-child{width:48px!important;height:48px!important}
+  .johtaja .naamio img:last-child{width:26px!important;height:26px!important}
+  .jnimi{font-size:22px}
+  .jpisteet{font-size:34px}
+  .johtaja .echip{display:none}
 }
 /* ---- kärkitaulun johtajakortti ---- */
 .johtaja{display:flex;align-items:center;gap:16px;background:linear-gradient(115deg,rgba(255,207,63,.10),var(--panel2) 55%);border:1px solid rgba(255,207,63,.35);border-radius:12px;padding:16px 18px;margin-bottom:8px;flex-wrap:wrap}
@@ -99,7 +106,7 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 .jpisteet{font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:46px;color:var(--amb);line-height:1;text-align:right}
 .echip{font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;color:var(--mut);background:var(--chipbg);border-radius:4px;padding:4px 8px;white-space:nowrap}
 /* ---- avattu erittely kortteina ---- */
-.ekortit{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;padding:4px 14px 12px 52px}
+.ekortit{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;padding:4px 10px 12px 10px}
 .ekortti{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:10px 12px}
 .el{font-family:'Spline Sans Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.12em;color:var(--mut);text-transform:uppercase;margin-bottom:6px}
 .ei{font-family:'Barlow Condensed';font-weight:800;font-size:22px;color:#fff}
@@ -259,9 +266,9 @@ const lyhytNimi = (nimi) => {
   return osat.length > 1 ? osat[0][0] + ". " + osat.slice(1).join(" ") : nimi;
 };
 
-function FaceLogo({ kuva, logo, koko, logoKoko, reuna }) {
+function FaceLogo({ kuva, logo, koko, logoKoko, reuna, className }) {
   return (
-    <span style={{ position: "relative", display: "inline-flex", width: koko, height: koko, flex: "0 0 auto" }}>
+    <span className={className} style={{ position: "relative", display: "inline-flex", width: koko, height: koko, flex: "0 0 auto" }}>
       {kuva ? <img src={kuva} alt="" style={{ width: koko, height: koko, borderRadius: "50%", objectFit: "cover",
         background: "var(--chipbg)", border: reuna || "1px solid var(--line2)" }} />
         : <span style={{ width: koko, height: koko, borderRadius: "50%", background: "var(--chipbg)", border: "1px solid var(--line2)" }}></span>}
@@ -330,7 +337,7 @@ function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standi
       </div>
 
       <div className="johtaja" onClick={() => setAuki(auki === eka.p.name ? null : eka.p.name)} style={{ cursor: "pointer" }}>
-        <FaceLogo kuva={nykyinenPelaaja(eka.p) && nykyinenPelaaja(eka.p).kuva} logo={eka.p.champ && logot[eka.p.champ]}
+        <FaceLogo className="naamio" kuva={nykyinenPelaaja(eka.p) && nykyinenPelaaja(eka.p).kuva} logo={eka.p.champ && logot[eka.p.champ]}
                   koko={64} logoKoko={34} reuna="2px solid var(--amb)" />
         <div>
           <div className="mono" style={{ fontSize: 9, letterSpacing: ".16em", color: "var(--amb)", textTransform: "uppercase" }}>Johdossa</div>
@@ -1198,11 +1205,11 @@ function Jarjestaja({ config, standings, onTallennettu }) {
   const [pin, setPin] = useState("");
   const [viesti, setViesti] = useState("");
   const [lomake, setLomake] = useState(null);
-  const eiPinia = !config || !config.pin;
+  const eiPinia = !config || !config.pin || !/^\d{6}$/.test(config.pin);
 
   const avaa = () => {
     if (!eiPinia && pin !== config.pin) { setViesti("Väärä PIN."); return; }
-    if (eiPinia && !/^\d{4}$/.test(pin)) { setViesti("Aseta 4-numeroinen järjestäjä-PIN."); return; }
+    if (eiPinia && !/^\d{6}$/.test(pin)) { setViesti("Aseta 6-numeroinen järjestäjä-PIN."); return; }
     setViesti("");
     setLomake({
       pin: eiPinia ? pin : config.pin,
@@ -1225,10 +1232,10 @@ function Jarjestaja({ config, standings, onTallennettu }) {
   if (!avattu) return (
     <div className="card">
       <h2>Järjestäjä</h2>
-      {eiPinia && <div className="note">Järjestäjä-PIN-koodia ei ole vielä asetettu. Keksi 4-numeroinen PIN — se tallentuu, kun tallennat asetukset ensimmäisen kerran.</div>}
+      {eiPinia && <div className="note">Järjestäjä-PIN ei ole käytössä (uusi tai nollattu). Keksi 6-numeroinen PIN — se tallentuu, kun tallennat asetukset ensimmäisen kerran.</div>}
       <div className="kirjaudu">
         <input type="password" inputMode="numeric" placeholder="Järjestäjä-PIN" value={pin}
-               onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))}
+               onChange={e => setPin(e.target.value.replace(/\D/g, "").slice(0, 6))}
                onKeyDown={e => { if (e.key === "Enter") avaa(); }} style={{ width: 140 }} />
         <button className="act" onClick={avaa}>Avaa</button>
       </div>
