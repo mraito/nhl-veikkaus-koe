@@ -260,6 +260,26 @@ html{scroll-behavior:smooth}
 .ttila.virhe{color:var(--red)}
 .ttila.lukossa{color:var(--amb)}
 .tedistys{font-family:'Spline Sans Mono',monospace;font-size:10px;color:var(--mut);margin-left:auto}
+/* ---- Uutiskortti (handoff 5) ---- */
+.uutiskortti{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:14px 0 6px}
+.uotsake{display:flex;align-items:center;gap:10px;background:var(--panel2);border-bottom:1px solid var(--line);padding:6px 14px}
+.upiste{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none}
+.uotsake .ul{font-family:'Spline Sans Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.16em;color:var(--blue2)}
+.uotsake .ur{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-size:9px;color:var(--faint)}
+.urivi{display:flex;align-items:center;gap:8px;padding:8px 14px;border-bottom:1px solid #10192e;flex-wrap:wrap;font-size:12px;color:var(--body)}
+.urivi:last-child{border-bottom:none}
+.utagi{font-family:'Spline Sans Mono',monospace;font-size:8.5px;font-weight:600;letter-spacing:.1em;border-radius:4px;padding:2px 7px;flex:none}
+.utagi.si{color:var(--blue2);background:rgba(63,140,255,.12)}
+.utagi.ho{color:var(--hopea);background:rgba(200,204,214,.1)}
+.utagi.am{color:var(--amb);background:rgba(255,207,63,.1)}
+.unimi{font-family:'Barlow Condensed';font-weight:700;font-size:13px;text-transform:uppercase;color:#fff}
+.upvm{margin-left:auto;font-family:'Spline Sans Mono',monospace;font-size:9px;color:var(--faint)}
+.fchip{display:inline-flex;align-items:center;gap:6px;background:var(--chipbg);border-radius:99px;padding:2px 9px 2px 2px}
+.fchip img{width:20px;height:20px;border-radius:50%;object-fit:cover;background:var(--panel2)}
+.fchip .fn{font-family:'Barlow Condensed';font-weight:700;font-size:12.5px;text-transform:uppercase;color:#fff;white-space:nowrap}
+.fchip .fp{font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;color:var(--body)}
+.fchip .fp.iso{color:var(--amb)}
+.fplus{font-family:'Spline Sans Mono',monospace;font-size:9.5px;font-weight:600;color:var(--blue2);background:var(--chipbg);border:none;border-radius:99px;padding:4px 10px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -362,6 +382,105 @@ function Laajenna({ auki, onClick, kiinniTxt, aukiTxt }) {
 
 const VKL = ["su", "ma", "ti", "ke", "to", "pe", "la"];
 const pvmTxt = (pvm) => VKL[new Date(pvm).getUTCDay()] + " " + pvm.slice(8, 10) + "." + pvm.slice(5, 7) + ".";
+
+function Uutiskortti({ preds, config, dayscores, rosters }) {
+  const [fiAuki, setFiAuki] = useState(false);
+  const [kaikkiAuki, setKaikkiAuki] = useState(false);
+  const tanaan = new Date().toISOString().slice(0, 10);
+  const lyhytPvm = (pvm) => parseInt(pvm.slice(8, 10), 10) + "." + parseInt(pvm.slice(5, 7), 10) + ".";
+
+  // 1) Suomalaisten pisteet viimeisimmältä pelipäivältä
+  let fiPvm = "", fiPisteet = [];
+  if (dayscores && rosters) {
+    const finnit = new Set(Object.values(rosters).flatMap(t =>
+      t.pelaajat.filter(p => p.maa === "FIN").map(p => String(p.id))));
+    const kuvat = {};
+    Object.values(rosters).forEach(t => t.pelaajat.forEach(p => { kuvat[String(p.id)] = p.kuva; }));
+    const paivat = {};
+    Object.values(dayscores).flat().forEach(g => {
+      const pvm = suomiAika(g.alkaaUTC).pvm;
+      (paivat[pvm] = paivat[pvm] || []).push(g);
+    });
+    fiPvm = Object.keys(paivat).sort().reverse()[0] || "";
+    if (fiPvm) {
+      const koonti = {};
+      paivat[fiPvm].forEach(g => { if (g.pts) Object.keys(g.pts).forEach(id => {
+        if (!finnit.has(id)) return;
+        const p = g.pts[id];
+        const k = koonti[id] || { id, n: p.n, g: 0, a: 0 };
+        k.g += p.g; k.a += p.a; koonti[id] = k;
+      }); });
+      fiPisteet = Object.values(koonti).map(k => Object.assign(k, { yht: k.g + k.a, kuva: kuvat[k.id] }))
+        .sort((a, b) => b.yht - a.yht || b.g - a.g);
+    }
+  }
+
+  // 2) Pelaajanvaihdot (näkyvät 7 pv vaihdosta)
+  const vaihtoRaja = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+  const vaihdot = preds.filter(p => p.player2 && p.vaihtoPvm && p.vaihtoPvm >= vaihtoRaja);
+
+  // 3) Trade deadline lähestyy (viimeiset 14 pv)
+  let dlPaivia = null;
+  if (config && config.tradeDL) {
+    const d = Math.round((new Date(config.tradeDL) - new Date(tanaan)) / 864e5);
+    if (d >= 0 && d <= 14) dlPaivia = d;
+  }
+
+  // 4) Järjestäjän tiedote (voimassaolopäivään asti)
+  const tiedote = (config && config.tiedote && String(config.tiedote).trim() &&
+    (!config.tiedoteAsti || tanaan <= config.tiedoteAsti)) ? String(config.tiedote).trim() : "";
+
+  const rivit = [];
+  if (fiPvm) {
+    const nayta = fiAuki ? fiPisteet : fiPisteet.slice(0, 5);
+    rivit.push(
+      <div className="urivi" key="fi">
+        <span className="utagi si">SUOMALAISET</span>
+        <span className="mono" style={{ fontSize: 9, color: "var(--faint)" }}>{pvmTxt(fiPvm)}</span>
+        {fiPisteet.length === 0 && <span style={{ color: "var(--mut)" }}>Ei suomalaispisteitä tällä kierroksella.</span>}
+        {nayta.map(f =>
+          <span className="fchip" key={f.id}>
+            {f.kuva && <img src={f.kuva} alt="" />}
+            <span className="fn">{lyhytNimi(f.n)}</span>
+            <span className={"fp" + (f.yht >= 3 ? " iso" : "")}>{f.g}+{f.a}</span>
+          </span>)}
+        {fiPisteet.length > 5 &&
+          <button className="fplus" onClick={() => setFiAuki(!fiAuki)}>
+            {fiAuki ? "− vähemmän ▴" : "+" + (fiPisteet.length - 5) + " ▾"}</button>}
+      </div>);
+  }
+  vaihdot.forEach(p => rivit.push(
+    <div className="urivi" key={"v-" + p.name}>
+      <span className="utagi ho">VAIHTO</span>
+      <span><span className="unimi">{p.name}</span> vaihtoi: <span style={{ color: "var(--body)" }}>{lyhytNimi(p.player.nimi)}</span>
+        <span style={{ color: "var(--mut)" }}> → </span><span style={{ color: "#fff" }}>{lyhytNimi(p.player2.nimi)}</span></span>
+      <span className="upvm">{lyhytPvm(p.vaihtoPvm)}</span>
+    </div>));
+  if (dlPaivia != null) rivit.push(
+    <div className="urivi" key="dl">
+      <span className="utagi am">DEADLINE</span>
+      <span>Pelaajanvaihdon takaraja <span style={{ color: "#fff" }}>{lyhytPvm(config.tradeDL)}</span>
+        <span style={{ color: "var(--amb)" }}> — {dlPaivia === 0 ? "viimeinen päivä tänään" : dlPaivia + (dlPaivia === 1 ? " päivä" : " päivää") + " jäljellä"}</span></span>
+    </div>);
+  if (tiedote) rivit.push(
+    <div className="urivi" key="tied">
+      <span className="utagi am">TIEDOTE</span>
+      <span>{tiedote} <span className="mono" style={{ fontSize: 9, color: "var(--faint)" }}>— JÄRJESTÄJÄ</span></span>
+    </div>);
+
+  if (rivit.length === 0) return null;
+  const naytaRivit = kaikkiAuki ? rivit : rivit.slice(0, 4);
+  return (
+    <div className="uutiskortti">
+      <div className="uotsake"><span className="upiste"></span><span className="ul">UUTISET</span>
+        <span className="ur">PÄIVITTYY JOKA AAMU</span></div>
+      {naytaRivit}
+      {rivit.length > 4 &&
+        <Laajenna auki={kaikkiAuki} onClick={() => setKaikkiAuki(!kaikkiAuki)}
+                  kiinniTxt={"NÄYTÄ KAIKKI (" + rivit.length + ")"} />}
+    </div>
+  );
+}
 
 function Tulostaulukko({ preds, round, results, checkpoints, playerstats, standings, stake, config }) {
   const erikois = { allstar: config && config.allstarTulos, viimeinen: config && config.viimeinenTulos };
@@ -1387,6 +1506,8 @@ function Jarjestaja({ config, standings, onTallennettu }) {
       locked1: !!(config && config.locked1),
       lockedAS: !!(config && config.lockedAS),
       tradeDL: (config && config.tradeDL) || "2027-03-08",
+      tiedote: (config && config.tiedote) || "",
+      tiedoteAsti: (config && config.tiedoteAsti) || "",
       allstarTulos: (config && config.allstarTulos) || "",
       viimeinenTulos: (config && config.viimeinenTulos) || ""
     });
@@ -1439,6 +1560,23 @@ function Jarjestaja({ config, standings, onTallennettu }) {
             <input type="date" value={lomake.tradeDL}
                    onChange={e => setLomake(Object.assign({}, lomake, { tradeDL: e.target.value }))} /></div>
         </div>
+      </div>
+      <div className="osio"><div className="ots">Tiedote (näkyy uutiskortissa Tulostaulukon ylälaidassa)</div>
+        <div className="kuv">Tyhjä teksti = ei tiedotetta. Tiedote poistuu automaattisesti "Näkyy asti" -päivän jälkeen.</div>
+        <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 6, alignItems: "flex-end" }}>
+          <div className="kentta" style={{ flex: "1 1 260px" }}><span className="lab">Tiedote</span>
+            <input maxLength={200} value={lomake.tiedote} placeholder="esim. Muistakaa täyttää toisen puolikkaan vakiot!"
+                   onChange={e => setLomake(Object.assign({}, lomake, { tiedote: e.target.value }))} style={{ width: "100%" }} /></div>
+          <div className="kentta"><span className="lab">Näkyy asti</span>
+            <input type="date" value={lomake.tiedoteAsti}
+                   onChange={e => setLomake(Object.assign({}, lomake, { tiedoteAsti: e.target.value }))} /></div>
+        </div>
+        {lomake.tiedote.trim() &&
+          <div className="urivi" style={{ border: "1px solid var(--line2)", borderRadius: 8, marginTop: 10 }}>
+            <span className="utagi am">TIEDOTE</span>
+            <span>{lomake.tiedote.trim()} <span className="mono" style={{ fontSize: 9, color: "var(--faint)" }}>— JÄRJESTÄJÄ</span></span>
+            {lomake.tiedoteAsti && <span className="upvm">näkyy {lomake.tiedoteAsti.slice(8,10)}.{lomake.tiedoteAsti.slice(5,7)}. asti</span>}
+          </div>}
       </div>
       <div className="osio"><div className="ots">Erikoiskohteiden tulokset (syötetään kun ratkeavat)</div>
         <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 6 }}>
@@ -1537,6 +1675,7 @@ function App() {
             const winsMap = Object.fromEntries(standings.map(t => [t.teamAbbrev.default, t.wins]));
             return (
               <div>
+                <Uutiskortti preds={preds} config={config} dayscores={dayscores} rosters={rosters} />
                 <Tulostaulukko preds={preds} round={round} results={results} checkpoints={checkpoints}
                                playerstats={playerstats} standings={standings} stake={config.stake != null ? config.stake : 10} config={config} />
                 <TulosKortit preds={preds} round={round} results={results} dayscores={dayscores} schedule={schedule} rosters={rosters} lukittu={!!config.locked1} logot={logot} />
