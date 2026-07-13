@@ -36,14 +36,35 @@ h1,h2,.disp{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spa
 .hero{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:14px 0 6px;position:relative;overflow:hidden;padding:0}
 .hero .streak{position:absolute;top:-20px;bottom:-20px;right:40px;width:280px;background:linear-gradient(115deg,transparent 0,rgba(63,140,255,.18) 35%,rgba(63,140,255,.04) 100%);transform:skewX(-14deg);pointer-events:none}
 .herorow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:20px 24px 16px;position:relative}
-.hero .cup{height:100px;width:auto;flex:0 0 auto;filter:drop-shadow(0 3px 10px rgba(0,0,0,.65))}
 .hero .htxt{flex:1 1 240px;min-width:0}
+/* ---- CSS-pokaali + kaiverrukset (handoff 6) ---- */
+.pokaali{--metalli:linear-gradient(90deg,#5c6675 0%,#cfd8e4 20%,#f5f9fe 38%,#a9b4c3 55%,#e6edf5 74%,#636d7c 100%);
+  display:flex;flex-direction:column;align-items:center;flex:none;filter:drop-shadow(0 8px 18px rgba(0,0,0,.85))}
+.pokaali.voitto{filter:drop-shadow(0 8px 18px rgba(0,0,0,.85)) drop-shadow(0 0 26px rgba(255,207,63,.22))}
+.pokaali>*{margin-top:1px}
+.pok-reunus{width:86px;height:9px;background:var(--metalli);border-radius:4px 4px 2px 2px;margin-top:0}
+.pok-malja{width:78px;height:36px;background:var(--metalli);border-radius:0 0 39px 39px;box-shadow:inset 0 -8px 12px rgba(20,26,36,.3)}
+.pok-kaula{width:20px;height:9px;background:var(--metalli)}
+.pok-rengas{height:8px;background:var(--metalli);border-radius:2px}
+.pok-runko{width:80px;background:var(--metalli);border-radius:3px;overflow:hidden;display:flex;flex-direction:column}
+.pok-vyo{border-top:1px solid rgba(20,26,36,.3);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pok-runko>.pok-vyo:first-child{border-top:none}
+.pok-vyo.tyhja{height:7px}
+.pok-vyo.keski{height:36px}
+.pok-vyo.historia{height:13px}
+.pok-jalusta{width:88px;height:10px;background:linear-gradient(90deg,#39404c,#98a2b1 28%,#cdd6e2 44%,#8c96a5 62%,#39404c);border-radius:2px 2px 4px 4px}
+.kaiv-paa{font-family:'Barlow Condensed';font-weight:800;font-size:13.5px;text-transform:uppercase;letter-spacing:.05em;color:#39424f;text-shadow:0 1px 0 rgba(255,255,255,.6);max-width:72px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.1}
+.kaiv-ala{font-family:'Spline Sans Mono',monospace;font-weight:700;font-size:6.5px;letter-spacing:.12em;color:#4a5361;text-shadow:0 1px 0 rgba(255,255,255,.55);white-space:nowrap}
+.kaiv-hist{font-family:'Spline Sans Mono',monospace;font-weight:700;font-size:6px;letter-spacing:.1em;color:#4a5361;text-shadow:0 1px 0 rgba(255,255,255,.55);white-space:nowrap}
+.hero.voitto .streak{background:linear-gradient(115deg,transparent 0,rgba(255,207,63,.14) 35%,rgba(255,207,63,.03) 100%)}
+.hero.voitto .kick{color:var(--amb)}
+.tick-kaiv{margin-left:auto;color:var(--amb);font-size:10px;white-space:nowrap}
 .kick{color:var(--blue);font-family:'Barlow Condensed';font-weight:800;letter-spacing:.22em;font-size:11px;text-transform:uppercase}
 .title{font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-size:clamp(34px,6.5vw,56px);line-height:.92;margin:4px 0 2px;color:#fff;text-transform:uppercase}
 .title .vuosi{color:var(--blue)}
 .logostrip{display:flex;gap:14px;align-items:center;margin-top:12px;flex-wrap:wrap}
 .logostrip img{width:40px;height:40px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
-.ticker{background:var(--panel2);border-top:1px solid var(--line);padding:7px 24px;font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.08em;color:var(--blue2);text-transform:uppercase}
+.ticker{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--panel2);border-top:1px solid var(--line);padding:7px 24px;font-family:'Spline Sans Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.08em;color:var(--blue2);text-transform:uppercase}
 .tabs{display:flex;gap:2px;flex-wrap:wrap;position:sticky;top:0;z-index:20;background:linear-gradient(var(--bg),rgba(7,10,18,.88));backdrop-filter:blur(8px);padding:10px 0 0;margin-bottom:12px;border-bottom:1px solid var(--line)}
 .tab{font-family:'Barlow Condensed';font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.05em;padding:7px 15px;border:none;border-bottom:3px solid transparent;background:transparent;color:var(--mut);cursor:pointer;transition:.15s}
 .tab:hover{color:#fff}
@@ -111,6 +132,7 @@ tr.poon td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
   .vrivi .merkit{margin-left:auto}
   .kirjaudu{flex-wrap:wrap}
   .vpaneeli input[placeholder^="Etunimi"]{flex:1 1 100%;min-width:0}
+  .pokaali{transform:scale(.7);transform-origin:top center}
 }
 /* ---- kärkitaulun johtajakortti ---- */
 .johtaja{display:flex;align-items:center;gap:16px;background:linear-gradient(115deg,rgba(255,207,63,.10),var(--panel2) 55%);border:1px solid rgba(255,207,63,.35);border-radius:12px;padding:16px 18px;margin-bottom:8px;flex-wrap:wrap}
@@ -792,25 +814,68 @@ function ValitutPorssit({ preds, playerstats, winsMap, logot, nimetMap }) {
   );
 }
 
-function Hero({ round, results, meta, lukittu }) {
+function Pokaali({ mestarit }) {
+  const KAUSI = "26-27";
+  const lista = (mestarit || []).slice().sort((a, b) => String(b.kausi || "").localeCompare(String(a.kausi || "")));
+  const nykyinen = lista.find(m => m.kausi === KAUSI);
+  const historia = lista.filter(m => m.kausi !== KAUSI);
+  return (
+    <div className={"pokaali" + (nykyinen ? " voitto" : "")}>
+      <div className="pok-reunus"></div>
+      <div className="pok-malja"></div>
+      <div className="pok-kaula"></div>
+      <div className="pok-rengas" style={{ width: 44 }}></div>
+      <div className="pok-rengas" style={{ width: 56 }}></div>
+      <div className="pok-rengas" style={{ width: 68 }}></div>
+      <div className="pok-runko">
+        <div className="pok-vyo tyhja"></div>
+        <div className="pok-vyo tyhja"></div>
+        <div className="pok-vyo keski">
+          {nykyinen
+            ? <React.Fragment>
+                <div className="kaiv-paa">{nykyinen.nimi}</div>
+                <div className="kaiv-ala">MESTARI '26–27</div>
+              </React.Fragment>
+            : <React.Fragment>
+                <div className="kaiv-paa">KAUDEN</div>
+                <div className="kaiv-ala">'26–27 VOITTAJA</div>
+              </React.Fragment>}
+        </div>
+        {historia.map(m =>
+          <div className="pok-vyo historia" key={m.kausi}>
+            <div className="kaiv-hist">'{String(m.kausi || "").replace("-", "–")} {String(m.nimi || "").toUpperCase()}</div>
+          </div>)}
+      </div>
+      <div className="pok-jalusta"></div>
+    </div>
+  );
+}
+
+function Hero({ round, results, meta, lukittu, config }) {
   const seurat = ["FLA", "VGK", "DAL", "COL", "EDM", "CAR"];
   const pelattu = round && results ? round.kohteet.filter(g => results.tulokset[g.id]).length : 0;
   const yht = round ? round.kohteet.length : 0;
+  const mestarit = (config && config.mestarit) || [];
+  const kaiverrettu = mestarit.find(m => m.kausi === "26-27");
+  const kaivPvm = kaiverrettu && kaiverrettu.kaiverrettuPvm
+    ? parseInt(kaiverrettu.kaiverrettuPvm.slice(8, 10), 10) + "." + parseInt(kaiverrettu.kaiverrettuPvm.slice(5, 7), 10) + "." + kaiverrettu.kaiverrettuPvm.slice(0, 4)
+    : "";
   return (
-    <div className="hero">
+    <div className={"hero" + (kaiverrettu ? " voitto" : "")}>
       <div className="streak"></div>
       <div className="herorow">
         <div className="htxt">
-          <div className="kick">Kaveriporukan kausiveikkaus · Koeversio</div>
+          <div className="kick">{kaiverrettu ? "Kausi ratkennut — mestari kaiverrettu" : "Kaveriporukan kausiveikkaus · Koeversio"}</div>
           <h1 className="title">NHL-Veikkaus <span className="vuosi">'26–27</span></h1>
           <div className="logostrip">
             {seurat.map(ab => <img key={ab} src={"https://assets.nhle.com/logos/nhl/svg/" + ab + "_light.svg"} alt={ab} />)}
           </div>
         </div>
-        <img className="cup" src="stanley-cup.png" alt="Stanley Cup" onError={e => { e.target.style.display = "none"; }} />
+        <Pokaali mestarit={mestarit} />
       </div>
       <div className="ticker">
-        {yht ? "Kierros " + pelattu + "/" + yht + " · " : ""}{meta ? meta.paiva + " · " : ""}1. puolikas {lukittu ? "lukittu" : "auki"}
+        <span>{yht ? "Kierros " + pelattu + "/" + yht + " · " : ""}{meta ? meta.paiva + " · " : ""}1. puolikas {lukittu ? "lukittu" : "auki"}</span>
+        {kaiverrettu && kaivPvm && <span className="tick-kaiv">✦ KAIVERRETTU {kaivPvm}</span>}
       </div>
     </div>
   );
@@ -1509,14 +1574,24 @@ function Jarjestaja({ config, standings, onTallennettu }) {
       tiedote: (config && config.tiedote) || "",
       tiedoteAsti: (config && config.tiedoteAsti) || "",
       allstarTulos: (config && config.allstarTulos) || "",
-      viimeinenTulos: (config && config.viimeinenTulos) || ""
+      viimeinenTulos: (config && config.viimeinenTulos) || "",
+      mestariNimi: (((config && config.mestarit) || []).find(m => m.kausi === "26-27") || {}).nimi || ""
     });
     setAvattu(true);
   };
 
   const tallenna = () => {
-    db.collection("nhl27").doc("config").set(lomake, { merge: true })
-      .then(() => { onTallennettu(lomake); setViesti("Asetukset tallennettu " + new Date().toLocaleTimeString("fi-FI")); })
+    const payload = Object.assign({}, lomake);
+    const mNimi = (payload.mestariNimi || "").trim();
+    delete payload.mestariNimi;
+    const muutKaudet = ((config && config.mestarit) || []).filter(m => m.kausi !== "26-27");
+    const nykyinen = ((config && config.mestarit) || []).find(m => m.kausi === "26-27");
+    payload.mestarit = mNimi
+      ? muutKaudet.concat([{ kausi: "26-27", nimi: mNimi,
+          kaiverrettuPvm: (nykyinen && nykyinen.kaiverrettuPvm) || new Date().toISOString().slice(0, 10) }])
+      : muutKaudet;
+    db.collection("nhl27").doc("config").set(payload, { merge: true })
+      .then(() => { onTallennettu(payload); setViesti("Asetukset tallennettu " + new Date().toLocaleTimeString("fi-FI")); })
       .catch(e => setViesti("Tallennus epäonnistui: " + e.message));
   };
 
@@ -1577,6 +1652,12 @@ function Jarjestaja({ config, standings, onTallennettu }) {
             <span>{lomake.tiedote.trim()} <span className="mono" style={{ fontSize: 9, color: "var(--faint)" }}>— JÄRJESTÄJÄ</span></span>
             {lomake.tiedoteAsti && <span className="upvm">näkyy {lomake.tiedoteAsti.slice(8,10)}.{lomake.tiedoteAsti.slice(5,7)}. asti</span>}
           </div>}
+      </div>
+      <div className="osio"><div className="ots">Mestarikaiverrus (kausi '26–27)</div>
+        <div className="kuv">Syötetään kauden ratkettua — nimi kaiverretaan bannerin pokaaliin ja banneri siirtyy juhlatilaan. Tyhjennä kenttä, jos kaiverrus pitää perua. Aiempien kausien kaiverrukset säilyvät automaattisesti.</div>
+        <div className="kentta" style={{ marginTop: 6, maxWidth: 280 }}><span className="lab">Mestarin nimi</span>
+          <input maxLength={30} value={lomake.mestariNimi} placeholder="esim. Kalle"
+                 onChange={e => setLomake(Object.assign({}, lomake, { mestariNimi: e.target.value }))} /></div>
       </div>
       <div className="osio"><div className="ots">Erikoiskohteiden tulokset (syötetään kun ratkeavat)</div>
         <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 6 }}>
@@ -1659,7 +1740,7 @@ function App() {
 
   return (
     <div className="wrap">
-      <Hero round={round} results={results} meta={meta} lukittu={!!config.locked1} />
+      <Hero round={round} results={results} meta={meta} lukittu={!!config.locked1} config={config} />
       <div className="tabs">
         {TABS.map(([id, nimi]) =>
           <button key={id} className={"tab" + (tab === id ? " on" : "")} onClick={() => setTab(id)}>{nimi}</button>)}
