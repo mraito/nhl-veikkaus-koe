@@ -1616,7 +1616,7 @@
     "inIntermission": false
    },
    "neutralSite": false,
-   "venueTimezone": "US/Mountain",
+   "venueTimezone": "America/Edmonton",
    "period": 3,
    "periodDescriptor": {
     "number": 3,
