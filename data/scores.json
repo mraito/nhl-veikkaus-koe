@@ -129,7 +129,11 @@
      "market": "N",
      "countryCode": "CA",
      "network": "SN1",
-     "sequenceNumber": 113
+     "sequenceNumber": 113,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/284-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/284-dark.svg"
+     }
     },
     {
      "id": 564,
@@ -445,14 +449,24 @@
      "market": "N",
      "countryCode": "US",
      "network": "ABC",
-     "sequenceNumber": 1
+     "sequenceNumber": 1,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/384-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/384-dark.svg"
+     }
     },
     {
      "id": 282,
      "market": "N",
      "countryCode": "CA",
      "network": "SN",
-     "sequenceNumber": 21
+     "sequenceNumber": 21,
+     "languageCode": "en",
+     "parentId": 282,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+     }
     }
    ],
    "gameState": "OFF",
@@ -749,28 +763,46 @@
      "market": "N",
      "countryCode": "US",
      "network": "ABC",
-     "sequenceNumber": 1
+     "sequenceNumber": 1,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/384-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/384-dark.svg"
+     }
     },
     {
      "id": 282,
      "market": "N",
      "countryCode": "CA",
      "network": "SN",
-     "sequenceNumber": 21
+     "sequenceNumber": 21,
+     "languageCode": "en",
+     "parentId": 282,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+     }
     },
     {
      "id": 284,
      "market": "N",
      "countryCode": "CA",
      "network": "SN1",
-     "sequenceNumber": 113
+     "sequenceNumber": 113,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/284-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/284-dark.svg"
+     }
     },
     {
      "id": 281,
      "market": "N",
      "countryCode": "CA",
      "network": "TVAS",
-     "sequenceNumber": 120
+     "sequenceNumber": 120,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/281-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/281-dark.svg"
+     }
     }
    ],
    "gameState": "OFF",
@@ -1572,7 +1604,12 @@
      "market": "N",
      "countryCode": "CA",
      "network": "SN",
-     "sequenceNumber": 107
+     "sequenceNumber": 107,
+     "parentId": 282,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+     }
     },
     {
      "id": 314,
@@ -2264,28 +2301,45 @@
      "market": "N",
      "countryCode": "CA",
      "network": "SNE",
-     "sequenceNumber": 30
+     "sequenceNumber": 30,
+     "parentId": 282,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/287-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/287-dark.svg"
+     }
     },
     {
      "id": 324,
      "market": "N",
      "countryCode": "US",
      "network": "NHLN",
-     "sequenceNumber": 35
+     "sequenceNumber": 35,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/324-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/324-dark.svg"
+     }
     },
     {
      "id": 281,
      "market": "N",
      "countryCode": "CA",
      "network": "TVAS",
-     "sequenceNumber": 120
+     "sequenceNumber": 120,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/281-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/281-dark.svg"
+     }
     },
     {
      "id": 286,
      "market": "N",
      "countryCode": "CA",
      "network": "CITY",
-     "sequenceNumber": 137
+     "sequenceNumber": 137,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/286-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/286-dark.svg"
+     }
     },
     {
      "id": 28,
@@ -2640,14 +2694,22 @@
      "market": "N",
      "countryCode": "CA",
      "network": "SN1",
-     "sequenceNumber": 113
+     "sequenceNumber": 113,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/284-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/284-dark.svg"
+     }
     },
     {
      "id": 291,
      "market": "N",
      "countryCode": "CA",
      "network": "TVAS2",
-     "sequenceNumber": 121
+     "sequenceNumber": 121,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/291-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/291-dark.svg"
+     }
     },
     {
      "id": 27,
@@ -3821,14 +3883,24 @@
      "market": "N",
      "countryCode": "CA",
      "network": "SN",
-     "sequenceNumber": 21
+     "sequenceNumber": 21,
+     "languageCode": "en",
+     "parentId": 282,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+     }
     },
     {
      "id": 4,
      "market": "N",
      "countryCode": "CA",
      "network": "CBC",
-     "sequenceNumber": 101
+     "sequenceNumber": 101,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/4-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/4-dark.svg"
+     }
     }
    ],
    "gameState": "OFF",
@@ -4429,28 +4501,45 @@
      "market": "N",
      "countryCode": "CA",
      "network": "CBC",
-     "sequenceNumber": 101
+     "sequenceNumber": 101,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/4-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/4-dark.svg"
+     }
     },
     {
      "id": 282,
      "market": "N",
      "countryCode": "CA",
      "network": "SN",
-     "sequenceNumber": 107
+     "sequenceNumber": 107,
+     "parentId": 282,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/282-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/282-dark.svg"
+     }
     },
     {
      "id": 281,
      "market": "N",
      "countryCode": "CA",
      "network": "TVAS",
-     "sequenceNumber": 120
+     "sequenceNumber": 120,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/281-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/281-dark.svg"
+     }
     },
     {
      "id": 286,
      "market": "N",
      "countryCode": "CA",
      "network": "CITY",
-     "sequenceNumber": 137
+     "sequenceNumber": 137,
+     "logoUrls": {
+      "light": "https://assets.nhle.com/logos/broadcast/286-light.svg",
+      "dark": "https://assets.nhle.com/logos/broadcast/286-dark.svg"
+     }
     },
     {
      "id": 568,
