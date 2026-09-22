@@ -1495,6 +1495,24 @@
    "value": 23
   },
   {
+   "id": 8479973,
+   "firstName": {
+    "default": "Stuart"
+   },
+   "lastName": {
+    "default": "Skinner"
+   },
+   "sweaterNumber": 74,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8479973.png",
+   "teamAbbrev": "PIT",
+   "teamName": {
+    "default": "Penguins"
+   },
+   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+   "position": "G",
+   "value": 23
+  },
+  {
    "id": 8481692,
    "firstName": {
     "default": "Dustin"
@@ -1657,26 +1675,6 @@
     "default": "Blackhawks"
    },
    "teamLogo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026",
-   "position": "G",
-   "value": 19
-  },
-  {
-   "id": 8481668,
-   "firstName": {
-    "default": "Arturs"
-   },
-   "lastName": {
-    "default": "Silovs",
-    "cs": "Šilovs",
-    "sk": "Šilovs"
-   },
-   "sweaterNumber": 37,
-   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481668.png",
-   "teamAbbrev": "PIT",
-   "teamName": {
-    "default": "Penguins"
-   },
-   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
    "position": "G",
    "value": 19
   }

@@ -280,24 +280,6 @@
    "value": 3
   },
   {
-   "id": 8479973,
-   "firstName": {
-    "default": "Stuart"
-   },
-   "lastName": {
-    "default": "Skinner"
-   },
-   "sweaterNumber": 74,
-   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8479973.png",
-   "teamAbbrev": "PIT",
-   "teamName": {
-    "default": "Penguins"
-   },
-   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-   "position": "G",
-   "value": 2
-  },
-  {
    "id": 8471734,
    "firstName": {
     "default": "Jonathan"
@@ -343,6 +325,24 @@
    },
    "sweaterNumber": 39,
    "headshot": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8478971.png",
+   "teamAbbrev": "EDM",
+   "teamName": {
+    "default": "Oilers"
+   },
+   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+   "position": "G",
+   "value": 2
+  },
+  {
+   "id": 8477465,
+   "firstName": {
+    "default": "Tristan"
+   },
+   "lastName": {
+    "default": "Jarry"
+   },
+   "sweaterNumber": 35,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/EDM/8477465.png",
    "teamAbbrev": "EDM",
    "teamName": {
     "default": "Oilers"
@@ -444,6 +444,24 @@
    "value": 2
   },
   {
+   "id": 8479973,
+   "firstName": {
+    "default": "Stuart"
+   },
+   "lastName": {
+    "default": "Skinner"
+   },
+   "sweaterNumber": 74,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8479973.png",
+   "teamAbbrev": "PIT",
+   "teamName": {
+    "default": "Penguins"
+   },
+   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+   "position": "G",
+   "value": 2
+  },
+  {
    "id": 8480280,
    "firstName": {
     "default": "Jeremy"
@@ -537,24 +555,6 @@
    "teamLogo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg?season=20252026",
    "position": "G",
    "value": 2
-  },
-  {
-   "id": 8482123,
-   "firstName": {
-    "default": "Drew"
-   },
-   "lastName": {
-    "default": "Commesso"
-   },
-   "sweaterNumber": 33,
-   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/CHI/8482123.png",
-   "teamAbbrev": "CHI",
-   "teamName": {
-    "default": "Blackhawks"
-   },
-   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026",
-   "position": "G",
-   "value": 1
   }
  ],
  "wins": [
@@ -942,6 +942,24 @@
    "value": 23
   },
   {
+   "id": 8479973,
+   "firstName": {
+    "default": "Stuart"
+   },
+   "lastName": {
+    "default": "Skinner"
+   },
+   "sweaterNumber": 74,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8479973.png",
+   "teamAbbrev": "PIT",
+   "teamName": {
+    "default": "Penguins"
+   },
+   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+   "position": "G",
+   "value": 23
+  },
+  {
    "id": 8481692,
    "firstName": {
     "default": "Dustin"
@@ -1104,26 +1122,6 @@
     "default": "Blackhawks"
    },
    "teamLogo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg?season=20252026",
-   "position": "G",
-   "value": 19
-  },
-  {
-   "id": 8481668,
-   "firstName": {
-    "default": "Arturs"
-   },
-   "lastName": {
-    "default": "Silovs",
-    "cs": "Šilovs",
-    "sk": "Šilovs"
-   },
-   "sweaterNumber": 37,
-   "headshot": "https://assets.nhle.com/mugs/nhl/20252026/PIT/8481668.png",
-   "teamAbbrev": "PIT",
-   "teamName": {
-    "default": "Penguins"
-   },
-   "teamLogo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
    "position": "G",
    "value": 19
   }
