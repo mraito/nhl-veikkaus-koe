@@ -140,14 +140,14 @@
      "market": "A",
      "countryCode": "US",
      "network": "FDSNW",
-     "sequenceNumber": 288
+     "sequenceNumber": 301
     },
     {
      "id": 322,
      "market": "H",
      "countryCode": "US",
      "network": "NBCSP",
-     "sequenceNumber": 389
+     "sequenceNumber": 402
     }
    ],
    "gameState": "OFF",
@@ -1616,7 +1616,7 @@
      "market": "A",
      "countryCode": "US",
      "network": "NBCSCA",
-     "sequenceNumber": 393
+     "sequenceNumber": 406
     }
    ],
    "gameState": "OFF",
@@ -1916,14 +1916,14 @@
      "market": "A",
      "countryCode": "US",
      "network": "FDSNSO",
-     "sequenceNumber": 202
+     "sequenceNumber": 214
     },
     {
      "id": 517,
      "market": "H",
      "countryCode": "US",
      "network": "MNMT",
-     "sequenceNumber": 396
+     "sequenceNumber": 409
     }
    ],
    "gameState": "OFF",
@@ -2346,7 +2346,7 @@
      "market": "H",
      "countryCode": "US",
      "network": "MSG-B",
-     "sequenceNumber": 392
+     "sequenceNumber": 405
     }
    ],
    "gameState": "OFF",
@@ -2716,7 +2716,7 @@
      "market": "A",
      "countryCode": "US",
      "network": "MSG",
-     "sequenceNumber": 417
+     "sequenceNumber": 430
     }
    ],
    "gameState": "OFF",
@@ -3022,14 +3022,14 @@
      "market": "A",
      "countryCode": "US",
      "network": "FDSNSO",
-     "sequenceNumber": 202
+     "sequenceNumber": 214
     },
     {
      "id": 409,
      "market": "H",
      "countryCode": "US",
      "network": "MSGSN",
-     "sequenceNumber": 411
+     "sequenceNumber": 424
     }
    ],
    "gameState": "OFF",
@@ -3426,14 +3426,14 @@
      "market": "H",
      "countryCode": "US",
      "network": "FDSNMW",
-     "sequenceNumber": 201
+     "sequenceNumber": 205
     },
     {
      "id": 565,
      "market": "A",
      "countryCode": "US",
      "network": "FDSNOH",
-     "sequenceNumber": 286
+     "sequenceNumber": 299
     }
    ],
    "gameState": "OFF",
@@ -4189,14 +4189,14 @@
      "market": "H",
      "countryCode": "US",
      "network": "Utah16",
-     "sequenceNumber": 381
+     "sequenceNumber": 394
     },
     {
      "id": 553,
      "market": "A",
      "countryCode": "US",
      "network": "Victory+",
-     "sequenceNumber": 382
+     "sequenceNumber": 395
     }
    ],
    "gameState": "OFF",
@@ -4546,14 +4546,14 @@
      "market": "A",
      "countryCode": "US",
      "network": "FDSNNOX",
-     "sequenceNumber": 285
+     "sequenceNumber": 298
     },
     {
      "id": 569,
      "market": "A",
      "countryCode": "US",
      "network": "FDSNWI",
-     "sequenceNumber": 419
+     "sequenceNumber": 432
     }
    ],
    "gameState": "OFF",
@@ -5071,7 +5071,7 @@
      "market": "A",
      "countryCode": "US",
      "network": "KHN/Prime",
-     "sequenceNumber": 348
+     "sequenceNumber": 362
     },
     {
      "id": 388,
